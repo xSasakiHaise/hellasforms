@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "pixelmon:items/trs/trblank"
+  },
+  "overrides": [
+    { "predicate": { "custom_model_data": 1 }, "model": "tunkhoforms:item/tm_bug" },
+    { "predicate": { "custom_model_data": 2 }, "model": "tunkhoforms:item/tm_dark" },
+    { "predicate": { "custom_model_data": 3 }, "model": "tunkhoforms:item/tm_dragon" },
+    { "predicate": { "custom_model_data": 4 }, "model": "tunkhoforms:item/tm_electric" },
+    { "predicate": { "custom_model_data": 5 }, "model": "tunkhoforms:item/tm_fairy" },
+    { "predicate": { "custom_model_data": 6 }, "model": "tunkhoforms:item/tm_fighting" },
+    { "predicate": { "custom_model_data": 7 }, "model": "tunkhoforms:item/tm_fire" },
+    { "predicate": { "custom_model_data": 8 }, "model": "tunkhoforms:item/tm_flying" },
+    { "predicate": { "custom_model_data": 9 }, "model": "tunkhoforms:item/tm_ghost" },
+    { "predicate": { "custom_model_data": 10 }, "model": "tunkhoforms:item/tm_grass" },
+    { "predicate": { "custom_model_data": 11 }, "model": "tunkhoforms:item/tm_ground" },
+    { "predicate": { "custom_model_data": 12 }, "model": "tunkhoforms:item/tm_ice" },
+    { "predicate": { "custom_model_data": 13 }, "model": "tunkhoforms:item/tm_normal" },
+    { "predicate": { "custom_model_data": 14 }, "model": "tunkhoforms:item/tm_poison" },
+    { "predicate": { "custom_model_data": 15 }, "model": "tunkhoforms:item/tm_psychic" },
+    { "predicate": { "custom_model_data": 16 }, "model": "tunkhoforms:item/tm_rock" },
+    { "predicate": { "custom_model_data": 17 }, "model": "tunkhoforms:item/tm_steel" },
+    { "predicate": { "custom_model_data": 18 }, "model": "tunkhoforms:item/tm_water" }
+  ]
+}
