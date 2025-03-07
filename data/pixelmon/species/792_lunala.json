@@ -427,6 +427,60 @@
           ]
         }
       ]
+    },
+    {
+      "name": "hellas",
+      "abilities": {
+        "abilities": [
+          "ShadowShield",
+          "SereneGrace"
+        ],
+        "hiddenAbilities": []
+      },
+      "battleStats": {
+        "hp": 157,
+        "attack": 133,
+        "defense": 99,
+        "specialAttack": 157,
+        "specialDefense": 117,
+        "speed": 117
+      },
+      "tags": [
+        "hellas"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "hellasforms:pokemon/792_lunala/all/fullmoon/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/792_lunala/all/fullmoon/hellas/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "hellasforms:pokemon/792_lunala/all/base/hellas/model.pqc"
+                ]
+              }
+            },
+            {
+              "name": "shiny",
+              "texture": "hellasforms:pokemon/792_lunala/all/fullmoon/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/792_lunala/all/fullmoon/hellasshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "DARK",
+        "GHOST"
+      ],
+      "preEvolutions": []
     }
   ],
   "generation": 7
