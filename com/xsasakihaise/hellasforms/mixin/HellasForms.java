@@ -47,7 +47,7 @@ import org.apache.logging.log4j.Logger;
         public static final String MOD_ID = "hellasforms";
         public static final Logger LOGGER = LogManager.getLogger("hellasforms");
         private static HellasForms instance;
-        public static final DeferredRegister<Item> ITEMS;
+        public static final DeferredRegister<Item> ITEMS = null;
 
         public HellasForms() {
             instance = this;
@@ -69,14 +69,15 @@ import org.apache.logging.log4j.Logger;
         }
 
         public static void StartBattle(PlayerEntity p, PixelmonEntity pixelmonEntity, Boolean useItem) {
-            if ((StorageProxy.getParty(p.unRide()).getTeam() != null) && !((Pokemon) StorageProxy.getParty(p.unRide()).getTeam().get(0)).isFainted() && pixelmonEntity.func_70039_c() && (pixelmonEntity.battleController == null)) {
-                BattleParticipant player = new PlayerParticipant((ServerPlayerEntity)p, new Pokemon[]{(Pokemon)StorageProxy.getParty(p.unRide()).getTeam().get(0)});
-                BattleParticipant wildpokemon = new WildPixelmonParticipant(new PixelmonEntity[]{pixelmonEntity});
-                BattleRegistry.startBattle(player, wildpokemon);
-                if (useItem) {
-                    p.forceAddEffect().func_190918_g(1);
+            if (StorageProxy.getParty(p.unRide()).getTeam() != null)
+                if (!((Pokemon) StorageProxy.getParty(p.unRide()).getTeam().get(0)).isFainted() && pixelmonEntity.func_70039_c() && (pixelmonEntity.battleController == null)) {
+                    BattleParticipant player = new PlayerParticipant((ServerPlayerEntity) p, new Pokemon[]{(Pokemon) StorageProxy.getParty(p.unRide()).getTeam().get(0)});
+                    BattleParticipant wildpokemon = new WildPixelmonParticipant(new PixelmonEntity[]{pixelmonEntity});
+                    BattleRegistry.startBattle(player, wildpokemon);
+                    if (useItem) {
+                        p.forceAddEffect().func_190918_g(1);
+                    }
                 }
-            }
 
         }
 
