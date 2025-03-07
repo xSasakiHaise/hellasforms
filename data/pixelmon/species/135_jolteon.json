@@ -907,10 +907,11 @@
       },
       "abilities": {
         "abilities": [
-          "VoltAbsorb"
+          "AngerPoint",
+          "StrongJaw"
         ],
         "hiddenAbilities": [
-          "QuickFeet"
+          "Adaptability"
         ]
       },
       "movement": {

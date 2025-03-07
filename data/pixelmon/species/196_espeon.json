@@ -896,7 +896,8 @@
       },
       "abilities": {
         "abilities": [
-          "Synchronize"
+          "Prankster",
+          "Telepathy"
         ],
         "hiddenAbilities": [
           "MagicBounce"

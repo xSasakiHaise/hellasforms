@@ -397,10 +397,11 @@
       },
       "abilities": {
         "abilities": [
-          "Levitate"
+          "Levitate",
+          "HeavyMetal"
         ],
         "hiddenAbilities": [
-
+          "MotorDrive"
         ]
       },
       "movement": {

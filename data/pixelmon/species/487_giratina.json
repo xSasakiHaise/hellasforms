@@ -577,6 +577,61 @@
           ]
         }
       ]
+    },
+    {
+      "name": "hellas",
+      "dimensions": {
+        "height": 3.8,
+        "width": 3.0,
+        "length": 3.0
+      },
+      "abilities": {
+        "abilities": [
+          "Telepathy",
+          "DragonsMaw"
+        ]
+      },
+      "battleStats": {
+        "hp": 200,
+        "attack": 130,
+        "defense": 180,
+        "specialAttack": 60,
+        "specialDefense": 120,
+        "speed": 105
+      },
+      "weight": 650.0,
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "hellasforms:pokemon/487_giratina/all/origin/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/487_giratina/all/origin/hellas/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "hellasforms:pokemon/487_giratina/all/origin/hellas/model.pqc"
+                ]
+              }
+            },
+            {
+              "name": "shiny",
+              "texture": "hellasforms:pokemon/487_giratina/all/origin/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/487_giratina/all/origin/hellasshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "DARK",
+        "DRAGON"
+      ]
     }
   ],
   "generation": 4

@@ -885,10 +885,11 @@
       },
       "abilities": {
         "abilities": [
-          "Synchronize"
+          "PowerSpot",
+          "Telepathy"
         ],
         "hiddenAbilities": [
-          "InnerFocus"
+          "DragonsMaw"
         ]
       },
       "movement": {

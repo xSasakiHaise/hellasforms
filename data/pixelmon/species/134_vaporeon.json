@@ -891,7 +891,8 @@
       },
       "abilities": {
         "abilities": [
-          "WaterAbsorb"
+          "WaterAbsorb",
+          "Merciless"
         ],
         "hiddenAbilities": [
           "Hydration"

@@ -796,10 +796,11 @@
       },
       "abilities": {
         "abilities": [
-          "Overgrow"
+          "Sharpness",
+          "NoGuard"
         ],
         "hiddenAbilities": [
-          "Unburden"
+          "Moxie"
         ]
       },
       "movement": {
