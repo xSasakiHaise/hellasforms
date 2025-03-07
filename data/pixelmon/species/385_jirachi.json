@@ -956,7 +956,8 @@
         "speed": 100
       },
       "tags": [
-        "mythical"
+        "hellas",
+        "wild"
       ],
       "spawn": {
         "baseExp": 215,

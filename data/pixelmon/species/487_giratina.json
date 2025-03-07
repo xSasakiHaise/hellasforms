@@ -599,6 +599,10 @@
         "specialDefense": 120,
         "speed": 105
       },
+      "tags": [
+        "hellas",
+        "wild"
+      ],
       "weight": 650.0,
       "genderProperties": [
         {
