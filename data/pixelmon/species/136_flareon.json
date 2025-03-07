@@ -876,10 +876,11 @@
       },
       "abilities": {
         "abilities": [
-          "FlashFire"
+          "FlashFire",
+          "FlameBody"
         ],
         "hiddenAbilities": [
-          "Guts"
+          "Steelworker"
         ]
       },
       "movement": {

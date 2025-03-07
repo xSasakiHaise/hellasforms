@@ -676,11 +676,11 @@
       },
       "abilities": {
         "abilities": [
-          "HyperCutter",
-          "ArenaTrap"
+          "ArenaTrap",
+          "HeavyMetal"
         ],
         "hiddenAbilities": [
-          "SheerForce"
+          "MotorDrive"
         ]
       },
       "movement": {
