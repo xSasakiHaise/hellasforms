@@ -1109,10 +1109,10 @@
       ],
       "defaultBaseForm": "",
       "megaItems": [
-        "hellasforms:sceptilite-h"
+        "hellasforms:sceptilite-hellas"
       ],
       "megas": [
-        "mega-h"
+        "mega-hellas"
       ],
       "gigantamax": {
         "canHaveFactor": false,
@@ -1128,7 +1128,7 @@
       }
     },
     {
-      "name": "mega-h",
+      "name": "mega-hellas",
       "tags": [
         "temp"
       ],
