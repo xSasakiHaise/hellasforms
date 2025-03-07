@@ -734,12 +734,12 @@
         "aggressive": 20
       },
       "battleStats": {
-        "hp": 55,
+        "hp": 75,
         "attack": 100,
         "defense": 60,
-        "specialAttack": 125,
+        "specialAttack": 145,
         "specialDefense": 60,
-        "speed": 110
+        "speed": 130
       },
       "tags": [
         "hellas"
