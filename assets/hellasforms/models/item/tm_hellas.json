@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "pixelmon:items/trs/trblank"
+  },
+  "overrides": [
+    { "predicate": { "custom_model_data": 1 }, "model": "hellasforms:item/tm_bug" },
+    { "predicate": { "custom_model_data": 2 }, "model": "hellasforms:item/tm_dark" },
+    { "predicate": { "custom_model_data": 3 }, "model": "hellasforms:item/tm_dragon" },
+    { "predicate": { "custom_model_data": 4 }, "model": "hellasforms:item/tm_electric" },
+    { "predicate": { "custom_model_data": 5 }, "model": "hellasforms:item/tm_fairy" },
+    { "predicate": { "custom_model_data": 6 }, "model": "hellasforms:item/tm_fighting" },
+    { "predicate": { "custom_model_data": 7 }, "model": "hellasforms:item/tm_fire" },
+    { "predicate": { "custom_model_data": 8 }, "model": "hellasforms:item/tm_flying" },
+    { "predicate": { "custom_model_data": 9 }, "model": "hellasforms:item/tm_ghost" },
+    { "predicate": { "custom_model_data": 10 }, "model": "hellasforms:item/tm_grass" },
+    { "predicate": { "custom_model_data": 11 }, "model": "hellasforms:item/tm_ground" },
+    { "predicate": { "custom_model_data": 12 }, "model": "hellasforms:item/tm_ice" },
+    { "predicate": { "custom_model_data": 13 }, "model": "hellasforms:item/tm_normal" },
+    { "predicate": { "custom_model_data": 14 }, "model": "hellasforms:item/tm_poison" },
+    { "predicate": { "custom_model_data": 15 }, "model": "hellasforms:item/tm_psychic" },
+    { "predicate": { "custom_model_data": 16 }, "model": "hellasforms:item/tm_rock" },
+    { "predicate": { "custom_model_data": 17 }, "model": "hellasforms:item/tm_steel" },
+    { "predicate": { "custom_model_data": 18 }, "model": "hellasforms:item/tm_water" }
+  ]
+}
