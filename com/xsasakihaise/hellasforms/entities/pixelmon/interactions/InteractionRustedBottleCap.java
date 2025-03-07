@@ -18,7 +18,7 @@ public class InteractionRustedBottleCap implements IInteraction {
 
     public boolean processInteract(PixelmonEntity pixelmon, PlayerEntity player, Hand hand, ItemStack itemstack) {
         if (player instanceof ServerPlayerEntity && pixelmon.getOwner() == player) {
-            Item item = itemstack.func_77973_b();
+            Item item = itemstack.enchant();
             if (item.getRegistryName().toString().equals("pixelmon:rusted_bottle_cap")) {
                 Pokemon pokemon = pixelmon.getPokemon();
                 int[] ivs = pokemon.getIVs().getArray();
@@ -33,7 +33,7 @@ public class InteractionRustedBottleCap implements IInteraction {
                     pokemon.getIVs().fillFromArray(minivs);
                     pokemon.setFriendship(0);
                     ChatHandler.sendChat(player, "hellasforms.interaction.rusted_bottle_cap", new Object[]{pokemon.getNickname()});
-                    itemstack.func_190918_g(1);
+                    itemstack.enchant(1);
                 } else {
                     ChatHandler.sendChat(player, "hellasforms.interaction.rusted_bottle_cap.failure", new Object[]{pokemon.getNickname()});
                 }

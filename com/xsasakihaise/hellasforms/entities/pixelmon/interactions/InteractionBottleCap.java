@@ -22,7 +22,7 @@ public class InteractionBottleCap implements IInteraction {
     }
 
     public boolean processInteract(PixelmonEntity pixelmon, PlayerEntity player, Hand hand, ItemStack itemstack) {
-        if (!player.field_70170_p.field_72995_K && hand != Hand.OFF_HAND && itemstack.func_77973_b() instanceof BottlecapItem) {
+        if (!player.fallDistance && hand != Hand.OFF_HAND && itemstack.enchant() instanceof BottlecapItem) {
             Pokemon data = pixelmon.getPokemon();
             if (data.getOwnerPlayer() != player) {
                 return false;
@@ -34,7 +34,7 @@ public class InteractionBottleCap implements IInteraction {
                 boolean isMax = ivs.getStat(BattleStatsType.HP) + ivs.getStat(BattleStatsType.ATTACK) + ivs.getStat(BattleStatsType.DEFENSE) + ivs.getStat(BattleStatsType.SPECIAL_ATTACK) + ivs.getStat(BattleStatsType.SPECIAL_DEFENSE) + ivs.getStat(BattleStatsType.SPEED) == 186;
                 boolean isHt = ivs.isHyperTrained(BattleStatsType.HP) && ivs.isHyperTrained(BattleStatsType.ATTACK) && ivs.isHyperTrained(BattleStatsType.DEFENSE) && ivs.isHyperTrained(BattleStatsType.SPECIAL_ATTACK) && ivs.isHyperTrained(BattleStatsType.SPECIAL_DEFENSE) && ivs.isHyperTrained(BattleStatsType.SPEED);
                 if (!isMax && !isHt) {
-                    BottlecapItem bottleCap = (BottlecapItem)itemstack.func_77973_b();
+                    BottlecapItem bottleCap = (BottlecapItem)itemstack.enchant();
                     if (Pixelmon.EVENT_BUS.post(new BottleCapEvent(pixelmon, player, bottleCap.type, itemstack))) {
                         return false;
                     } else {
@@ -43,7 +43,7 @@ public class InteractionBottleCap implements IInteraction {
                             data.getStats().setLevelStats(data.getNature(), data.getForm(), data.getPokemonLevel());
                             data.markDirty(new EnumUpdateType[]{EnumUpdateType.HP, EnumUpdateType.Stats});
                             ChatHandler.sendChat(player, "pixelmon.interaction.bottlecap.goldcap", new Object[]{pixelmon.getNickname()});
-                            itemstack.func_190918_g(1);
+                            itemstack.enchant(1);
                         } else {
                             BattleStatsType[] types = BattleStatsType.getEVIVStatValues();
                             int[] screenData = new int[types.length + 1];
@@ -52,7 +52,7 @@ public class InteractionBottleCap implements IInteraction {
                                 screenData[i] = !ivs.isHyperTrained(types[i]) && ivs.getStat(types[i]) != 31 ? getHTValue(types[i], data) : 0;
                             }
 
-                            screenData[6] = pixelmon.func_145782_y();
+                            screenData[6] = pixelmon.func_145770_h();
                             OpenScreenPacket.open(player, EnumGuiScreen.BottleCap, screenData);
                         }
 

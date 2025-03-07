@@ -10,28 +10,21 @@ import com.pixelmonmod.pixelmon.battles.controller.participants.PlayerParticipan
 import com.pixelmonmod.pixelmon.battles.controller.participants.WildPixelmonParticipant;
 import com.pixelmonmod.pixelmon.entities.pixelmon.PixelmonEntity;
 import com.pixelmonmod.pixelmon.init.registry.ItemRegistration;
-import com.pixelmonmod.pixelmon.items.group.PixelmonItemGroups;
 import com.xsasakihaise.hellasforms.battles.attacks.specialAttacks.basic.Corrode;
 import com.xsasakihaise.hellasforms.battles.attacks.specialAttacks.basic.HitchKick;
 import com.xsasakihaise.hellasforms.battles.attacks.specialAttacks.basic.PlasmaFangs;
 import com.xsasakihaise.hellasforms.battles.status.PlasmaVeil;
 import com.xsasakihaise.hellasforms.entities.pixelmon.interactions.InteractionBottleCap;
 import com.xsasakihaise.hellasforms.entities.pixelmon.interactions.InteractionRustedBottleCap;
-import com.xsasakihaise.hellasforms.entities.pixelmon.interactions.InteractionTMHellas;
-import com.xsasakihaise.hellasforms.items.HellasTMItem;
-import com.xsasakihaise.hellasforms.command.GiveHellasTMCommand;
 import com.xsasakihaise.hellasforms.items.heldItems.EeveeoliteItem;
-import com.xsasakihaise.hellasforms.items.heldItems.HuntersCowlItem;
 import com.xsasakihaise.hellasforms.listener.GrowthSpawningListener;
 import com.xsasakihaise.hellasforms.listener.ReturnItemsListener;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -42,15 +35,11 @@ import net.minecraftforge.fml.event.server.FMLServerStoppedEvent;
 import net.minecraftforge.fml.event.server.FMLServerStoppingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
-import java.util.logging.Logger;
-
-
-    @Mod("hellasforms")
+@Mod("hellasforms")
     @EventBusSubscriber(
             modid = "hellasforms"
     )
@@ -59,7 +48,6 @@ import java.util.logging.Logger;
         public static final Logger LOGGER = LogManager.getLogger("hellasforms");
         private static HellasForms instance;
         public static final DeferredRegister<Item> ITEMS;
-        public static final RegistryObject<Item> TM_Hellas;
 
         public HellasForms() {
             instance = this;
@@ -68,15 +56,12 @@ import java.util.logging.Logger;
             MinecraftForge.EVENT_BUS.register(this);
             PixelmonEntity.interactionList.add(new InteractionBottleCap());
             PixelmonEntity.interactionList.add(new InteractionRustedBottleCap());
-            PixelmonEntity.interactionList.add(new InteractionTMHellas());
             EffectTypeAdapter.EFFECTS.put("Corrode", Corrode.class);
             EffectTypeAdapter.EFFECTS.put("PlasmaVeil", PlasmaVeil.class);
             EffectTypeAdapter.EFFECTS.put("HitchKick", HitchKick.class);
             EffectTypeAdapter.EFFECTS.put("PlasmaFangs", PlasmaFangs.class);
-            ItemRegistration.ITEMS.register("hunters_cowl", HuntersCowlItem::new);
             ItemRegistration.ITEMS.register("eeveeolite", EeveeoliteItem::new);
             ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-            MinecraftForge.EVENT_BUS.addListener(HellasForms::onRegisterCommands);
         }
 
         private void setup(FMLCommonSetupEvent event) {
@@ -84,12 +69,12 @@ import java.util.logging.Logger;
         }
 
         public static void StartBattle(PlayerEntity p, PixelmonEntity pixelmonEntity, Boolean useItem) {
-            if (StorageProxy.getParty(p.func_110124_au()).getTeam() != null && !((Pokemon) StorageProxy.getParty(p.func_110124_au()).getTeam().get(0)).isFainted() && pixelmonEntity.func_70089_S() && pixelmonEntity.battleController == null) {
-                BattleParticipant player = new PlayerParticipant((ServerPlayerEntity)p, new Pokemon[]{(Pokemon)StorageProxy.getParty(p.func_110124_au()).getTeam().get(0)});
+            if ((StorageProxy.getParty(p.unRide()).getTeam() != null) && !((Pokemon) StorageProxy.getParty(p.unRide()).getTeam().get(0)).isFainted() && pixelmonEntity.func_70039_c() && (pixelmonEntity.battleController == null)) {
+                BattleParticipant player = new PlayerParticipant((ServerPlayerEntity)p, new Pokemon[]{(Pokemon)StorageProxy.getParty(p.unRide()).getTeam().get(0)});
                 BattleParticipant wildpokemon = new WildPixelmonParticipant(new PixelmonEntity[]{pixelmonEntity});
                 BattleRegistry.startBattle(player, wildpokemon);
                 if (useItem) {
-                    p.func_184614_ca().func_190918_g(1);
+                    p.forceAddEffect().func_190918_g(1);
                 }
             }
 
@@ -103,11 +88,6 @@ import java.util.logging.Logger;
 
         @SubscribeEvent
         public static void onServerStarted(FMLServerStartedEvent event) {
-        }
-
-        @SubscribeEvent
-        public static void onRegisterCommands(RegisterCommandsEvent event) {
-            GiveHellasTMCommand.register(event.getDispatcher());
         }
 
         @SubscribeEvent
@@ -139,10 +119,6 @@ import java.util.logging.Logger;
         public void clientSetup(FMLClientSetupEvent event) {
         }
 
-        static {
-            ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "hellasforms");
-            TM_Hellas = ITEMS.register("tm_hellas", () -> new HellasTMItem((new Item.Properties()).func_200916_a(PixelmonItemGroups.TAB_TM_TR)));
-        }
     }
 
 }
