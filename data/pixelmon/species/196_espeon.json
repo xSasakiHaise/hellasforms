@@ -896,11 +896,11 @@
       },
       "abilities": {
         "abilities": [
-          "Prankster",
+          "Levitate",
           "Telepathy"
         ],
         "hiddenAbilities": [
-          "MagicBounce"
+          "ToughClaws"
         ]
       },
       "movement": {

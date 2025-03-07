@@ -907,11 +907,11 @@
       },
       "abilities": {
         "abilities": [
-          "AngerPoint",
-          "StrongJaw"
+          "Sturdy",
+          "DrySkin"
         ],
         "hiddenAbilities": [
-          "Adaptability"
+          "MouldBreaker"
         ]
       },
       "movement": {

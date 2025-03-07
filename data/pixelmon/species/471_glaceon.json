@@ -740,10 +740,10 @@
       "abilities": {
         "abilities": [
           "SereneGrace",
-          "QueenlyMajesty"
+          "GaleWings"
         ],
         "hiddenAbilities": [
-          "SnowWarning"
+          "Refrigerate"
         ]
       },
       "movement": {
