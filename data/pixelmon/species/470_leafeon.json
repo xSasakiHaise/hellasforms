@@ -783,12 +783,10 @@
       },
       "abilities": {
         "abilities": [
-          "SpeedBoost",
+          "WindRider",
           "Technician"
         ],
-        "hiddenAbilities": [
-          "Chlorophyll"
-        ]
+        "hiddenAbilities": []
       },
       "movement": {
         "rideable": true,

@@ -891,11 +891,11 @@
       },
       "abilities": {
         "abilities": [
-          "WaterAbsorb",
-          "Merciless"
+          "PoisonTouch",
+          "Unburden"
         ],
         "hiddenAbilities": [
-          "Hydration"
+          "ToxicDebris"
         ]
       },
       "movement": {
