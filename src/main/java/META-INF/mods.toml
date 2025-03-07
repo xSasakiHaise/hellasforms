@@ -4,7 +4,7 @@ license="MIT"
 
 [[mods]]
 modId="hellasforms"
-version="4.4.7"
+version="0.9.937"
 displayName="HellasForms"
 displayURL="https://discord.gg/ggShyqB92C"
 credits="xSasaki_Haise, pg13snipez, xGlitzerschaf"
@@ -30,6 +30,6 @@ Welcome to Hellas :)
 [[dependencies.hellasforms]]
     modId="pixelmon"
     mandatory=true
-    versionRange="[9.1.13,)"
+    versionRange="[9.1.12,)"
     ordering="AFTER"
     side="BOTH"
