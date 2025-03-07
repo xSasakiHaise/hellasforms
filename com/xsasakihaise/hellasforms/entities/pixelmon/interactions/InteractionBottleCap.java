@@ -22,7 +22,9 @@ public class InteractionBottleCap implements IInteraction {
     }
 
     public boolean processInteract(PixelmonEntity pixelmon, PlayerEntity player, Hand hand, ItemStack itemstack) {
-        if (!player.fallDistance && hand != Hand.OFF_HAND && itemstack.enchant() instanceof BottlecapItem) {
+        if (player.fallDistance || (hand == Hand.OFF_HAND) || (!(itemstack.enchant() instanceof BottlecapItem))) {
+            return false;
+        } else {
             Pokemon data = pixelmon.getPokemon();
             if (data.getOwnerPlayer() != player) {
                 return false;
@@ -63,8 +65,6 @@ public class InteractionBottleCap implements IInteraction {
                     return true;
                 }
             }
-        } else {
-            return false;
         }
     }
 
