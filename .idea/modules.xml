@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/hellasforms.iml" filepath="$PROJECT_DIR$/.idea/hellasforms.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hellasforms-1.0.0.main.iml" filepath="$PROJECT_DIR$/.idea/modules/hellasforms-1.0.0.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hellasforms-1.0.0.test.iml" filepath="$PROJECT_DIR$/.idea/modules/hellasforms-1.0.0.test.iml" />
     </modules>
