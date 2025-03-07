@@ -61,6 +61,8 @@ import org.apache.logging.log4j.Logger;
             EffectTypeAdapter.EFFECTS.put("HitchKick", HitchKick.class);
             EffectTypeAdapter.EFFECTS.put("PlasmaFangs", PlasmaFangs.class);
             ItemRegistration.ITEMS.register("eeveeolite", EeveeoliteItem::new);
+            ItemRegistration.ITEMS.register("diancite-hellas", EeveeoliteItem::new);
+            ItemRegistration.ITEMS.register("sceptilite-hellas", EeveeoliteItem::new);
             ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         }
 
