@@ -1,4 +1,4 @@
-package com.xsasakihaise.hellasforms.mixin;
+package com.xsasakihaise.hellasforms;
 
 import com.pixelmonmod.pixelmon.Pixelmon;
 import com.pixelmonmod.pixelmon.api.pokemon.Pokemon;
@@ -10,12 +10,11 @@ import com.pixelmonmod.pixelmon.battles.controller.participants.PlayerParticipan
 import com.pixelmonmod.pixelmon.battles.controller.participants.WildPixelmonParticipant;
 import com.pixelmonmod.pixelmon.entities.pixelmon.PixelmonEntity;
 import com.pixelmonmod.pixelmon.init.registry.ItemRegistration;
+import com.pixelmonmod.pixelmon.items.heldItems.MegaStoneItem;
 import com.xsasakihaise.hellasforms.battles.attacks.specialAttacks.basic.Corrode;
 import com.xsasakihaise.hellasforms.battles.attacks.specialAttacks.basic.HitchKick;
 import com.xsasakihaise.hellasforms.battles.attacks.specialAttacks.basic.PlasmaFangs;
 import com.xsasakihaise.hellasforms.battles.status.PlasmaVeil;
-import com.xsasakihaise.hellasforms.entities.pixelmon.interactions.InteractionBottleCap;
-import com.xsasakihaise.hellasforms.entities.pixelmon.interactions.InteractionRustedBottleCap;
 import com.xsasakihaise.hellasforms.items.heldItems.EeveeoliteItem;
 import com.xsasakihaise.hellasforms.listener.GrowthSpawningListener;
 import com.xsasakihaise.hellasforms.listener.ReturnItemsListener;
@@ -54,33 +53,18 @@ import org.apache.logging.log4j.Logger;
             IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
             modEventBus.addListener(this::setup);
             MinecraftForge.EVENT_BUS.register(this);
-            PixelmonEntity.interactionList.add(new InteractionBottleCap());
-            PixelmonEntity.interactionList.add(new InteractionRustedBottleCap());
             EffectTypeAdapter.EFFECTS.put("Corrode", Corrode.class);
             EffectTypeAdapter.EFFECTS.put("PlasmaVeil", PlasmaVeil.class);
             EffectTypeAdapter.EFFECTS.put("HitchKick", HitchKick.class);
             EffectTypeAdapter.EFFECTS.put("PlasmaFangs", PlasmaFangs.class);
             ItemRegistration.ITEMS.register("eeveeolite", EeveeoliteItem::new);
-            ItemRegistration.ITEMS.register("diancite-hellas", EeveeoliteItem::new);
-            ItemRegistration.ITEMS.register("sceptilite-hellas", EeveeoliteItem::new);
+//            ItemRegistration.ITEMS.register("diancite-hellas", MegaStoneItem::new);
+//            ItemRegistration.ITEMS.register("sceptilite-hellas", MegaStoneItem::new);
             ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         }
 
         private void setup(FMLCommonSetupEvent event) {
             LOGGER.info("Loaded HellasForms (hopefully XD)");
-        }
-
-        public static void StartBattle(PlayerEntity p, PixelmonEntity pixelmonEntity, Boolean useItem) {
-            if (StorageProxy.getParty(p.unRide()).getTeam() != null)
-                if (!((Pokemon) StorageProxy.getParty(p.unRide()).getTeam().get(0)).isFainted() && pixelmonEntity.func_70039_c() && (pixelmonEntity.battleController == null)) {
-                    BattleParticipant player = new PlayerParticipant((ServerPlayerEntity) p, new Pokemon[]{(Pokemon) StorageProxy.getParty(p.unRide()).getTeam().get(0)});
-                    BattleParticipant wildpokemon = new WildPixelmonParticipant(new PixelmonEntity[]{pixelmonEntity});
-                    BattleRegistry.startBattle(player, wildpokemon);
-                    if (useItem) {
-                        p.forceAddEffect().func_190918_g(1);
-                    }
-                }
-
         }
 
         @SubscribeEvent
@@ -123,5 +107,3 @@ import org.apache.logging.log4j.Logger;
         }
 
     }
-
-}

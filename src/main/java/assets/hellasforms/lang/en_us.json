@@ -51,5 +51,5 @@
 	"attack.plasma_fangs": "Plasma Fangs",
 	"attack.plasma_fangs.description": "The user charges its fangs with plasma and bites the opponent where it's weakest. If this attack defeats the opponent, Plasma Veil is set or refreshed.",
 	"attack.plasma_veil": "Plasma Veil",
-	"attack.plasma_veil.description": "The user sets up a barrier of arc lightning, halving damage from all incoming attacks. Fails if not used on Electric Terrain.",
+	"attack.plasma_veil.description": "The user sets up a barrier of arc lightning, halving damage from all incoming attacks. Fails if not used on Electric Terrain."
 }
