@@ -1,0 +1,16 @@
+{
+  "type": "pixelmon:infuser",
+  "ingredients": [
+    {
+      "item": "pixelmon:haban_berry",
+      "count": 5
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "ticks": 1600,
+  "results": {
+    "item": "minecraft:dragon_breath"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "pixelmon:infuser",
+  "ingredients": [
+    {
+      "item": "pixelmon:passho_berry",
+      "count": 5
+    },
+    {
+      "item": "pixelmon:silver_bottle_cap"
+    }
+  ],
+  "ticks": 1600,
+  "results": {
+    "item": "pixelmon:rusted_bottle_cap"
+  }
+}
