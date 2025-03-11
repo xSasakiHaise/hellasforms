@@ -1,0 +1,54 @@
+{
+  "attackName": "Lightning Flash",
+  "attackType": "ELECTRIC",
+  "attackCategory": "SPECIAL",
+  "basePower": 70,
+  "ppBase": 5,
+  "ppMax": 8,
+  "accuracy": 100,
+  "makesContact": false,
+  "effects": [
+    {
+      "priority": 1,
+      "modifiers": [],
+      "persists": false,
+      "effectTypeID": "Priority"
+    },
+    {
+      "type": "LightningFlash",
+      "modifiers": [],
+      "persists": false,
+      "effectTypeID": "LightningFlash"
+    }
+  ],
+  "animations": [
+    "leapForward"
+  ],
+  "targetingInfo": {
+    "hitsAll": false,
+    "hitsOppositeFoe": true,
+    "hitsAdjacentFoe": true,
+    "hitsExtendedFoe": false,
+    "hitsSelf": false,
+    "hitsAdjacentAlly": true,
+    "hitsExtendedAlly": true
+  },
+  "z": [
+    {
+      "crystal": "electrium_z",
+      "attackName": "Stormcloud's Wrath",
+      "basePower": 140,
+      "effects": [
+        {
+          "type": "SPEED",
+          "amount": 2,
+          "isUser": true,
+          "modifiers": [],
+          "persists": false,
+          "effectTypeID": "StatsEffect"
+        }
+      ],
+      "allowedPokemon": []
+    }
+  ]
+}

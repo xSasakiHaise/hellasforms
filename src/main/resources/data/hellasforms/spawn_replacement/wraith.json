@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "detection_logic": "simple",
+  "replaced_mobs": [
+    "quark:wraith"
+  ],
+  "replacement_logic": "simple",
+  "specs": [
+    "shuppet",
+    "banette",
+    "duskull",
+    "dusclops",
+    "gastly",
+    "haunter",
+    "misdreavus",
+    "mismagius"
+  ]
+}
