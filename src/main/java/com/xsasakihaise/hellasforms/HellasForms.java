@@ -34,76 +34,77 @@ import net.minecraftforge.fml.event.server.FMLServerStoppedEvent;
 import net.minecraftforge.fml.event.server.FMLServerStoppingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
 @Mod("hellasforms")
-    @EventBusSubscriber(
-            modid = "hellasforms"
-    )
-    public class HellasForms {
-        public static final String MOD_ID = "hellasforms";
-        public static final Logger LOGGER = LogManager.getLogger("hellasforms");
-        private static HellasForms instance;
-        public static final DeferredRegister<Item> ITEMS = null;
+@EventBusSubscriber(
+        modid = "hellasforms"
+)
+public class HellasForms {
+    public static final String MOD_ID = "hellasforms";
+    public static final Logger LOGGER = LogManager.getLogger("hellasforms");
+    private static HellasForms instance;
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
 
-        public HellasForms() {
-            instance = this;
-            IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-            modEventBus.addListener(this::setup);
-            MinecraftForge.EVENT_BUS.register(this);
-            EffectTypeAdapter.EFFECTS.put("Corrode", Corrode.class);
-            EffectTypeAdapter.EFFECTS.put("PlasmaVeil", PlasmaVeil.class);
-            EffectTypeAdapter.EFFECTS.put("HitchKick", HitchKick.class);
-            EffectTypeAdapter.EFFECTS.put("PlasmaFangs", PlasmaFangs.class);
-            ItemRegistration.ITEMS.register("eeveeolite", EeveeoliteItem::new);
-//            ItemRegistration.ITEMS.register("diancite-hellas", MegaStoneItem::new);
-//            ItemRegistration.ITEMS.register("sceptilite-hellas", MegaStoneItem::new);
-            ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        }
-
-        private void setup(FMLCommonSetupEvent event) {
-            LOGGER.info("Loaded HellasForms (hopefully XD)");
-        }
-
-        @SubscribeEvent
-        public static void onServerStarting(FMLServerStartingEvent event) {
-            Pixelmon.EVENT_BUS.register(new ReturnItemsListener());
-            MinecraftForge.EVENT_BUS.register(new GrowthSpawningListener());
-        }
-
-        @SubscribeEvent
-        public static void onServerStarted(FMLServerStartedEvent event) {
-        }
-
-        @SubscribeEvent
-        public static void onServerStopping(FMLServerStoppingEvent event) {
-        }
-
-        @SubscribeEvent
-        public static void onServerStopped(FMLServerStoppedEvent event) {
-        }
-
-        public static HellasForms getInstance() {
-            return instance;
-        }
-
-        public static Logger getLogger() {
-            return LOGGER;
-        }
-
-        public void ModEventSubscriber() {
-            FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
-            FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
-        }
-
-        @SubscribeEvent
-        public void commonSetup(FMLCommonSetupEvent event) {
-        }
-
-        @SubscribeEvent
-        public void clientSetup(FMLClientSetupEvent event) {
-        }
-
+    public HellasForms() {
+        instance = this;
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        modEventBus.addListener(this::setup);
+        MinecraftForge.EVENT_BUS.register(this);
+        EffectTypeAdapter.EFFECTS.put("Corrode", Corrode.class);
+        EffectTypeAdapter.EFFECTS.put("PlasmaVeil", PlasmaVeil.class);
+        EffectTypeAdapter.EFFECTS.put("HitchKick", HitchKick.class);
+        EffectTypeAdapter.EFFECTS.put("PlasmaFangs", PlasmaFangs.class);
+        ItemRegistration.ITEMS.register("eeveeolite", EeveeoliteItem::new);
+        ItemRegistration.ITEMS.register("diancite-hellas", MegaStoneItem::new);
+        ItemRegistration.ITEMS.register("sceptilite-hellas", MegaStoneItem::new);
+        ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
+
+    private void setup(FMLCommonSetupEvent event) {
+        LOGGER.info("Loaded HellasForms (hopefully XD)");
+    }
+
+    @SubscribeEvent
+    public static void onServerStarting(FMLServerStartingEvent event) {
+        Pixelmon.EVENT_BUS.register(new ReturnItemsListener());
+        MinecraftForge.EVENT_BUS.register(new GrowthSpawningListener());
+    }
+
+    @SubscribeEvent
+    public static void onServerStarted(FMLServerStartedEvent event) {
+    }
+
+    @SubscribeEvent
+    public static void onServerStopping(FMLServerStoppingEvent event) {
+    }
+
+    @SubscribeEvent
+    public static void onServerStopped(FMLServerStoppedEvent event) {
+    }
+
+    public static HellasForms getInstance() {
+        return instance;
+    }
+
+    public static Logger getLogger() {
+        return LOGGER;
+    }
+
+    public void ModEventSubscriber() {
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
+    }
+
+    @SubscribeEvent
+    public void commonSetup(FMLCommonSetupEvent event) {
+    }
+
+    @SubscribeEvent
+    public void clientSetup(FMLClientSetupEvent event) {
+    }
+
+}
