@@ -38,11 +38,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
 @Mod("hellasforms")
-@EventBusSubscriber(
-        modid = "hellasforms"
-)
+@EventBusSubscriber(modid = "hellasforms")
 public class HellasForms {
     public static final String MOD_ID = "hellasforms";
     public static final Logger LOGGER = LogManager.getLogger("hellasforms");
@@ -59,8 +56,11 @@ public class HellasForms {
         EffectTypeAdapter.EFFECTS.put("HitchKick", HitchKick.class);
         EffectTypeAdapter.EFFECTS.put("PlasmaFangs", PlasmaFangs.class);
         ItemRegistration.ITEMS.register("eeveeolite", EeveeoliteItem::new);
-        ItemRegistration.ITEMS.register("diancite-hellas", MegaStoneItem::new);
-        ItemRegistration.ITEMS.register("sceptilite-hellas", MegaStoneItem::new);
+
+        // Properly registering MegaStoneItem with the required String argument
+        ItemRegistration.ITEMS.register("diancite-hellas", () -> new MegaStoneItem("diancite-hellas"));
+        ItemRegistration.ITEMS.register("sceptilite-hellas", () -> new MegaStoneItem("sceptilite-hellas"));
+
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
@@ -106,5 +106,4 @@ public class HellasForms {
     @SubscribeEvent
     public void clientSetup(FMLClientSetupEvent event) {
     }
-
 }
