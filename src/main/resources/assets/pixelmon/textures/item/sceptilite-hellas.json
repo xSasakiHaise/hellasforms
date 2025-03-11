@@ -1,6 +1,6 @@
 {
   "parent": "pixelmon:item/pixelmon_item",
   "textures": {
-    "layer0": "hellasforms:items/helditems/sceptilite-hellas"
+    "layer0": "hellasforms:items/helditems/sceptilite-hellas.png"
   }
 }

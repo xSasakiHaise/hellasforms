@@ -1,6 +1,6 @@
 {
   "parent": "pixelmon:item/pixelmon_item",
   "textures": {
-    "layer0": "hellasforms:items/helditems/diancite-hellas"
+    "layer0": "hellasforms:items/helditems/diancite-hellas.png"
   }
 }

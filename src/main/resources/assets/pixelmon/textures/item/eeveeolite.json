@@ -1,6 +1,6 @@
 {
   "parent": "pixelmon:item/pixelmon_item",
   "textures": {
-    "layer0": "hellasforms:items/helditems/eeveeolite"
+    "layer0": "hellasforms:items/helditems/eeveeolite.png"
   }
 }
