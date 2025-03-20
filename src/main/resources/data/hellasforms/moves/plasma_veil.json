@@ -9,9 +9,9 @@
   "makesContact": false,
   "effects": [
     {
-      "langStart": "tunkhoforms.effect.plasmaveil.raised",
-      "langFail": "tunkhoforms.effect.plasmaveil.already",
-      "langEnd": "tunkhoforms.status.plasmaveil.woreoff",
+      "langStart": "hellasforms.effect.plasmaveil.raised",
+      "langFail": "hellasforms.effect.plasmaveil.already",
+      "langEnd": "hellasforms.status.plasmaveil.woreoff",
       "type": "PlasmaVeil",
       "modifiers": [],
       "persists": false,

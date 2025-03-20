@@ -683,218 +683,43 @@
           {
             "level": 0,
             "attacks": [
-              "Astonish",
               "Growl",
-              "Leaf Storm",
-              "Leafage",
-              "Phantom Force",
-              "Spirit Shackle",
-              "Spite",
               "Tackle",
-              "U-turn"
-            ]
-          },
-          {
-            "level": 9,
-            "attacks": [
-              "Peck"
-            ]
-          },
-          {
-            "level": 12,
-            "attacks": [
-              "Shadow Sneak"
-            ]
-          },
-          {
-            "level": 15,
-            "attacks": [
-              "Razor Leaf"
-            ]
-          },
-          {
-            "level": 20,
-            "attacks": [
-              "Synthesis"
+              "Peck",
+              "Leafage",
+              "Astonish",
+              "Shadow Sneak",
+              "Razor Leaf",
+              "Synthesis",
+              "Pluck",
+              "Absorb"
             ]
           },
           {
             "level": 25,
             "attacks": [
-              "Pluck"
+              "Nasty Plot",
+              "Sucker Punch",
+              "Leaf Blade",
+              "Feather Dance",
+              "Brave Bird",
+              "Spirit Shackle",
+              "Leaf Storm",
+              "Hurricane",
+              "Dark Pulse"
             ]
           },
           {
-            "level": 30,
+            "level": 50,
             "attacks": [
-              "Nasty Plot"
-            ]
-          },
-          {
-            "level": 37,
-            "attacks": [
-              "Sucker Punch"
-            ]
-          },
-          {
-            "level": 44,
-            "attacks": [
-              "Leaf Blade"
-            ]
-          },
-          {
-            "level": 51,
-            "attacks": [
-              "Feather Dance"
-            ]
-          },
-          {
-            "level": 58,
-            "attacks": [
-              "Brave Bird"
+              "Corrode",
+              "Night Slash",
+              "Phantom Force",
+              "Shadow Ball",
+              "Hex",
+              "Ominous Wind"
             ]
           }
-        ],
-        "tutorMoves": [
-          "Dual Wingbeat",
-          "Frenzy Plant",
-          "Grass Pledge",
-          "Grassy Glide",
-          "Poltergeist",
-          "Skitter Smack"
-        ],
-        "eggMoves": [
-          "Confuse Ray",
-          "Defog",
-          "Double Team",
-          "Knock Off"
-        ],
-        "tmMoves8": [
-          "Hyper Beam",
-          "Giga Impact",
-          "Solar Beam",
-          "Solar Blade",
-          "Light Screen",
-          "Safeguard",
-          "Rest",
-          "Snore",
-          "Protect",
-          "Giga Drain",
-          "Steel Wing",
-          "Attract",
-          "Sunny Day",
-          "Facade",
-          "Swift",
-          "Imprison",
-          "U-turn",
-          "Shadow Claw",
-          "Psycho Cut",
-          "Low Sweep",
-          "Round",
-          "Hex",
-          "Acrobatics",
-          "Phantom Force",
-          "False Swipe",
-          "Air Slash"
-        ],
-        "trMoves": [
-          "Swords Dance",
-          "Substitute",
-          "Endure",
-          "Sleep Talk",
-          "Baton Pass",
-          "Shadow Ball",
-          "Leaf Blade",
-          "Seed Bomb",
-          "Energy Ball",
-          "Brave Bird",
-          "Nasty Plot",
-          "Leaf Storm",
-          "Grass Knot",
-          "Work Up",
-          "Hurricane"
-        ],
-        "hmMoves": [
-
-        ],
-        "transferMoves": [
-          "Confide",
-          "Covet",
-          "Curse",
-          "Echoed Voice",
-          "Foresight",
-          "Frustration",
-          "Fury Attack",
-          "Haze",
-          "Hidden Power",
-          "Laser Focus",
-          "Nature Power",
-          "Ominous Wind",
-          "Return",
-          "Roost",
-          "Sky Attack",
-          "Smack Down",
-          "Swagger",
-          "Tailwind",
-          "Toxic",
-          "Worry Seed"
-        ],
-        "tmMoves7": [
-          "Work Up",
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Light Screen",
-          "Protect",
-          "Roost",
-          "Safeguard",
-          "Frustration",
-          "Solar Beam",
-          "Smack Down",
-          "Return",
-          "Shadow Ball",
-          "Double Team",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Low Sweep",
-          "Round",
-          "Echoed Voice",
-          "Steel Wing",
-          "Energy Ball",
-          "False Swipe",
-          "Acrobatics",
-          "Shadow Claw",
-          "Giga Impact",
-          "Swords Dance",
-          "Grass Knot",
-          "Swagger",
-          "Sleep Talk",
-          "U-turn",
-          "Substitute",
-          "Nature Power",
-          "Confide"
-        ],
-        "tmMoves6": [
-
-        ],
-        "tmMoves5": [
-
-        ],
-        "tmMoves4": [
-
-        ],
-        "tmMoves3": [
-
-        ],
-        "tmMoves2": [
-
-        ],
-        "tmMoves1": [
-
-        ],
-        "tmMoves": [
-
         ]
       },
       "abilities": {
@@ -996,7 +821,7 @@
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "hellasforms:pokemon/724_decidueye/all/base/hellas/model.pqc"
+                  "pixelmon:pokemon/724_decidueye/all/base/none/model.pqc"
                 ]
               },
               "sounds": [
@@ -1020,8 +845,8 @@
         "FLYING"
       ],
       "preEvolutions": [
-        "Dartrix f:hellas",
-        "Rowlet f:hellas"
+        "Dartrix form:hellas",
+        "Rowlet form:hellas"
       ],
       "defaultBaseForm": "",
       "megaItems": [

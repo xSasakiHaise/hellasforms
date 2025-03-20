@@ -513,318 +513,32 @@
             "level": 0,
             "attacks": [
               "Astonish",
-              "Bite",
-              "Bulldoze",
-              "Crunch",
-              "Dig",
-              "Dragon Breath",
-              "Fissure",
-              "Laser Focus",
               "Sand Attack",
-              "Superpower",
-              "Supersonic"
+              "Steel Roller",
+              "Eearthquake"
             ]
           },
           {
-            "level": 12,
+            "level": 40,
             "attacks": [
-              "Mud-Slap"
-            ]
-          },
-          {
-            "level": 16,
-            "attacks": [
-              "Sand Tomb"
-            ]
-          },
-          {
-            "level": 20,
-            "attacks": [
-              "Dragon Tail"
-            ]
-          },
-          {
-            "level": 24,
-            "attacks": [
-              "Screech"
-            ]
-          },
-          {
-            "level": 28,
-            "attacks": [
-              "Bug Buzz"
-            ]
-          },
-          {
-            "level": 32,
-            "attacks": [
-              "Sandstorm"
-            ]
-          },
-          {
-            "level": 38,
-            "attacks": [
-              "Earth Power"
-            ]
-          },
-          {
-            "level": 44,
-            "attacks": [
-              "Earthquake"
-            ]
-          },
-          {
-            "level": 50,
-            "attacks": [
-              "Uproar"
-            ]
-          },
-          {
-            "level": 56,
-            "attacks": [
-              "Dragon Rush"
-            ]
-          },
-          {
-            "level": 62,
-            "attacks": [
-              "Boomburst"
+              "Draconic Shout",
+              "Gyro Ball",
+              "Heavy Slam",
+              "Iron Defense",
+              "Iron Head",
+              "Metal Claw",
+              "Metal Sound",
+              "Steel Beam",
+              "Dragon Dance",
+              "Dragon Pulse",
+              "Dragon Rush",
+              "Dragon Tail",
+              "Dragon Claw",
+              "Dragon Rage",
+              "Dragon Breath",
+              "Outrage"
             ]
           }
-        ],
-        "tutorMoves": [
-          "Draco Meteor",
-          "Dual Wingbeat",
-          "Scorching Sands"
-        ],
-        "eggMoves": [
-          "Bug Bite",
-          "Feint",
-          "First Impression",
-          "Flail",
-          "Fury Cutter",
-          "Gust",
-          "Quick Attack"
-        ],
-        "tmMoves8": [
-          "Fly",
-          "Hyper Beam",
-          "Solar Beam",
-          "Dig",
-          "Screech",
-          "Rest",
-          "Rock Slide",
-          "Snore",
-          "Protect",
-          "Giga Drain",
-          "Steel Wing",
-          "Attract",
-          "Sandstorm",
-          "Sunny Day",
-          "Facade",
-          "Swift",
-          "Rock Tomb",
-          "Sand Tomb",
-          "Mud Shot",
-          "U-turn",
-          "Round",
-          "Bulldoze",
-          "Air Slash"
-        ],
-        "trMoves": [
-          "Body Slam",
-          "Earthquake",
-          "Focus Energy",
-          "Substitute",
-          "Outrage",
-          "Endure",
-          "Sleep Talk",
-          "Crunch",
-          "Uproar",
-          "Heat Wave",
-          "Superpower",
-          "Bug Buzz",
-          "Dragon Pulse",
-          "Earth Power",
-          "Throat Chop"
-        ],
-        "hmMoves": [
-
-        ],
-        "transferMoves": [
-          "Air Cutter",
-          "Bide",
-          "Captivate",
-          "Confide",
-          "Defog",
-          "Double Team",
-          "Double-Edge",
-          "Feint Attack",
-          "Frustration",
-          "Headbutt",
-          "Hidden Power",
-          "Mimic",
-          "Natural Gift",
-          "Ominous Wind",
-          "Return",
-          "Rock Smash",
-          "Roost",
-          "Secret Power",
-          "Signal Beam",
-          "Silver Wind",
-          "Sonic Boom",
-          "Strength",
-          "Struggle Bug",
-          "Swagger",
-          "Tailwind",
-          "Toxic",
-          "Twister"
-        ],
-        "tmMoves7": [
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Hyper Beam",
-          "Protect",
-          "Roost",
-          "Frustration",
-          "Solar Beam",
-          "Earthquake",
-          "Return",
-          "Double Team",
-          "Sandstorm",
-          "Rock Tomb",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Steel Wing",
-          "Fly",
-          "Bulldoze",
-          "Rock Slide",
-          "Swagger",
-          "Sleep Talk",
-          "U-turn",
-          "Substitute",
-          "Confide"
-        ],
-        "tmMoves6": [
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Hyper Beam",
-          "Protect",
-          "Roost",
-          "Frustration",
-          "Solar Beam",
-          "Earthquake",
-          "Return",
-          "Dig",
-          "Double Team",
-          "Sandstorm",
-          "Rock Tomb",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Steel Wing",
-          "Struggle Bug",
-          "Bulldoze",
-          "Rock Slide",
-          "Swagger",
-          "Sleep Talk",
-          "U-turn",
-          "Substitute",
-          "Secret Power",
-          "Confide"
-        ],
-        "tmMoves5": [
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Hyper Beam",
-          "Protect",
-          "Frustration",
-          "Solar Beam",
-          "Earthquake",
-          "Return",
-          "Dig",
-          "Double Team",
-          "Sandstorm",
-          "Rock Tomb",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Struggle Bug",
-          "Bulldoze",
-          "Rock Slide",
-          "Swagger",
-          "U-turn",
-          "Substitute",
-          "Rock Smash"
-        ],
-        "tmMoves4": [
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Hyper Beam",
-          "Protect",
-          "Giga Drain",
-          "Frustration",
-          "Solar Beam",
-          "Earthquake",
-          "Return",
-          "Dig",
-          "Double Team",
-          "Sandstorm",
-          "Rock Tomb",
-          "Facade",
-          "Secret Power",
-          "Rest",
-          "Attract",
-          "Steel Wing",
-          "Roost",
-          "Endure",
-          "Dragon Pulse",
-          "Silver Wind",
-          "Captivate",
-          "Rock Slide",
-          "Sleep Talk",
-          "Natural Gift",
-          "Swagger",
-          "U-turn",
-          "Substitute"
-        ],
-        "tmMoves3": [
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Hyper Beam",
-          "Protect",
-          "Giga Drain",
-          "Frustration",
-          "Solar Beam",
-          "Earthquake",
-          "Return",
-          "Dig",
-          "Double Team",
-          "Sandstorm",
-          "Rock Tomb",
-          "Facade",
-          "Secret Power",
-          "Rest",
-          "Attract",
-          "Steel Wing"
-        ],
-        "tmMoves2": [
-
-        ],
-        "tmMoves1": [
-
-        ],
-        "tmMoves": [
-
         ]
       },
       "abilities": {
@@ -926,7 +640,7 @@
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "hellasforms:pokemon/329_vibrava/all/base/hellas/model.pqc"
+                  "pixelmon:pokemon/329_vibrava/all/base/none/model.pqc"
                 ],
                 "movementThreshold": 0.03,
                 "rotateAngleX": 0
@@ -952,7 +666,7 @@
         "DRAGON"
       ],
       "preEvolutions": [
-        "Trapinch f:hellas"
+        "Trapinch form:hellas"
       ],
       "defaultBaseForm": "",
       "megaItems": [
@@ -972,7 +686,7 @@
       "evolutions": [
         {
           "level": 45,
-          "to": "Flygon f:hellas",
+          "to": "Flygon form:hellas",
           "conditions": [
 
           ],

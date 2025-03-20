@@ -430,6 +430,31 @@
     },
     {
       "name": "hellas",
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 50,
+            "attacks": [
+              "Moonlight Dance",
+              "Corrode",
+              "Shadow Ball",
+              "Moonblast",
+              "Night Daze",
+              "Dream Eater",
+              "Wide Guard",
+              "Moonlight",
+              "Night Shade",
+              "Air Slash",
+              "Confuse Ray",
+              "Cosmic Power",
+              "Hypnosis",
+              "Confusion",
+              "Moongeist Beam",
+              "Teleport"
+            ]
+          }
+        ]
+      },
       "abilities": {
         "abilities": [
           "ShadowShield",
@@ -446,7 +471,8 @@
         "speed": 117
       },
       "tags": [
-        "hellas"
+        "hellas",
+        "wild"
       ],
       "genderProperties": [
         {
@@ -460,7 +486,7 @@
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "hellasforms:pokemon/792_lunala/all/base/hellas/model.pqc"
+                  "pixelmon:pokemon/792_lunala/all/base/none/model.pqc"
                 ]
               }
             },

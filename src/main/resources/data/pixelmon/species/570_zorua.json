@@ -645,20 +645,7 @@
           "Sludge Bomb",
           "Snarl",
           "Swift"
-        ],
-        "eggMoves": [],
-        "tmMoves8": [],
-        "trMoves": [],
-        "hmMoves": [],
-        "transferMoves": [],
-        "tmMoves7": [],
-        "tmMoves6": [],
-        "tmMoves5": [],
-        "tmMoves4": [],
-        "tmMoves3": [],
-        "tmMoves2": [],
-        "tmMoves1": [],
-        "tmMoves": []
+        ]
       },
       "abilities": {
         "abilities": [
@@ -710,11 +697,12 @@
               "name": "none",
               "texture": "hellasforms:pokemon/570_zorua/all/hisuian/hellas/texture.png",
               "sprite": "hellasforms:pokemon/570_zorua/all/hisuian/hellas/sprite.png",
+              "emissive": "hellasforms:pokemon/570_zorua/all/hisuian/hellas/emissive.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "hellasforms:pokemon/570_zorua/all/hisuian/hellas/model.pqc"
+                  "pixelmon:pokemon/570_zorua/all/hisuian/none/model.pqc"
                 ]
               }
             },
@@ -722,6 +710,7 @@
               "name": "shiny",
               "texture": "hellasforms:pokemon/570_zorua/all/hisuian/hellasshiny/texture.png",
               "sprite": "hellasforms:pokemon/570_zorua/all/hisuian/hellasshiny/sprite.png",
+              "emissive": "hellasforms:pokemon/570_zorua/all/hisuian/hellasshiny/emissive.png",
               "particle": "arcanery:shiny"
             }
           ]
@@ -749,7 +738,7 @@
       "evolutions": [
         {
           "level": 30,
-          "to": "Zoroark f:hellas",
+          "to": "Zoroark form:hellas",
           "conditions": [],
           "evoType": "leveling"
         }

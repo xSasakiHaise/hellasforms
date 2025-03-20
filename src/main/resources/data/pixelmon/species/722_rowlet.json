@@ -325,181 +325,18 @@
             "level": 0,
             "attacks": [
               "Growl",
-              "Tackle"
-            ]
-          },
-          {
-            "level": 3,
-            "attacks": [
-              "Leafage"
-            ]
-          },
-          {
-            "level": 6,
-            "attacks": [
-              "Astonish"
-            ]
-          },
-          {
-            "level": 9,
-            "attacks": [
-              "Peck"
-            ]
-          },
-          {
-            "level": 12,
-            "attacks": [
-              "Shadow Sneak"
-            ]
-          },
-          {
-            "level": 15,
-            "attacks": [
-              "Razor Leaf"
-            ]
-          },
-          {
-            "level": 18,
-            "attacks": [
-              "Synthesis"
-            ]
-          },
-          {
-            "level": 21,
-            "attacks": [
-              "Pluck"
-            ]
-          },
-          {
-            "level": 24,
-            "attacks": [
-              "Nasty Plot"
-            ]
-          },
-          {
-            "level": 27,
-            "attacks": [
-              "Sucker Punch"
-            ]
-          },
-          {
-            "level": 30,
-            "attacks": [
-              "Leaf Blade"
-            ]
-          },
-          {
-            "level": 33,
-            "attacks": [
-              "Feather Dance"
-            ]
-          },
-          {
-            "level": 36,
-            "attacks": [
-              "Brave Bird"
+              "Tackle",
+              "Peck",
+              "Leafage",
+              "Astonish",
+              "Shadow Sneak",
+              "Razor Leaf",
+              "Synthesis",
+              "Pluck",
+              "Absorb"
             ]
           }
-        ],
-        "tutorMoves": [
-          "Dual Wingbeat",
-          "Grass Pledge",
-          "Grassy Glide"
-        ],
-        "eggMoves": [
-          "Confuse Ray",
-          "Defog",
-          "Double Team",
-          "Knock Off"
-        ],
-        "tmMoves8": [
-          "Solar Beam",
-          "Light Screen",
-          "Safeguard",
-          "Rest",
-          "Snore",
-          "Protect",
-          "Giga Drain",
-          "Steel Wing",
-          "Attract",
-          "Sunny Day",
-          "Facade",
-          "Swift",
-          "Shadow Claw",
-          "Round",
-          "False Swipe"
-        ],
-        "trMoves": [
-          "Swords Dance",
-          "Substitute",
-          "Endure",
-          "Sleep Talk",
-          "Baton Pass",
-          "Leaf Blade",
-          "Seed Bomb",
-          "Energy Ball",
-          "Brave Bird",
-          "Nasty Plot",
-          "Grass Knot",
-          "Work Up"
-        ],
-        "hmMoves": [],
-        "transferMoves": [
-          "Confide",
-          "Covet",
-          "Curse",
-          "Echoed Voice",
-          "Foresight",
-          "Frustration",
-          "Fury Attack",
-          "Haze",
-          "Hidden Power",
-          "Nature Power",
-          "Ominous Wind",
-          "Return",
-          "Roost",
-          "Sky Attack",
-          "Swagger",
-          "Toxic",
-          "Worry Seed"
-        ],
-        "tmMoves7": [
-          "Work Up",
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Light Screen",
-          "Protect",
-          "Roost",
-          "Safeguard",
-          "Frustration",
-          "Solar Beam",
-          "Return",
-          "Double Team",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Echoed Voice",
-          "Steel Wing",
-          "Energy Ball",
-          "False Swipe",
-          "Shadow Claw",
-          "Swords Dance",
-          "Grass Knot",
-          "Swagger",
-          "Sleep Talk",
-          "Substitute",
-          "Nature Power",
-          "Confide"
-        ],
-        "tmMoves6": [],
-        "tmMoves5": [],
-        "tmMoves4": [],
-        "tmMoves3": [],
-        "tmMoves2": [],
-        "tmMoves1": [],
-        "tmMoves": []
+        ]
       },
       "abilities": {
         "abilities": [
@@ -570,7 +407,7 @@
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "hellasforms:pokemon/722_rowlet/all/base/hellas/model.pqc"
+                  "pixelmon:pokemon/722_rowlet/all/base/none/model.pqc"
                 ]
               },
               "sounds": [
@@ -608,7 +445,7 @@
       "evolutions": [
         {
           "level": 17,
-          "to": "Dartrix f:hellas",
+          "to": "Dartrix form:hellas",
           "conditions": [],
           "evoType": "leveling"
         }

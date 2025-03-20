@@ -4,8 +4,9 @@ import com.pixelmonmod.pixelmon.api.pokemon.Element;
 
 public enum HellasMoves {
     Corrode(1, "Corrode", Element.POISON),
-    PlasmaVeil(2, "Plasma Veil", Element.ELECTRIC),
-    HitchKick(3, "Hitch Kick", Element.FIGHTING);
+    DraconicShout(2, "Draconic Shout", Element.DRAGON),
+    HitchKick(3, "Hitch Kick", Element.FIGHTING),
+    PlasmaVeil(4, "Plasma Veil", Element.ELECTRIC);
 
     private final int id;
     private final String moveName;

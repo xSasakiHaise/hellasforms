@@ -1,0 +1,51 @@
+{
+  "attackName": "Colony Swarm",
+  "attackType": "GRASS",
+  "attackCategory": "STATUS",
+  "basePower": 0,
+  "ppBase": 5,
+  "ppMax": 8,
+  "accuracy": -1,
+  "makesContact": true,
+  "effects": [
+    {
+      "modifiers": [],
+      "persists": false,
+      "effectTypeID": "ColonySwarm"
+    }
+  ],
+  "animations": [
+    "leapForward"
+  ],
+  "targetingInfo": {
+    "hitsAll": false,
+    "hitsOppositeFoe": true,
+    "hitsAdjacentFoe": true,
+    "hitsExtendedFoe": true,
+    "hitsSelf": false,
+    "hitsAdjacentAlly": true,
+    "hitsExtendedAlly": true
+  },
+  "z": [
+    {
+      "crystal": "grassium_z",
+      "attackName": "Z-Colony Swarm",
+      "basePower": 0,
+      "effects": [
+        {
+          "weatherRock": "heatRock",
+          "type": "Sunny",
+          "modifiers": [],
+          "persists": false,
+          "effectTypeID": "Sunny"
+        },
+        {
+          "modifiers": [],
+          "persists": false,
+          "effectTypeID": "Synthesis"
+        }
+      ],
+      "allowedPokemon": []
+    }
+  ]
+}

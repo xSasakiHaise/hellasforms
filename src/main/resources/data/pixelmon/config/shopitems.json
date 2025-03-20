@@ -1,0 +1,150 @@
+{
+  "items": [
+
+    {
+      "name": "pixelmon:ability_capsule",
+      "buy": 10000,
+      "sell": 5000
+    },
+    {
+      "name": "pixelmon:ability_patch",
+      "buy": 60000,
+      "sell": 30000
+    },
+    {
+      "name": "pixelmon:gold_bottle_cap",
+      "buy": 60000,
+      "sell": 30000
+    },
+    {
+      "name": "pixelmon:silver_bottle_cap",
+      "buy": 20000,
+      "sell": 10000
+    },
+    {
+      "name": "pixelmon:mint_modest",
+      "buy": 50000,
+      "sell": 25000
+    },
+    {
+      "name": "pixelmon:mint_jolly",
+      "buy": 50000,
+      "sell": 25000
+    },
+    {
+      "name": "pixelmon:mint_timid",
+      "buy": 50000,
+      "sell": 25000
+    },
+    {
+      "name": "pixelmon:mint_adamant",
+      "buy": 50000,
+      "sell": 25000
+    },
+    {
+      "name": "pixelmon:mint_brave",
+      "buy": 50000,
+      "sell": 25000
+    },
+    {
+      "name": "pixelmon:mint_quiet",
+      "buy": 50000,
+      "sell": 25000
+    },
+    {
+      "name": "pixelmon:mint_hardy",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_serious",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_docile",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_bashful",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_quirky",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_lonely",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_naughty",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_bold",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_relaxed",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_impish",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_lax",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_hasty",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_naive",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_mild",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_rash",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_calm",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_gentle",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_sassy",
+      "buy": 25000,
+      "sell": 12500
+    },
+    {
+      "name": "pixelmon:mint_careful",
+      "buy": 25000,
+      "sell": 12500
+    }
+  ]
+} 

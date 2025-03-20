@@ -452,304 +452,35 @@
           {
             "level": 0,
             "attacks": [
-              "Astonish",
-              "Growl",
-              "Noble Roar",
-              "Soak",
               "Splash",
-              "Water Gun"
+              "Aqua Ring",
+              "Psywave",
+              "Confusion"
             ]
           },
           {
-            "level": 15,
+            "level": 50,
             "attacks": [
-              "Mist"
-            ]
-          },
-          {
-            "level": 18,
-            "attacks": [
-              "Water Pulse"
-            ]
-          },
-          {
-            "level": 21,
-            "attacks": [
-              "Heavy Slam"
-            ]
-          },
-          {
-            "level": 24,
-            "attacks": [
-              "Brine"
-            ]
-          },
-          {
-            "level": 27,
-            "attacks": [
-              "Whirlpool"
-            ]
-          },
-          {
-            "level": 30,
-            "attacks": [
-              "Dive"
-            ]
-          },
-          {
-            "level": 33,
-            "attacks": [
-              "Bounce"
-            ]
-          },
-          {
-            "level": 36,
-            "attacks": [
-              "Body Slam"
-            ]
-          },
-          {
-            "level": 39,
-            "attacks": [
-              "Rest"
-            ]
-          },
-          {
-            "level": 44,
-            "attacks": [
-              "Amnesia"
-            ]
-          },
-          {
-            "level": 49,
-            "attacks": [
-              "Hydro Pump"
-            ]
-          },
-          {
-            "level": 54,
-            "attacks": [
-              "Water Spout"
+              "Water Spout",
+              "Psychic",
+              "Hydro Pump",
+              "Heavy Slam",
+              "Psychic",
+              "Amnesia",
+              "Rest",
+              "Bounce",
+              "Dive",
+              "Brine",
+              "Whirlpool",
+              "Water Pulse",
+              "Mist",
+              "Water Gun",
+              "Surf",
+              "Waterfall",
+              "Soak"
             ]
           }
-        ],
-        "tutorMoves": [
-          "Steel Roller"
-        ],
-        "eggMoves": [
-          "Aqua Ring",
-          "Curse",
-          "Defense Curl",
-          "Double-Edge",
-          "Fissure",
-          "Rollout",
-          "Soak",
-          "Thrash",
-          "Tickle"
-        ],
-        "tmMoves8": [
-          "Hyper Beam",
-          "Giga Impact",
-          "Self-Destruct",
-          "Rest",
-          "Snore",
-          "Protect",
-          "Icy Wind",
-          "Attract",
-          "Rain Dance",
-          "Hail",
-          "Whirlpool",
-          "Facade",
-          "Dive",
-          "Weather Ball",
-          "Rock Tomb",
-          "Bounce",
-          "Brine",
-          "Avalanche",
-          "Round",
-          "Bulldoze"
-        ],
-        "trMoves": [
-          "Body Slam",
-          "Hydro Pump",
-          "Surf",
-          "Ice Beam",
-          "Blizzard",
-          "Earthquake",
-          "Waterfall",
-          "Amnesia",
-          "Substitute",
-          "Endure",
-          "Sleep Talk",
-          "Hyper Voice",
-          "Zen Headbutt",
-          "Iron Head",
-          "Heavy Slam",
-          "Scald",
-          "Liquidation",
-          "Body Press"
-        ],
-        "hmMoves": [],
-        "transferMoves": [
-          "Block",
-          "Captivate",
-          "Clear Smog",
-          "Confide",
-          "Double Team",
-          "Echoed Voice",
-          "Frustration",
-          "Headbutt",
-          "Hidden Power",
-          "Mimic",
-          "Natural Gift",
-          "Return",
-          "Roar",
-          "Rock Smash",
-          "Secret Power",
-          "Strength",
-          "Swagger",
-          "Toxic"
-        ],
-        "tmMoves7": [
-          "Roar",
-          "Toxic",
-          "Hail",
-          "Hidden Power",
-          "Ice Beam",
-          "Blizzard",
-          "Hyper Beam",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Earthquake",
-          "Return",
-          "Double Team",
-          "Rock Tomb",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Echoed Voice",
-          "Scald",
-          "Giga Impact",
-          "Bulldoze",
-          "Swagger",
-          "Sleep Talk",
-          "Substitute",
-          "Surf",
-          "Waterfall",
-          "Confide"
-        ],
-        "tmMoves6": [
-          "Roar",
-          "Toxic",
-          "Hail",
-          "Hidden Power",
-          "Ice Beam",
-          "Blizzard",
-          "Hyper Beam",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Earthquake",
-          "Return",
-          "Double Team",
-          "Rock Tomb",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Echoed Voice",
-          "Scald",
-          "Giga Impact",
-          "Bulldoze",
-          "Swagger",
-          "Sleep Talk",
-          "Substitute",
-          "Secret Power",
-          "Confide"
-        ],
-        "tmMoves5": [
-          "Roar",
-          "Toxic",
-          "Hail",
-          "Hidden Power",
-          "Ice Beam",
-          "Blizzard",
-          "Hyper Beam",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Earthquake",
-          "Return",
-          "Double Team",
-          "Rock Tomb",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Echoed Voice",
-          "Scald",
-          "Giga Impact",
-          "Bulldoze",
-          "Swagger",
-          "Substitute",
-          "Rock Smash"
-        ],
-        "tmMoves4": [
-          "Water Pulse",
-          "Roar",
-          "Toxic",
-          "Hail",
-          "Hidden Power",
-          "Ice Beam",
-          "Blizzard",
-          "Hyper Beam",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Earthquake",
-          "Return",
-          "Double Team",
-          "Rock Tomb",
-          "Facade",
-          "Secret Power",
-          "Rest",
-          "Attract",
-          "Brine",
-          "Endure",
-          "Giga Impact",
-          "Avalanche",
-          "Captivate",
-          "Sleep Talk",
-          "Natural Gift",
-          "Swagger",
-          "Substitute"
-        ],
-        "tmMoves3": [
-          "Water Pulse",
-          "Roar",
-          "Toxic",
-          "Hail",
-          "Hidden Power",
-          "Ice Beam",
-          "Blizzard",
-          "Hyper Beam",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Earthquake",
-          "Return",
-          "Double Team",
-          "Rock Tomb",
-          "Facade",
-          "Secret Power",
-          "Rest",
-          "Attract"
-        ],
-        "tmMoves2": [],
-        "tmMoves1": [],
-        "tmMoves": []
+        ]
       },
       "abilities": {
         "abilities": [
@@ -855,7 +586,7 @@
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "hellasforms:pokemon/321_wailord/all/base/hellas/model.pqc"
+                  "pixelmon:pokemon/321_wailord/all/base/none/model.pqc"
                 ],
                 "movementThreshold": 0.01,
                 "yRotation": 12
