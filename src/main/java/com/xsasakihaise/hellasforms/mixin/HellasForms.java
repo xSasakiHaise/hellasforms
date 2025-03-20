@@ -41,12 +41,13 @@ public class HellasForms {
             IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
             modEventBus.addListener(this::setup);
             MinecraftForge.EVENT_BUS.register(this);
+            EffectTypeAdapter.EFFECTS.put("ColonySwarm", ColonySwarm.class);
             EffectTypeAdapter.EFFECTS.put("Corrode", Corrode.class);
-            EffectTypeAdapter.EFFECTS.put("PlasmaVeil", PlasmaVeil.class);
+            EffectTypeAdapter.EFFECTS.put("GreekFire", GreekFire.class);
             EffectTypeAdapter.EFFECTS.put("HitchKick", HitchKick.class);
             EffectTypeAdapter.EFFECTS.put("PlasmaFangs", PlasmaFangs.class);
             EffectTypeAdapter.EFFECTS.put("RabidClaw", RabidClaw.class);
-            EffectTypeAdapter.EFFECTS.put("GreekFire", GreekFire.class);
+            EffectTypeAdapter.EFFECTS.put("PlasmaVeil", PlasmaVeil.class);
             ItemRegistration.ITEMS.register("eeveeolite", EeveeoliteItem::new);
             ItemRegistration.ITEMS.register("diancite-hellas", EeveeoliteItem::new);
             ItemRegistration.ITEMS.register("sceptilite-hellas", EeveeoliteItem::new);
