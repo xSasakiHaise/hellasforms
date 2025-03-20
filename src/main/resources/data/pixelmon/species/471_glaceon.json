@@ -443,299 +443,37 @@
           {
             "level": 0,
             "attacks": [
-              "Baton Pass",
-              "Charm",
-              "Copycat",
-              "Covet",
-              "Double-Edge",
-              "Growl",
-              "Helping Hand",
-              "Icy Wind",
-              "Swift",
-              "Tackle",
-              "Tail Whip",
-              "Take Down"
-            ]
-          },
-          {
-            "level": 5,
-            "attacks": [
-              "Sand Attack"
-            ]
-          },
-          {
-            "level": 10,
-            "attacks": [
-              "Quick Attack"
-            ]
-          },
-          {
-            "level": 15,
-            "attacks": [
-              "Baby-Doll Eyes"
-            ]
-          },
-          {
-            "level": 20,
-            "attacks": [
-              "Ice Shard"
-            ]
-          },
-          {
-            "level": 25,
-            "attacks": [
-              "Bite"
-            ]
-          },
-          {
-            "level": 30,
-            "attacks": [
-              "Ice Fang"
-            ]
-          },
-          {
-            "level": 35,
-            "attacks": [
-              "Hail"
-            ]
-          },
-          {
-            "level": 40,
-            "attacks": [
-              "Freeze-Dry"
-            ]
-          },
-          {
-            "level": 45,
-            "attacks": [
-              "Mirror Coat"
+              "Quick Attack",
+              "Astonish",
+              "Crunch",
+              "Swords Dance"
             ]
           },
           {
             "level": 50,
             "attacks": [
-              "Blizzard"
-            ]
-          },
-          {
-            "level": 55,
-            "attacks": [
-              "Last Resort"
+              "Cleansing Frost",
+              "Ice Beam",
+              "Blizzard",
+              "Hyper Beam",
+              "Hail",
+              "Frost Breath",
+              "Ice Fang",
+              "Avalanche",
+              "Icicle Crash",
+              "Ice Shard",
+              "Freeze-Dry",
+              "Aerial Ace",
+              "Fly",
+              "Roost",
+              "Air Slash",
+              "Hurricane",
+              "Defog",
+              "Tailwind",
+              "Sky Attack"
             ]
           }
-        ],
-        "tutorMoves": [
-          "Celebrate",
-          "Triple Axel"
-        ],
-        "eggMoves": [
-          "Curse",
-          "Detect",
-          "Double Kick",
-          "Flail",
-          "Mud-Slap",
-          "Tickle",
-          "Wish",
-          "Yawn"
-        ],
-        "tmMoves8": [
-          "Pay Day",
-          "Hyper Beam",
-          "Giga Impact",
-          "Dig",
-          "Rest",
-          "Snore",
-          "Protect",
-          "Icy Wind",
-          "Charm",
-          "Attract",
-          "Rain Dance",
-          "Sunny Day",
-          "Hail",
-          "Facade",
-          "Swift",
-          "Helping Hand",
-          "Weather Ball",
-          "Fake Tears",
-          "Icicle Spear",
-          "Avalanche",
-          "Ice Fang",
-          "Round",
-          "Retaliate"
-        ],
-        "trMoves": [
-          "Body Slam",
-          "Ice Beam",
-          "Blizzard",
-          "Focus Energy",
-          "Substitute",
-          "Endure",
-          "Sleep Talk",
-          "Baton Pass",
-          "Iron Tail",
-          "Shadow Ball",
-          "Hyper Voice",
-          "Stored Power",
-          "Work Up"
-        ],
-        "hmMoves": [],
-        "transferMoves": [
-          "Aqua Tail",
-          "Aurora Veil",
-          "Barrier",
-          "Bide",
-          "Captivate",
-          "Confide",
-          "Double Team",
-          "Echoed Voice",
-          "Frost Breath",
-          "Frustration",
-          "Headbutt",
-          "Heal Bell",
-          "Hidden Power",
-          "Laser Focus",
-          "Mimic",
-          "Natural Gift",
-          "Rage",
-          "Reflect",
-          "Refresh",
-          "Return",
-          "Roar",
-          "Rock Smash",
-          "Secret Power",
-          "Signal Beam",
-          "Sing",
-          "Skull Bash",
-          "Strength",
-          "Swagger",
-          "Synchronoise",
-          "Toxic",
-          "Trump Card",
-          "Water Pulse"
-        ],
-        "tmMoves7": [
-          "Work Up",
-          "Roar",
-          "Toxic",
-          "Hail",
-          "Hidden Power",
-          "Sunny Day",
-          "Ice Beam",
-          "Blizzard",
-          "Hyper Beam",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Return",
-          "Shadow Ball",
-          "Double Team",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Echoed Voice",
-          "Giga Impact",
-          "Aurora Veil",
-          "Frost Breath",
-          "Swagger",
-          "Sleep Talk",
-          "Substitute",
-          "Confide"
-        ],
-        "tmMoves6": [
-          "Roar",
-          "Toxic",
-          "Hail",
-          "Hidden Power",
-          "Sunny Day",
-          "Ice Beam",
-          "Blizzard",
-          "Hyper Beam",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Return",
-          "Dig",
-          "Shadow Ball",
-          "Double Team",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Echoed Voice",
-          "Retaliate",
-          "Giga Impact",
-          "Frost Breath",
-          "Swagger",
-          "Sleep Talk",
-          "Substitute",
-          "Secret Power",
-          "Confide"
-        ],
-        "tmMoves5": [
-          "Roar",
-          "Toxic",
-          "Hail",
-          "Hidden Power",
-          "Sunny Day",
-          "Ice Beam",
-          "Blizzard",
-          "Hyper Beam",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Return",
-          "Dig",
-          "Shadow Ball",
-          "Double Team",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Echoed Voice",
-          "Retaliate",
-          "Giga Impact",
-          "Frost Breath",
-          "Work Up",
-          "Swagger",
-          "Substitute",
-          "Rock Smash"
-        ],
-        "tmMoves4": [
-          "Water Pulse",
-          "Roar",
-          "Toxic",
-          "Hail",
-          "Hidden Power",
-          "Sunny Day",
-          "Ice Beam",
-          "Blizzard",
-          "Hyper Beam",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Iron Tail",
-          "Return",
-          "Dig",
-          "Shadow Ball",
-          "Double Team",
-          "Facade",
-          "Secret Power",
-          "Rest",
-          "Attract",
-          "Endure",
-          "Giga Impact",
-          "Avalanche",
-          "Captivate",
-          "Sleep Talk",
-          "Natural Gift",
-          "Swagger",
-          "Substitute"
-        ],
-        "tmMoves3": [],
-        "tmMoves2": [],
-        "tmMoves1": [],
-        "tmMoves": []
+        ]
       },
       "abilities": {
         "abilities": [
@@ -805,7 +543,7 @@
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "hellasforms:pokemon/471_glaceon/all/base/hellas/model.pqc"
+                  "pixelmon:pokemon/471_glaceon/all/base/none/model.pqc"
                 ]
               },
               "sounds": [
@@ -829,7 +567,7 @@
         "FLYING"
       ],
       "preEvolutions": [
-        "Eevee f:hellas"
+        "Eevee form:hellas"
       ],
       "defaultBaseForm": "",
       "megaItems": [],

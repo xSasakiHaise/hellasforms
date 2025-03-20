@@ -623,329 +623,12 @@
           {
             "level": 0,
             "attacks": [
-              "Covet",
-              "Growl",
-              "Helping Hand",
-              "Tackle",
-              "Tail Whip"
-            ]
-          },
-          {
-            "level": 5,
-            "attacks": [
-              "Sand Attack"
-            ]
-          },
-          {
-            "level": 10,
-            "attacks": [
-              "Quick Attack"
-            ]
-          },
-          {
-            "level": 15,
-            "attacks": [
-              "Baby-Doll Eyes"
-            ]
-          },
-          {
-            "level": 20,
-            "attacks": [
-              "Swift"
-            ]
-          },
-          {
-            "level": 25,
-            "attacks": [
-              "Bite"
-            ]
-          },
-          {
-            "level": 30,
-            "attacks": [
-              "Copycat"
-            ]
-          },
-          {
-            "level": 35,
-            "attacks": [
-              "Baton Pass"
-            ]
-          },
-          {
-            "level": 40,
-            "attacks": [
-              "Take Down"
-            ]
-          },
-          {
-            "level": 45,
-            "attacks": [
-              "Charm"
-            ]
-          },
-          {
-            "level": 50,
-            "attacks": [
-              "Double-Edge"
-            ]
-          },
-          {
-            "level": 55,
-            "attacks": [
-              "Last Resort"
+              "Quick Attack",
+              "Astonish",
+              "Crunch",
+              "Swords Dance"
             ]
           }
-        ],
-        "tutorMoves": [],
-        "eggMoves": [
-          "Curse",
-          "Detect",
-          "Double Kick",
-          "Flail",
-          "Mud-Slap",
-          "Tickle",
-          "Wish",
-          "Yawn"
-        ],
-        "tmMoves8": [
-          "Pay Day",
-          "Dig",
-          "Rest",
-          "Snore",
-          "Protect",
-          "Charm",
-          "Attract",
-          "Rain Dance",
-          "Sunny Day",
-          "Facade",
-          "Swift",
-          "Helping Hand",
-          "Weather Ball",
-          "Fake Tears",
-          "Round",
-          "Retaliate"
-        ],
-        "trMoves": [
-          "Body Slam",
-          "Focus Energy",
-          "Substitute",
-          "Endure",
-          "Sleep Talk",
-          "Baton Pass",
-          "Iron Tail",
-          "Shadow Ball",
-          "Hyper Voice",
-          "Stored Power",
-          "Work Up"
-        ],
-        "hmMoves": [],
-        "transferMoves": [
-          "Bide",
-          "Captivate",
-          "Celebrate",
-          "Confide",
-          "Curse",
-          "Detect",
-          "Double Kick",
-          "Double Team",
-          "Echoed Voice",
-          "Flail",
-          "Frustration",
-          "Headbutt",
-          "Heal Bell",
-          "Hidden Power",
-          "Laser Focus",
-          "Mimic",
-          "Mud-Slap",
-          "Natural Gift",
-          "Rage",
-          "Reflect",
-          "Refresh",
-          "Return",
-          "Secret Power",
-          "Sing",
-          "Skull Bash",
-          "Swagger",
-          "Synchronoise",
-          "Tickle",
-          "Toxic",
-          "Trump Card",
-          "Wish",
-          "Yawn"
-        ],
-        "tmMoves7": [
-          "Work Up",
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Return",
-          "Shadow Ball",
-          "Double Team",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Echoed Voice",
-          "Swagger",
-          "Sleep Talk",
-          "Substitute",
-          "Confide"
-        ],
-        "tmMoves6": [
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Return",
-          "Dig",
-          "Shadow Ball",
-          "Double Team",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Echoed Voice",
-          "Retaliate",
-          "Swagger",
-          "Sleep Talk",
-          "Substitute",
-          "Secret Power",
-          "Confide"
-        ],
-        "tmMoves5": [
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Return",
-          "Dig",
-          "Shadow Ball",
-          "Double Team",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Echoed Voice",
-          "Retaliate",
-          "Work Up",
-          "Swagger",
-          "Substitute"
-        ],
-        "tmMoves4": [
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Iron Tail",
-          "Return",
-          "Dig",
-          "Shadow Ball",
-          "Double Team",
-          "Facade",
-          "Secret Power",
-          "Rest",
-          "Attract",
-          "Endure",
-          "Captivate",
-          "Sleep Talk",
-          "Natural Gift",
-          "Swagger",
-          "Substitute"
-        ],
-        "tmMoves3": [
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Iron Tail",
-          "Return",
-          "Dig",
-          "Shadow Ball",
-          "Double Team",
-          "Facade",
-          "Secret Power",
-          "Rest",
-          "Attract"
-        ],
-        "tmMoves2": [
-          "Headbutt",
-          "Curse",
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Snore",
-          "Protect",
-          "Rain Dance",
-          "Endure",
-          "Frustration",
-          "Iron Tail",
-          "Return",
-          "Shadow Ball",
-          "Mud-Slap",
-          "Double Team",
-          "Swagger",
-          "Sleep Talk",
-          "Swift",
-          "Detect",
-          "Rest",
-          "Attract"
-        ],
-        "tmMoves1": [
-          "Toxic",
-          "Body Slam",
-          "Take Down",
-          "Double-Edge",
-          "Rage",
-          "Mimic",
-          "Double Team",
-          "Reflect",
-          "Bide",
-          "Swift",
-          "Skull Bash",
-          "Rest",
-          "Substitute"
-        ],
-        "tmMoves": [],
-        "tmMoves9": [
-          "Take Down",
-          "Charm",
-          "Fake Tears",
-          "Mud-Slap",
-          "Protect",
-          "Trailblaze",
-          "Facade",
-          "Swift",
-          "Stored Power",
-          "Endure",
-          "Sunny Day",
-          "Rain Dance",
-          "Dig",
-          "Body Slam",
-          "Sleep Talk",
-          "Rest",
-          "Substitute",
-          "Shadow Ball",
-          "Hyper Voice",
-          "Calm Mind",
-          "Helping Hand",
-          "Baton Pass",
-          "Tera Blast",
-          "Roar",
-          "Weather Ball",
-          "Double-Edge",
-          "Curse"
         ]
       },
       "abilities": {
@@ -1005,7 +688,7 @@
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "hellasforms:pokemon/133_eevee/all/base/hellas/model.pqc"
+                  "pixelmon:pokemon/133_eevee/all/base/none/model.pqc"
                 ]
               },
               "sounds": [
@@ -1042,7 +725,7 @@
       "malePercentage": 87.5,
       "evolutions": [
         {
-          "to": "Sylveon  f:hellas",
+          "to": "Sylveon  form:hellas",
           "conditions": [
             {
               "friendship": 220,
@@ -1051,13 +734,6 @@
             {
               "type": "FAIRY",
               "evoConditionType": "moveType"
-            },
-            {
-              "biomes": [
-                "minecraft:flower_forest",
-                "minecraft:sunflower_plains"
-              ],
-              "evoConditionType": "biome"
             }
           ],
           "evoType": "leveling",
@@ -1069,7 +745,7 @@
           "item": {
             "itemID": "pixelmon:water_stone"
           },
-          "to": "Vaporeon f:hellas",
+          "to": "Vaporeon form:hellas",
           "conditions": [],
           "evoType": "interact",
           "moves": [
@@ -1080,7 +756,7 @@
           "item": {
             "itemID": "pixelmon:thunder_stone"
           },
-          "to": "Jolteon f:hellas",
+          "to": "Jolteon form:hellas",
           "conditions": [],
           "evoType": "interact",
           "moves": [
@@ -1091,7 +767,7 @@
           "item": {
             "itemID": "pixelmon:fire_stone"
           },
-          "to": "Flareon f:hellas",
+          "to": "Flareon form:hellas",
           "conditions": [],
           "evoType": "interact",
           "moves": [
@@ -1099,7 +775,7 @@
           ]
         },
         {
-          "to": "Espeon f:hellas",
+          "to": "Espeon form:hellas",
           "conditions": [
             {
               "friendship": 220,
@@ -1116,7 +792,7 @@
           ]
         },
         {
-          "to": "Umbreon f:hellas",
+          "to": "Umbreon form:hellas",
           "conditions": [
             {
               "friendship": 220,
@@ -1136,7 +812,7 @@
           "item": {
             "itemID": "pixelmon:leaf_stone"
           },
-          "to": "Leafeon f:hellas",
+          "to": "Leafeon form:hellas",
           "conditions": [],
           "evoType": "interact",
           "moves": [
@@ -1144,7 +820,7 @@
           ]
         },
         {
-          "to": "Leafeon f:hellas",
+          "to": "Leafeon form:hellas",
           "conditions": [
             {
               "evolutionRock": "MOSSY_ROCK",
@@ -1161,7 +837,7 @@
           "item": {
             "itemID": "pixelmon:ice_stone"
           },
-          "to": "Glaceon f:hellas",
+          "to": "Glaceon form:hellas",
           "conditions": [],
           "evoType": "interact",
           "moves": [
@@ -1169,7 +845,7 @@
           ]
         },
         {
-          "to": "Glaceon f:hellas",
+          "to": "Glaceon form:hellas",
           "conditions": [
             {
               "evolutionRock": "ICE_ROCK",

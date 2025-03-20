@@ -680,6 +680,14 @@
             ]
           },
           {
+            "level": 50,
+            "attacks": [
+              "Hitch Kick",
+              "Plasma Veil",
+              "Plasma Fangs"
+            ]
+          },
+          {
             "level": 52,
             "attacks": [
               "Extrasensory"
@@ -701,20 +709,7 @@
           "Sludge Bomb",
           "Snarl",
           "Swift"
-        ],
-        "eggMoves": [],
-        "tmMoves8": [],
-        "trMoves": [],
-        "hmMoves": [],
-        "transferMoves": [],
-        "tmMoves7": [],
-        "tmMoves6": [],
-        "tmMoves5": [],
-        "tmMoves4": [],
-        "tmMoves3": [],
-        "tmMoves2": [],
-        "tmMoves1": [],
-        "tmMoves": []
+        ]
       },
       "abilities": {
         "abilities": [
@@ -765,11 +760,12 @@
               "name": "none",
               "texture": "hellasforms:pokemon/571_zoroark/all/hisuian/hellas/texture.png",
               "sprite": "hellasforms:pokemon/571_zoroark/all/hisuian/hellas/sprite.png",
+              "emissive": "hellasforms:pokemon/571_zoroark/all/hisuian/hellas/emissive.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "hellasforms:pokemon/571_zoroark/all/hisuian/hellas/model.pqc"
+                  "pixelmon:pokemon/571_zoroark/all/hisuian/none/model.pqc"
                 ]
               },
               "sounds": [
@@ -780,6 +776,7 @@
               "name": "shiny",
               "texture": "hellasforms:pokemon/571_zoroark/all/hisuian/hellasshiny/texture.png",
               "sprite": "hellasforms:pokemon/571_zoroark/all/hisuian/hellasshiny/sprite.png",
+              "emissive": "hellasforms:pokemon/571_zoroark/all/hisuian/hellasshiny/emissive.png",
               "particle": "arcanery:shiny"
             }
           ]
@@ -793,7 +790,7 @@
         "GHOST"
       ],
       "preEvolutions": [
-        "Zorua f:hellas"
+        "Zorua form:hellas"
       ],
       "defaultBaseForm": "",
       "megaItems": [],

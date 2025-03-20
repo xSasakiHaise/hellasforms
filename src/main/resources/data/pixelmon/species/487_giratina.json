@@ -585,6 +585,37 @@
         "width": 3.0,
         "length": 3.0
       },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 50,
+            "attacks": [
+              "Body Press",
+              "Recover",
+              "Draconic Shout",
+              "Draconic Greed",
+              "Crunch",
+              "Earthquake",
+              "Rock Slide",
+              "Defog",
+              "Shadow Sneak",
+              "Dragon Breath",
+              "Ancient Power",
+              "Hex",
+              "Slash",
+              "Scary Face",
+              "Shadow Claw",
+              "Tachyon Beam",
+              "Aura Sphere",
+              "Dragon Claw",
+              "Earth Power",
+              "Shadow Force",
+              "Destiny Bond",
+              "Tachyon Cutter"
+            ]
+          }
+        ]
+      },
       "abilities": {
         "abilities": [
           "Telepathy",
@@ -616,7 +647,7 @@
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "hellasforms:pokemon/487_giratina/all/origin/hellas/model.pqc"
+                  "pixelmon:pokemon/487_giratina/all/origin/none/model.pqc"
                 ]
               }
             },

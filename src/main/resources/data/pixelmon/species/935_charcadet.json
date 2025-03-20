@@ -238,95 +238,21 @@
       "moves": {
         "levelUpMoves": [
           {
-            "level": 0,
+            "level": 1,
             "attacks": [
-              "Astonish",
-              "Ember",
-              "Leer"
-            ]
-          },
-          {
-            "level": 8,
-            "attacks": [
-              "Clear Smog"
-            ]
-          },
-          {
-            "level": 12,
-            "attacks": [
-              "Fire Spin"
-            ]
-          },
-          {
-            "level": 16,
-            "attacks": [
-              "Will-O-Wisp"
-            ]
-          },
-          {
-            "level": 20,
-            "attacks": [
-              "Night Shade"
-            ]
-          },
-          {
-            "level": 24,
-            "attacks": [
-              "Flame Charge"
-            ]
-          },
-          {
-            "level": 28,
-            "attacks": [
-              "Incinerate"
-            ]
-          },
-          {
-            "level": 32,
-            "attacks": [
-              "Lava Plume"
+              "Hitch Kick",
+              "Plasma Veil",
+              "Thunder Shock",
+              "Thunder Wave",
+              "Thunderbolt",
+              "Thunder",
+              "Thunder Punch",
+              "Thunder Fang",
+              "Thunder Clap",
+              "Thunder Strike"
             ]
           }
-        ],
-        "tutorMoves": [],
-        "eggMoves": [
-          "Destiny Bond",
-          "Disable",
-          "Spite"
-        ],
-        "tmMoves9": [
-          "Take Down",
-          "Protect",
-          "Confuse Ray",
-          "Fire Spin",
-          "Facade",
-          "Flame Charge",
-          "Night Shade",
-          "Endure",
-          "Sunny Day",
-          "Sleep Talk",
-          "Substitute",
-          "Will-O-Wisp",
-          "Heat Wave",
-          "Flamethrower",
-          "Helping Hand",
-          "Fire Blast",
-          "Overheat",
-          "Flare Blitz",
-          "Tera Blast"
-        ],
-        "tmMoves8": [],
-        "trMoves": [],
-        "hmMoves": [],
-        "transferMoves": [],
-        "tmMoves7": [],
-        "tmMoves6": [],
-        "tmMoves5": [],
-        "tmMoves4": [],
-        "tmMoves3": [],
-        "tmMoves2": [],
-        "tmMoves1": [],
-        "tmMoves": []
+        ]
       },
       "abilities": {
         "abilities": [
@@ -334,7 +260,7 @@
           "FlameBody"
         ],
         "hiddenAbilities": [
-          "Electric Surge"
+          "ElectricSurge"
         ]
       },
       "movement": {
@@ -386,7 +312,7 @@
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "hellasforms:pokemon/935_charcadet/all/base/hellas/model.pqc"
+                  "pixelmon:pokemon/935_charcadet/all/base/none/model.pqc"
                 ]
               },
               "sounds": [
@@ -426,7 +352,7 @@
           "item": {
             "itemID": "pixelmon:auspicious_armor"
           },
-          "to": "Armarouge f:hellas",
+          "to": "Armarouge form:hellas",
           "conditions": [],
           "evoType": "interact",
           "moves": [
@@ -437,7 +363,7 @@
           "item": {
             "itemID": "pixelmon:malicious_armor"
           },
-          "to": "Ceruledge f:hellas",
+          "to": "Ceruledge form:hellas",
           "conditions": [],
           "evoType": "interact",
           "moves": [

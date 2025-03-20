@@ -506,319 +506,27 @@
             "level": 0,
             "attacks": [
               "Astonish",
-              "Defense Curl",
-              "Focus Punch",
-              "High Horsepower",
               "Mud-Slap",
-              "Pound"
+              "Iron Defense",
+              "Rock Slide"
             ]
           },
           {
-            "level": 12,
+            "level": 50,
             "attacks": [
-              "Shadow Punch"
-            ]
-          },
-          {
-            "level": 16,
-            "attacks": [
-              "Curse"
-            ]
-          },
-          {
-            "level": 20,
-            "attacks": [
+              "Corrode",
+              "Earthquake",
+              "Heavy Slam",
+              "Phantom Force",
+              "Shadow Punch",
+              "Shadow Ball",
+              "Stomping Tantrum",
+              "Hammer Arm",
+              "Dynamic Punch",
+              "Focus Punch",
               "Night Shade"
             ]
-          },
-          {
-            "level": 24,
-            "attacks": [
-              "Stomping Tantrum"
-            ]
-          },
-          {
-            "level": 28,
-            "attacks": [
-              "Iron Defense"
-            ]
-          },
-          {
-            "level": 32,
-            "attacks": [
-              "Mega Punch"
-            ]
-          },
-          {
-            "level": 36,
-            "attacks": [
-              "Shadow Ball"
-            ]
-          },
-          {
-            "level": 40,
-            "attacks": [
-              "Heavy Slam"
-            ]
-          },
-          {
-            "level": 46,
-            "attacks": [
-              "Phantom Force"
-            ]
-          },
-          {
-            "level": 52,
-            "attacks": [
-              "Hammer Arm"
-            ]
-          },
-          {
-            "level": 58,
-            "attacks": [
-              "Earthquake"
-            ]
-          },
-          {
-            "level": 64,
-            "attacks": [
-              "Dynamic Punch"
-            ]
           }
-        ],
-        "tutorMoves": [
-          "Poltergeist",
-          "Scorching Sands"
-        ],
-        "eggMoves": [
-
-        ],
-        "tmMoves8": [
-          "Mega Punch",
-          "Mega Kick",
-          "Fire Punch",
-          "Ice Punch",
-          "Thunder Punch",
-          "Fly",
-          "Hyper Beam",
-          "Giga Impact",
-          "Solar Beam",
-          "Dig",
-          "Safeguard",
-          "Self-Destruct",
-          "Rest",
-          "Rock Slide",
-          "Thief",
-          "Snore",
-          "Protect",
-          "Icy Wind",
-          "Rain Dance",
-          "Facade",
-          "Helping Hand",
-          "Brick Break",
-          "Imprison",
-          "Rock Tomb",
-          "Fling",
-          "Drain Punch",
-          "Low Sweep",
-          "Round",
-          "Bulldoze",
-          "Phantom Force",
-          "Stomping Tantrum"
-        ],
-        "trMoves": [
-          "Body Slam",
-          "Ice Beam",
-          "Low Kick",
-          "Thunderbolt",
-          "Earthquake",
-          "Psychic",
-          "Substitute",
-          "Endure",
-          "Sleep Talk",
-          "Shadow Ball",
-          "Trick",
-          "Superpower",
-          "Iron Defense",
-          "Gyro Ball",
-          "Close Combat",
-          "Focus Blast",
-          "Earth Power",
-          "Zen Headbutt",
-          "Flash Cannon",
-          "Stone Edge",
-          "Stealth Rock",
-          "Grass Knot",
-          "Heavy Slam",
-          "Ally Switch",
-          "Heat Crash",
-          "Darkest Lariat",
-          "High Horsepower",
-          "Body Press"
-        ],
-        "hmMoves": [
-
-        ],
-        "transferMoves": [
-          "Block",
-          "Charge Beam",
-          "Confide",
-          "Double Team",
-          "Flash",
-          "Frustration",
-          "Gravity",
-          "Hidden Power",
-          "Magic Coat",
-          "Magnitude",
-          "Power-Up Punch",
-          "Return",
-          "Rock Polish",
-          "Rock Smash",
-          "Rollout",
-          "Secret Power",
-          "Shock Wave",
-          "Signal Beam",
-          "Strength",
-          "Swagger",
-          "Telekinesis",
-          "Toxic"
-        ],
-        "tmMoves7": [
-          "Toxic",
-          "Hidden Power",
-          "Ice Beam",
-          "Hyper Beam",
-          "Protect",
-          "Rain Dance",
-          "Safeguard",
-          "Frustration",
-          "Solar Beam",
-          "Thunderbolt",
-          "Earthquake",
-          "Return",
-          "Psychic",
-          "Shadow Ball",
-          "Brick Break",
-          "Double Team",
-          "Rock Tomb",
-          "Facade",
-          "Rest",
-          "Thief",
-          "Low Sweep",
-          "Round",
-          "Focus Blast",
-          "Fling",
-          "Charge Beam",
-          "Giga Impact",
-          "Rock Polish",
-          "Stone Edge",
-          "Gyro Ball",
-          "Fly",
-          "Bulldoze",
-          "Rock Slide",
-          "Grass Knot",
-          "Swagger",
-          "Sleep Talk",
-          "Substitute",
-          "Flash Cannon",
-          "Confide"
-        ],
-        "tmMoves6": [
-          "Toxic",
-          "Hidden Power",
-          "Ice Beam",
-          "Hyper Beam",
-          "Protect",
-          "Rain Dance",
-          "Safeguard",
-          "Frustration",
-          "Solar Beam",
-          "Thunderbolt",
-          "Earthquake",
-          "Return",
-          "Psychic",
-          "Shadow Ball",
-          "Brick Break",
-          "Double Team",
-          "Rock Tomb",
-          "Facade",
-          "Rest",
-          "Thief",
-          "Low Sweep",
-          "Round",
-          "Focus Blast",
-          "Fling",
-          "Charge Beam",
-          "Giga Impact",
-          "Rock Polish",
-          "Flash",
-          "Stone Edge",
-          "Gyro Ball",
-          "Bulldoze",
-          "Rock Slide",
-          "Grass Knot",
-          "Swagger",
-          "Sleep Talk",
-          "Substitute",
-          "Flash Cannon",
-          "Secret Power",
-          "Power-Up Punch",
-          "Confide"
-        ],
-        "tmMoves5": [
-          "Toxic",
-          "Hidden Power",
-          "Ice Beam",
-          "Hyper Beam",
-          "Protect",
-          "Rain Dance",
-          "Telekinesis",
-          "Safeguard",
-          "Frustration",
-          "Solar Beam",
-          "Thunderbolt",
-          "Earthquake",
-          "Return",
-          "Psychic",
-          "Shadow Ball",
-          "Brick Break",
-          "Double Team",
-          "Rock Tomb",
-          "Facade",
-          "Rest",
-          "Thief",
-          "Low Sweep",
-          "Round",
-          "Focus Blast",
-          "Fling",
-          "Charge Beam",
-          "Giga Impact",
-          "Rock Polish",
-          "Flash",
-          "Stone Edge",
-          "Gyro Ball",
-          "Bulldoze",
-          "Rock Slide",
-          "Grass Knot",
-          "Swagger",
-          "Substitute",
-          "Flash Cannon",
-          "Rock Smash"
-        ],
-        "tmMoves4": [
-
-        ],
-        "tmMoves3": [
-
-        ],
-        "tmMoves2": [
-
-        ],
-        "tmMoves1": [
-
-        ],
-        "tmMoves": [
-
         ]
       },
       "abilities": {
@@ -921,13 +629,13 @@
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "hellasforms:pokemon/623_golurk/all/base/hellas/model.pqc"
+                  "pixelmon:pokemon/623_golurk/all/base/none/model.pqc"
                 ]
               },
               "flyingModelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "hellasforms:pokemon/623_golurk/all/base/hellas/flying/model.pqc"
+                  "pixelmon:pokemon/623_golurk/all/base/none/flying/model.pqc"
                 ]
               },
               "sounds": [
@@ -951,7 +659,7 @@
         "GHOST"
       ],
       "preEvolutions": [
-        "Golett f:hellas"
+        "Golett form:hellas"
       ],
       "defaultBaseForm": "",
       "megaItems": [

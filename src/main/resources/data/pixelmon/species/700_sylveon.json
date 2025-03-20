@@ -388,245 +388,24 @@
           {
             "level": 0,
             "attacks": [
-              "Baton Pass",
-              "Bite",
-              "Charm",
-              "Copycat",
-              "Covet",
-              "Disarming Voice",
-              "Double-Edge",
-              "Growl",
-              "Helping Hand",
-              "Tackle",
-              "Tail Whip",
-              "Take Down"
-            ]
-          },
-          {
-            "level": 5,
-            "attacks": [
-              "Sand Attack"
-            ]
-          },
-          {
-            "level": 10,
-            "attacks": [
-              "Quick Attack"
-            ]
-          },
-          {
-            "level": 15,
-            "attacks": [
-              "Baby-Doll Eyes"
-            ]
-          },
-          {
-            "level": 20,
-            "attacks": [
-              "Swift"
-            ]
-          },
-          {
-            "level": 25,
-            "attacks": [
-              "Light Screen"
-            ]
-          },
-          {
-            "level": 30,
-            "attacks": [
-              "Draining Kiss"
-            ]
-          },
-          {
-            "level": 35,
-            "attacks": [
-              "Misty Terrain"
-            ]
-          },
-          {
-            "level": 40,
-            "attacks": [
-              "Skill Swap"
-            ]
-          },
-          {
-            "level": 45,
-            "attacks": [
-              "Psych Up"
+              "Quick Attack",
+              "Astonish",
+              "Crunch",
+              "Swords Dance"
             ]
           },
           {
             "level": 50,
             "attacks": [
-              "Moonblast"
-            ]
-          },
-          {
-            "level": 55,
-            "attacks": [
-              "Last Resort"
+              "Fairy Circle",
+              "Moonblast",
+              "Moonlight",
+              "Rock Slide",
+              "Rock Tomb",
+              "Stone Edge"
             ]
           }
-        ],
-        "tutorMoves": [
-          "Celebrate",
-          "Misty Explosion"
-        ],
-        "eggMoves": [
-          "Curse",
-          "Detect",
-          "Double Kick",
-          "Flail",
-          "Mud-Slap",
-          "Tickle",
-          "Wish",
-          "Yawn"
-        ],
-        "tmMoves8": [
-          "Pay Day",
-          "Hyper Beam",
-          "Giga Impact",
-          "Magical Leaf",
-          "Dig",
-          "Light Screen",
-          "Reflect",
-          "Safeguard",
-          "Rest",
-          "Snore",
-          "Protect",
-          "Charm",
-          "Attract",
-          "Rain Dance",
-          "Sunny Day",
-          "Facade",
-          "Swift",
-          "Helping Hand",
-          "Weather Ball",
-          "Fake Tears",
-          "Round",
-          "Retaliate",
-          "Draining Kiss",
-          "Misty Terrain",
-          "Mystical Fire"
-        ],
-        "trMoves": [
-          "Body Slam",
-          "Focus Energy",
-          "Substitute",
-          "Psyshock",
-          "Endure",
-          "Sleep Talk",
-          "Baton Pass",
-          "Iron Tail",
-          "Shadow Ball",
-          "Skill Swap",
-          "Hyper Voice",
-          "Calm Mind",
-          "Stored Power",
-          "Work Up",
-          "Play Rough",
-          "Dazzling Gleam"
-        ],
-        "hmMoves": [],
-        "transferMoves": [
-          "Bide",
-          "Captivate",
-          "Confide",
-          "Cut",
-          "Double Team",
-          "Echoed Voice",
-          "Fairy Wind",
-          "Flash",
-          "Frustration",
-          "Headbutt",
-          "Heal Bell",
-          "Hidden Power",
-          "Laser Focus",
-          "Magic Coat",
-          "Mimic",
-          "Natural Gift",
-          "Rage",
-          "Refresh",
-          "Return",
-          "Secret Power",
-          "Sing",
-          "Skull Bash",
-          "Swagger",
-          "Synchronoise",
-          "Telekinesis",
-          "Toxic",
-          "Trump Card"
-        ],
-        "tmMoves7": [
-          "Work Up",
-          "Psyshock",
-          "Calm Mind",
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Hyper Beam",
-          "Light Screen",
-          "Protect",
-          "Rain Dance",
-          "Safeguard",
-          "Frustration",
-          "Return",
-          "Shadow Ball",
-          "Double Team",
-          "Reflect",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Echoed Voice",
-          "Giga Impact",
-          "Psych Up",
-          "Swagger",
-          "Sleep Talk",
-          "Substitute",
-          "Dazzling Gleam",
-          "Confide"
-        ],
-        "tmMoves6": [
-          "Psyshock",
-          "Calm Mind",
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Hyper Beam",
-          "Light Screen",
-          "Protect",
-          "Rain Dance",
-          "Safeguard",
-          "Frustration",
-          "Return",
-          "Dig",
-          "Shadow Ball",
-          "Double Team",
-          "Reflect",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Echoed Voice",
-          "Retaliate",
-          "Giga Impact",
-          "Flash",
-          "Psych Up",
-          "Swagger",
-          "Sleep Talk",
-          "Substitute",
-          "Secret Power",
-          "Dazzling Gleam",
-          "Confide"
-        ],
-        "tmMoves5": [],
-        "tmMoves4": [],
-        "tmMoves3": [],
-        "tmMoves2": [],
-        "tmMoves1": [],
-        "tmMoves": []
+        ]
       },
       "abilities": {
         "abilities": [
@@ -692,11 +471,12 @@
               "name": "none",
               "texture": "hellasforms:pokemon/700_sylveon/all/base/hellas/texture.png",
               "sprite": "hellasforms:pokemon/700_sylveon/all/base/hellas/sprite.png",
+              "emissive": "hellasforms:pokemon/700_sylveon/all/base/hellas/emissive.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "hellasforms:pokemon/700_sylveon/all/base/hellas/model.pqc"
+                  "pixelmon:pokemon/700_sylveon/all/base/none/model.pqc"
                 ]
               },
               "sounds": [
@@ -708,6 +488,7 @@
               "name": "shiny",
               "texture": "hellasforms:pokemon/700_sylveon/all/base/hellasshiny/texture.png",
               "sprite": "hellasforms:pokemon/700_sylveon/all/base/hellasshiny/sprite.png",
+              "emissive": "hellasforms:pokemon/700_sylveon/all/base/hellasshiny/emissive.png",
               "particle": "arcanery:shiny"
             }
           ]
@@ -721,7 +502,7 @@
         "ROCK"
       ],
       "preEvolutions": [
-        "Eevee f:hellas"
+        "Eevee form:hellas"
       ],
       "defaultBaseForm": "",
       "megaItems": [],

@@ -320,192 +320,15 @@
             "level": 0,
             "attacks": [
               "Growth",
-              "Tackle"
-            ]
-          },
-          {
-            "level": 7,
-            "attacks": [
-              "Vine Whip"
-            ]
-          },
-          {
-            "level": 9,
-            "attacks": [
-              "Tail Whip"
-            ]
-          },
-          {
-            "level": 12,
-            "attacks": [
-              "Leech Seed"
-            ]
-          },
-          {
-            "level": 13,
-            "attacks": [
-              "Razor Leaf"
-            ]
-          },
-          {
-            "level": 16,
-            "attacks": [
-              "Worry Seed"
-            ]
-          },
-          {
-            "level": 20,
-            "attacks": [
-              "Synthesis"
-            ]
-          },
-          {
-            "level": 22,
-            "attacks": [
-              "Take Down"
-            ]
-          },
-          {
-            "level": 26,
-            "attacks": [
-              "Bulldoze"
-            ]
-          },
-          {
-            "level": 30,
-            "attacks": [
-              "Seed Bomb"
-            ]
-          },
-          {
-            "level": 34,
-            "attacks": [
-              "Bulk Up"
-            ]
-          },
-          {
-            "level": 38,
-            "attacks": [
-              "Double-Edge"
-            ]
-          },
-          {
-            "level": 42,
-            "attacks": [
-              "Horn Leech"
-            ]
-          },
-          {
-            "level": 45,
-            "attacks": [
-              "Leaf Blade"
-            ]
-          },
-          {
-            "level": 50,
-            "attacks": [
-              "Milk Drink"
+              "Tackle",
+              "Trample",
+              "Jump Kick"
             ]
           }
-        ],
-        "tutorMoves": [
-          "Giga Drain",
-          "Iron Tail",
-          "Seed Bomb",
-          "Snore",
-          "Synthesis",
-          "Worry Seed",
-          "Zen Headbutt"
-        ],
-        "eggMoves": [
-          "Defense Curl",
-          "Grassy Terrain",
-          "Milk Drink",
-          "Rollout"
-        ],
-        "tmMoves8": [],
-        "trMoves": [],
-        "hmMoves": [],
-        "transferMoves": [
-          "Dig",
-          "Retaliate",
-          "Rock Smash",
-          "Secret Power",
-          "Strength"
-        ],
-        "tmMoves7": [
-          "Work Up",
-          "Roar",
-          "Toxic",
-          "Bulk Up",
-          "Hidden Power",
-          "Sunny Day",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Solar Beam",
-          "Return",
-          "Brick Break",
-          "Double Team",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Energy Ball",
-          "Payback",
-          "Bulldoze",
-          "Rock Slide",
-          "Grass Knot",
-          "Swagger",
-          "Sleep Talk",
-          "Substitute",
-          "Wild Charge",
-          "Surf",
-          "Nature Power",
-          "Confide"
-        ],
-        "tmMoves6": [
-          "Roar",
-          "Toxic",
-          "Bulk Up",
-          "Hidden Power",
-          "Sunny Day",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Solar Beam",
-          "Return",
-          "Dig",
-          "Brick Break",
-          "Double Team",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Round",
-          "Energy Ball",
-          "Payback",
-          "Retaliate",
-          "Bulldoze",
-          "Rock Slide",
-          "Grass Knot",
-          "Swagger",
-          "Sleep Talk",
-          "Substitute",
-          "Wild Charge",
-          "Secret Power",
-          "Nature Power",
-          "Confide"
-        ],
-        "tmMoves5": [],
-        "tmMoves4": [],
-        "tmMoves3": [],
-        "tmMoves2": [],
-        "tmMoves1": [],
-        "tmMoves": []
+        ]
       },
       "abilities": {
         "abilities": [
-          "AgileSteps",
           "RockHead"
         ],
         "hiddenAbilities": [
@@ -560,7 +383,7 @@
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "hellasforms:pokemon/672_skiddo/all/base/hellas/model.pqc"
+                  "pixelmon:pokemon/672_skiddo/all/base/none/model.pqc"
                 ]
               },
               "sounds": []
@@ -596,7 +419,7 @@
       "evolutions": [
         {
           "level": 32,
-          "to": "Gogoat f:hellas",
+          "to": "Gogoat form:hellas",
           "conditions": [],
           "evoType": "leveling",
           "moves": [

@@ -1,10 +1,11 @@
 modLoader="javafml"
 loaderVersion="[36,)"
-license="MIT"
+logoFile="Hellas.png"
+license="Restricted"
 
 [[mods]]
 modId="hellasforms"
-version="0.9.937"
+version="1.0.0"
 displayName="HellasForms"
 displayURL="https://discord.gg/ggShyqB92C"
 credits="xSasaki_Haise, pg13snipez, xGlitzerschaf"
@@ -26,6 +27,13 @@ Welcome to Hellas :)
     versionRange="[1.16.5,)"
     ordering="NONE"
     side="BOTH"
+
+[[dependencies.hellasforms]]
+modId="tconstruct"
+mandatory=false
+versionRange="[3.3.+,)"
+ordering="AFTER"
+side="BOTH"
 
 [[dependencies.hellasforms]]
     modId="pixelmon"
