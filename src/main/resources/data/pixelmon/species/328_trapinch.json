@@ -404,15 +404,45 @@
       "moves": {
         "levelUpMoves": [
           {
-            "level": 0,
+            "level": 1,
             "attacks": [
-              "Astonish",
-              "Sand Attack",
-              "Steel Roller",
-              "Eearthquake"
+              "Astonish"
+            ]
+          },
+          {
+            "level": 5,
+            "attacks": [
+              "Sand Attack"
+            ]
+          },
+          {
+            "level": 12,
+            "attacks": [
+              "Steel Roller"
+            ]
+          },
+          {
+            "level": 24,
+            "attacks": [
+              "Earthquake"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
@@ -466,6 +496,7 @@
             {
               "name": "none",
               "texture": "hellasforms:pokemon/328_trapinch/all/base/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/328_trapinch/all/base/hellas/emissive.png",
               "sprite": "hellasforms:pokemon/328_trapinch/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
@@ -480,6 +511,7 @@
             {
               "name": "shiny",
               "texture": "hellasforms:pokemon/328_trapinch/all/base/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/328_trapinch/all/base/hellasshiny/emissive.png",
               "sprite": "hellasforms:pokemon/328_trapinch/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }

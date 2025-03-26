@@ -509,36 +509,138 @@
       "moves": {
         "levelUpMoves": [
           {
+            "level": 0,
+            "attacks": [
+              "Quick Attack",
+              "Astonish",
+              "Crunch",
+              "Swords Dance"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
-              "Burnout",
-              "Flare Blitz",
-              "Flare Burst",
-              "Flare Up",
-              "Flare Wheel",
-              "Flare",
-              "Flare Dance",
-              "Flare Strike",
-              "Flare Storm",
-              "Flare Wave",
-              "Gyro Ball",
-              "Heat Wave",
-              "Inferno",
-              "Lava Plume",
-              "Magma Storm",
-              "Overheat",
-              "Double Iron Bash",
-              "Iron Head",
-              "Iron Tail",
-              "Metal Burst",
-              "Metal Claw",
-              "Metal Sound",
-              "Metal Whip",
-              "Steel Beam",
+              "Burnout"
+            ]
+          },
+          {
+            "level": 51,
+            "attacks": [
               "Steel Roller"
             ]
+          },
+          {
+            "level": 52,
+            "attacks": [
+              "Steel Beam"
+            ]
+          },
+          {
+            "level": 53,
+            "attacks": [
+              "Metal Whip"
+            ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Metal Sound"
+            ]
+          },
+          {
+            "level": 55,
+            "attacks": [
+              "Metal Claw"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Metal Burst"
+            ]
+          },
+          {
+            "level": 57,
+            "attacks": [
+              "Iron Tail"
+            ]
+          },
+          {
+            "level": 58,
+            "attacks": [
+              "Iron Head"
+            ]
+          },
+          {
+            "level": 59,
+            "attacks": [
+              "Double Iron Bash"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Overheat"
+            ]
+          },
+          {
+            "level": 61,
+            "attacks": [
+              "Magma Storm"
+            ]
+          },
+          {
+            "level": 62,
+            "attacks": [
+              "Lava Plume"
+            ]
+          },
+          {
+            "level": 63,
+            "attacks": [
+              "Inferno"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Heat Wave"
+            ]
+          },
+          {
+            "level": 65,
+            "attacks": [
+              "Gyro Ball"
+            ]
+          },
+          {
+            "level": 66,
+            "attacks": [
+              "Fire Spin"
+            ]
+          },
+          {
+            "level": 67,
+            "attacks": [
+              "Flare Blitz"
+            ]
           }
-        ]
+        ],
+        "tutorMoves": [],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
@@ -603,6 +705,7 @@
             {
               "name": "none",
               "texture": "hellasforms:pokemon/136_flareon/all/base/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/136_flareon/all/base/hellas/emissive.png",
               "sprite": "hellasforms:pokemon/136_flareon/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
@@ -618,6 +721,7 @@
             {
               "name": "shiny",
               "texture": "hellasforms:pokemon/136_flareon/all/base/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/136_flareon/all/base/hellasshiny/emissive.png",
               "sprite": "hellasforms:pokemon/136_flareon/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }

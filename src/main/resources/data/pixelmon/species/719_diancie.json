@@ -445,13 +445,13 @@
           {
             "level": 21,
             "attacks": [
-              "Energy Ball"
+              "Flail"
             ]
           },
           {
             "level": 28,
             "attacks": [
-              "Breaking Swipe"
+              "Ancient Power"
             ]
           },
           {
@@ -469,13 +469,13 @@
           {
             "level": 49,
             "attacks": [
-              "Draco Meteor"
+              "Rock Slide"
             ]
           },
           {
             "level": 56,
             "attacks": [
-              "Skill Swap"
+              "Jade Light"
             ]
           },
           {
@@ -487,7 +487,7 @@
           {
             "level": 70,
             "attacks": [
-              "Spiky Shield"
+              "Stealth Rock"
             ]
           },
           {
@@ -499,61 +499,58 @@
           {
             "level": 84,
             "attacks": [
-              "Diamond Storm"
+              "Stone Edge"
             ]
           },
           {
             "level": 91,
             "attacks": [
-              "Dynamax Cannon"
+              "Diamond Storm"
             ]
           }
         ],
         "tutorMoves": [
-          "Knock Off",
-          "Expanding Force",
-          "Psycho Cut",
-          "Petal Blizzard",
-          "Dragon Dance",
+          "Meteor Beam",
           "Misty Explosion",
-          "Terrain Pulse"
+          "Terrain Pulse",
+          "Knock Off"
         ],
         "eggMoves": [],
         "tmMoves8": [
           "Hyper Beam",
-          "Dazzling Gleam",
           "Giga Impact",
           "Light Screen",
           "Reflect",
           "Safeguard",
           "Rest",
-          "Surf",
+          "Rock Slide",
           "Snore",
           "Protect",
-          "Nasty Plot",
-          "Waterfall",
+          "Charm",
+          "Sandstorm",
           "Sunny Day",
-          "Rain Dance",
-          "Psychic Fangs",
-          "Shadow Ball",
+          "Hail",
+          "Facade",
+          "Helping Hand",
           "Fake Tears",
           "Rock Tomb",
+          "Sand Tomb",
           "Guard Swap",
-          "Aura Sphere",
-          "Misty Terrain",
-          "Psychic Terrain",
+          "Trick Room",
+          "Wonder Room",
+          "Round",
           "Draining Kiss",
           "Mystical Fire"
         ],
         "trMoves": [
           "Psychic",
           "Metronome",
-          "Will-O-Wisp",
+          "Amnesia",
           "Substitute",
           "Psyshock",
           "Endure",
           "Sleep Talk",
-          "Draco Meteor",
+          "Baton Pass",
           "Encore",
           "Skill Swap",
           "Iron Defense",
@@ -561,7 +558,7 @@
           "Gyro Ball",
           "Power Gem",
           "Earth Power",
-          "Dragon Dance",
+          "Stone Edge",
           "Stealth Rock",
           "Stored Power",
           "Ally Switch",
@@ -630,7 +627,52 @@
           "Nature Power",
           "Dazzling Gleam",
           "Confide"
-        ]
+        ],
+        "tmMoves6": [
+          "Psyshock",
+          "Calm Mind",
+          "Toxic",
+          "Hail",
+          "Hidden Power",
+          "Sunny Day",
+          "Hyper Beam",
+          "Light Screen",
+          "Protect",
+          "Safeguard",
+          "Frustration",
+          "Smack Down",
+          "Return",
+          "Psychic",
+          "Double Team",
+          "Reflect",
+          "Sandstorm",
+          "Rock Tomb",
+          "Facade",
+          "Rest",
+          "Round",
+          "Explosion",
+          "Giga Impact",
+          "Rock Polish",
+          "Flash",
+          "Stone Edge",
+          "Gyro Ball",
+          "Psych Up",
+          "Rock Slide",
+          "Swagger",
+          "Sleep Talk",
+          "Substitute",
+          "Trick Room",
+          "Secret Power",
+          "Nature Power",
+          "Dazzling Gleam",
+          "Confide"
+        ],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
@@ -712,7 +754,7 @@
         "FAIRY"
       ],
       "preEvolutions": [],
-      "defaultBaseForm": "",
+      "defaultBaseForm": "diancie form:hellas",
       "megaItems": [
         "hellasforms:diancite-hellas"
       ],
@@ -740,7 +782,7 @@
       ],
       "abilities": {
         "abilities": [
-          "SoulHeart"
+          "JadeEmperor"
         ]
       },
       "battleStats": {

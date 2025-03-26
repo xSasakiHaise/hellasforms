@@ -539,21 +539,85 @@
           {
             "level": 50,
             "attacks": [
-              "Rabid Claw",
-              "Hitch Kick",
-              "Thunder Fang",
-              "Thunder",
-              "Thunderbolt",
-              "Thunder Wave",
-              "Superpower",
-              "Close Combat",
-              "Volt Tackle",
-              "Wild Charge",
-              "Zap Cannon",
-              "Thunder Kick"
+              "Rabid Claw"
+            ]
+          },
+          {
+            "level": 51,
+            "attacks": [
+              "Zap Cannon"
+            ]
+          },
+          {
+            "level": 52,
+            "attacks": [
+              "Wild Charge"
+            ]
+          },
+          {
+            "level": 53,
+            "attacks": [
+              "Volt Tackle"
+            ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Close Combat"
+            ]
+          },
+          {
+            "level": 55,
+            "attacks": [
+              "Superpower"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Thunder Wave"
+            ]
+          },
+          {
+            "level": 57,
+            "attacks": [
+              "Thunderbolt"
+            ]
+          },
+          {
+            "level": 58,
+            "attacks": [
+              "Thunder"
+            ]
+          },
+          {
+            "level": 59,
+            "attacks": [
+              "Thunder Fang"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Hitch Kick"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [

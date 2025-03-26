@@ -317,15 +317,45 @@
       "moves": {
         "levelUpMoves": [
           {
-            "level": 0,
+            "level": 1,
             "attacks": [
-              "Growth",
-              "Tackle",
-              "Trample",
+              "Growth"
+            ]
+          },
+          {
+            "level": 5,
+            "attacks": [
+              "Tackle"
+            ]
+          },
+          {
+            "level": 8,
+            "attacks": [
               "Jump Kick"
             ]
+          },
+          {
+            "level": 12,
+            "attacks": [
+              "Vine Whip"
+            ]
           }
-        ]
+        ],
+        "tutorMoves": [],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [

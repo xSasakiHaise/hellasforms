@@ -515,31 +515,47 @@
               "Astonish",
               "Sand Attack",
               "Steel Roller",
-              "Eearthquake"
+              "Earthquake"
             ]
           },
           {
             "level": 40,
             "attacks": [
-              "Draconic Shout",
-              "Gyro Ball",
-              "Heavy Slam",
-              "Iron Defense",
-              "Iron Head",
-              "Metal Claw",
-              "Metal Sound",
-              "Steel Beam",
-              "Dragon Dance",
-              "Dragon Pulse",
-              "Dragon Rush",
-              "Dragon Tail",
-              "Dragon Claw",
-              "Dragon Rage",
-              "Dragon Breath",
-              "Outrage"
+              "Draconic Shout"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Gyro Ball",
+          "Heavy Slam",
+          "Iron Defense",
+          "Iron Head",
+          "Metal Claw",
+          "Metal Sound",
+          "Steel Beam",
+          "Dragon Dance",
+          "Dragon Pulse",
+          "Dragon Rush",
+          "Dragon Tail",
+          "Dragon Claw",
+          "Dragon Rage",
+          "Dragon Breath",
+          "Outrage"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
@@ -635,6 +651,7 @@
             {
               "name": "none",
               "texture": "hellasforms:pokemon/329_vibrava/all/base/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/329_vibrava/all/base/hellas/emissive.png",
               "sprite": "hellasforms:pokemon/329_vibrava/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
@@ -652,6 +669,7 @@
             {
               "name": "shiny",
               "texture": "hellasforms:pokemon/329_vibrava/all/base/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/329_vibrava/all/base/hellasshiny/emissive.png",
               "sprite": "hellasforms:pokemon/329_vibrava/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }

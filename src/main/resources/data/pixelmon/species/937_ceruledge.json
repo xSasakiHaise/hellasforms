@@ -271,42 +271,53 @@
       "moves": {
         "levelUpMoves": [
           {
-            "level": 1,
+            "level": 0,
             "attacks": [
               "Hitch Kick",
-              "Plasma Veil",
-              "Thunder Shock",
-              "Thunder Wave",
-              "Thunderbolt",
-              "Thunder",
-              "Thunder Punch",
-              "Thunder Fang",
-              "Thunder Clap",
-              "Thunder Strike"
+              "Plasma Veil"
             ]
           },
           {
             "level": 50,
             "attacks": [
-              "Hitch Kick",
-              "Plasma Veil",
-              "Shadow Claw",
-              "Shadow Sneak",
-              "Bitter Blade",
-              "Psycho Cut",
-              "Psycho Slash",
-              "Night Slash"
+              "Shadow Claw"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Thunder Shock",
+          "Thunder Wave",
+          "Thunderbolt",
+          "Thunder",
+          "Thunder Punch",
+          "Thunder Fang",
+          "Shadow Sneak",
+          "Bitter Blade",
+          "Psycho Cut",
+          "Night Slash"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
           "abilities": [
-            "FlashFire",
+            "ElectricSurge",
             "Sharpness"
           ],
           "hiddenAbilities": [
-            "WeakArmor"
+            "StormForce"
           ]
         },
         "movement": {

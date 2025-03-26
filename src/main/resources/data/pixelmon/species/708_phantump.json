@@ -383,15 +383,45 @@
       "moves": {
         "levelUpMoves": [
           {
-            "level": 0,
+            "level": 1,
             "attacks": [
-              "Astonish",
-              "Tackle",
-              "Ember",
+              "Astonish"
+            ]
+          },
+          {
+            "level": 5,
+            "attacks": [
+              "Tackle"
+            ]
+          },
+          {
+            "level": 8,
+            "attacks": [
+              "Ember"
+            ]
+          },
+          {
+            "level": 12,
+            "attacks": [
               "Absorb"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
@@ -443,6 +473,7 @@
             {
               "name": "none",
               "texture": "hellasforms:pokemon/708_phantump/all/base/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/708_phantump/all/base/hellas/emissive.png",
               "sprite": "hellasforms:pokemon/708_phantump/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
@@ -458,6 +489,7 @@
             {
               "name": "shiny",
               "texture": "hellasforms:pokemon/708_phantump/all/base/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/708_phantump/all/base/hellasshiny/emissive.png",
               "sprite": "hellasforms:pokemon/708_phantump/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }

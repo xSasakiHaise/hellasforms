@@ -438,7 +438,7 @@
       }
     },
     {
-      "name": "",
+      "name": "hellas",
       "experienceGroup": "FLUCTUATING",
       "dimensions": {
         "height": 4.0,
@@ -455,32 +455,48 @@
               "Splash",
               "Aqua Ring",
               "Psywave",
-              "Confusion"
+              "Confusion",
+              "Water Pulse"
             ]
           },
           {
             "level": 50,
             "attacks": [
-              "Water Spout",
-              "Psychic",
-              "Hydro Pump",
-              "Heavy Slam",
-              "Psychic",
-              "Amnesia",
-              "Rest",
-              "Bounce",
-              "Dive",
-              "Brine",
-              "Whirlpool",
-              "Water Pulse",
-              "Mist",
-              "Water Gun",
-              "Surf",
-              "Waterfall",
-              "Soak"
+              "Water Spout"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Psychic",
+          "Hydro Pump",
+          "Heavy Slam",
+          "Psychic",
+          "Amnesia",
+          "Rest",
+          "Bounce",
+          "Dive",
+          "Brine",
+          "Whirlpool",
+          "Mist",
+          "Water Gun",
+          "Surf",
+          "Waterfall",
+          "Soak"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [

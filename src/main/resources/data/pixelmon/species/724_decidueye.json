@@ -692,35 +692,46 @@
               "Razor Leaf",
               "Synthesis",
               "Pluck",
-              "Absorb"
-            ]
-          },
-          {
-            "level": 25,
-            "attacks": [
-              "Nasty Plot",
-              "Sucker Punch",
-              "Leaf Blade",
-              "Feather Dance",
-              "Brave Bird",
-              "Spirit Shackle",
-              "Leaf Storm",
-              "Hurricane",
-              "Dark Pulse"
+              "Absorb",
+              "Nasty Plot"
             ]
           },
           {
             "level": 50,
             "attacks": [
-              "Corrode",
-              "Night Slash",
-              "Phantom Force",
-              "Shadow Ball",
-              "Hex",
-              "Ominous Wind"
+              "Corrode"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Sucker Punch",
+          "Leaf Blade",
+          "Feather Dance",
+          "Brave Bird",
+          "Spirit Shackle",
+          "Leaf Storm",
+          "Hurricane",
+          "Dark Pulse",
+          "Night Slash",
+          "Phantom Force",
+          "Shadow Ball",
+          "Hex",
+          "Ominous Wind"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [

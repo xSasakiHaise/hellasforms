@@ -9,7 +9,7 @@
   "makesContact": false,
   "effects": [
     {
-      "stages": 2,
+      "stages": 1,
       "modifiers": [],
       "persists": false,
       "effectTypeID": "CriticalHit"

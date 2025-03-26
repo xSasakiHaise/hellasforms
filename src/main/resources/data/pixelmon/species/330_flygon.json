@@ -594,12 +594,7 @@
               "Astonish",
               "Sand Attack",
               "Steel Roller",
-              "Eearthquake"
-            ]
-          },
-          {
-            "level": 40,
-            "attacks": [
+              "Earthquake",
               "Draconic Shout",
               "Gyro Ball",
               "Heavy Slam",
@@ -621,13 +616,28 @@
           {
             "level": 50,
             "attacks": [
-              "Metallic Scales",
-              "Tachyon Cutter",
-              "Autotomize",
-              "Steel Wing"
+              "Metallic Scales"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Autotomize",
+          "Steel Wing"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
@@ -723,6 +733,7 @@
             {
               "name": "none",
               "texture": "hellasforms:pokemon/330_flygon/all/base/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/330_flygon/all/base/hellas/emissive.png",
               "sprite": "hellasforms:pokemon/330_flygon/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
@@ -738,8 +749,8 @@
               "flyingModelLocator": {
                 "factoryType": "DUAL",
                 "pqc": [
-                  "hellasforms:pokemon/330_flygon/all/base/hellas/flying/model.pqc",
-                  "hellasforms:pokemon/330_flygon/all/base/hellas/flying/model2.pqc"
+                  "pixelmon:pokemon/330_flygon/all/base/none/flying/model.pqc",
+                  "pixelmon:pokemon/330_flygon/all/base/none/flying/model2.pqc"
                 ],
                 "movementThreshold": 0.03,
                 "rotateAngleX": 0,
@@ -752,6 +763,7 @@
             {
               "name": "shiny",
               "texture": "hellasforms:pokemon/330_flygon/all/base/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/330_flygon/all/base/hellasshiny/emissive.png",
               "sprite": "hellasforms:pokemon/330_flygon/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }

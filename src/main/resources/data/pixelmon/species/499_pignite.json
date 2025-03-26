@@ -401,16 +401,51 @@
             ]
           },
           {
+            "level": 20,
+            "attacks": [
+              "Flame Charge"
+            ]
+          },
+          {
+            "level": 22,
+            "attacks": [
+              "Take Down"
+            ]
+          },
+          {
             "level": 25,
             "attacks": [
-              "Flame Charge",
-              "Take Down",
-              "Heat Crash",
-              "Assurance",
+              "Heat Crash"
+            ]
+          },
+          {
+            "level": 28,
+            "attacks": [
+              "Assurance"
+            ]
+          },
+          {
+            "level": 32,
+            "attacks": [
               "Flamethrower"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [

@@ -682,15 +682,25 @@
           {
             "level": 50,
             "attacks": [
-              "Hitch Kick",
-              "Plasma Veil",
-              "Plasma Fangs"
+              "Hitch Kick"
             ]
           },
           {
             "level": 52,
             "attacks": [
               "Extrasensory"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Plasma Veil"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Plasma Fangs"
             ]
           }
         ],
@@ -709,7 +719,21 @@
           "Sludge Bomb",
           "Snarl",
           "Swift"
-        ]
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
@@ -759,8 +783,8 @@
             {
               "name": "none",
               "texture": "hellasforms:pokemon/571_zoroark/all/hisuian/hellas/texture.png",
-              "sprite": "hellasforms:pokemon/571_zoroark/all/hisuian/hellas/sprite.png",
               "emissive": "hellasforms:pokemon/571_zoroark/all/hisuian/hellas/emissive.png",
+              "sprite": "hellasforms:pokemon/571_zoroark/all/hisuian/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -775,8 +799,8 @@
             {
               "name": "shiny",
               "texture": "hellasforms:pokemon/571_zoroark/all/hisuian/hellasshiny/texture.png",
-              "sprite": "hellasforms:pokemon/571_zoroark/all/hisuian/hellasshiny/sprite.png",
               "emissive": "hellasforms:pokemon/571_zoroark/all/hisuian/hellasshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/571_zoroark/all/hisuian/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }
           ]

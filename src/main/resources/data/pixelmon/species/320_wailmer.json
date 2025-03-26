@@ -451,15 +451,51 @@
       "moves": {
         "levelUpMoves": [
           {
-            "level": 0,
+            "level": 1,
             "attacks": [
-              "Splash",
-              "Aqua Ring",
-              "Psywave",
+              "Splash"
+            ]
+          },
+          {
+            "level": 5,
+            "attacks": [
+              "Aqua Ring"
+            ]
+          },
+          {
+            "level": 8,
+            "attacks": [
+              "Psywave"
+            ]
+          },
+          {
+            "level": 12,
+            "attacks": [
               "Confusion"
             ]
+          },
+          {
+            "level": 20,
+            "attacks": [
+              "Water Pulse"
+            ]
           }
-        ]
+        ],
+        "tutorMoves": [],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [

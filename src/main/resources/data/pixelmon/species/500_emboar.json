@@ -432,12 +432,7 @@
               "Tackle",
               "Water Gun",
               "Tail Whip",
-              "Ember"
-            ]
-          },
-          {
-            "level": 25,
-            "attacks": [
+              "Ember",
               "Flame Charge",
               "Take Down",
               "Heat Crash",
@@ -448,21 +443,36 @@
           {
             "level": 50,
             "attacks": [
-              "Greek Fire",
-              "Hitch Kick",
-              "Belly Drum",
-              "Blaze Kick",
-              "Blaze Punch",
-              "Fire Punch",
-              "Thunder Punch",
-              "Ice Punch",
-              "Mega Punch",
-              "Mega Kick",
-              "Double Kick",
-              "Triple Kick"
+              "Greek Fire"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Hitch Kick",
+          "Belly Drum",
+          "Blaze Kick",
+          "Fire Punch",
+          "Thunder Punch",
+          "Ice Punch",
+          "Mega Punch",
+          "Mega Kick",
+          "Double Kick",
+          "Triple Kick"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
@@ -527,6 +537,7 @@
             {
               "name": "none",
               "texture": "hellasforms:pokemon/500_emboar/all/base/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/500_emboar/all/base/hellas/emissive.png",
               "sprite": "hellasforms:pokemon/500_emboar/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
@@ -542,6 +553,7 @@
             {
               "name": "shiny",
               "texture": "hellasforms:pokemon/500_emboar/all/base/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/500_emboar/all/base/hellasshiny/emissive.png",
               "sprite": "hellasforms:pokemon/500_emboar/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }

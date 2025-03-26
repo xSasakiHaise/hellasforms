@@ -522,31 +522,56 @@
       "moves": {
         "levelUpMoves": [
           {
+            "level": 0,
+            "attacks": [
+              "Quick Attack",
+              "Astonish",
+              "Crunch",
+              "Swords Dance"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
-              "Supernova",
-              "Psyshock",
-              "Calm Mind",
-              "Toxic",
-              "Hidden Power",
-              "Psychic",
-              "Shadow Ball",
-              "Double Team",
-              "Reflect",
-              "Facade",
-              "Rest",
-              "Attract",
-              "Earthquake",
-              "Psych Up",
-              "Bulldoze",
-              "Dig",
-              "Psychic Fangs",
-              "Future Sight",
-              "Fissure",
-              "Stomping Tantrum"
+              "Supernova"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Psyshock",
+          "Calm Mind",
+          "Toxic",
+          "Hidden Power",
+          "Psychic",
+          "Shadow Ball",
+          "Double Team",
+          "Reflect",
+          "Facade",
+          "Rest",
+          "Attract",
+          "Earthquake",
+          "Psych Up",
+          "Bulldoze",
+          "Dig",
+          "Psychic Fangs",
+          "Future Sight",
+          "Fissure",
+          "Stomping Tantrum"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
@@ -611,6 +636,7 @@
             {
               "name": "none",
               "texture": "hellasforms:pokemon/196_espeon/all/base/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/196_espeon/all/base/hellas/emissive.png",
               "sprite": "hellasforms:pokemon/196_espeon/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
@@ -626,6 +652,7 @@
             {
               "name": "shiny",
               "texture": "hellasforms:pokemon/196_espeon/all/base/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/196_espeon/all/base/hellasshiny/emissive.png",
               "sprite": "hellasforms:pokemon/196_espeon/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }

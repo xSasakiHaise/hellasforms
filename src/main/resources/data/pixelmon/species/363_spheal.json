@@ -496,15 +496,51 @@
       "moves": {
         "levelUpMoves": [
           {
-            "level": 0,
+            "level": 1,
             "attacks": [
-              "Defense Curl",
-              "Rollout",
-              "Hydro Pump",
+              "Rollout"
+            ]
+          },
+          {
+            "level": 5,
+            "attacks": [
+              "Defense Curl"
+            ]
+          },
+          {
+            "level": 12,
+            "attacks": [
+              "Hydro Pump"
+            ]
+          },
+          {
+            "level": 18,
+            "attacks": [
               "Fly"
             ]
+          },
+          {
+            "level": 26,
+            "attacks": [
+              "Bounce"
+            ]
           }
-        ]
+        ],
+        "tutorMoves": [],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [

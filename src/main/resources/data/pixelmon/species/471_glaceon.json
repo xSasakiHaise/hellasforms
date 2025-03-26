@@ -452,28 +452,44 @@
           {
             "level": 50,
             "attacks": [
-              "Cleansing Frost",
-              "Ice Beam",
-              "Blizzard",
-              "Hyper Beam",
-              "Hail",
-              "Frost Breath",
-              "Ice Fang",
-              "Avalanche",
-              "Icicle Crash",
-              "Ice Shard",
-              "Freeze-Dry",
-              "Aerial Ace",
-              "Fly",
-              "Roost",
-              "Air Slash",
-              "Hurricane",
-              "Defog",
-              "Tailwind",
-              "Sky Attack"
+              "Cleansing Frost"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Ice Beam",
+          "Blizzard",
+          "Hyper Beam",
+          "Hail",
+          "Frost Breath",
+          "Ice Fang",
+          "Avalanche",
+          "Icicle Crash",
+          "Ice Shard",
+          "Freeze-Dry",
+          "Aerial Ace",
+          "Fly",
+          "Roost",
+          "Air Slash",
+          "Hurricane",
+          "Defog",
+          "Tailwind",
+          "Sky Attack"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
