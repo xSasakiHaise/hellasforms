@@ -240,27 +240,46 @@
           {
             "level": 1,
             "attacks": [
-              "Hitch Kick",
-              "Plasma Veil",
-              "Thunder Shock",
-              "Thunder Wave",
-              "Thunderbolt",
-              "Thunder",
-              "Thunder Punch",
-              "Thunder Fang",
-              "Thunder Clap",
-              "Thunder Strike"
+              "Hitch Kick"
+            ]
+          },
+          {
+            "level": 5,
+            "attacks": [
+              "Plasma Veil"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Thunder Shock",
+          "Thunder Wave",
+          "Thunderbolt",
+          "Thunder",
+          "Thunder Punch",
+          "Thunder Fang"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
-          "FlashFire",
+          "ElectricSurge",
           "FlameBody"
         ],
         "hiddenAbilities": [
-          "ElectricSurge"
+          "StormForce"
         ]
       },
       "movement": {

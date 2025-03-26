@@ -590,36 +590,73 @@
           {
             "level": 50,
             "attacks": [
-              "Body Press",
-              "Recover",
-              "Draconic Shout",
-              "Draconic Greed",
-              "Crunch",
-              "Earthquake",
-              "Rock Slide",
-              "Defog",
-              "Shadow Sneak",
-              "Dragon Breath",
-              "Ancient Power",
-              "Hex",
-              "Slash",
-              "Scary Face",
-              "Shadow Claw",
-              "Tachyon Beam",
-              "Aura Sphere",
-              "Dragon Claw",
-              "Earth Power",
-              "Shadow Force",
-              "Destiny Bond",
-              "Tachyon Cutter"
+              "Body Press"
+            ]
+          },
+          {
+            "level": 55,
+            "attacks": [
+              "Draconic Greed"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Crunch"
+            ]
+          },
+          {
+            "level": 65,
+            "attacks": [
+              "Earthquake"
+            ]
+          },
+          {
+            "level": 70,
+            "attacks": [
+              "Shadow Sneak"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Rock Slide",
+          "Defog",
+          "Dragon Breath",
+          "Ancient Power",
+          "Hex",
+          "Slash",
+          "Scary Face",
+          "Shadow Claw",
+          "Aura Sphere",
+          "Dragon Claw",
+          "Earth Power",
+          "Shadow Force",
+          "Recover",
+          "Draconic Shout",
+          "Destiny Bond"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
           "Telepathy",
           "DragonsMaw"
+        ],
+        "hiddenAbilities": [
+          "NightmareRealm"
         ]
       },
       "battleStats": {
@@ -642,6 +679,7 @@
             {
               "name": "none",
               "texture": "hellasforms:pokemon/487_giratina/all/origin/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/487_giratina/all/origin/hellas/emissive.png",
               "sprite": "hellasforms:pokemon/487_giratina/all/origin/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
@@ -654,6 +692,7 @@
             {
               "name": "shiny",
               "texture": "hellasforms:pokemon/487_giratina/all/origin/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/487_giratina/all/origin/hellasshiny/emissive.png",
               "sprite": "hellasforms:pokemon/487_giratina/all/origin/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }

@@ -274,41 +274,53 @@
       "moves": {
         "levelUpMoves": [
           {
-            "level": 1,
+            "level": 0,
             "attacks": [
               "Hitch Kick",
-              "Plasma Veil",
-              "Thunder Shock",
-              "Thunder Wave",
-              "Thunderbolt",
-              "Thunder",
-              "Thunder Punch",
-              "Thunder Fang",
-              "Thunder Clap",
-              "Thunder Strike"
+              "Plasma Veil"
             ]
           },
           {
             "level": 50,
             "attacks": [
-              "Hitch Kick",
-              "Plasma Veil",
-              "Psyshock",
-              "Psybeam",
-              "Psychic",
-              "Expanding Force",
-              "Armor Cannon"
+              "Psyshock"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Thunder Shock",
+          "Thunder Wave",
+          "Thunderbolt",
+          "Thunder",
+          "Thunder Punch",
+          "Thunder Fang",
+          "Psybeam",
+          "Psychic",
+          "Expanding Force",
+          "Armor Cannon"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
-          "FlashFire",
+          "ElectricSurge",
           "WeakArmor"
         ],
         "hiddenAbilities": [
-          "ElectricSurge"
+          "StormForce"
         ]
       },
       "movement": {

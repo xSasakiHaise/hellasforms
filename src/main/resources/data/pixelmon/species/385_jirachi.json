@@ -529,22 +529,42 @@
           {
             "level": 50,
             "attacks": [
-              "Corrode",
-              "Psychic",
-              "Psyshock",
-              "Mirror Shot",
-              "Smarts Strike",
-              "Psybeam",
-              "Psywave",
-              "Confusion",
-              "Zen Headbutt",
-              "Future Sight",
-              "Cosmic Power",
-              "Healing Wish",
-              "Rest"
+              "Corrode"
+            ]
+          },
+          {
+            "level": 51,
+            "attacks": [
+              "Psychic"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Psyshock",
+          "Mirror Shot",
+          "Psybeam",
+          "Psywave",
+          "Confusion",
+          "Zen Headbutt",
+          "Future Sight",
+          "Cosmic Power",
+          "Healing Wish",
+          "Rest"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [

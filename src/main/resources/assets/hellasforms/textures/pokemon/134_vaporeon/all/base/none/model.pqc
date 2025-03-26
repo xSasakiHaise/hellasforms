@@ -1,0 +1,4 @@
+$body hellasforms:textures/pokemon/134_vaporeon/all/base/none/vaporeon.bmd
+$anim walk hellasforms:textures/pokemon/134_vaporeon/all/base/none/walk.bmd
+$anim idle hellasforms:textures/pokemon/134_vaporeon/all/base/none/idle.bmd
+$scale 2

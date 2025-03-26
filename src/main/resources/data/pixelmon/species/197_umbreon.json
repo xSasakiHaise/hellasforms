@@ -518,28 +518,53 @@
       "moves": {
         "levelUpMoves": [
           {
+            "level": 0,
+            "attacks": [
+              "Quick Attack",
+              "Astonish",
+              "Crunch",
+              "Swords Dance"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
-              "Soul Sap",
-              "Draconic Shout",
-              "Dragon Pulse",
-              "Dragon Dance",
-              "Crunch",
-              "Dragon Rush",
-              "Outrage",
-              "Dragon Claw",
-              "Dragon Tail",
-              "Dragon Breath",
-              "Dragon Rage",
-              "Psychic Fangs",
-              "Psychic",
-              "Psybeam",
-              "Telekinesis",
-              "Toxic",
-              "Earthquake"
+              "Soul Sap"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Draconic Shout",
+          "Dragon Pulse",
+          "Dragon Dance",
+          "Crunch",
+          "Dragon Rush",
+          "Outrage",
+          "Dragon Claw",
+          "Dragon Tail",
+          "Dragon Breath",
+          "Dragon Rage",
+          "Psychic Fangs",
+          "Psychic",
+          "Psybeam",
+          "Telekinesis",
+          "Toxic",
+          "Earthquake"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [

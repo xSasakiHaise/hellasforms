@@ -463,15 +463,45 @@
       "moves": {
         "levelUpMoves": [
           {
-            "level": 0,
+            "level": 1,
             "attacks": [
-              "Pound",
-              "Leaf Blade",
-              "Night Slash",
+              "Pound"
+            ]
+          },
+          {
+            "level": 5,
+            "attacks": [
+              "Leaf Blade"
+            ]
+          },
+          {
+            "level": 8,
+            "attacks": [
+              "Night Slash"
+            ]
+          },
+          {
+            "level": 12,
+            "attacks": [
               "Absorb"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [

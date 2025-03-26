@@ -435,32 +435,55 @@
           {
             "level": 50,
             "attacks": [
-              "Moonlight Dance",
-              "Corrode",
-              "Shadow Ball",
-              "Moonblast",
-              "Night Daze",
-              "Dream Eater",
-              "Wide Guard",
-              "Moonlight",
-              "Night Shade",
-              "Air Slash",
-              "Confuse Ray",
-              "Cosmic Power",
-              "Hypnosis",
-              "Confusion",
-              "Moongeist Beam",
-              "Teleport"
+              "Moonlight Dance"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Corrode"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Shadow Ball",
+          "Moonblast",
+          "Night Daze",
+          "Dream Eater",
+          "Wide Guard",
+          "Moonlight",
+          "Night Shade",
+          "Air Slash",
+          "Confuse Ray",
+          "Cosmic Power",
+          "Hypnosis",
+          "Confusion",
+          "Moongeist Beam",
+          "Teleport"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
           "ShadowShield",
           "SereneGrace"
         ],
-        "hiddenAbilities": []
+        "hiddenAbilities": [
+          "VampiricFangs"
+        ]
       },
       "battleStats": {
         "hp": 157,
@@ -481,6 +504,7 @@
             {
               "name": "none",
               "texture": "hellasforms:pokemon/792_lunala/all/fullmoon/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/792_lunala/all/fullmoon/hellas/emissive.png",
               "sprite": "hellasforms:pokemon/792_lunala/all/fullmoon/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
@@ -493,6 +517,7 @@
             {
               "name": "shiny",
               "texture": "hellasforms:pokemon/792_lunala/all/fullmoon/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/792_lunala/all/fullmoon/hellasshiny/emissive.png",
               "sprite": "hellasforms:pokemon/792_lunala/all/fullmoon/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }

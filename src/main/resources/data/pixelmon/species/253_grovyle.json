@@ -498,13 +498,43 @@
           {
             "level": 20,
             "attacks": [
-              "Leaf Storm",
-              "Cut",
-              "Solar Blade",
+              "Leaf Storm"
+            ]
+          },
+          {
+            "level": 24,
+            "attacks": [
+              "Cut"
+            ]
+          },
+          {
+            "level": 28,
+            "attacks": [
+              "Solar Blade"
+            ]
+          },
+          {
+            "level": 30,
+            "attacks": [
               "Air Slash"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [

@@ -322,21 +322,52 @@
       "moves": {
         "levelUpMoves": [
           {
-            "level": 0,
+            "level": 1,
             "attacks": [
-              "Growl",
-              "Tackle",
-              "Peck",
-              "Leafage",
-              "Astonish",
-              "Shadow Sneak",
-              "Razor Leaf",
-              "Synthesis",
-              "Pluck",
+              "Tackle"
+            ]
+          },
+          {
+            "level": 5,
+            "attacks": [
+              "Growl"
+            ]
+          },
+          {
+            "level": 8,
+            "attacks": [
+              "Peck"
+            ]
+          },
+          {
+            "level": 12,
+            "attacks": [
               "Absorb"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Leafage",
+          "Astonish",
+          "Shadow Sneak",
+          "Razor Leaf",
+          "Synthesis",
+          "Pluck"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [

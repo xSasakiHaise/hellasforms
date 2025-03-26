@@ -1,10 +1,13 @@
 package com.xsasakihaise.hellasforms.mixin;
 
+import battles.attacks.specialAttacks.basic.*;
+import battles.status.*;
 import com.pixelmonmod.pixelmon.Pixelmon;
 import com.pixelmonmod.pixelmon.battles.attacks.EffectTypeAdapter;
 import com.pixelmonmod.pixelmon.init.registry.ItemRegistration;
-import com.xsasakihaise.hellasforms.battles.attacks.specialAttacks.basic.*;
-import com.xsasakihaise.hellasforms.battles.status.PlasmaVeil;
+import com.pixelmonmod.pixelmon.items.QuestItem;
+import com.pixelmonmod.pixelmon.items.heldItems.MegaStoneItem;
+import com.xsasakihaise.hellasforms.api.pokemon.ability.abilities.*;
 import com.xsasakihaise.hellasforms.items.heldItems.EeveeoliteItem;
 import com.xsasakihaise.hellasforms.listener.GrowthSpawningListener;
 import com.xsasakihaise.hellasforms.listener.ReturnItemsListener;
@@ -36,23 +39,30 @@ public class HellasForms {
     private static HellasForms instance;
     public static final DeferredRegister<Item> ITEMS;
 
-        public HellasForms() {
-            instance = this;
-            IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-            modEventBus.addListener(this::setup);
-            MinecraftForge.EVENT_BUS.register(this);
-            EffectTypeAdapter.EFFECTS.put("ColonySwarm", ColonySwarm.class);
-            EffectTypeAdapter.EFFECTS.put("Corrode", Corrode.class);
-            EffectTypeAdapter.EFFECTS.put("GreekFire", GreekFire.class);
-            EffectTypeAdapter.EFFECTS.put("HitchKick", HitchKick.class);
-            EffectTypeAdapter.EFFECTS.put("PlasmaFangs", PlasmaFangs.class);
-            EffectTypeAdapter.EFFECTS.put("RabidClaw", RabidClaw.class);
-            EffectTypeAdapter.EFFECTS.put("PlasmaVeil", PlasmaVeil.class);
-            ItemRegistration.ITEMS.register("eeveeolite", EeveeoliteItem::new);
-            ItemRegistration.ITEMS.register("diancite-hellas", EeveeoliteItem::new);
-            ItemRegistration.ITEMS.register("sceptilite-hellas", EeveeoliteItem::new);
-            ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        }
+    public HellasForms() {
+        instance = this;
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        modEventBus.addListener(this::setup);
+        MinecraftForge.EVENT_BUS.register(this);
+        EffectTypeAdapter.EFFECTS.put("ColonySwarm", ColonySwarm.class);
+        EffectTypeAdapter.EFFECTS.put("Corrode", Corrode.class);
+        EffectTypeAdapter.EFFECTS.put("GreekFire", GreekFire.class);
+        EffectTypeAdapter.EFFECTS.put("HitchKick", HitchKick.class);
+        EffectTypeAdapter.EFFECTS.put("PlasmaFangs", PlasmaFangs.class);
+        EffectTypeAdapter.EFFECTS.put("RabidClaw", RabidClaw.class);
+        EffectTypeAdapter.EFFECTS.put("PlasmaVeil", PlasmaVeil.class);
+        ItemRegistration.ITEMS.register("eeveeolite", EeveeoliteItem::new);
+        ItemRegistration.ITEMS.register("diancite-hellas", () -> new MegaStoneItem("diancie form:hellas"));
+        ItemRegistration.ITEMS.register("sceptilite-hellas", () -> new MegaStoneItem("sceptile form:hellas"));
+        ItemRegistration.ITEMS.register("gyaradosite-hellas", () -> new MegaStoneItem("gyarados form:hellas"));
+        ItemRegistration.ITEMS.register("wild-egg", QuestItem::new);
+        ItemRegistration.ITEMS.register("hellasian-egg", QuestItem::new);
+        ItemRegistration.ITEMS.register("odd-looking-egg", QuestItem::new);
+        ItemRegistration.ITEMS.register("sparkly-wild-egg", QuestItem::new);
+        ItemRegistration.ITEMS.register("sparkly-hellasian-egg", QuestItem::new);
+        ItemRegistration.ITEMS.register("sparkly-odd-looking-egg", QuestItem::new);
+        ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    }
 
     private void setup(FMLCommonSetupEvent event) {
         LOGGER.info("Loaded HellasForms (hopefully XD)");

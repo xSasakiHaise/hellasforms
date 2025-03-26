@@ -526,29 +526,115 @@
               "Astonish",
               "Crunch",
               "Swords Dance"
-            ],
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
-              "Oilslick",
-              "Corrode",
-              "Hydro Pump",
-              "Acid Armor",
-              "Toxic",
-              "Venom Drench",
-              "Sludge Wave",
-              "Muddy Water",
-              "Acid Rain",
-              "Toxic Spikes",
-              "Surf",
-              "Poison Jab",
-              "Aqua Ring",
-              "Aqua Tail",
-              "Poison Fang",
+              "Oilslick"
+            ]
+          },
+          {
+            "level": 51,
+            "attacks": [
+              "Corrode"
+            ]
+          },
+          {
+            "level": 52,
+            "attacks": [
+              "Hydro Pump"
+            ]
+          },
+          {
+            "level": 53,
+            "attacks": [
+              "Acid Armor"
+            ]
+          },
+          {
+            "level": 54,
+            "attacks": [
               "Poison Tail"
             ]
+          },
+          {
+            "level": 55,
+            "attacks": [
+              "Poison Fang"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Aqua Tail"
+            ]
+          },
+          {
+            "level": 57,
+            "attacks": [
+              "Aqua Ring"
+            ]
+          },
+          {
+            "level": 58,
+            "attacks": [
+              "Poison Jab"
+            ]
+          },
+          {
+            "level": 59,
+            "attacks": [
+              "Surf"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Toxic Spikes"
+            ]
+          },
+          {
+            "level": 61,
+            "attacks": [
+              "Muddy Water"
+            ]
+          },
+          {
+            "level": 62,
+            "attacks": [
+              "Sludge Wave"
+            ]
+          },
+          {
+            "level": 63,
+            "attacks": [
+              "Venom Drench"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Toxic"
+            ]
           }
-        ]
-      },
+        ],
+        "tutorMoves": [],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+    },
       "abilities": {
         "abilities": [
           "PoisonTouch",
@@ -617,7 +703,7 @@
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "pixelmon:pokemon/134_vaporeon/all/base/none/model.pqc"
+                  "hellasforms:pokemon/134_vaporeon/all/base/none/model.pqc"
                 ]
               },
               "sounds": [

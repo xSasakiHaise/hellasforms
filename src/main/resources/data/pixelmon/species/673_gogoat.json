@@ -343,19 +343,35 @@
             "attacks": [
               "Growth",
               "Tackle",
-              "Trample",
-              "Jump Kick"
+              "Jump Kick",
+              "Vine Whip"
             ]
           },
           {
             "level": 50,
             "attacks": [
-              "Hitch Kick",
-              "Triple Kick",
-              "High Jump Kick"
+              "Hitch Kick"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Triple Kick",
+          "High Jump Kick"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [

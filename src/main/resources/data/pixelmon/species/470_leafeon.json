@@ -476,18 +476,33 @@
           {
             "level": 50,
             "attacks": [
-              "Colony Swarm",
-              "Leaf Blade",
-              "X-Scissor",
-              "Swords Dance",
-              "Bug Bite",
-              "Leaf Storm",
-              "Bug Frenzy",
-              "Bug Buzz",
-              "Leaf Tornado"
+              "Colony Swarm"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Leaf Blade",
+          "X-Scissor",
+          "Swords Dance",
+          "Bug Bite",
+          "Leaf Storm",
+          "Bug Buzz",
+          "Leaf Tornado"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [

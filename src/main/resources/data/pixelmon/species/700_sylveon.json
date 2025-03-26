@@ -397,15 +397,31 @@
           {
             "level": 50,
             "attacks": [
-              "Fairy Circle",
-              "Moonblast",
-              "Moonlight",
-              "Rock Slide",
-              "Rock Tomb",
-              "Stone Edge"
+              "Fairy Circle"
             ]
           }
-        ]
+        ],
+        "tutorMoves": [
+          "Moonblast",
+          "Moonlight",
+          "Rock Slide",
+          "Rock Tomb",
+          "Stone Edge"
+        ],
+        "eggMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
