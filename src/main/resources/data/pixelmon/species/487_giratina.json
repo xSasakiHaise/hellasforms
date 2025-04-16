@@ -662,10 +662,10 @@
       "battleStats": {
         "hp": 200,
         "attack": 130,
-        "defense": 180,
-        "specialAttack": 60,
-        "specialDefense": 120,
-        "speed": 105
+        "defense": 150,
+        "specialAttack": 20,
+        "specialDefense": 100,
+        "speed": 100
       },
       "tags": [
         "hellas",

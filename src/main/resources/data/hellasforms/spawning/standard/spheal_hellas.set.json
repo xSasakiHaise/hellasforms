@@ -1,0 +1,27 @@
+{
+  "id": "Hellasian Spheal",
+  "spawnInfos": [
+    {
+      "spec": "species:Spheal form:hellas",
+      "stringLocationTypes": [
+        "Water",
+        "Land"
+      ],
+      "tags": [
+        "hellas",
+        "wild"
+      ],
+      "minLevel": 5,
+      "maxLevel": 30,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+        ],
+        "stringBiomes": [
+          "beaches"
+        ]
+      },
+      "rarity": 0.4
+    }
+  ]
+}

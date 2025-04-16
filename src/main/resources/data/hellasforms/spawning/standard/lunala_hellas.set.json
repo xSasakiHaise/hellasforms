@@ -1,0 +1,31 @@
+{
+  "id": "Hellasian Lunala",
+  "spawnInfos": [
+    {
+      "spec": "species:Lunala form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "tags": [
+        "hellas",
+        "wild"
+      ],
+      "minLevel": 50,
+      "maxLevel": 70,
+      "typeID": "pokemon",
+      "heldItems": [
+      ],
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+      "stringBiomes": [
+        "roofed",
+        "evil",
+        "byg:lavender_fields"
+      ]
+      },
+      "rarity": 0.1
+    }
+  ]
+}

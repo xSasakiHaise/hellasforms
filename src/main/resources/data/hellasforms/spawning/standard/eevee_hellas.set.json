@@ -1,0 +1,28 @@
+{
+  "id": "Hellasian Eevee",
+  "spawnInfos": [
+    {
+      "spec": "species:Eevee form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 5,
+      "maxLevel": 15,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+        ],
+        "tags": [
+          "hellas",
+          "wild"
+        ],
+        "stringBiomes": [
+          "birches",
+          "plains",
+          "evil"
+        ]
+      },
+      "rarity": 0.6
+    }
+  ]
+}

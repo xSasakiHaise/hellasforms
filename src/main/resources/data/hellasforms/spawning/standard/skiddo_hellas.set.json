@@ -1,0 +1,28 @@
+{
+  "id": "Hellasian Skiddo",
+  "spawnInfos": [
+    {
+      "spec": "species:Skiddo form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "tags": [
+        "hellas",
+        "wild"
+      ],
+      "minLevel": 15,
+      "maxLevel": 30,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "hills",
+          "mountainous forests"
+        ]
+      },
+      "rarity": 0.4
+    }
+  ]
+}

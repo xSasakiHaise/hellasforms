@@ -1,0 +1,29 @@
+{
+  "id": "Hellasian Jirachi",
+  "spawnInfos": [
+    {
+      "spec": "species:Jirachi form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "tags": [
+        "hellas",
+        "wild"
+      ],
+      "minLevel": 30,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "heldItems": [
+      ],
+      "condition": {
+        "times": [
+        ],
+        "stringBiomes": [
+          "minecraft:gravelly_mountains",
+          "byg:jade_cliffs"
+        ]
+      },
+      "rarity": 0.2
+    }
+  ]
+}

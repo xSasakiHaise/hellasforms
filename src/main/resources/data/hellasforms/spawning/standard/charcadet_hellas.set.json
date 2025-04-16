@@ -1,0 +1,28 @@
+{
+  "id": "Hellasian Charcadet",
+  "spawnInfos": [
+    {
+      "spec": "species:Charcadet form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 5,
+      "maxLevel": 25,
+      "typeID": "pokemon",
+      "heldItems": [
+      ],
+      "tags": [
+        "hellas",
+        "wild"
+      ],
+      "condition": {
+        "stringBiomes": [
+          "mesas",
+          "minecraft:snowy_mountains",
+          "minecraft:gravelly_mountains"
+         ]
+      },
+      "rarity": 0.4
+    }
+  ]
+}

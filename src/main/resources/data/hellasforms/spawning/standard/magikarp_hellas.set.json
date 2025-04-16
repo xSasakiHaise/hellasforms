@@ -1,0 +1,37 @@
+{
+  "id": "Hellasian Magikarp",
+  "spawnInfos": [
+    {
+      "spec": "species:Magikarp form:hellas",
+      "stringLocationTypes": [
+        "Water"
+      ],
+      "tags": [
+        "hellas",
+        "wild"
+      ],
+      "minLevel": 5,
+      "maxLevel": 20,
+      "typeID": "pokemon",
+      "condition": {
+        "stringBiomes": [
+          "oceanic",
+          "beaches",
+          "swamps",
+          "minecraft:river",
+          "jungles",
+          "all forests",
+          "mountainous",
+          "freezing",
+          "savannas",
+          "plains",
+          "magical",
+          "lakes",
+          "byg:polluted_lake",
+          "byg:crag_gardens"
+        ]
+      },
+      "rarity": 0.3
+    }
+  ]
+}

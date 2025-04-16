@@ -621,22 +621,54 @@
             ]
           },
           {
+            "level": 38,
+            "attacks": [
+              "Razor Leaf"
+            ]
+          },
+          {
+            "level": 42,
+            "attacks": [
+              "Fury Cutter"            ]
+          },
+          {
+            "level": 46,
+            "attacks": [
+              "Hitch Kick"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Draconic Shout"
             ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "X-Scissor"
+            ]
+          },
+          {
+            "level": 58,
+            "attacks": [
+              "Psycho Cut"
+            ]
+          },
+          {
+            "level": 62,
+            "attacks": [
+              "Cross Poison"
+            ]
+          },
+          {
+            "level": 62,
+            "attacks": [
+              "Bitter Blade"
+            ]
           }
         ],
-        "tutorMoves": [
-          "Hitch Kick",
-          "Bitter Blade",
-          "Cross Poison",
-          "Fury Cutter",
-          "Psycho Cut",
-          "Razor Leaf",
-          "Stone Axe",
-          "X-Scissor"
-        ],
+        "tutorMoves": [],
         "eggMoves": [],
         "tmMoves9": [],
         "tmMoves8": [],
@@ -781,7 +813,7 @@
       },
       "abilities": {
         "abilities": [
-          "LightningRod"
+          "Sharpness"
         ]
       },
       "battleStats": {

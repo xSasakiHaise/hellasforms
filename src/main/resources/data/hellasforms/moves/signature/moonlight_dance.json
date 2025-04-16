@@ -49,9 +49,9 @@
   ],
   "targetingInfo": {
     "hitsAll": false,
-    "hitsOppositeFoe": false,
-    "hitsAdjacentFoe": false,
-    "hitsExtendedFoe": false,
+    "hitsOppositeFoe": true,
+    "hitsAdjacentFoe": true,
+    "hitsExtendedFoe": true,
     "hitsSelf": true,
     "hitsAdjacentAlly": false,
     "hitsExtendedAlly": false

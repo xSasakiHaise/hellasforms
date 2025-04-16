@@ -1140,12 +1140,6 @@
             ]
           },
           {
-            "level": 28,
-            "attacks": [
-              "Burning Bulwark"
-            ]
-          },
-          {
             "level": 32,
             "attacks": [
               "Flare Blitz"
@@ -1160,7 +1154,7 @@
           {
             "level": 40,
             "attacks": [
-              "Glaive Rush"
+              "Dragon Tail"
             ]
           },
           {
@@ -1179,6 +1173,12 @@
             "level": 52,
             "attacks": [
               "Earthquake"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Sunsteel Strike"
             ]
           }
         ],
@@ -1577,8 +1577,8 @@
       },
       "abilities": {
         "abilities": [
-          "Drought",
-          "Steelworker"
+          "FlameBody",
+          "MirrorArmor"
         ],
         "hiddenAbilities": [
           "DragonsMaw"
@@ -1615,12 +1615,12 @@
         "aggressive": 20
       },
       "battleStats": {
-        "hp": 120,
-        "attack": 160,
-        "defense": 100,
-        "specialAttack": 35,
+        "hp": 110,
+        "attack": 145,
+        "defense": 105,
+        "specialAttack": 70,
         "specialDefense": 110,
-        "speed": 155
+        "speed": 120
       },
       "tags": [
         "hellas"
@@ -1712,12 +1712,12 @@
         ]
       },
       "battleStats": {
-        "hp": 120,
-        "attack": 190,
-        "defense": 130,
-        "specialAttack": 45,
-        "specialDefense": 130,
-        "speed": 165
+        "hp": 110,
+        "attack": 175,
+        "defense": 125,
+        "specialAttack": 70,
+        "specialDefense": 135,
+        "speed": 145
       },
       "types": [
         "FIRE",
