@@ -1,0 +1,29 @@
+{
+  "id": "Hellasian Diancie",
+  "spawnInfos": [
+    {
+      "spec": "species:Diancie form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 50,
+      "maxLevel": 70,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+        ],
+        "tags": [
+          "hellas",
+          "wild"
+        ],
+        "condition": {
+          "stringBiomes": [
+            "minecraft:gravelly_mountains",
+            "byg:jade_cliffs"
+          ]
+        }
+      },
+      "rarity": 0.1
+    }
+  ]
+}

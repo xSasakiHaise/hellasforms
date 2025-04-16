@@ -1,0 +1,28 @@
+{
+  "id": "Hellasian Zorua",
+  "spawnInfos": [
+    {
+      "spec": "species:Zorua form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "tags": [
+        "hellas",
+        "wild"
+      ],
+      "minLevel": 5,
+      "maxLevel": 25,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "minecraft:snowy_mountains",
+          "minecraft:gravelly_mountains"
+        ]
+      },
+      "rarity": 0.4
+    }
+  ]
+}

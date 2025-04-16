@@ -1,0 +1,28 @@
+{
+  "id": "Hellasian Golett",
+  "spawnInfos": [
+    {
+      "spec": "species:Golett form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "tags": [
+        "hellas",
+        "wild"
+      ],
+      "minLevel": 10,
+      "maxLevel": 35,
+      "typeID": "pokemon",
+      "heldItems": [
+      ],
+      "condition": {
+        "times": [
+        ],
+        "stringBiomes": [
+          "arid"
+        ]
+      },
+      "rarity": 0.4
+    }
+  ]
+}

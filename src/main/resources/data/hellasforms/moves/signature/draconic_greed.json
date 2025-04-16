@@ -5,11 +5,11 @@
   "basePower": 100,
   "ppBase": 10,
   "ppMax": 16,
-  "accuracy": 75,
+  "accuracy": 100,
   "makesContact": false,
   "effects": [
     {
-      "drainPercent": 35,
+      "drainPercent": 25,
       "modifiers": [],
       "persists": false,
       "effectTypeID": "Drain"

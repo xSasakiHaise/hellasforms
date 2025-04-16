@@ -1,31 +1,20 @@
 {
   "attackName": "Jade Light",
   "attackType": "FAIRY",
-  "attackCategory": "PHYSICAL",
-  "basePower": 100,
+  "attackCategory": "SPECIAL",
+  "basePower": 80,
   "ppBase": 5,
   "ppMax": 8,
   "accuracy": 95,
   "makesContact": true,
   "effects": [
     {
-      "type": "ATTACK",
-      "amount": 2,
+      "type": "SPECIAL_ATTACK",
+      "amount": 1,
       "isUser": true,
-      "modifiers": [
-        {
-          "type": "Chance",
-          "value": 50.0
-        }
-      ],
-      "persists": false,
-      "effectTypeID": "StatsEffect"
-    },
-    {
-      "stages": 1,
       "modifiers": [],
       "persists": false,
-      "effectTypeID": "CriticalHit"
+      "effectTypeID": "StatsEffect"
     }
   ],
   "animations": [
@@ -37,7 +26,7 @@
     "hitsAdjacentFoe": true,
     "hitsExtendedFoe": false,
     "hitsSelf": false,
-    "hitsAdjacentAlly": false,
+    "hitsAdjacentAlly": true,
     "hitsExtendedAlly": false
   },
   "z": [

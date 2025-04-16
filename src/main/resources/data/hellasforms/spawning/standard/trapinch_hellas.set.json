@@ -1,0 +1,26 @@
+{
+  "id": "Hellasian Trapinch",
+  "spawnInfos": [
+    {
+      "spec": "species:Trapinch form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "tags": [
+        "hellas",
+        "wild"
+      ],
+      "minLevel": 5,
+      "maxLevel": 35,
+      "typeID": "pokemon",
+      "heldItems": [
+      ],
+      "condition": {
+        "stringBiomes": [
+          "arid"
+        ]
+      },
+      "rarity": 0.4
+    }
+  ]
+}

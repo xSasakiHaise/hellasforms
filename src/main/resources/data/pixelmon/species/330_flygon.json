@@ -595,22 +595,7 @@
               "Sand Attack",
               "Steel Roller",
               "Earthquake",
-              "Draconic Shout",
-              "Gyro Ball",
-              "Heavy Slam",
-              "Iron Defense",
-              "Iron Head",
-              "Metal Claw",
-              "Metal Sound",
-              "Steel Beam",
-              "Dragon Dance",
-              "Dragon Pulse",
-              "Dragon Rush",
-              "Dragon Tail",
-              "Dragon Claw",
-              "Dragon Rage",
-              "Dragon Breath",
-              "Outrage"
+              "Draconic Shout"
             ]
           },
           {
@@ -618,26 +603,341 @@
             "attacks": [
               "Metallic Scales"
             ]
+          },
+          {
+            "level": 55,
+            "attacks": [
+              "Autotomize"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Steel Wing"
+            ]
+          },
+          {
+            "level": 65,
+            "attacks": [
+              "Metal Claw"
+            ]
+          },
+          {
+            "level": 70,
+            "attacks": [
+              "Metal Sound"
+            ]
+          },
+          {
+            "level": 75,
+            "attacks": [
+              "Dragon Dance"
+            ]
+          },
+          {
+            "level": 80,
+            "attacks": [
+              "Dragon Tail"
+            ]
+          },
+          {
+            "level": 85,
+            "attacks": [
+              "Dragon Claw"
+            ]
+          },
+          {
+            "level": 90,
+            "attacks": [
+              "Dragon Rage"
+            ]
+          },
+          {
+            "level": 95,
+            "attacks": [
+              "Outrage"
+            ]
           }
         ],
-        "tutorMoves": [
-          "Autotomize",
-          "Steel Wing"
-        ],
+        "tutorMoves": [],
         "eggMoves": [],
         "tmMoves9": [],
-        "tmMoves8": [],
-        "trMoves": [],
-        "hmMoves": [],
-        "transferMoves": [],
-        "tmMoves7": [],
-        "tmMoves6": [],
-        "tmMoves5": [],
-        "tmMoves4": [],
-        "tmMoves3": [],
-        "tmMoves2": [],
-        "tmMoves1": [],
-        "tmMoves": []
+        "tmMoves8": [
+          "Mega Punch",
+          "Mega Kick",
+          "Fire Punch",
+          "Thunder Punch",
+          "Fly",
+          "Hyper Beam",
+          "Giga Impact",
+          "Solar Beam",
+          "Fire Spin",
+          "Dig",
+          "Screech",
+          "Rest",
+          "Rock Slide",
+          "Snore",
+          "Protect",
+          "Giga Drain",
+          "Steel Wing",
+          "Attract",
+          "Sandstorm",
+          "Sunny Day",
+          "Facade",
+          "Swift",
+          "Rock Tomb",
+          "Sand Tomb",
+          "Mud Shot",
+          "U-turn",
+          "Round",
+          "Bulldoze",
+          "Air Slash",
+          "Brutal Swing",
+          "Breaking Swipe"
+        ],
+        "trMoves": [
+          "Body Slam",
+          "Flamethrower",
+          "Earthquake",
+          "Focus Energy",
+          "Fire Blast",
+          "Substitute",
+          "Outrage",
+          "Endure",
+          "Sleep Talk",
+          "Iron Tail",
+          "Crunch",
+          "Uproar",
+          "Heat Wave",
+          "Superpower",
+          "Dragon Claw",
+          "Dragon Dance",
+          "Bug Buzz",
+          "Dragon Pulse",
+          "Earth Power",
+          "Stone Edge",
+          "Throat Chop"
+        ],
+        "hmMoves": [
+
+        ],
+        "transferMoves": [
+          "Aerial Ace",
+          "Air Cutter",
+          "Bide",
+          "Captivate",
+          "Confide",
+          "Defog",
+          "Double Team",
+          "Double-Edge",
+          "Feint Attack",
+          "Frustration",
+          "Headbutt",
+          "Hidden Power",
+          "Hone Claws",
+          "Incinerate",
+          "Mimic",
+          "Natural Gift",
+          "Ominous Wind",
+          "Power-Up Punch",
+          "Return",
+          "Rock Smash",
+          "Roost",
+          "Secret Power",
+          "Signal Beam",
+          "Silver Wind",
+          "Sonic Boom",
+          "Strength",
+          "Struggle Bug",
+          "Swagger",
+          "Tailwind",
+          "Toxic",
+          "Twister"
+        ],
+        "tmMoves7": [
+          "Dragon Claw",
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Hyper Beam",
+          "Protect",
+          "Roost",
+          "Frustration",
+          "Solar Beam",
+          "Earthquake",
+          "Return",
+          "Double Team",
+          "Flamethrower",
+          "Sandstorm",
+          "Fire Blast",
+          "Rock Tomb",
+          "Aerial Ace",
+          "Facade",
+          "Rest",
+          "Attract",
+          "Round",
+          "Steel Wing",
+          "Brutal Swing",
+          "Giga Impact",
+          "Stone Edge",
+          "Fly",
+          "Bulldoze",
+          "Rock Slide",
+          "Dragon Tail",
+          "Swagger",
+          "Sleep Talk",
+          "U-turn",
+          "Substitute",
+          "Confide"
+        ],
+        "tmMoves6": [
+          "Hone Claws",
+          "Dragon Claw",
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Hyper Beam",
+          "Protect",
+          "Roost",
+          "Frustration",
+          "Solar Beam",
+          "Earthquake",
+          "Return",
+          "Dig",
+          "Double Team",
+          "Flamethrower",
+          "Sandstorm",
+          "Fire Blast",
+          "Rock Tomb",
+          "Aerial Ace",
+          "Facade",
+          "Rest",
+          "Attract",
+          "Round",
+          "Steel Wing",
+          "Incinerate",
+          "Giga Impact",
+          "Stone Edge",
+          "Struggle Bug",
+          "Bulldoze",
+          "Rock Slide",
+          "Dragon Tail",
+          "Swagger",
+          "Sleep Talk",
+          "U-turn",
+          "Substitute",
+          "Secret Power",
+          "Power-Up Punch",
+          "Confide"
+        ],
+        "tmMoves5": [
+          "Hone Claws",
+          "Dragon Claw",
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Hyper Beam",
+          "Protect",
+          "Frustration",
+          "Solar Beam",
+          "Earthquake",
+          "Return",
+          "Dig",
+          "Double Team",
+          "Flamethrower",
+          "Sandstorm",
+          "Fire Blast",
+          "Rock Tomb",
+          "Aerial Ace",
+          "Facade",
+          "Rest",
+          "Attract",
+          "Round",
+          "Incinerate",
+          "Giga Impact",
+          "Stone Edge",
+          "Struggle Bug",
+          "Bulldoze",
+          "Rock Slide",
+          "Dragon Tail",
+          "Swagger",
+          "U-turn",
+          "Substitute",
+          "Rock Smash"
+        ],
+        "tmMoves4": [
+          "Dragon Claw",
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Hyper Beam",
+          "Protect",
+          "Giga Drain",
+          "Frustration",
+          "Solar Beam",
+          "Iron Tail",
+          "Earthquake",
+          "Return",
+          "Dig",
+          "Double Team",
+          "Flamethrower",
+          "Sandstorm",
+          "Fire Blast",
+          "Rock Tomb",
+          "Aerial Ace",
+          "Facade",
+          "Secret Power",
+          "Rest",
+          "Attract",
+          "Steel Wing",
+          "Roost",
+          "Endure",
+          "Dragon Pulse",
+          "Silver Wind",
+          "Giga Impact",
+          "Stone Edge",
+          "Captivate",
+          "Rock Slide",
+          "Sleep Talk",
+          "Natural Gift",
+          "Swagger",
+          "U-turn",
+          "Substitute"
+        ],
+        "tmMoves3": [
+          "Dragon Claw",
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Hyper Beam",
+          "Protect",
+          "Giga Drain",
+          "Frustration",
+          "Solar Beam",
+          "Iron Tail",
+          "Earthquake",
+          "Return",
+          "Dig",
+          "Double Team",
+          "Flamethrower",
+          "Sandstorm",
+          "Fire Blast",
+          "Rock Tomb",
+          "Facade",
+          "Secret Power",
+          "Rest",
+          "Attract",
+          "Steel Wing"
+        ],
+        "tmMoves2": [
+
+        ],
+        "tmMoves1": [
+
+        ],
+        "tmMoves": [
+
+        ]
       },
       "abilities": {
         "abilities": [

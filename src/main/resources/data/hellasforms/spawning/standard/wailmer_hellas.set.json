@@ -1,0 +1,27 @@
+{
+  "id": "Hellasian Wailmer",
+  "spawnInfos": [
+    {
+      "spec": "species:Wailmer form:hellas",
+      "stringLocationTypes": [
+        "Water"
+      ],
+      "tags": [
+        "hellas",
+        "wild"
+      ],
+      "minLevel": 5,
+      "maxLevel": 40,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+        ],
+        "stringBiomes": [
+          "oceanic",
+          "terraforged:warm_beach"
+        ]
+      },
+      "rarity": 0.4
+    }
+  ]
+}

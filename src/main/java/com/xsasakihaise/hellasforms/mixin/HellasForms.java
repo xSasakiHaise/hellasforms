@@ -5,6 +5,7 @@ import battles.status.*;
 import com.pixelmonmod.pixelmon.Pixelmon;
 import com.pixelmonmod.pixelmon.battles.attacks.EffectTypeAdapter;
 import com.pixelmonmod.pixelmon.init.registry.ItemRegistration;
+import com.pixelmonmod.pixelmon.items.BadgeItem;
 import com.pixelmonmod.pixelmon.items.QuestItem;
 import com.pixelmonmod.pixelmon.items.heldItems.MegaStoneItem;
 import com.xsasakihaise.hellasforms.api.pokemon.ability.abilities.*;
@@ -61,6 +62,24 @@ public class HellasForms {
         ItemRegistration.ITEMS.register("sparkly-wild-egg", QuestItem::new);
         ItemRegistration.ITEMS.register("sparkly-hellasian-egg", QuestItem::new);
         ItemRegistration.ITEMS.register("sparkly-odd-looking-egg", QuestItem::new);
+        ItemRegistration.ITEMS.register("bug_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("dark_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("dragon_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("electric_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("fairy_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("fighting_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("fire_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("flying_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("ghost_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("grass_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("ground_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("ice_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("normal_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("poison_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("psychic_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("rock_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("steel_badge", BadgeItem::new);
+        ItemRegistration.ITEMS.register("water_badge", BadgeItem::new);
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 

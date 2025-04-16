@@ -1,0 +1,28 @@
+{
+  "id": "Hellasian Treecko",
+  "spawnInfos": [
+    {
+      "spec": "species:Treecko form:hellas",
+      "stringLocationTypes": [
+        "Land",
+        "Tree Top"
+      ],
+      "tags": [
+        "hellas",
+        "wild"
+      ],
+      "minLevel": 5,
+      "maxLevel": 12,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+        ],
+        "stringBiomes": [
+          "jungles",
+          "forests"
+        ]
+      },
+      "rarity": 0.8
+    }
+  ]
+}

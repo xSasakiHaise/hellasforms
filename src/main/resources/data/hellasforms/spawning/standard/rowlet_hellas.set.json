@@ -1,0 +1,29 @@
+{
+  "id": "Hellasian Rowlet",
+  "spawnInfos": [
+    {
+      "spec": "species:Rowlet form:hellas",
+      "stringLocationTypes": [
+        "Tree Top",
+        "Flying"
+      ],
+      "tags": [
+        "hellas",
+        "wild"
+      ],
+      "minLevel": 5,
+      "maxLevel": 16,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+        ],
+        "stringBiomes": [
+          "taigas",
+          "redwoods",
+          "evil"
+        ]
+      },
+      "rarity": 0.8
+    }
+  ]
+}

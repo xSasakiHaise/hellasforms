@@ -1,0 +1,28 @@
+{
+  "id": "Hellasian Tepig",
+  "spawnInfos": [
+    {
+      "spec": "species:Tepig form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "tags": [
+        "hellas",
+        "wild"
+      ],
+      "minLevel": 5,
+      "maxLevel": 16,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "savannas",
+          "beaches"
+        ]
+      },
+      "rarity": 0.8
+    }
+  ]
+}
