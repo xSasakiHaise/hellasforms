@@ -433,6 +433,16 @@
       "moves": {
         "levelUpMoves": [
           {
+            "level": 0,
+            "attacks": [
+              "Confusion",
+              "Cosmic Power",
+              "Hypnosis",
+              "Moongeist Beam",
+              "Teleport"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Moonlight Dance"
@@ -459,22 +469,158 @@
           "Hypnosis",
           "Confusion",
           "Moongeist Beam",
-          "Teleport"
+          "Teleport",
+          "Dual Wingbeat",
+          "Expanding Force",
+          "Meteor Beam",
+          "Poltergeist"
         ],
-        "eggMoves": [],
-        "tmMoves9": [],
-        "tmMoves8": [],
-        "trMoves": [],
-        "hmMoves": [],
-        "transferMoves": [],
-        "tmMoves7": [],
-        "tmMoves6": [],
-        "tmMoves5": [],
-        "tmMoves4": [],
-        "tmMoves3": [],
-        "tmMoves2": [],
-        "tmMoves1": [],
-        "tmMoves": []
+        "eggMoves": [
+
+        ],
+        "tmMoves8": [
+          "Fly",
+          "Hyper Beam",
+          "Giga Impact",
+          "Solar Beam",
+          "Thunder Wave",
+          "Light Screen",
+          "Reflect",
+          "Safeguard",
+          "Rest",
+          "Snore",
+          "Protect",
+          "Scary Face",
+          "Icy Wind",
+          "Sunny Day",
+          "Will-O-Wisp",
+          "Facade",
+          "Swift",
+          "Helping Hand",
+          "Shadow Claw",
+          "Psycho Cut",
+          "Trick Room",
+          "Wonder Room",
+          "Magic Room",
+          "Round",
+          "Hex",
+          "Acrobatics",
+          "Phantom Force",
+          "Air Slash"
+        ],
+        "trMoves": [
+          "Ice Beam",
+          "Blizzard",
+          "Thunderbolt",
+          "Thunder",
+          "Psychic",
+          "Agility",
+          "Substitute",
+          "Psyshock",
+          "Endure",
+          "Sleep Talk",
+          "Shadow Ball",
+          "Future Sight",
+          "Heat Wave",
+          "Trick",
+          "Cosmic Power",
+          "Calm Mind",
+          "Focus Blast",
+          "Work Up",
+          "Dazzling Gleam"
+        ],
+        "hmMoves": [
+
+        ],
+        "transferMoves": [
+          "Aerial Ace",
+          "Charge Beam",
+          "Confide",
+          "Defog",
+          "Double Team",
+          "Frustration",
+          "Hidden Power",
+          "Psych Up",
+          "Return",
+          "Roar",
+          "Roost",
+          "Shock Wave",
+          "Signal Beam",
+          "Sky Attack",
+          "Sky Drop",
+          "Spite",
+          "Swagger",
+          "Tailwind",
+          "Telekinesis",
+          "Toxic"
+        ],
+        "tmMoves7": [
+          "Work Up",
+          "Psyshock",
+          "Calm Mind",
+          "Roar",
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Ice Beam",
+          "Blizzard",
+          "Hyper Beam",
+          "Light Screen",
+          "Protect",
+          "Roost",
+          "Safeguard",
+          "Frustration",
+          "Solar Beam",
+          "Thunderbolt",
+          "Thunder",
+          "Return",
+          "Psychic",
+          "Shadow Ball",
+          "Double Team",
+          "Reflect",
+          "Aerial Ace",
+          "Facade",
+          "Rest",
+          "Round",
+          "Focus Blast",
+          "Charge Beam",
+          "Sky Drop",
+          "Will-O-Wisp",
+          "Acrobatics",
+          "Shadow Claw",
+          "Giga Impact",
+          "Thunder Wave",
+          "Fly",
+          "Psych Up",
+          "Dream Eater",
+          "Swagger",
+          "Sleep Talk",
+          "Substitute",
+          "Trick Room",
+          "Dazzling Gleam",
+          "Confide"
+        ],
+        "tmMoves6": [
+
+        ],
+        "tmMoves5": [
+
+        ],
+        "tmMoves4": [
+
+        ],
+        "tmMoves3": [
+
+        ],
+        "tmMoves2": [
+
+        ],
+        "tmMoves1": [
+
+        ],
+        "tmMoves": [
+
+        ]
       },
       "abilities": {
         "abilities": [
