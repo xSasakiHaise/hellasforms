@@ -1,6 +1,6 @@
 {
   "parent": "pixelmon:item/pixelmon_item",
   "textures": {
-    "layer0": "hellasforms:items/badges/poison_badge"
+    "layer0": "hellasforms:items/badges/ghost_badge_hellas"
   }
 }

@@ -716,22 +716,147 @@
           "Phantom Force",
           "Shadow Ball",
           "Hex",
-          "Ominous Wind"
+          "Ominous Wind",
+          "Dual Wingbeat",
+          "Frenzy Plant",
+          "Grass Pledge",
+          "Grassy Glide",
+          "Poltergeist",
+          "Skitter Smack"
         ],
-        "eggMoves": [],
-        "tmMoves9": [],
-        "tmMoves8": [],
-        "trMoves": [],
-        "hmMoves": [],
-        "transferMoves": [],
-        "tmMoves7": [],
-        "tmMoves6": [],
-        "tmMoves5": [],
-        "tmMoves4": [],
-        "tmMoves3": [],
-        "tmMoves2": [],
-        "tmMoves1": [],
-        "tmMoves": []
+        "eggMoves": [
+          "Confuse Ray",
+          "Defog",
+          "Double Team",
+          "Knock Off"
+        ],
+        "tmMoves8": [
+          "Hyper Beam",
+          "Giga Impact",
+          "Solar Beam",
+          "Solar Blade",
+          "Light Screen",
+          "Safeguard",
+          "Rest",
+          "Snore",
+          "Protect",
+          "Giga Drain",
+          "Steel Wing",
+          "Attract",
+          "Sunny Day",
+          "Facade",
+          "Swift",
+          "Imprison",
+          "U-turn",
+          "Shadow Claw",
+          "Psycho Cut",
+          "Low Sweep",
+          "Round",
+          "Hex",
+          "Acrobatics",
+          "Phantom Force",
+          "False Swipe",
+          "Air Slash"
+        ],
+        "trMoves": [
+          "Swords Dance",
+          "Substitute",
+          "Endure",
+          "Sleep Talk",
+          "Baton Pass",
+          "Shadow Ball",
+          "Leaf Blade",
+          "Seed Bomb",
+          "Energy Ball",
+          "Brave Bird",
+          "Nasty Plot",
+          "Leaf Storm",
+          "Grass Knot",
+          "Work Up",
+          "Hurricane"
+        ],
+        "hmMoves": [
+
+        ],
+        "transferMoves": [
+          "Confide",
+          "Covet",
+          "Curse",
+          "Echoed Voice",
+          "Foresight",
+          "Frustration",
+          "Fury Attack",
+          "Haze",
+          "Hidden Power",
+          "Laser Focus",
+          "Nature Power",
+          "Ominous Wind",
+          "Return",
+          "Roost",
+          "Sky Attack",
+          "Smack Down",
+          "Swagger",
+          "Tailwind",
+          "Toxic",
+          "Worry Seed"
+        ],
+        "tmMoves7": [
+          "Work Up",
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Light Screen",
+          "Protect",
+          "Roost",
+          "Safeguard",
+          "Frustration",
+          "Solar Beam",
+          "Smack Down",
+          "Return",
+          "Shadow Ball",
+          "Double Team",
+          "Facade",
+          "Rest",
+          "Attract",
+          "Low Sweep",
+          "Round",
+          "Echoed Voice",
+          "Steel Wing",
+          "Energy Ball",
+          "False Swipe",
+          "Acrobatics",
+          "Shadow Claw",
+          "Giga Impact",
+          "Swords Dance",
+          "Grass Knot",
+          "Swagger",
+          "Sleep Talk",
+          "U-turn",
+          "Substitute",
+          "Nature Power",
+          "Confide"
+        ],
+        "tmMoves6": [
+
+        ],
+        "tmMoves5": [
+
+        ],
+        "tmMoves4": [
+
+        ],
+        "tmMoves3": [
+
+        ],
+        "tmMoves2": [
+
+        ],
+        "tmMoves1": [
+
+        ],
+        "tmMoves": [
+
+        ]
       },
       "abilities": {
         "abilities": [
