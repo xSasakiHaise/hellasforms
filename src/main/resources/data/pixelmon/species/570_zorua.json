@@ -414,45 +414,82 @@
       "moves": {
         "levelUpMoves": [
           {
-            "level": 1,
+            "level": 0,
+            "attacks": [
+              "Leer",
+              "Scratch"
+            ]
+          },
+          {
+            "level": 4,
+            "attacks": [
+              "Torment"
+            ]
+          },
+          {
+            "level": 8,
+            "attacks": [
+              "Hone Claws"
+            ]
+          },
+          {
+            "level": 12,
             "attacks": [
               "Shadow Sneak"
             ]
           },
           {
-            "level": 6,
+            "level": 16,
             "attacks": [
-              "Snarl"
+              "Curse"
             ]
           },
           {
-            "level": 11,
+            "level": 20,
             "attacks": [
-              "Swift"
+              "Taunt"
             ]
           },
           {
-            "level": 18,
+            "level": 24,
+            "attacks": [
+              "Knock Off"
+            ]
+          },
+          {
+            "level": 28,
+            "attacks": [
+              "Spite"
+            ]
+          },
+          {
+            "level": 32,
+            "attacks": [
+              "Agility"
+            ]
+          },
+          {
+            "level": 36,
+            "attacks": [
+              "Shadow Ball"
+            ]
+          },
+          {
+            "level": 40,
             "attacks": [
               "Bitter Malice"
             ]
           },
           {
-            "level": 25,
-            "attacks": [
-              "Slash"
-            ]
-          },
-          {
-            "level": 34,
-            "attacks": [
-              "Shadow Claw"
-            ]
-          },
-          {
-            "level": 43,
+            "level": 44,
             "attacks": [
               "Nasty Plot"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Foul Play"
             ]
           }
         ],
@@ -465,199 +502,83 @@
           "Shadow Claw",
           "Sludge Bomb",
           "Snarl",
-          "Swift",
-          "Burning Jealousy",
-          "Lash Out",
-          "Skitter Smack"
+          "Swift"
         ],
         "eggMoves": [
-          "Copycat",
-          "Counter",
+          "Comeuppance",
+          "Detect",
+          "Extrasensory",
+          "Memento"
+        ],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [
+          "Comeuppance",
           "Detect",
           "Extrasensory",
           "Memento",
-          "Sucker Punch"
-        ],
-        "tmMoves8": [
-          "Dig",
-          "Rest",
-          "Thief",
-          "Snore",
-          "Protect",
-          "Scary Face",
-          "Attract",
-          "Rain Dance",
-          "Sunny Day",
-          "Facade",
-          "Swift",
-          "Revenge",
-          "Imprison",
-          "Fake Tears",
-          "Bounce",
-          "U-turn",
-          "Payback",
-          "Assurance",
-          "Fling",
-          "Round",
-          "Hex",
-          "Retaliate",
-          "Snarl"
-        ],
-        "trMoves": [
-          "Swords Dance",
-          "Agility",
-          "Substitute",
-          "Sludge Bomb",
-          "Endure",
-          "Sleep Talk",
-          "Shadow Ball",
-          "Uproar",
-          "Taunt",
-          "Trick",
-          "Hyper Voice",
-          "Calm Mind",
-          "Dark Pulse",
-          "Nasty Plot",
-          "Grass Knot",
-          "Foul Play"
-        ],
-        "hmMoves": [],
-        "transferMoves": [
-          "Aerial Ace",
-          "Captivate",
-          "Confide",
-          "Covet",
-          "Cut",
-          "Double Team",
-          "Embargo",
-          "Feint Attack",
-          "Frustration",
-          "Hidden Power",
-          "Incinerate",
-          "Psych Up",
-          "Punishment",
-          "Pursuit",
-          "Return",
-          "Roar",
-          "Secret Power",
-          "Snatch",
-          "Spite",
-          "Swagger",
-          "Toxic"
-        ],
-        "tmMoves7": [
-          "Calm Mind",
-          "Roar",
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Taunt",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Return",
-          "Shadow Ball",
-          "Double Team",
-          "Aerial Ace",
-          "Torment",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Thief",
-          "Round",
-          "Fling",
-          "Embargo",
-          "Payback",
-          "Swords Dance",
-          "Psych Up",
-          "Grass Knot",
-          "Swagger",
-          "Sleep Talk",
-          "U-turn",
-          "Substitute",
+          "Shadow Claw",
+          "Slash",
           "Snarl",
-          "Dark Pulse",
-          "Confide"
+          "Swift"
         ],
-        "tmMoves6": [
-          "Hone Claws",
-          "Calm Mind",
-          "Roar",
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Taunt",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Return",
-          "Dig",
-          "Shadow Ball",
-          "Double Team",
-          "Aerial Ace",
-          "Torment",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Thief",
-          "Round",
-          "Fling",
-          "Incinerate",
-          "Embargo",
-          "Payback",
-          "Retaliate",
-          "Swords Dance",
-          "Psych Up",
-          "Grass Knot",
-          "Swagger",
-          "Sleep Talk",
-          "U-turn",
-          "Substitute",
-          "Secret Power",
-          "Snarl",
-          "Dark Pulse",
-          "Confide"
-        ],
-        "tmMoves5": [
-          "Hone Claws",
-          "Calm Mind",
-          "Roar",
-          "Toxic",
-          "Hidden Power",
-          "Sunny Day",
-          "Taunt",
-          "Protect",
-          "Rain Dance",
-          "Frustration",
-          "Return",
-          "Dig",
-          "Shadow Ball",
-          "Double Team",
-          "Aerial Ace",
-          "Torment",
-          "Facade",
-          "Rest",
-          "Attract",
-          "Thief",
-          "Round",
-          "Fling",
-          "Incinerate",
-          "Embargo",
-          "Payback",
-          "Retaliate",
-          "Swords Dance",
-          "Psych Up",
-          "Grass Knot",
-          "Swagger",
-          "U-turn",
-          "Substitute",
-          "Snarl"
-        ],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
         "tmMoves4": [],
         "tmMoves3": [],
         "tmMoves2": [],
         "tmMoves1": [],
-        "tmMoves": []
+        "tmMoves": [],
+        "tmMoves9": [
+          "Take Down",
+          "Fake Tears",
+          "Agility",
+          "Protect",
+          "Confuse Ray",
+          "Thief",
+          "Facade",
+          "Hex",
+          "Snarl",
+          "Swift",
+          "Icy Wind",
+          "Night Shade",
+          "Fling",
+          "Endure",
+          "Rain Dance",
+          "Snowscape",
+          "Dig",
+          "U-turn",
+          "Shadow Claw",
+          "Foul Play",
+          "Sleep Talk",
+          "Rest",
+          "Taunt",
+          "Imprison",
+          "Dark Pulse",
+          "Substitute",
+          "Will-O-Wisp",
+          "Trick",
+          "Shadow Ball",
+          "Calm Mind",
+          "Nasty Plot",
+          "Sludge Bomb",
+          "Phantom Force",
+          "Giga Impact",
+          "Hyper Beam",
+          "Tera Blast",
+          "Roar",
+          "Spite",
+          "Knock Off",
+          "Focus Punch",
+          "Burning Jealousy",
+          "Lash Out",
+          "Pain Split",
+          "Psych Up",
+          "Skitter Smack",
+          "Curse"
+        ]
       },
       "abilities": {
         "abilities": [
@@ -824,12 +745,59 @@
           "Snarl",
           "Swift"
         ],
-        "eggMoves": [],
-        "tmMoves9": [],
-        "tmMoves8": [],
+        "transferMoves": [],
         "trMoves": [],
         "hmMoves": [],
-        "transferMoves": [],
+        "tmMoves9": [
+          "Take Down",
+          "Fake Tears",
+          "Agility",
+          "Protect",
+          "Confuse Ray",
+          "Thief",
+          "Facade",
+          "Hex",
+          "Snarl",
+          "Swift",
+          "Icy Wind",
+          "Night Shade",
+          "Fling",
+          "Endure",
+          "Rain Dance",
+          "Snowscape",
+          "Dig",
+          "U-turn",
+          "Shadow Claw",
+          "Foul Play",
+          "Sleep Talk",
+          "Rest",
+          "Taunt",
+          "Imprison",
+          "Dark Pulse",
+          "Substitute",
+          "Will-O-Wisp",
+          "Trick",
+          "Shadow Ball",
+          "Calm Mind",
+          "Nasty Plot",
+          "Sludge Bomb",
+          "Phantom Force",
+          "Giga Impact",
+          "Hyper Beam",
+          "Tera Blast",
+          "Roar",
+          "Spite",
+          "Knock Off",
+          "Focus Punch",
+          "Burning Jealousy",
+          "Lash Out",
+          "Pain Split",
+          "Psych Up",
+          "Skitter Smack",
+          "Curse"
+        ],
+        "tmMoves8": [],
+        "eggMoves": [],
         "tmMoves7": [],
         "tmMoves6": [],
         "tmMoves5": [],
