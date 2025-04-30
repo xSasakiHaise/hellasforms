@@ -56,6 +56,7 @@ public class HellasForms {
         ItemRegistration.ITEMS.register("diancite-hellas", () -> new MegaStoneItem("diancie form:hellas"));
         ItemRegistration.ITEMS.register("sceptilite-hellas", () -> new MegaStoneItem("sceptile form:hellas"));
         ItemRegistration.ITEMS.register("gyaradosite-hellas", () -> new MegaStoneItem("gyarados form:hellas"));
+        ItemRegistration.ITEMS.register("hellas_coupon", QuestItem::new);
         ItemRegistration.ITEMS.register("wild-egg", QuestItem::new);
         ItemRegistration.ITEMS.register("hellasian-egg", QuestItem::new);
         ItemRegistration.ITEMS.register("odd-looking-egg", QuestItem::new);
