@@ -2060,6 +2060,7 @@
       }
     ]
   },
+  {
   "pokemon":"Grookey",
   "items":[
   {
@@ -2080,7 +2081,7 @@
     "max":1,
     "chance":0.05
   }
-]
+  ]
   },
   {
     "pokemon":"Thwackey",
