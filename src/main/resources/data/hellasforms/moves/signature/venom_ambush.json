@@ -1,0 +1,52 @@
+{
+  "attackName": "Venom Ambush",
+  "attackType": "POISON",
+  "attackCategory": "SPECIAL",
+  "basePower": 80,
+  "ppBase": 5,
+  "ppMax": 8,
+  "accuracy": -1,
+  "makesContact": true,
+  "effects": [
+    {
+      "message": "pixelmon.effect.dighole",
+      "base": "UnderGround",
+      "type": "UnderGround",
+      "modifiers": [],
+      "persists": true,
+      "effectTypeID": "VenomAmbush"
+    },
+    {
+      "type": "Poison",
+      "modifiers": [
+        {
+          "type": "Chance",
+          "value": 30.0
+        }
+      ],
+      "persists": false,
+      "effectTypeID": "Poison"
+    }
+  ],
+  "animations": [
+    "leapForward"
+  ],
+  "targetingInfo": {
+    "hitsAll": false,
+    "hitsOppositeFoe": true,
+    "hitsAdjacentFoe": true,
+    "hitsExtendedFoe": false,
+    "hitsSelf": false,
+    "hitsAdjacentAlly": true,
+    "hitsExtendedAlly": false
+  },
+  "z": [
+    {
+      "crystal": "poisonium_z",
+      "attackName": "Acid Downpour",
+      "basePower": 190,
+      "effects": [],
+      "allowedPokemon": []
+    }
+  ]
+}

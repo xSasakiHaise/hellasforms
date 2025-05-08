@@ -120,6 +120,15 @@
 	"hellasforms.abilities.VampiricFangs.activate": "%s mocks you",
 	"hellasforms.abilities.DragonInstall.activate": "%s creates new terrain",
 
+	"ability.PoisonSkin": "Poison Skin",
+	"ability.PoisonSkin.description": "Making contact with %s hurts the opponent and may poison them",
+	"hellasforms.abilities.PoisonSkin.activate": "%s's skin is poisonous",
+	"ability.CombatHedge": "Combat Hedge",
+	"ability.CombatHedge.description": "%s's changes form when damaged",
+	"ability.CombatHedge.start": "%s's form changes",
+	"ability.CombatHedge.stop": "%s's form changes",
+	"hellasforms.abilities.CombatHedge.activate": "%s's form changes",
+
 	"ability.Stormforce": "Storm Force",
 	"ability.Stormforce.description": "%s summons an electric terrain in which it gets increased priority on status moves",
 	"hellasforms.abilities.StormForce.activate": "%s creates new terrain",
