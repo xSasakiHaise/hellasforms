@@ -15,15 +15,12 @@ public class GreekFire extends SpecialAttackBase {
     }
 
     public double modifyTypeEffectiveness(List<Element> effectiveTypes, Element moveType, double baseEffectiveness) {
-       if (moveType == Element.FIRE && effectiveTypes.contains(Element.WATER)) {
-            boolean isSuperEffective = true;
-            for (Element type : effectiveTypes) {
-                if (type != Element.WATER && type != Element.FIRE) {
-                    isSuperEffective = false;
-                    break;
-                }
+        if (moveType == Element.FIRE && effectiveTypes.contains(Element.WATER)) {
+            if (!effectiveTypes.contains(Element.BUG) && !effectiveTypes.contains(Element.STEEL) && !effectiveTypes.contains(Element.GRASS) && !effectiveTypes.contains(Element.ICE)) {
+                return !effectiveTypes.contains(Element.FIRE) && !effectiveTypes.contains(Element.ROCK) && !effectiveTypes.contains(Element.WATER) && !effectiveTypes.contains(Element.DRAGON) ? 2.0F : 1.0F;
+            } else {
+                return 4.0F;
             }
-            return isSuperEffective ? 2.0F : baseEffectiveness;
         } else {
             return baseEffectiveness;
         }

@@ -1,11 +1,11 @@
 {
-  "attackName": "Greek Fire",
-  "attackType": "FIRE",
-  "attackCategory": "PHYSICAL",
-  "basePower": 80,
-  "ppBase": 20,
-  "ppMax": 32,
-  "accuracy": 100,
+  "attackName": "Isbrand",
+  "attackType": "ICE",
+  "attackCategory": "SPECIAL",
+  "basePower": 100,
+  "ppBase": 5,
+  "ppMax": 8,
+  "accuracy": 80,
   "makesContact": false,
   "effects": [
     {
@@ -17,7 +17,7 @@
     {
       "modifiers": [],
       "persists": false,
-      "effectTypeID": "GreekFire"
+      "effectTypeID": "Isbrand"
     }
   ],
   "animations": [
@@ -34,9 +34,9 @@
   },
   "z": [
     {
-      "crystal": "ghostium_z",
-      "attackName": "Raccoon Baboon Bash",
-      "basePower": 180,
+      "crystal": "icium_z",
+      "attackName": "Subzero Slammer",
+      "basePower": 140,
       "effects": [],
       "allowedPokemon": []
     }
