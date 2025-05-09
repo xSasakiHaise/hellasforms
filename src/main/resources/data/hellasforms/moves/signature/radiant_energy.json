@@ -1,0 +1,44 @@
+{
+  "attackName": "Radiant Energy",
+  "attackType": "ELECTRIC",
+  "attackCategory": "SPECIAL",
+  "basePower": 30,
+  "ppBase": 10,
+  "ppMax": 16,
+  "accuracy": 80,
+  "makesContact": false,
+  "effects": [
+    {
+      "weather": "Clear",
+      "modifiers": [],
+      "persists": false,
+      "effectTypeID": "AlwaysHit"
+    },
+    {
+      "modifiers": [],
+      "persists": false,
+      "effectTypeID": "RadiantEnergy"
+    }
+  ],
+  "animations": [
+    "leapForward"
+  ],
+  "targetingInfo": {
+    "hitsAll": false,
+    "hitsOppositeFoe": true,
+    "hitsAdjacentFoe": true,
+    "hitsExtendedFoe": false,
+    "hitsSelf": false,
+    "hitsAdjacentAlly": true,
+    "hitsExtendedAlly": false
+  },
+  "z": [
+    {
+      "crystal": "electrium_z",
+      "attackName": "Gigavolt Havoc",
+      "basePower": 185,
+      "effects": [],
+      "allowedPokemon": []
+    }
+  ]
+}

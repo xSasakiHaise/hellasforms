@@ -41,10 +41,6 @@
     "hitsAdjacentAlly": false,
     "hitsExtendedAlly": false
   },
-  "flags": {
-    "authentic": true,
-    "sound": true
-  },
   "z": [
     {
       "crystal": "dragonium_z",
