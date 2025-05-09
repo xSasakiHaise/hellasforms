@@ -1,23 +1,17 @@
 {
-  "attackName": "Greek Fire",
-  "attackType": "FIRE",
+  "attackName": "Bleeding Jaw",
+  "attackType": "DARK",
   "attackCategory": "PHYSICAL",
-  "basePower": 80,
-  "ppBase": 20,
-  "ppMax": 32,
+  "basePower": 70,
+  "ppBase": 10,
+  "ppMax": 16,
   "accuracy": 100,
   "makesContact": false,
   "effects": [
     {
-      "stages": 1,
       "modifiers": [],
       "persists": false,
-      "effectTypeID": "CriticalHit"
-    },
-    {
-      "modifiers": [],
-      "persists": false,
-      "effectTypeID": "GreekFire"
+      "effectTypeID": "BleedingJaw"
     }
   ],
   "animations": [
@@ -34,9 +28,9 @@
   },
   "z": [
     {
-      "crystal": "ghostium_z",
-      "attackName": "Raccoon Baboon Bash",
-      "basePower": 180,
+      "crystal": "darkinium_z",
+      "attackName": "Black Hole Eclipse",
+      "basePower": 140,
       "effects": [],
       "allowedPokemon": []
     }
