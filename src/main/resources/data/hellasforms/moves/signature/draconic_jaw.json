@@ -1,0 +1,88 @@
+{
+  "attackName": "Draconic Jaw",
+  "attackType": "DRAGON",
+  "attackCategory": "PHYSICAL",
+  "basePower": 60,
+  "ppBase": 10,
+  "ppMax": 16,
+  "accuracy": 95,
+  "makesContact": false,
+  "effects": [
+    {
+      "type": "Burn",
+      "modifiers": [
+        {
+          "type": "Chance",
+          "value": 20.0
+        }
+      ],
+      "persists": false,
+      "effectTypeID": "Burn"
+    },
+    {
+      "type": "Freeze",
+      "modifiers": [
+        {
+          "type": "Chance",
+          "value": 20.0
+        }
+      ],
+      "persists": false,
+      "effectTypeID": "Freeze"
+    },
+    {
+      "type": "Paralyze",
+      "modifiers": [
+        {
+          "type": "Chance",
+          "value": 20.0
+        }
+      ],
+      "persists": false,
+      "effectTypeID": "Paralyze"
+    },
+    {
+      "type": "Confusion",
+      "modifiers": [
+        {
+          "type": "Chance",
+          "value": 20.0
+        }
+      ],
+      "persists": false,
+      "effectTypeID": "Confusion"
+    },
+    {
+      "type": "Poison",
+      "modifiers": [
+        {
+          "type": "Chance",
+          "value": 20.0
+        }
+      ],
+      "persists": false,
+      "effectTypeID": "Poison"
+    }
+  ],
+  "animations": [
+    "leapForward"
+  ],
+  "targetingInfo": {
+    "hitsAll": false,
+    "hitsOppositeFoe": true,
+    "hitsAdjacentFoe": true,
+    "hitsExtendedFoe": false,
+    "hitsSelf": false,
+    "hitsAdjacentAlly": true,
+    "hitsExtendedAlly": false
+  },
+  "z": [
+    {
+      "crystal": "dragonium_z",
+      "attackName": "Devastating Drake",
+      "basePower": 160,
+      "effects": [],
+      "allowedPokemon": []
+    }
+  ]
+}

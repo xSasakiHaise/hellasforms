@@ -16,7 +16,7 @@ public class MixinStrongJaw extends AbstractAbility {
             remap = false
     )
     public int[] modifyPowerAndAccuracyUser(int power, int accuracy, PixelmonWrapper user, PixelmonWrapper target, Attack a) {
-        Set<String> bitingMoves = Sets.newHashSet(new String[]{"Bite", "Bleeding Jaw", "Crunch", "Fire Fang", "Hyper Fang", "Ice Fang", "Poison Fang", "Psychic Fangs", "Thunder Fang", "Fishious Rend", "Jaw Lock"});
+        Set<String> bitingMoves = Sets.newHashSet(new String[]{"Bite", "Bleeding Jaw", "Crunch", "Draconic Jaw", "Fire Fang", "Hyper Fang", "Ice Fang", "Poison Fang", "Psychic Fangs", "Thunder Fang", "Fishious Rend", "Jaw Lock"});
         if (bitingMoves.contains(a.getMove().getAttackName())) {
             power = (int)((double)power * (double)1.5F);
         }
