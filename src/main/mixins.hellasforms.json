@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.xsasakihaise.hellasforms.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "hellasforms.refmap.json",
+  "mixins": [
+    "abilities.effects.MixinSharpness",
+    "abilities.effects.MixinStrongJaw"
+  ],
+  "client": [
+  ],
+  "minVersion": "0.8"
+}

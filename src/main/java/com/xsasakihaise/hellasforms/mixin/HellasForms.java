@@ -1,6 +1,7 @@
 package com.xsasakihaise.hellasforms.mixin;
 
 import battles.attacks.specialAttacks.basic.*;
+import battles.attacks.specialAttacks.multiTurn.*;
 import battles.status.*;
 import com.pixelmonmod.pixelmon.Pixelmon;
 import com.pixelmonmod.pixelmon.battles.attacks.EffectTypeAdapter;
@@ -51,6 +52,12 @@ public class HellasForms {
         EffectTypeAdapter.EFFECTS.put("PlasmaFangs", PlasmaFangs.class);
         EffectTypeAdapter.EFFECTS.put("RabidClaw", RabidClaw.class);
         EffectTypeAdapter.EFFECTS.put("PlasmaVeil", PlasmaVeil.class);
+        EffectTypeAdapter.EFFECTS.put("RadiantEnergy", RadiantEnergy.class);
+        EffectTypeAdapter.EFFECTS.put("BleedingJaw", BleedingJaw.class);
+        EffectTypeAdapter.EFFECTS.put("Shatterstorm", Shatterstorm.class);
+        EffectTypeAdapter.EFFECTS.put("SnowstormFury", SnowstormFury.class);
+        EffectTypeAdapter.EFFECTS.put("Afterburner", Afterburner.class);
+        EffectTypeAdapter.EFFECTS.put("VenomAmbush", VenomAmbush.class);
         ItemRegistration.ITEMS.register("eeveeolite", EeveeoliteItem::new);
         ItemRegistration.ITEMS.register("diancite-hellas", () -> new MegaStoneItem("diancie form:hellas"));
         ItemRegistration.ITEMS.register("sceptilite-hellas", () -> new MegaStoneItem("sceptile form:hellas"));
