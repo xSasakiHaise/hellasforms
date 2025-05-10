@@ -16,7 +16,7 @@ public class MixinSharpness extends AbstractAbility {
             remap = false
     )
     public int[] modifyPowerAndAccuracyUser(int power, int accuracy, PixelmonWrapper user, PixelmonWrapper target, Attack a) {
-        Set<String> sharpnessMoves = Sets.newHashSet(new String[]{"Aerial Ace", "Air Cutter", "Air Slash", "Aqua Cutter", "Behemoth Blade", "Bitter Blade", "Ceaseless Edge", "Cross Poison", "Cut", "Cutting Edge", "Fury Cutter", "Isbrand", "Kowtow Cleave", "Leaf Blade", "Night Slash", "Petal Blade", "Population Bomb", "Psyblade", "Psycho Cut", "Razor Leaf", "Razor Shell", "Sacred Sword", "Slash", "Solar Blade", "Stone Axe", "X-Scissor"});
+        Set<String> sharpnessMoves = Sets.newHashSet(new String[]{"Aerial Ace", "Air Cutter", "Air Slash", "Aqua Cutter", "Behemoth Blade", "Bitter Blade", "Ceaseless Edge", "Cross Poison", "Cut", "Cutting Edge", "Fury Cutter", "Isbrand", "Kowtow Cleave", "Leaf Blade", "Night Slash", "Petal Blade", "Population Bomb", "Psyblade", "Psycho Cut", "Razor Leaf", "Razor Shell", "Sacred Sword", "Slash", "Snowstorm Fury", "Solar Blade", "Stone Axe", "X-Scissor"});
         if (sharpnessMoves.contains(a.getMove().getAttackName())) {
             power = (int)((double)power * (double)1.5F);
         }

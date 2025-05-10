@@ -18,6 +18,17 @@
       "modifiers": [],
       "persists": false,
       "effectTypeID": "GreekFire"
+    },
+    {
+      "type": "Burn",
+      "modifiers": [
+        {
+          "type": "Chance",
+          "value": 33.0
+        }
+      ],
+      "persists": false,
+      "effectTypeID": "Burn"
     }
   ],
   "animations": [

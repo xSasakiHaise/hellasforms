@@ -128,6 +128,9 @@
 	"ability.CombatHedge.start": "%s's form changes",
 	"ability.CombatHedge.stop": "%s's form changes",
 	"hellasforms.abilities.CombatHedge.activate": "%s's form changes",
+	"ability.CrystalLens": "Crystal Lens",
+	"ability.CrystalLens.description": "%s ignores enemies evasion stat and has increased critical hit chance as well as increasing the odds of wild pokemon holding items when in the first slot of your party",
+	"hellasforms.abilities.CrystalLens.activate": "%s's Crystal Lens activates",
 
 	"ability.Stormforce": "Storm Force",
 	"ability.Stormforce.description": "%s summons an electric terrain in which it gets increased priority on status moves",
@@ -166,5 +169,8 @@
 	"attack.soul_sap": "Soul Sap",
 	"attack.soul_sap.description": "The user utters a dark fae enchantment, stealing away part of the soul of the target and recovering 3/4 of damage dealt. This move hits both opposing Pokemon in a double battle.",
 	"attack.supernova": "Supernova",
-	"attack.supernova.description": "The user explodes in a vibrant burst of light. Gravity and a layer of spikes are set, then the user faints. This move usually goes last."
+	"attack.supernova.description": "The user explodes in a vibrant burst of light. Gravity and a layer of spikes are set, then the user faints. This move usually goes last.",
+
+	"attack.afterburner": "Afterburner",
+	"attack.afterburner.description": ""
 }
