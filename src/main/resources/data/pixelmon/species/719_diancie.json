@@ -683,7 +683,7 @@
       "preEvolutions": [],
       "defaultBaseForm": "diancie form:hellas",
       "megaItems": [
-        "hellasforms:diancite-hellas"
+        "pixelmon:diancite-hellas"
       ],
       "megas": [
         "mega-hellas"
@@ -705,7 +705,8 @@
     {
       "name": "mega-hellas",
       "tags": [
-        "temp"
+        "temp",
+        "hellas"
       ],
       "abilities": {
         "abilities": [

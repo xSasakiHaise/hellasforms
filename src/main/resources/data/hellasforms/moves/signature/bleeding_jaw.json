@@ -6,7 +6,7 @@
   "ppBase": 10,
   "ppMax": 16,
   "accuracy": 100,
-  "makesContact": false,
+  "makesContact": true,
   "effects": [
     {
       "modifiers": [],

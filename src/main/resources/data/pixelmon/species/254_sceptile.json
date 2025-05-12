@@ -882,7 +882,7 @@
         ],
         "defaultBaseForm": "sceptile form:hellas",
         "megaItems": [
-          "hellasforms:sceptilite-hellas"
+          "pixelmon:sceptilite-hellas"
         ],
         "megas": [
           "mega-hellas"

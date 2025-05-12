@@ -528,7 +528,7 @@
       }
     },
     {
-      "name": "",
+      "name": "hellas",
       "experienceGroup": "SLOW",
       "dimensions": {
         "height": 1.2,
@@ -765,7 +765,7 @@
       },
       "abilities": {
         "abilities": [
-          "Strong Jaw"
+          "StrongJaw"
         ],
         "hiddenAbilities": [
           "Sturdy"
@@ -785,12 +785,14 @@
       "battleStats": {
         "hp": 120,
         "attack": 80,
-        "defense": 80,
-        "specialAttack": 45,
-        "specialDefense": 80,
-        "speed": 55
+        "defense": 105,
+        "specialAttack": 40,
+        "specialDefense": 105,
+        "speed": 60
       },
-      "tags": [],
+      "tags": [
+        "hellas"
+      ],
       "spawn": {
         "baseExp": 144,
         "baseFriendship": 35,
