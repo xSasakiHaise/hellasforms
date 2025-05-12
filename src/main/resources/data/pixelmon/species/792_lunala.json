@@ -570,12 +570,12 @@
         ]
       },
       "battleStats": {
-        "hp": 157,
-        "attack": 133,
-        "defense": 99,
-        "specialAttack": 157,
-        "specialDefense": 117,
-        "speed": 117
+        "hp": 130,
+        "attack": 120,
+        "defense": 95,
+        "specialAttack": 120,
+        "specialDefense": 95,
+        "speed": 90
       },
       "tags": [
         "hellas",

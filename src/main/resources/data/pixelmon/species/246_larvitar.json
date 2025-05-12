@@ -780,7 +780,7 @@
       },
       "abilities": {
         "abilities": [
-          "Strong Jaw"
+          "StrongJaw"
         ],
         "hiddenAbilities": [
           "Sturdy"
@@ -798,14 +798,17 @@
         "aggressive": 20
       },
       "battleStats": {
-        "hp": 100,
+        "hp": 80,
         "attack": 70,
-        "defense": 60,
-        "specialAttack": 45,
-        "specialDefense": 60,
-        "speed": 45
+        "defense": 75,
+        "specialAttack": 40,
+        "specialDefense": 75,
+        "speed": 60
       },
-      "tags": [],
+      "tags": [
+        "hellas",
+        "wild"
+      ],
       "spawn": {
         "baseExp": 67,
         "baseFriendship": 35,

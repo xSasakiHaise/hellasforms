@@ -6,7 +6,7 @@
   "ppBase": 5,
   "ppMax": 8,
   "accuracy": 100,
-  "makesContact": false,
+  "makesContact": true,
   "effects": [
     {
       "type": "Burn",
