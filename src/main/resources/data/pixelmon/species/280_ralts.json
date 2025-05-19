@@ -1029,11 +1029,11 @@
       },
       "abilities": {
         "abilities": [
-          "Synchronize",
-          "Trace"
+          "Neuroforce",
+          "Levitate"
         ],
         "hiddenAbilities": [
-          "Telepathy"
+          "Pixilate"
         ]
       },
       "movement": {
@@ -1098,12 +1098,6 @@
               "texture": "pixelmon:pokemon/280_ralts/all/base/shiny/texture.png",
               "sprite": "pixelmon:pokemon/280_ralts/all/base/shiny/sprite.png",
               "particle": "arcanery:shiny"
-            },
-            {
-              "name": "strike",
-              "texture": "pixelmon:pokemon/280_ralts/all/base/strike/texture.png",
-              "sprite": "pixelmon:pokemon/280_ralts/all/base/strike/sprite.png",
-              "particle": ""
             }
           ]
         }

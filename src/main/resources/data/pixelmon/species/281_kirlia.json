@@ -585,6 +585,388 @@
       "evYields": {
         "specialAttack": 2
       }
+    },
+    {
+      "name": "hellas",
+      "experienceGroup": "SLOW",
+      "dimensions": {
+        "height": 0.8,
+        "width": 0.6,
+        "length": 1,
+        "eyeHeight": 0.8,
+        "hoverHeight": 0.8
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Confusion",
+              "Disarming Voice",
+              "Double Team",
+              "Growl"
+            ]
+          },
+          {
+            "level": 9,
+            "attacks": [
+              "Hypnosis"
+            ]
+          },
+          {
+            "level": 12,
+            "attacks": [
+              "Draining Kiss"
+            ]
+          },
+          {
+            "level": 15,
+            "attacks": [
+              "Teleport"
+            ]
+          },
+          {
+            "level": 18,
+            "attacks": [
+              "Psybeam"
+            ]
+          },
+          {
+            "level": 23,
+            "attacks": [
+              "Life Dew"
+            ]
+          },
+          {
+            "level": 28,
+            "attacks": [
+              "Charm"
+            ]
+          },
+          {
+            "level": 33,
+            "attacks": [
+              "Calm Mind"
+            ]
+          },
+          {
+            "level": 38,
+            "attacks": [
+              "Psychic"
+            ]
+          },
+          {
+            "level": 43,
+            "attacks": [
+              "Heal Pulse"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Dream Eater"
+            ]
+          },
+          {
+            "level": 53,
+            "attacks": [
+              "Future Sight"
+            ]
+          }
+        ],
+        "tutorMoves": [
+          "Expanding Force",
+          "Triple Axel"
+        ],
+        "transferMoves": [
+          "Captivate",
+          "Charge Beam",
+          "Confide",
+          "Confuse Ray",
+          "Defense Curl",
+          "Destiny Bond",
+          "Disable",
+          "Double-Edge",
+          "Echoed Voice",
+          "Flash",
+          "Frustration",
+          "Grudge",
+          "Headbutt",
+          "Hidden Power",
+          "Knock Off",
+          "Lucky Chant",
+          "Magic Coat",
+          "Mean Look",
+          "Memento",
+          "Mimic",
+          "Mud-Slap",
+          "Mystical Fire",
+          "Natural Gift",
+          "Nightmare",
+          "Pain Split",
+          "Psych Up",
+          "Recycle",
+          "Return",
+          "Secret Power",
+          "Shadow Sneak",
+          "Shock Wave",
+          "Signal Beam",
+          "Sing",
+          "Snatch",
+          "Swagger",
+          "Synchronoise",
+          "Telekinesis",
+          "Torment",
+          "Toxic",
+          "Wish"
+        ],
+        "trMoves": [
+          "Body Slam",
+          "Thunderbolt",
+          "Psychic",
+          "Substitute",
+          "Psyshock",
+          "Endure",
+          "Sleep Talk",
+          "Encore",
+          "Shadow Ball",
+          "Future Sight",
+          "Taunt",
+          "Trick",
+          "Skill Swap",
+          "Hyper Voice",
+          "Calm Mind",
+          "Zen Headbutt",
+          "Grass Knot",
+          "Stored Power",
+          "Ally Switch",
+          "Dazzling Gleam"
+        ],
+        "hmMoves": [],
+        "tmMoves9": [
+          "Charm",
+          "Protect",
+          "Psybeam",
+          "Confuse Ray",
+          "Thief",
+          "Disarming Voice",
+          "Charge Beam",
+          "Facade",
+          "Swift",
+          "Magical Leaf",
+          "Icy Wind",
+          "Draining Kiss",
+          "Stored Power",
+          "Fling",
+          "Endure",
+          "Sunny Day",
+          "Rain Dance",
+          "Psyshock",
+          "Zen Headbutt",
+          "Body Slam",
+          "Fire Punch",
+          "Thunder Punch",
+          "Ice Punch",
+          "Sleep Talk",
+          "Reflect",
+          "Light Screen",
+          "Dazzling Gleam",
+          "Metronome",
+          "Grass Knot",
+          "Thunder Wave",
+          "Rest",
+          "Taunt",
+          "Imprison",
+          "Skill Swap",
+          "Substitute",
+          "Will-O-Wisp",
+          "Trick",
+          "Shadow Ball",
+          "Hyper Voice",
+          "Psychic",
+          "Encore",
+          "Thunderbolt",
+          "Calm Mind",
+          "Helping Hand",
+          "Psychic Terrain",
+          "Misty Terrain",
+          "Trick Room",
+          "Hyper Beam",
+          "Tera Blast",
+          "Knock Off",
+          "Pain Split",
+          "Psych Up",
+          "Triple Axel",
+          "Future Sight",
+          "Expanding Force"
+        ],
+        "tmMoves8": [
+          "Mega Punch",
+          "Mega Kick",
+          "Fire Punch",
+          "Ice Punch",
+          "Thunder Punch",
+          "Magical Leaf",
+          "Thunder Wave",
+          "Light Screen",
+          "Reflect",
+          "Safeguard",
+          "Rest",
+          "Thief",
+          "Snore",
+          "Protect",
+          "Icy Wind",
+          "Charm",
+          "Attract",
+          "Rain Dance",
+          "Sunny Day",
+          "Will-O-Wisp",
+          "Facade",
+          "Swift",
+          "Helping Hand",
+          "Imprison",
+          "Fling",
+          "Trick Room",
+          "Wonder Room",
+          "Magic Room",
+          "Round",
+          "Draining Kiss",
+          "Misty Terrain"
+        ],
+        "eggMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "Neuroforce",
+          "Levitate"
+        ],
+        "hiddenAbilities": [
+          "Pixilate"
+        ]
+      },
+      "movement": {
+        "rideable": false,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false
+      },
+      "aggression": {
+        "timid": 80,
+        "passive": 0,
+        "aggressive": 20
+      },
+      "battleStats": {
+        "hp": 100,
+        "attack": 80,
+        "defense": 70,
+        "specialAttack": 80,
+        "specialDefense": 70,
+        "speed": 100
+      },
+      "tags": [
+        "hellas"
+      ],
+      "spawn": {
+        "baseExp": 140,
+        "baseFriendship": 35,
+        "spawnLevel": 20,
+        "spawnLevelRange": 9,
+        "spawnLocations": [
+          "LAND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "pixelmon:pokemon/281_kirlia/all/base/none/texture.png",
+              "sprite": "pixelmon:pokemon/281_kirlia/all/base/none/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/281_kirlia/all/base/none/model.pqc"
+                ]
+              },
+              "sounds": [
+                "pixelmon.mob.kirlia",
+                "pixelmon.mob.kirlia"
+              ]
+            },
+            {
+              "name": "shiny",
+              "texture": "pixelmon:pokemon/281_kirlia/all/base/shiny/texture.png",
+              "sprite": "pixelmon:pokemon/281_kirlia/all/base/shiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "FIRE"
+      ],
+      "preEvolutions": [
+        "Ralts form:hellas"
+      ],
+      "defaultBaseForm": "",
+      "megaItems": [],
+      "megas": [],
+      "gigantamax": {
+        "canHaveFactor": false,
+        "canGigantamax": false
+      },
+      "eggCycles": 21,
+      "weight": 20.2,
+      "catchRate": 120,
+      "malePercentage": 50,
+      "evolutions": [
+        {
+          "level": 30,
+          "to": "Gardevoir form:hellas",
+          "conditions": [
+            {
+              "genders": [
+                "FEMALE"
+              ],
+              "evoConditionType": "gender"
+            }
+          ],
+          "evoType": "leveling",
+          "moves": [
+            "Dazzling Gleam"
+          ]
+        },
+        {
+          "item": {
+            "itemID": "pixelmon:dawn_stone"
+          },
+          "to": "Gallade form:hellas",
+          "evoType": "interact",
+          "moves": [
+            "Slash"
+          ]
+        }
+      ],
+      "evYields": {
+        "specialAttack": 2
+      }
     }
   ],
   "generation": 3

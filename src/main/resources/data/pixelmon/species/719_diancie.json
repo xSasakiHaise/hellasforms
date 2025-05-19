@@ -606,7 +606,9 @@
           "PrismArmor",
           "MagicBounce"
         ],
-        "hiddenAbilities": []
+        "hiddenAbilities": [
+            "CrystalLens"
+        ]
       },
       "movement": {
         "rideable": false,
