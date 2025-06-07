@@ -1,0 +1,79 @@
+{
+  "id": "Hellasian Gible",
+  "spawnInfos": [
+    {
+      "spec": "species:Gible form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 14,
+      "maxLevel": 23,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "arid",
+          "mesas"
+        ],
+        "maxY": 80
+      },
+      "rarity": 90.0
+    },
+    {
+      "spec": "species:Gible",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 14,
+      "maxLevel": 23,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "biomesoplenty:volcano",
+          "biomesoplenty:volcanic_plains"
+        ]
+      },
+      "rarity": 0.3
+    },
+    {
+      "spec": "species:Gible form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 14,
+      "maxLevel": 23,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "pixelmon:ultra_desert"
+        ]
+      },
+      "rarity": 0.3
+    },
+    {
+      "spec": "species:Gible form:hellas",
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 14,
+      "maxLevel": 23,
+      "typeID": "pokemon",
+      "condition": {
+        "stringBiomes": [
+          "arid",
+          "mesas"
+        ],
+        "maxY": 70
+      },
+      "rarity": 0.3
+    }
+  ]
+}
