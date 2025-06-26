@@ -1,10 +1,11 @@
 {
-  "id": "Hellasian Wailmer",
+  "id": "Hellasian Sizzlipede",
   "spawnInfos": [
     {
-      "spec": "species:Wailmer form:hellas",
+      "spec": "species:Sizzlipede form:hellas",
       "stringLocationTypes": [
-        "Water"
+        "Land",
+        "Headbutt"
       ],
       "tags": [
         "hellas",
@@ -16,10 +17,16 @@
       "typeID": "pokemon",
       "condition": {
         "times": [
+          "DAWN",
+          "NIGHT",
+          "DUSK"
         ],
         "stringBiomes": [
-          "oceanic",
-          "terraforged:warm_beach"
+          "arid",
+          "mesas",
+          "biomesoplenty:burnt_forest",
+          "evil",
+          "hellish"
         ]
       },
       "rarity": 1.0

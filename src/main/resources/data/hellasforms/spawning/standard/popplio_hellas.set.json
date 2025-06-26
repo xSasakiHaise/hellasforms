@@ -1,13 +1,18 @@
 {
-  "id": "Popplio",
+  "id": "Hellasian Popplio",
   "spawnInfos": [
     {
-      "spec": "species:Popplio",
+      "spec": "species:Popplio form:hellas",
       "stringLocationTypes": [
         "Land"
       ],
+      "tags": [
+        "hellas",
+        "wild",
+        "tier_uncommon"
+      ],
       "minLevel": 5,
-      "maxLevel": 16,
+      "maxLevel": 15,
       "typeID": "pokemon",
       "condition": {
         "times": [
@@ -32,7 +37,7 @@
           }
         }
       ],
-      "rarity": 10.0
+      "rarity": 0.8
     }
   ]
 }

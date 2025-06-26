@@ -1,20 +1,22 @@
 {
-  "id": "Meloetta",
+  "id": "Hellasian Shaymin",
   "spawnInfos": [
     {
-      "spec": "species:Meloetta level:50",
+      "spec": "species:Shaymin form:hellas",
       "stringLocationTypes": [
         "Land"
       ],
       "tags": [
-        "legendary",
-        "mythical"
+        "hellas",
+        "wild",
+        "tier_mythic"
       ],
-      "interval": "legendary",
+      "minLevel": 35,
+      "maxLevel": 50,
       "typeID": "pokemon",
       "condition": {
         "times": [
-          "NIGHT"
+          "MORNING"
         ],
         "stringBiomes": [
           "flowery"

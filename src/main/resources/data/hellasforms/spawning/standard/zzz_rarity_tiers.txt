@@ -1,0 +1,95 @@
+Rarity Tiers:
+    Common:
+        Golett
+        Sizzlipede
+        Skiddo
+        Spheal
+        Wailmer
+        Wooloo
+            BST:
+                500
+            Rarity:
+                1.0
+            Spawn Levels:
+                5-10
+            Background:
+                Grey
+    Uncommon:
+        Phantump
+        Popplio
+        Tepig
+        Trapinch
+            BST:
+                520
+            Rarity:
+                0.8
+            Spawn Levels:
+                10-15
+            Background:
+                Green
+    Rare:
+        Charcadet
+        Oshawott
+        Ralts
+        Rowlet
+        Treecko
+            BST:
+                550
+            Rarity:
+                0.6
+            Spawn Levels:
+                10-25
+            Background:
+                Blue
+    Epic:
+        Dreepy
+        Gible
+        Eevee
+        Larvitar
+        Zorua
+            BST:
+                580
+            Rarity:
+                0.4
+            Spawn Levels:
+                15-35
+            Background:
+                Purple
+    Mythic:
+        Iron Valiant
+        Jirachi
+        Roaring Moon
+        Shaymin
+            BST:
+                600
+            Rarity:
+                0.3
+            Spawn Levels:
+                35-50
+            Background:
+                Yellow
+    Legendary:
+        Magikarp
+        Meloetta
+        Poipole
+        Yveltal
+            BST:
+                620
+            Rarity:
+                0.2
+            Spawn Levels:
+                50-70
+            Background:
+                Orange
+    Exotic:
+        Diancie
+        Giratina
+        Lunala
+            BST:
+                650
+            Rarity:
+                0.1
+            Spawn Levels:
+                70-80
+            Background:
+                Red

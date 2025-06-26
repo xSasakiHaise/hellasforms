@@ -1,10 +1,10 @@
 {
-  "id": "Hellasian Wailmer",
+  "id": "Hellasian Wooloo",
   "spawnInfos": [
     {
-      "spec": "species:Wailmer form:hellas",
+      "spec": "species:Wooloo form:hellas",
       "stringLocationTypes": [
-        "Water"
+        "Land"
       ],
       "tags": [
         "hellas",
@@ -16,10 +16,12 @@
       "typeID": "pokemon",
       "condition": {
         "times": [
+          "DAWN",
+          "MORNING"
         ],
         "stringBiomes": [
-          "oceanic",
-          "terraforged:warm_beach"
+          "plains",
+          "minecraft:snowy_tundra"
         ]
       },
       "rarity": 1.0

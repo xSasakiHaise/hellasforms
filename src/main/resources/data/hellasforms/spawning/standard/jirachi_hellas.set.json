@@ -8,7 +8,8 @@
       ],
       "tags": [
         "hellas",
-        "wild"
+        "wild",
+        "tier_mythic"
       ],
       "minLevel": 30,
       "maxLevel": 50,
@@ -23,7 +24,7 @@
           "byg:jade_cliffs"
         ]
       },
-      "rarity": 0.2
+      "rarity": 0.3
     }
   ]
 }

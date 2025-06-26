@@ -9,10 +9,11 @@
       ],
       "tags": [
         "hellas",
-        "wild"
+        "wild",
+        "tier_common"
       ],
       "minLevel": 5,
-      "maxLevel": 30,
+      "maxLevel": 10,
       "typeID": "pokemon",
       "condition": {
         "times": [
@@ -21,7 +22,7 @@
           "beaches"
         ]
       },
-      "rarity": 0.4
+      "rarity": 1.0
     }
   ]
 }

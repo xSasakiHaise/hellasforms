@@ -1,31 +1,28 @@
 {
-  "id": "Hellasian Skiddo",
+  "id": "Hellasian Iron Valiant",
   "spawnInfos": [
     {
-      "spec": "species:Skiddo form:hellas",
+      "spec": "species:IronValiant form:hellas",
       "stringLocationTypes": [
         "Land"
       ],
       "tags": [
         "hellas",
         "wild",
-        "tier_common"
+        "tier_mythic"
       ],
-      "minLevel": 5,
-      "maxLevel": 10,
+      "minLevel": 35,
+      "maxLevel": 50,
       "typeID": "pokemon",
+      "heldItems": [
+      ],
       "condition": {
-        "times": [
-          "DAY"
-        ],
         "stringBiomes": [
-          "hills",
-          "mountainous forests",
           "minecraft:snowy_mountains",
           "minecraft:gravelly_mountains"
         ]
       },
-      "rarity": 1.0
+      "rarity": 0.3
     }
   ]
 }

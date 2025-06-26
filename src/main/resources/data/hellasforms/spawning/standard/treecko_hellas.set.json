@@ -9,10 +9,11 @@
       ],
       "tags": [
         "hellas",
-        "wild"
+        "wild",
+        "tier_rare"
       ],
-      "minLevel": 5,
-      "maxLevel": 12,
+      "minLevel": 10,
+      "maxLevel": 25,
       "typeID": "pokemon",
       "condition": {
         "times": [
@@ -22,7 +23,7 @@
           "forests"
         ]
       },
-      "rarity": 0.8
+      "rarity": 0.6
     }
   ]
 }
