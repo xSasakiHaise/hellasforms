@@ -1,13 +1,18 @@
 {
-  "id": "Oshawott",
+  "id": "Hellasian Oshawott",
   "spawnInfos": [
     {
-      "spec": "species:Oshawott",
+      "spec": "species:Oshawott form:hellas",
       "stringLocationTypes": [
         "Land"
       ],
-      "minLevel": 5,
-      "maxLevel": 16,
+      "tags": [
+        "hellas",
+        "wild",
+        "tier_rare"
+      ],
+      "minLevel": 10,
+      "maxLevel": 25,
       "typeID": "pokemon",
       "condition": {
         "times": [
@@ -30,25 +35,7 @@
           }
         }
       ],
-      "rarity": 10.0
-    },
-    {
-      "spec": "species:Oshawott",
-      "stringLocationTypes": [
-        "Land"
-      ],
-      "minLevel": 5,
-      "maxLevel": 16,
-      "typeID": "pokemon",
-      "condition": {
-        "times": [
-          "DAY"
-        ],
-        "stringBiomes": [
-          "pixelmon:ultra_deep_sea"
-        ]
-      },
-      "rarity": 10.0
+      "rarity": 0.6
     }
   ]
 }

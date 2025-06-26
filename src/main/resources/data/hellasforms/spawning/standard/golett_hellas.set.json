@@ -8,10 +8,11 @@
       ],
       "tags": [
         "hellas",
-        "wild"
+        "wild",
+        "tier_common"
       ],
-      "minLevel": 10,
-      "maxLevel": 35,
+      "minLevel": 5,
+      "maxLevel": 10,
       "typeID": "pokemon",
       "heldItems": [
       ],
@@ -19,10 +20,11 @@
         "times": [
         ],
         "stringBiomes": [
-          "arid"
+          "arid",
+          "mesas"
         ]
       },
-      "rarity": 0.4
+      "rarity": 1.0
     }
   ]
 }

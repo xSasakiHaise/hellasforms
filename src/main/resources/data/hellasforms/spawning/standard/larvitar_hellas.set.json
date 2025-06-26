@@ -1,28 +1,29 @@
 {
-  "id": "Hellasian Wailmer",
+  "id": "Hellasian Larvitar",
   "spawnInfos": [
     {
-      "spec": "species:Wailmer form:hellas",
+      "spec": "species:Larvitar form:hellas",
       "stringLocationTypes": [
-        "Water"
+        "Land"
       ],
       "tags": [
         "hellas",
         "wild",
-        "tier_common"
+        "tier_epic"
       ],
-      "minLevel": 5,
-      "maxLevel": 10,
+      "minLevel": 15,
+      "maxLevel": 35,
       "typeID": "pokemon",
       "condition": {
         "times": [
+          "NIGHT"
         ],
         "stringBiomes": [
-          "oceanic",
-          "terraforged:warm_beach"
+          "mountainous",
+          "mesas"
         ]
       },
-      "rarity": 1.0
+      "rarity": 0.4
     }
   ]
 }

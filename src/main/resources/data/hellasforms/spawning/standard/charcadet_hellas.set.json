@@ -6,14 +6,15 @@
       "stringLocationTypes": [
         "Land"
       ],
-      "minLevel": 5,
+      "minLevel": 10,
       "maxLevel": 25,
       "typeID": "pokemon",
       "heldItems": [
       ],
       "tags": [
         "hellas",
-        "wild"
+        "wild",
+        "tier_rare"
       ],
       "condition": {
         "stringBiomes": [
@@ -22,7 +23,7 @@
           "minecraft:gravelly_mountains"
          ]
       },
-      "rarity": 0.4
+      "rarity": 0.6
     }
   ]
 }

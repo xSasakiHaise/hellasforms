@@ -1,28 +1,28 @@
 {
-  "id": "Hellasian Wailmer",
+  "id": "Hellasian Meloetta",
   "spawnInfos": [
     {
-      "spec": "species:Wailmer form:hellas",
+      "spec": "species:Meloetta form:hellas",
       "stringLocationTypes": [
-        "Water"
+        "Land"
       ],
       "tags": [
         "hellas",
         "wild",
-        "tier_common"
+        "tier_legendary"
       ],
-      "minLevel": 5,
-      "maxLevel": 10,
+      "minLevel": 50,
+      "maxLevel": 70,
       "typeID": "pokemon",
       "condition": {
         "times": [
+          "NIGHT"
         ],
         "stringBiomes": [
-          "oceanic",
-          "terraforged:warm_beach"
+          "flowery"
         ]
       },
-      "rarity": 1.0
+      "rarity": 0.2
     }
   ]
 }

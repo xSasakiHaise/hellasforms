@@ -1,28 +1,30 @@
 {
-  "id": "Hellasian Wailmer",
+  "id": "Hellasian Ralts",
   "spawnInfos": [
     {
-      "spec": "species:Wailmer form:hellas",
+      "spec": "species:Ralts form:hellas",
       "stringLocationTypes": [
-        "Water"
+        "Land",
+        "Sweet Scent"
       ],
       "tags": [
         "hellas",
         "wild",
-        "tier_common"
+        "tier_rare"
       ],
-      "minLevel": 5,
-      "maxLevel": 10,
+      "minLevel": 10,
+      "maxLevel": 25,
       "typeID": "pokemon",
       "condition": {
         "times": [
+          "DAWN",
+          "DUSK"
         ],
         "stringBiomes": [
-          "oceanic",
-          "terraforged:warm_beach"
+          "birches"
         ]
       },
-      "rarity": 1.0
+      "rarity": 0.6
     }
   ]
 }

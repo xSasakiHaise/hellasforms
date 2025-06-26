@@ -1,28 +1,25 @@
 {
-  "id": "Hellasian Yveltal",
+  "id": "Hellasian Roaring Moon",
   "spawnInfos": [
     {
-      "spec": "species:Yveltal form:hellas",
+      "spec": "species:RoaringMoon form:hellas",
       "stringLocationTypes": [
-        "Air"
+        "Land"
       ],
       "tags": [
         "hellas",
         "wild",
-        "tier_legendary"
+        "tier_mythic"
       ],
-      "minLevel": 50,
-      "maxLevel": 70,
+      "minLevel": 35,
+      "maxLevel": 50,
       "typeID": "pokemon",
       "condition": {
-        "times": [
-          "NIGHT"
-        ],
         "stringBiomes": [
           "evil"
         ]
       },
-      "rarity": 0.2
+      "rarity": 0.4
     }
   ]
 }

@@ -9,10 +9,11 @@
       ],
       "tags": [
         "hellas",
-        "wild"
+        "wild",
+        "tier_rare"
       ],
-      "minLevel": 5,
-      "maxLevel": 16,
+      "minLevel": 10,
+      "maxLevel": 25,
       "typeID": "pokemon",
       "condition": {
         "times": [
@@ -23,7 +24,7 @@
           "evil"
         ]
       },
-      "rarity": 0.8
+      "rarity": 0.6
     }
   ]
 }

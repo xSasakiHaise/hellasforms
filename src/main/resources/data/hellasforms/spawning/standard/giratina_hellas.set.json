@@ -8,10 +8,11 @@
       ],
       "tags": [
         "hellas",
-        "wild"
+        "wild",
+        "tier_exotic"
       ],
-      "minLevel": 50,
-      "maxLevel": 70,
+      "minLevel": 70,
+      "maxLevel": 80,
       "typeID": "pokemon",
       "heldItems": [
       ],

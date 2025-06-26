@@ -1,10 +1,10 @@
 {
-  "id": "Hellasian Yveltal",
+  "id": "Hellas Poipole",
   "spawnInfos": [
     {
-      "spec": "species:Yveltal form:hellas",
+      "spec": "species:Poipole form:hellas",
       "stringLocationTypes": [
-        "Air"
+        "Land"
       ],
       "tags": [
         "hellas",
@@ -15,11 +15,10 @@
       "maxLevel": 70,
       "typeID": "pokemon",
       "condition": {
-        "times": [
-          "NIGHT"
-        ],
         "stringBiomes": [
-          "evil"
+          "redwoods",
+          "jungles",
+          "forests"
         ]
       },
       "rarity": 0.2
