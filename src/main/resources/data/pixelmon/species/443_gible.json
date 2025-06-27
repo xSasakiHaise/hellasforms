@@ -666,7 +666,7 @@
         "attack": 40,
         "defense": 60,
         "specialAttack": 80,
-        "specialDefense": 60,
+        "specialDefense": 50,
         "speed": 50
       },
       "tags": [
