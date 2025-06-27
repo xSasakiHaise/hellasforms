@@ -736,6 +736,503 @@
           ]
         }
       ]
+    },
+    {
+      "name": "hellas",
+      "experienceGroup": "SLOW",
+      "dimensions": {
+        "height": 1.6,
+        "width": 1.0,
+        "length": 1,
+        "eyeHeight": 1.6,
+        "hoverHeight": 1.6
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Aqua Cutter",
+              "Calm Mind",
+              "Charm",
+              "Confusion",
+              "Disarming Voice",
+              "Double Team",
+              "Draining Kiss",
+              "Dream Eater",
+              "Fury Cutter",
+              "Future Sight",
+              "Growl",
+              "Hypnosis",
+              "Imprison",
+              "Leaf Blade",
+              "Leer",
+              "Life Dew",
+              "Night Slash",
+              "Psybeam",
+              "Psychic",
+              "Sacred Sword",
+              "Slash"
+            ]
+          },
+          {
+            "level": 9,
+            "attacks": [
+              "Helping Hand"
+            ]
+          },
+          {
+            "level": 12,
+            "attacks": [
+              "Feint"
+            ]
+          },
+          {
+            "level": 15,
+            "attacks": [
+              "Teleport"
+            ]
+          },
+          {
+            "level": 18,
+            "attacks": [
+              "Aerial Ace"
+            ]
+          },
+          {
+            "level": 23,
+            "attacks": [
+              "False Swipe"
+            ]
+          },
+          {
+            "level": 28,
+            "attacks": [
+              "Protect"
+            ]
+          },
+          {
+            "level": 35,
+            "attacks": [
+              "Swords Dance"
+            ]
+          },
+          {
+            "level": 42,
+            "attacks": [
+              "Psycho Cut"
+            ]
+          },
+          {
+            "level": 49,
+            "attacks": [
+              "Heal Pulse"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Quick Guard",
+              "Wide Guard"
+            ]
+          },
+          {
+            "level": 63,
+            "attacks": [
+              "Close Combat"
+            ]
+          }
+        ],
+        "tutorMoves": [
+          "Coaching",
+          "Expanding Force",
+          "Triple Axel"
+        ],
+        "transferMoves": [
+          "Captivate",
+          "Charge Beam",
+          "Confide",
+          "Cut",
+          "Defense Curl",
+          "Double-Edge",
+          "Dual Chop",
+          "Echoed Voice",
+          "Flash",
+          "Focus Punch",
+          "Frustration",
+          "Headbutt",
+          "Hidden Power",
+          "Laser Focus",
+          "Lucky Chant",
+          "Magic Coat",
+          "Mimic",
+          "Mud-Slap",
+          "Natural Gift",
+          "Nightmare",
+          "Pain Split",
+          "Power-Up Punch",
+          "Psych Up",
+          "Recycle",
+          "Return",
+          "Rock Smash",
+          "Secret Power",
+          "Shock Wave",
+          "Signal Beam",
+          "Sing",
+          "Snatch",
+          "Strength",
+          "Swagger",
+          "Synchronoise",
+          "Telekinesis",
+          "Torment",
+          "Toxic",
+          "Vacuum Wave",
+          "Wish"
+        ],
+        "trMoves": [
+          "Swords Dance",
+          "Body Slam",
+          "Low Kick",
+          "Thunderbolt",
+          "Earthquake",
+          "Psychic",
+          "Substitute",
+          "Reversal",
+          "Psyshock",
+          "Endure",
+          "Sleep Talk",
+          "Encore",
+          "Shadow Ball",
+          "Future Sight",
+          "Taunt",
+          "Trick",
+          "Skill Swap",
+          "Hyper Voice",
+          "Bulk Up",
+          "Calm Mind",
+          "Leaf Blade",
+          "Close Combat",
+          "Aura Sphere",
+          "Poison Jab",
+          "X-Scissor",
+          "Focus Blast",
+          "Energy Ball",
+          "Zen Headbutt",
+          "Stone Edge",
+          "Grass Knot",
+          "Stored Power",
+          "Ally Switch",
+          "Work Up",
+          "Dazzling Gleam",
+          "Throat Chop"
+        ],
+        "hmMoves": [],
+        "tmMoves9": [
+          "Take Down",
+          "Charm",
+          "Agility",
+          "Protect",
+          "Low Kick",
+          "Psybeam",
+          "Confuse Ray",
+          "Thief",
+          "Disarming Voice",
+          "Charge Beam",
+          "Facade",
+          "Aerial Ace",
+          "Bulldoze",
+          "Hex",
+          "Swift",
+          "Magical Leaf",
+          "Icy Wind",
+          "Rock Tomb",
+          "Draining Kiss",
+          "Low Sweep",
+          "Stored Power",
+          "Night Shade",
+          "Fling",
+          "Endure",
+          "Sunny Day",
+          "Rain Dance",
+          "Psyshock",
+          "False Swipe",
+          "Brick Break",
+          "Zen Headbutt",
+          "Shadow Claw",
+          "Bulk Up",
+          "Air Slash",
+          "Body Slam",
+          "Fire Punch",
+          "Thunder Punch",
+          "Ice Punch",
+          "Sleep Talk",
+          "Drain Punch",
+          "Reflect",
+          "Light Screen",
+          "Dazzling Gleam",
+          "Grass Knot",
+          "Thunder Wave",
+          "Poison Jab",
+          "Rest",
+          "Rock Slide",
+          "Taunt",
+          "Swords Dance",
+          "Imprison",
+          "Skill Swap",
+          "Substitute",
+          "X-Scissor",
+          "Will-O-Wisp",
+          "Trick",
+          "Aura Sphere",
+          "Shadow Ball",
+          "Hyper Voice",
+          "Energy Ball",
+          "Psychic",
+          "Encore",
+          "Thunderbolt",
+          "Calm Mind",
+          "Helping Hand",
+          "Reversal",
+          "Psychic Terrain",
+          "Misty Terrain",
+          "Earthquake",
+          "Stone Edge",
+          "Giga Impact",
+          "Focus Blast",
+          "Trick Room",
+          "Hyper Beam",
+          "Close Combat",
+          "Tera Blast",
+          "Knock Off",
+          "Vacuum Wave",
+          "Solar Blade",
+          "Focus Punch",
+          "Pain Split",
+          "Psych Up",
+          "Triple Axel",
+          "Coaching",
+          "Future Sight",
+          "Expanding Force",
+          "Throat Chop"
+        ],
+        "tmMoves8": [
+          "Mega Punch",
+          "Mega Kick",
+          "Fire Punch",
+          "Ice Punch",
+          "Thunder Punch",
+          "Hyper Beam",
+          "Giga Impact",
+          "Magical Leaf",
+          "Solar Blade",
+          "Thunder Wave",
+          "Light Screen",
+          "Reflect",
+          "Safeguard",
+          "Rest",
+          "Rock Slide",
+          "Thief",
+          "Snore",
+          "Protect",
+          "Icy Wind",
+          "Charm",
+          "Attract",
+          "Rain Dance",
+          "Sunny Day",
+          "Will-O-Wisp",
+          "Facade",
+          "Swift",
+          "Helping Hand",
+          "Revenge",
+          "Brick Break",
+          "Imprison",
+          "Rock Tomb",
+          "Fling",
+          "Drain Punch",
+          "Psycho Cut",
+          "Trick Room",
+          "Wonder Room",
+          "Magic Room",
+          "Low Sweep",
+          "Round",
+          "Retaliate",
+          "Bulldoze",
+          "Draining Kiss",
+          "Misty Terrain",
+          "False Swipe",
+          "Air Slash"
+        ],
+        "eggMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "QuickDraw",
+          "Sharpness"
+        ],
+        "hiddenAbilities": [
+          "Opportunist"
+        ]
+      },
+      "movement": {
+        "rideable": false,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false
+      },
+      "aggression": {
+        "timid": 80,
+        "passive": 0,
+        "aggressive": 20
+      },
+      "battleStats": {
+        "hp": 140,
+        "attack": 100,
+        "defense": 100,
+        "specialAttack": 80,
+        "specialDefense": 70,
+        "speed": 100
+      },
+      "tags": [
+        "hellas"
+      ],
+      "spawn": {
+        "baseExp": 208,
+        "baseFriendship": 35,
+        "spawnLevel": 20,
+        "spawnLevelRange": 45,
+        "spawnLocations": [
+          "LAND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "pixelmon:pokemon/475_gallade/all/base/none/texture.png",
+              "sprite": "pixelmon:pokemon/475_gallade/all/base/none/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/475_gallade/all/base/none/model.pqc"
+                ],
+                "yRotation": 24.2
+              },
+              "sounds": [
+                "pixelmon.mob.gallade"
+              ]
+            },
+            {
+              "name": "shiny",
+              "texture": "pixelmon:pokemon/475_gallade/all/base/shiny/texture.png",
+              "sprite": "pixelmon:pokemon/475_gallade/all/base/shiny/sprite.png",
+              "particle": "arcanery:shiny"
+            },
+            {
+              "name": "strike",
+              "texture": "pixelmon:pokemon/475_gallade/all/base/strike/texture.png",
+              "sprite": "pixelmon:pokemon/475_gallade/all/base/strike/sprite.png",
+              "particle": ""
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "FIRE",
+        "PSYCHIC"
+      ],
+      "preEvolutions": [
+        "Kirlia form:hellas",
+        "Ralts form:hellas"
+      ],
+      "defaultBaseForm": "hellas",
+      "megaItems": [
+        "pixelmon:galladite-hellas"
+      ],
+      "megas": [
+        "mega-hellas"
+      ],
+      "gigantamax": {
+        "canHaveFactor": false,
+        "canGigantamax": false
+      },
+      "eggCycles": 21,
+      "weight": 52.0,
+      "catchRate": 45,
+      "malePercentage": 100,
+      "evolutions": [],
+      "evYields": {
+        "attack": 3
+      }
+    },
+    {
+      "name": "mega-hellas",
+      "tags": [
+        "temp"
+      ],
+      "abilities": {
+        "abilities": [
+          "SwordOfRuin"
+        ]
+      },
+      "battleStats": {
+        "hp": 140,
+        "attack": 150,
+        "defense": 130,
+        "specialAttack": 80,
+        "specialDefense": 70,
+        "speed": 120
+      },
+      "weight": 56.4,
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "pixelmon:pokemon/475_gallade/all/mega/none/texture.png",
+              "sprite": "pixelmon:pokemon/475_gallade/all/mega/none/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/475_gallade/all/mega/none/model.pqc"
+                ],
+                "yRotation": 24.2
+              }
+            },
+            {
+              "name": "shiny",
+              "texture": "pixelmon:pokemon/475_gallade/all/mega/shiny/texture.png",
+              "sprite": "pixelmon:pokemon/475_gallade/all/mega/shiny/sprite.png",
+              "particle": "arcanery:shiny"
+            },
+            {
+              "name": "strike",
+              "texture": "pixelmon:pokemon/475_gallade/all/mega/none/texture.png",
+              "sprite": "pixelmon:pokemon/475_gallade/all/mega/none/sprite.png",
+              "particle": ""
+            }
+          ]
+        }
+      ]
     }
   ],
   "generation": 4
