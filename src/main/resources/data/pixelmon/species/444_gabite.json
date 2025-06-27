@@ -80,12 +80,6 @@
           "Scale Shot",
           "Scorching Sands"
         ],
-        "eggMoves": [
-          "Double-Edge",
-          "Metal Claw",
-          "Thrash",
-          "Twister"
-        ],
         "tmMoves8": [
           "Dig",
           "Rest",
@@ -162,6 +156,7 @@
           "Toxic",
           "Twister"
         ],
+        "eggMoves": [],
         "tmMoves7": [
           "Dragon Claw",
           "Roar",
@@ -455,6 +450,336 @@
         {
           "level": 48,
           "to": "Garchomp",
+          "conditions": [],
+          "evoType": "leveling",
+          "moves": [
+            "Crunch"
+          ]
+        }
+      ],
+      "evYields": {
+        "attack": 2
+      }
+    },
+    {
+      "name": "hellas",
+      "experienceGroup": "SLOW",
+      "dimensions": {
+        "height": 1.1,
+        "width": 1.0,
+        "length": 1,
+        "eyeHeight": 1.1,
+        "hoverHeight": 1.1
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Dragon Breath",
+              "Sand Attack",
+              "Sand Tomb",
+              "Tackle"
+            ]
+          },
+          {
+            "level": 18,
+            "attacks": [
+              "Bulldoze"
+            ]
+          },
+          {
+            "level": 27,
+            "attacks": [
+              "Bite"
+            ]
+          },
+          {
+            "level": 34,
+            "attacks": [
+              "Slash"
+            ]
+          },
+          {
+            "level": 42,
+            "attacks": [
+              "Dragon Claw"
+            ]
+          },
+          {
+            "level": 50,
+            "attacks": [
+              "Dig"
+            ]
+          },
+          {
+            "level": 58,
+            "attacks": [
+              "Sandstorm"
+            ]
+          },
+          {
+            "level": 66,
+            "attacks": [
+              "Take Down"
+            ]
+          },
+          {
+            "level": 74,
+            "attacks": [
+              "Dragon Rush"
+            ]
+          }
+        ],
+        "tutorMoves": [
+          "Draco Meteor",
+          "Scale Shot",
+          "Scorching Sands"
+        ],
+        "transferMoves": [
+          "Aerial Ace",
+          "Body Slam",
+          "Captivate",
+          "Confide",
+          "Cut",
+          "Double Team",
+          "Double-Edge",
+          "Dragon Breath",
+          "Dragon Rage",
+          "Dual Chop",
+          "Frustration",
+          "Fury Cutter",
+          "Headbutt",
+          "Hidden Power",
+          "Hone Claws",
+          "Incinerate",
+          "Iron Head",
+          "Iron Tail",
+          "Laser Focus",
+          "Metal Claw",
+          "Mud Shot",
+          "Mud-Slap",
+          "Natural Gift",
+          "Outrage",
+          "Return",
+          "Roar",
+          "Rock Climb",
+          "Rock Smash",
+          "Sand Tomb",
+          "Scary Face",
+          "Secret Power",
+          "Strength",
+          "Swagger",
+          "Thrash",
+          "Toxic",
+          "Twister"
+        ],
+        "trMoves": [
+          "Body Slam",
+          "Flamethrower",
+          "Earthquake",
+          "Fire Blast",
+          "Substitute",
+          "Outrage",
+          "Endure",
+          "Sleep Talk",
+          "Iron Tail",
+          "Dragon Claw",
+          "Dragon Pulse",
+          "Earth Power",
+          "Iron Head",
+          "Stone Edge",
+          "Stealth Rock"
+        ],
+        "hmMoves": [],
+        "tmMoves9": [
+          "Take Down",
+          "Scary Face",
+          "Protect",
+          "Fire Fang",
+          "Thunder Fang",
+          "Facade",
+          "Aerial Ace",
+          "Bulldoze",
+          "Metal Claw",
+          "Swift",
+          "Mud Shot",
+          "Rock Tomb",
+          "Dragon Tail",
+          "Endure",
+          "Sunny Day",
+          "Rain Dance",
+          "Sandstorm",
+          "Dig",
+          "False Swipe",
+          "Shadow Claw",
+          "Body Slam",
+          "Sleep Talk",
+          "Dragon Claw",
+          "Rest",
+          "Rock Slide",
+          "Swords Dance",
+          "Iron Head",
+          "Power Gem",
+          "Substitute",
+          "Crunch",
+          "Dragon Pulse",
+          "Stealth Rock",
+          "Flamethrower",
+          "Helping Hand",
+          "Earth Power",
+          "Fire Blast",
+          "Earthquake",
+          "Stone Edge",
+          "Outrage",
+          "Draco Meteor",
+          "Tera Blast",
+          "Sand Tomb",
+          "Scale Shot",
+          "Double-Edge",
+          "Scorching Sands",
+          "Breaking Swipe"
+        ],
+        "tmMoves8": [
+          "Dig",
+          "Rest",
+          "Rock Slide",
+          "Snore",
+          "Protect",
+          "Scary Face",
+          "Attract",
+          "Sandstorm",
+          "Rain Dance",
+          "Sunny Day",
+          "Facade",
+          "Swift",
+          "Rock Tomb",
+          "Sand Tomb",
+          "Mud Shot",
+          "Shadow Claw",
+          "Round",
+          "Bulldoze"
+        ],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "ShedSkin",
+          "PoisonTouch"
+        ],
+        "hiddenAbilities": [
+          "PoisonSkin"
+        ]
+      },
+      "movement": {
+        "rideable": true,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false,
+        "ridingOffsets": {
+          "standing": {
+            "x": 0.0,
+            "y": -1.1,
+            "z": -0.22
+          },
+          "moving": {
+            "x": 0.0,
+            "y": -1.1,
+            "z": -0.22
+          }
+        }
+      },
+      "aggression": {
+        "timid": 80,
+        "passive": 0,
+        "aggressive": 20
+      },
+      "battleStats": {
+        "hp": 120,
+        "attack": 40,
+        "defense": 80,
+        "specialAttack": 100,
+        "specialDefense": 60,
+        "speed": 80
+      },
+      "tags": [
+        "hellas"
+      ],
+      "spawn": {
+        "baseExp": 144,
+        "baseFriendship": 70,
+        "spawnLevel": 25,
+        "spawnLevelRange": 17,
+        "spawnLocations": [
+          "LAND",
+          "UNDERGROUND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "pixelmon:pokemon/444_gabite/all/base/none/texture.png",
+              "sprite": "pixelmon:pokemon/444_gabite/all/base/none/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/444_gabite/all/base/none/model.pqc"
+                ]
+              },
+              "sounds": [
+                "pixelmon.mob.gabite",
+                "pixelmon.mob.gabite"
+              ]
+            },
+            {
+              "name": "shiny",
+              "texture": "pixelmon:pokemon/444_gabite/all/base/shiny/texture.png",
+              "sprite": "pixelmon:pokemon/444_gabite/all/base/shiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "DRAGON",
+        "POISON"
+      ],
+      "preEvolutions": [
+        "Gible form:hellas"
+      ],
+      "defaultBaseForm": "",
+      "megaItems": [],
+      "megas": [],
+      "gigantamax": {
+        "canHaveFactor": false,
+        "canGigantamax": false
+      },
+      "eggCycles": 41,
+      "weight": 56.0,
+      "catchRate": 45,
+      "malePercentage": 50,
+      "evolutions": [
+        {
+          "level": 48,
+          "to": "Garchomp form:hellas",
           "conditions": [],
           "evoType": "leveling",
           "moves": [
