@@ -3,8 +3,7 @@ package enums;
 import com.pixelmonmod.pixelmon.api.pokemon.Element;
 
 public enum HellasMoves {
-    Corrode(1, "Corrode", Element.POISON),
-    RadiantEnergy(2, "Radiant Energy", Element.ELECTRIC);
+    Corrode(1, "Corrode", Element.POISON);
 
     private final int id;
     private final String moveName;
