@@ -12,6 +12,10 @@ Rarity Tiers:
                 1.0
             Spawn Levels:
                 5-10
+            Basic->Phase1:
+                20
+            Phase1->Phase2:
+                45
             Background:
                 Grey
     Uncommon:
@@ -25,6 +29,10 @@ Rarity Tiers:
                 0.8
             Spawn Levels:
                 10-15
+            Basic->Phase1:
+                25
+            Phase1->Phase2:
+                45
             Background:
                 Green
     Rare:
@@ -39,6 +47,10 @@ Rarity Tiers:
                 0.6
             Spawn Levels:
                 10-25
+            Basic->Phase1:
+                35
+            Phase1->Phase2:
+                50
             Background:
                 Blue
     Epic:
@@ -53,6 +65,10 @@ Rarity Tiers:
                 0.4
             Spawn Levels:
                 15-35
+            Basic->Phase1:
+                40
+            Phase1->Phase2:
+                60
             Background:
                 Purple
     Mythic:
@@ -66,6 +82,10 @@ Rarity Tiers:
                 0.3
             Spawn Levels:
                 35-50
+            Basic->Phase1:
+                55
+            Phase1->Phase2:
+                70
             Background:
                 Yellow
     Legendary:
@@ -79,6 +99,10 @@ Rarity Tiers:
                 0.2
             Spawn Levels:
                 50-70
+            Basic->Phase1:
+                75
+            Phase1->Phase2:
+                85
             Background:
                 Orange
     Exotic:
@@ -91,5 +115,9 @@ Rarity Tiers:
                 0.1
             Spawn Levels:
                 70-80
+            Basic->Phase1:
+                85
+            Phase1->Phase2:
+                90
             Background:
                 Red
