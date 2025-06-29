@@ -949,7 +949,7 @@
       },
       "abilities": {
         "abilities": [
-          "BattleArmor",
+          "BattleArmour",
           "Sharpness"
         ],
         "hiddenAbilities": [
