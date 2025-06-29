@@ -1209,8 +1209,8 @@
         "UNDISCOVERED"
       ],
       "types": [
-        "Fairy",
-        "Fighting"
+        "FAIRY",
+        "FIGHTING"
       ],
       "preEvolutions": [],
       "defaultBaseForm": "hellas",
