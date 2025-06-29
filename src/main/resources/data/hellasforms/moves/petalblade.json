@@ -1,6 +1,6 @@
 {
   "attackName": "Petalblade",
-  "attackType": "Grass",
+  "attackType": "GRASS",
   "attackCategory": "PHYSICAL",
   "basePower": 70,
   "ppBase": 15,
