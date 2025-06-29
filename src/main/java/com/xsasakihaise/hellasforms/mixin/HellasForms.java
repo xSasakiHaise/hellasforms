@@ -62,6 +62,12 @@ public class HellasForms {
         ItemRegistration.ITEMS.register("diancite-hellas", () -> new MegaStoneItem("diancie form:hellas"));
         ItemRegistration.ITEMS.register("sceptilite-hellas", () -> new MegaStoneItem("sceptile form:hellas"));
         ItemRegistration.ITEMS.register("gyaradosite-hellas", () -> new MegaStoneItem("gyarados form:hellas"));
+        ItemRegistration.ITEMS.register("tyranitarite-hellas", () -> new MegaStoneItem("tyranitar form:hellas"));
+        ItemRegistration.ITEMS.register("gardevourite-hellas", () -> new MegaStoneItem("gardevoir form:hellas"));
+        ItemRegistration.ITEMS.register("garchompite-hellas", () -> new MegaStoneItem("garchomp form:hellas"));
+        ItemRegistration.ITEMS.register("galladite-hellas", () -> new MegaStoneItem("gallade form:hellas"));
+        ItemRegistration.ITEMS.register("samurottite-hellas", () -> new MegaStoneItem("samurott form:hellas"));
+        ItemRegistration.ITEMS.register("centiskorchite-hellas", () -> new MegaStoneItem("centiskorch form:hellas"));
         ItemRegistration.ITEMS.register("hellas_coupon", QuestItem::new);
         ItemRegistration.ITEMS.register("wild-egg", QuestItem::new);
         ItemRegistration.ITEMS.register("hellasian-egg", QuestItem::new);
