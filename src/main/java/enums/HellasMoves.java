@@ -1,9 +1,11 @@
 package enums;
 
+import battles.attacks.specialAttacks.basic.DivineCastigation;
 import com.pixelmonmod.pixelmon.api.pokemon.Element;
 
 public enum HellasMoves {
-    Corrode(1, "Corrode", Element.POISON);
+    Corrode(1, "Corrode", Element.POISON),
+    DivineCastigation(2, "Divine Castigation", Element.FIGHTING);
 
     private final int id;
     private final String moveName;
