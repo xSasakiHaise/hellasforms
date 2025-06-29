@@ -401,6 +401,294 @@
       "evYields": {
         "specialAttack": 2
       }
+    },
+    {
+      "name": "hellas",
+      "experienceGroup": "MEDIUM_SLOW",
+      "dimensions": {
+        "height": 0.7,
+        "width": 0.4,
+        "length": 1,
+        "eyeHeight": 0.7,
+        "hoverHeight": 0.7
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Soak",
+              "Tackle",
+              "Tail Whip",
+              "Water Gun"
+            ]
+          },
+          {
+            "level": 13,
+            "attacks": [
+              "Focus Energy"
+            ]
+          },
+          {
+            "level": 18,
+            "attacks": [
+              "Razor Shell"
+            ]
+          },
+          {
+            "level": 21,
+            "attacks": [
+              "Fury Cutter"
+            ]
+          },
+          {
+            "level": 26,
+            "attacks": [
+              "Water Pulse"
+            ]
+          },
+          {
+            "level": 29,
+            "attacks": [
+              "Aerial Ace"
+            ]
+          },
+          {
+            "level": 34,
+            "attacks": [
+              "Aqua Jet"
+            ]
+          },
+          {
+            "level": 37,
+            "attacks": [
+              "Encore"
+            ]
+          },
+          {
+            "level": 42,
+            "attacks": [
+              "Aqua Tail"
+            ]
+          },
+          {
+            "level": 45,
+            "attacks": [
+              "Retaliate"
+            ]
+          },
+          {
+            "level": 50,
+            "attacks": [
+              "Swords Dance"
+            ]
+          },
+          {
+            "level": 53,
+            "attacks": [
+              "Hydro Pump"
+            ]
+          }
+        ],
+        "tutorMoves": [
+          "Aqua Tail",
+          "Covet",
+          "Helping Hand",
+          "Icy Wind",
+          "Iron Tail",
+          "Snore",
+          "Water Pledge",
+          "Water Pulse"
+        ],
+        "transferMoves": [
+          "Air Slash",
+          "Aqua Cutter",
+          "Assurance",
+          "Brine",
+          "Copycat",
+          "Cut",
+          "Detect",
+          "Dig",
+          "Dive",
+          "Knock Off",
+          "Night Slash",
+          "Revenge",
+          "Rock Smash",
+          "Sacred Sword",
+          "Screech",
+          "Secret Power",
+          "Trump Card",
+          "Water Sport"
+        ],
+        "trMoves": [],
+        "hmMoves": [],
+        "tmMoves9": [
+          "Take Down",
+          "Protect",
+          "Water Pulse",
+          "Thief",
+          "Chilling Water",
+          "Facade",
+          "Aerial Ace",
+          "Swift",
+          "Icy Wind",
+          "Fling",
+          "Avalanche",
+          "Endure",
+          "Rain Dance",
+          "Snowscape",
+          "Dig",
+          "False Swipe",
+          "Brick Break",
+          "Air Slash",
+          "Sleep Talk",
+          "Waterfall",
+          "Grass Knot",
+          "Rest",
+          "Taunt",
+          "Swords Dance",
+          "Substitute",
+          "X-Scissor",
+          "Liquidation",
+          "Encore",
+          "Surf",
+          "Helping Hand",
+          "Ice Beam",
+          "Hydro Pump",
+          "Blizzard",
+          "Water Pledge",
+          "Tera Blast",
+          "Knock Off",
+          "Vacuum Wave",
+          "Flip Turn",
+          "Whirlpool"
+        ],
+        "tmMoves8": [],
+        "eggMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "BattleArmor",
+          "Sharpness"
+        ],
+        "hiddenAbilities": [
+          "IronBarbs"
+        ]
+      },
+      "movement": {
+        "rideable": false,
+        "canFly": false,
+        "canSurf": true,
+        "canRideShoulder": false,
+        "swimmingParameters": {
+          "depthRangeStart": 1,
+          "depthRangeEnd": 25,
+          "swimSpeed": 20,
+          "decayRate": 0.99,
+          "refreshRate": 100
+        }
+      },
+      "aggression": {
+        "timid": 80,
+        "passive": 0,
+        "aggressive": 20
+      },
+      "battleStats": {
+        "hp": 120,
+        "attack": 100,
+        "defense": 80,
+        "specialAttack": 30,
+        "specialDefense": 80,
+        "speed": 40
+      },
+      "tags": [
+        "hellas"
+      ],
+      "spawn": {
+        "baseExp": 145,
+        "baseFriendship": 70,
+        "spawnLevel": 17,
+        "spawnLevelRange": 18,
+        "spawnLocations": [
+          "WATER",
+          "LAND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "pixelmon:pokemon/502_dewott/all/base/none/texture.png",
+              "sprite": "pixelmon:pokemon/502_dewott/all/base/none/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/502_dewott/all/base/none/model.pqc"
+                ]
+              },
+              "sounds": [
+                "pixelmon.mob.dewott"
+              ]
+            },
+            {
+              "name": "shiny",
+              "texture": "pixelmon:pokemon/502_dewott/all/base/shiny/texture.png",
+              "sprite": "pixelmon:pokemon/502_dewott/all/base/shiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "STEEL",
+        "DARK"
+      ],
+      "preEvolutions": [
+        "Oshawott form:hellas"
+      ],
+      "defaultBaseForm": "",
+      "megaItems": [],
+      "megas": [],
+      "gigantamax": {
+        "canHaveFactor": false,
+        "canGigantamax": false
+      },
+      "eggCycles": 21,
+      "weight": 24.5,
+      "catchRate": 45,
+      "malePercentage": 87.5,
+      "evolutions": [
+        {
+          "level": 36,
+          "to": "Samurott form:hellas",
+          "conditions": [],
+          "evoType": "leveling",
+          "moves": [
+            "Slash"
+          ]
+        }
+      ],
+      "evYields": {
+        "specialAttack": 2
+      }
     }
   ],
   "generation": 5
