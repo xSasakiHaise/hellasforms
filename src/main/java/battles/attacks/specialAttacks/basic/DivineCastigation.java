@@ -8,10 +8,10 @@ import com.pixelmonmod.pixelmon.battles.controller.participants.PixelmonWrapper;
 public class DivineCastigation extends SpecialAttackBase {
     public void applyAfterEffect(PixelmonWrapper pw) {
         if (pw.getSpecies().is(new RegistryValue[]{PixelmonSpecies.MELOETTA})) {
-            if (pw.getForm().isForm(new String[]{"ying"})) {
+            if (pw.getForm().isForm(new String[]{"hellas"})) {
                 pw.setForm("yang");
             } else if (pw.getForm().isForm(new String[]{"yang"})) {
-                pw.setForm("ying");
+                pw.setForm("hellas");
             }
 
             pw.bc.sendToAll("pixelmon.abilities.changeform", new Object[]{pw.getNickname()});
