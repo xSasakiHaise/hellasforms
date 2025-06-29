@@ -444,6 +444,237 @@
           ]
         }
       ]
+    },
+    {
+      "name": "hellas",
+      "experienceGroup": "MEDIUM_FAST",
+      "dimensions": {
+        "height": 1.2,
+        "width": 1.2,
+        "length": 1,
+        "eyeHeight": 1.2,
+        "hoverHeight": 1.2
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Copycat",
+              "Defense Curl",
+              "Growl",
+              "Tackle"
+            ]
+          },
+          {
+            "level": 12,
+            "attacks": [
+              "Guard Split"
+            ]
+          },
+          {
+            "level": 16,
+            "attacks": [
+              "Double Kick"
+            ]
+          },
+          {
+            "level": 21,
+            "attacks": [
+              "Headbutt"
+            ]
+          },
+          {
+            "level": 27,
+            "attacks": [
+              "Take Down"
+            ]
+          },
+          {
+            "level": 32,
+            "attacks": [
+              "Guard Swap"
+            ]
+          },
+          {
+            "level": 38,
+            "attacks": [
+              "Reversal"
+            ]
+          },
+          {
+            "level": 44,
+            "attacks": [
+              "Cotton Guard"
+            ]
+          },
+          {
+            "level": 50,
+            "attacks": [
+              "Double-Edge"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Last Resort"
+            ]
+          }
+        ],
+        "tutorMoves": [
+          "Grassy Glide"
+        ],
+        "transferMoves": [],
+        "trMoves": [
+          "Swords Dance",
+          "Body Slam",
+          "Agility",
+          "Substitute",
+          "Reversal",
+          "Endure",
+          "Sleep Talk",
+          "Baton Pass",
+          "Zen Headbutt",
+          "Electro Ball",
+          "Wild Charge",
+          "Body Press"
+        ],
+        "hmMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [
+          "Mega Kick",
+          "Hyper Beam",
+          "Giga Impact",
+          "Thunder Wave",
+          "Rest",
+          "Snore",
+          "Protect",
+          "Attract",
+          "Facade",
+          "Bounce",
+          "Payback",
+          "Guard Swap",
+          "Round",
+          "Retaliate"
+        ],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "Fluffy",
+          "GrassySurge"
+        ],
+        "hiddenAbilities": [
+          "FlowerGift"
+        ]
+      },
+      "movement": {
+        "rideable": true,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false,
+        "ridingOffsets": {
+          "standing": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": -0.5
+          },
+          "moving": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": -0.5
+          }
+        }
+      },
+      "aggression": {
+        "timid": 80,
+        "passive": 0,
+        "aggressive": 20
+      },
+      "battleStats": {
+        "hp": 140,
+        "attack": 90,
+        "defense": 120,
+        "specialAttack": 30,
+        "specialDefense": 80,
+        "speed": 40
+      },
+      "tags": [
+        "hellas"
+      ],
+      "spawn": {
+        "baseExp": 172,
+        "baseFriendship": 50,
+        "spawnLevel": 24,
+        "spawnLevelRange": 20,
+        "spawnLocations": [
+          "LAND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "pixelmon:pokemon/832_dubwool/all/base/none/texture.png",
+              "sprite": "pixelmon:pokemon/832_dubwool/all/base/none/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/832_dubwool/all/base/none/model.pqc"
+                ]
+              },
+              "sounds": [
+                "pixelmon.mob.dubwool"
+              ]
+            },
+            {
+              "name": "shiny",
+              "texture": "pixelmon:pokemon/832_dubwool/all/base/shiny/texture.png",
+              "sprite": "pixelmon:pokemon/832_dubwool/all/base/shiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "GRASS",
+        "NORMAL"
+      ],
+      "preEvolutions": [
+        "Wooloo form:hellas"
+      ],
+      "defaultBaseForm": "",
+      "megaItems": [],
+      "megas": [],
+      "gigantamax": {
+        "canHaveFactor": false,
+        "canGigantamax": false
+      },
+      "eggCycles": 15,
+      "weight": 43.0,
+      "catchRate": 127,
+      "malePercentage": 50,
+      "evolutions": [],
+      "evYields": {
+        "defense": 2
+      }
     }
   ],
   "generation": 8
