@@ -910,8 +910,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/492_shaymin/all/land/none/texture.png",
-              "sprite": "pixelmon:pokemon/492_shaymin/all/land/none/sprite.png",
+              "texture": "hellasforms:pokemon/492_shaymin/all/land/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/492_shaymin/all/land/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -925,15 +925,9 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/492_shaymin/all/land/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/492_shaymin/all/land/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/492_shaymin/all/land/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/492_shaymin/all/land/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
-            },
-            {
-              "name": "christmas",
-              "texture": "pixelmon:pokemon/492_shaymin/all/land/christmas/texture.png",
-              "sprite": "pixelmon:pokemon/492_shaymin/all/land/christmas/sprite.png",
-              "particle": ""
             }
           ]
         }
@@ -1180,8 +1174,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/492_shaymin/all/sky/none/texture.png",
-              "sprite": "pixelmon:pokemon/492_shaymin/all/sky/none/sprite.png",
+              "texture": "hellasforms:pokemon/492_shaymin/all/sky/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/492_shaymin/all/sky/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -1192,15 +1186,9 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/492_shaymin/all/sky/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/492_shaymin/all/sky/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/492_shaymin/all/sky/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/492_shaymin/all/sky/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
-            },
-            {
-              "name": "christmas",
-              "texture": "pixelmon:pokemon/492_shaymin/all/sky/christmas/texture.png",
-              "sprite": "pixelmon:pokemon/492_shaymin/all/sky/christmas/sprite.png",
-              "particle": ""
             }
           ]
         }

@@ -1122,8 +1122,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/475_gallade/all/base/none/texture.png",
-              "sprite": "pixelmon:pokemon/475_gallade/all/base/none/sprite.png",
+              "texture": "hellasforms:pokemon/475_gallade/all/base/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/475_gallade/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -1138,15 +1138,9 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/475_gallade/all/base/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/475_gallade/all/base/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/475_gallade/all/base/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/475_gallade/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
-            },
-            {
-              "name": "strike",
-              "texture": "pixelmon:pokemon/475_gallade/all/base/strike/texture.png",
-              "sprite": "pixelmon:pokemon/475_gallade/all/base/strike/sprite.png",
-              "particle": ""
             }
           ]
         }
@@ -1207,8 +1201,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/475_gallade/all/mega/none/texture.png",
-              "sprite": "pixelmon:pokemon/475_gallade/all/mega/none/sprite.png",
+              "texture": "hellasforms:pokemon/475_gallade/all/mega/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/475_gallade/all/mega/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -1220,15 +1214,9 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/475_gallade/all/mega/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/475_gallade/all/mega/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/475_gallade/all/mega/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/475_gallade/all/mega/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
-            },
-            {
-              "name": "strike",
-              "texture": "pixelmon:pokemon/475_gallade/all/mega/none/texture.png",
-              "sprite": "pixelmon:pokemon/475_gallade/all/mega/none/sprite.png",
-              "particle": ""
             }
           ]
         }

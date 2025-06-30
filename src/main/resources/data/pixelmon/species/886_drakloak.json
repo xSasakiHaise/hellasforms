@@ -581,8 +581,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/886_drakloak/all/base/none/texture.png",
-              "sprite": "pixelmon:pokemon/886_drakloak/all/base/none/sprite.png",
+              "texture": "hellasforms:pokemon/886_drakloak/all/base/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/886_drakloak/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -596,15 +596,9 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/886_drakloak/all/base/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/886_drakloak/all/base/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/886_drakloak/all/base/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/886_drakloak/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
-            },
-            {
-              "name": "spirit",
-              "texture": "pixelmon:pokemon/886_drakloak/all/base/spirit/texture.png",
-              "sprite": "pixelmon:pokemon/886_drakloak/all/base/spirit/sprite.png",
-              "particle": ""
             }
           ]
         }

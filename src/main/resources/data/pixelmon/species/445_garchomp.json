@@ -911,8 +911,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/445_garchomp/all/base/none/texture.png",
-              "sprite": "pixelmon:pokemon/445_garchomp/all/base/none/sprite.png",
+              "texture": "hellasforms:pokemon/445_garchomp/all/base/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/445_garchomp/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -929,8 +929,8 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/445_garchomp/all/base/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/445_garchomp/all/base/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/445_garchomp/all/base/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/445_garchomp/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }
           ]
@@ -991,8 +991,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/445_garchomp/all/mega/none/texture.png",
-              "sprite": "pixelmon:pokemon/445_garchomp/all/mega/none/sprite.png",
+              "texture": "hellasforms:pokemon/445_garchomp/all/mega/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/445_garchomp/all/mega/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -1003,8 +1003,8 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/445_garchomp/all/mega/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/445_garchomp/all/mega/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/445_garchomp/all/mega/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/445_garchomp/all/mega/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }
           ]

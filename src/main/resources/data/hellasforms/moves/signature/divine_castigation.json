@@ -22,7 +22,7 @@
     {
       "modifiers": [],
       "persists": false,
-      "effectTypeID": "DivineCastigation"
+      "effectTypeID": "DC"
     }
   ],
   "animations": [

@@ -628,8 +628,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/832_dubwool/all/base/none/texture.png",
-              "sprite": "pixelmon:pokemon/832_dubwool/all/base/none/sprite.png",
+              "texture": "hellasforms:pokemon/832_dubwool/all/base/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/832_dubwool/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -643,8 +643,8 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/832_dubwool/all/base/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/832_dubwool/all/base/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/832_dubwool/all/base/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/832_dubwool/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }
           ]

@@ -58,6 +58,7 @@ public class HellasForms {
         EffectTypeAdapter.EFFECTS.put("SnowstormFury", SnowstormFury.class);
         EffectTypeAdapter.EFFECTS.put("Afterburner", Afterburner.class);
         EffectTypeAdapter.EFFECTS.put("VenomAmbush", VenomAmbush.class);
+        EffectTypeAdapter.EFFECTS.put("DC", DC.class);
         ItemRegistration.ITEMS.register("eeveeolite", EeveeoliteItem::new);
         ItemRegistration.ITEMS.register("diancite-hellas", () -> new MegaStoneItem("diancie form:hellas"));
         ItemRegistration.ITEMS.register("sceptilite-hellas", () -> new MegaStoneItem("sceptile form:hellas"));
