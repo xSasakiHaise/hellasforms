@@ -1146,12 +1146,12 @@
       ],
       "genderProperties": [
         {
-          "gender": "ALL",
-          "palettes": [
+        "gender": "ALL",
+        "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/248_tyranitar/all/base/none/texture.png",
-              "sprite": "pixelmon:pokemon/248_tyranitar/all/base/none/sprite.png",
+              "texture": "hellasforms:pokemon/248_tyranitar/all/base/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/248_tyranitar/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -1160,15 +1160,12 @@
                 ],
                 "yRotation": 24.2
               },
-              "sounds": [
-                "pixelmon.mob.tyranitar",
-                "pixelmon.mob.tyranitar"
-              ]
+              "sounds": []
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/248_tyranitar/all/base/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/248_tyranitar/all/base/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/248_tyranitar/all/base/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/248_tyranitar/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }
           ]
@@ -1235,8 +1232,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/248_tyranitar/all/mega/none/texture.png",
-              "sprite": "pixelmon:pokemon/248_tyranitar/all/mega/none/sprite.png",
+              "texture": "hellasforms:pokemon/248_tyranitar/all/mega/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/248_tyranitar/all/mega/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -1247,8 +1244,8 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/248_tyranitar/all/mega/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/248_tyranitar/all/mega/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/248_tyranitar/all/mega/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/248_tyranitar/all/mega/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }
           ],

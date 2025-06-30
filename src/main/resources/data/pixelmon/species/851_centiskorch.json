@@ -483,8 +483,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/851_centiskorch/all/base/none/texture.png",
-              "sprite": "pixelmon:pokemon/851_centiskorch/all/base/none/sprite.png",
+              "texture": "hellasforms:pokemon/851_centiskorch/all/base/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/851_centiskorch/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -498,15 +498,9 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/851_centiskorch/all/base/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/851_centiskorch/all/base/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/851_centiskorch/all/base/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/851_centiskorch/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
-            },
-            {
-              "name": "ashen",
-              "texture": "pixelmon:pokemon/851_centiskorch/all/base/ashen/texture.png",
-              "sprite": "pixelmon:pokemon/851_centiskorch/all/base/ashen/sprite.png",
-              "particle": ""
             }
           ]
         }
@@ -564,8 +558,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/851_centiskorch/all/gmax/none/texture.png",
-              "sprite": "pixelmon:pokemon/851_centiskorch/all/gmax/none/sprite.png",
+              "texture": "hellasforms:pokemon/851_centiskorch/all/gmax/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/851_centiskorch/all/gmax/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -576,15 +570,9 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/851_centiskorch/all/gmax/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/851_centiskorch/all/gmax/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/851_centiskorch/all/gmax/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/851_centiskorch/all/gmax/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
-            },
-            {
-              "name": "ashen",
-              "texture": "pixelmon:pokemon/851_centiskorch/all/gmax/none/texture.png",
-              "sprite": "pixelmon:pokemon/851_centiskorch/all/gmax/none/sprite.png",
-              "particle": ""
             }
           ]
         }

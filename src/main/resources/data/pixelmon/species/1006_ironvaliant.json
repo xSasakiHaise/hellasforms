@@ -528,9 +528,9 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/1006_ironvaliant/all/base/none/texture.png",
-              "emissive": "pixelmon:pokemon/1006_ironvaliant/all/base/none/emissive.png",
-              "sprite": "pixelmon:pokemon/1006_ironvaliant/all/base/none/sprite.png",
+              "texture": "hellasforms:pokemon/1006_ironvaliant/all/base/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/1006_ironvaliant/all/base/hellas/emissive.png",
+              "sprite": "hellasforms:pokemon/1006_ironvaliant/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -542,17 +542,10 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/1006_ironvaliant/all/base/shiny/texture.png",
-              "emissive": "pixelmon:pokemon/1006_ironvaliant/all/base/shiny/emissive.png",
-              "sprite": "pixelmon:pokemon/1006_ironvaliant/all/base/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/1006_ironvaliant/all/base/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/1006_ironvaliant/all/base/hellasshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/1006_ironvaliant/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
-            },
-            {
-              "name": "spirit",
-              "texture": "pixelmon:pokemon/1006_ironvaliant/all/base/spirit/texture.png",
-              "emissive": "pixelmon:pokemon/1006_ironvaliant/all/base/spirit/emissive.png",
-              "sprite": "pixelmon:pokemon/1006_ironvaliant/all/base/spirit/sprite.png",
-              "particle": ""
             }
           ]
         }

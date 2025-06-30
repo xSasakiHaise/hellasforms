@@ -689,8 +689,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/887_dragapult/all/base/none/texture.png",
-              "sprite": "pixelmon:pokemon/887_dragapult/all/base/none/sprite.png",
+              "texture": "hellasforms:pokemon/887_dragapult/all/base/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/887_dragapult/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -705,15 +705,9 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/887_dragapult/all/base/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/887_dragapult/all/base/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/887_dragapult/all/base/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/887_dragapult/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
-            },
-            {
-              "name": "spirit",
-              "texture": "pixelmon:pokemon/887_dragapult/all/base/spirit/texture.png",
-              "sprite": "pixelmon:pokemon/887_dragapult/all/base/spirit/sprite.png",
-              "particle": ""
             }
           ]
         }

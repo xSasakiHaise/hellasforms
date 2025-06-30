@@ -572,8 +572,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/1005_roaringmoon/all/base/none/texture.png",
-              "sprite": "pixelmon:pokemon/1005_roaringmoon/all/base/none/sprite.png",
+              "texture": "hellasforms:pokemon/1005_roaringmoon/all/base/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/1005_roaringmoon/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -587,8 +587,8 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/1005_roaringmoon/all/base/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/1005_roaringmoon/all/base/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/1005_roaringmoon/all/base/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/1005_roaringmoon/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }
           ]
