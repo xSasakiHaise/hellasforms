@@ -1152,6 +1152,7 @@
               "name": "none",
               "texture": "hellasforms:pokemon/248_tyranitar/all/base/hellas/texture.png",
               "sprite": "hellasforms:pokemon/248_tyranitar/all/base/hellas/sprite.png",
+              "emissive": "hellasforms:pokemon/248_tyranitar/all/base/hellas/emissive.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -1166,6 +1167,7 @@
               "name": "shiny",
               "texture": "hellasforms:pokemon/248_tyranitar/all/base/hellasshiny/texture.png",
               "sprite": "hellasforms:pokemon/248_tyranitar/all/base/hellasshiny/sprite.png",
+              "emissive": "hellasforms:pokemon/248_tyranitar/all/base/hellasshiny/emissive.png",
               "particle": "arcanery:shiny"
             }
           ]
@@ -1234,6 +1236,7 @@
               "name": "none",
               "texture": "hellasforms:pokemon/248_tyranitar/all/mega/hellas/texture.png",
               "sprite": "hellasforms:pokemon/248_tyranitar/all/mega/hellas/sprite.png",
+              "emissive": "hellasforms:pokemon/248_tyranitar/all/mega/hellas/emissive.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -1246,6 +1249,7 @@
               "name": "shiny",
               "texture": "hellasforms:pokemon/248_tyranitar/all/mega/hellasshiny/texture.png",
               "sprite": "hellasforms:pokemon/248_tyranitar/all/mega/hellasshiny/sprite.png",
+              "emissive": "hellasforms:pokemon/248_tyranitar/all/mega/hellasshiny/emissive.png",
               "particle": "arcanery:shiny"
             }
           ],
