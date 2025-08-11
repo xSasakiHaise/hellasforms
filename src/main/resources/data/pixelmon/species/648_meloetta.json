@@ -750,8 +750,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/648_meloetta/all/aria/none/texture.png",
-              "sprite": "pixelmon:pokemon/648_meloetta/all/aria/none/sprite.png",
+              "texture": "hellasforms:pokemon/648_meloetta/all/ying/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/648_meloetta/all/ying/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -766,8 +766,8 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/648_meloetta/all/aria/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/648_meloetta/all/aria/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/648_meloetta/all/ying/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/648_meloetta/all/ying/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }
           ]
@@ -822,21 +822,24 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/648_meloetta/all/pirouette/none/texture.png",
-              "sprite": "pixelmon:pokemon/648_meloetta/all/pirouette/none/sprite.png",
+              "texture": "hellasforms:pokemon/648_meloetta/all/yang/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/648_meloetta/all/yang/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
                   "pixelmon:pokemon/648_meloetta/all/pirouette/none/model.pqc"
                 ],
-                "yRotation": 25
-              }
+                "yRotation": 40
+              },
+              "sounds": [
+                "pixelmon.mob.meloetta"
+              ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/648_meloetta/all/pirouette/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/648_meloetta/all/pirouette/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/648_meloetta/all/yang/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/648_meloetta/all/yang/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }
           ]
