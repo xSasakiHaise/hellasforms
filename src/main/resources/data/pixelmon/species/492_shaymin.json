@@ -910,8 +910,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "hellasforms:pokemon/492_shaymin/all/land/hellas/texture.png",
-              "sprite": "hellasforms:pokemon/492_shaymin/all/land/hellas/sprite.png",
+              "texture": "hellasforms:pokemon/492_shaymin/all/defensive/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/492_shaymin/all/defensive/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -925,8 +925,8 @@
             },
             {
               "name": "shiny",
-              "texture": "hellasforms:pokemon/492_shaymin/all/land/hellasshiny/texture.png",
-              "sprite": "hellasforms:pokemon/492_shaymin/all/land/hellasshiny/sprite.png",
+              "texture": "hellasforms:pokemon/492_shaymin/all/defensive/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/492_shaymin/all/defensive/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }
           ]
@@ -1174,8 +1174,9 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "hellasforms:pokemon/492_shaymin/all/sky/hellas/texture.png",
-              "sprite": "hellasforms:pokemon/492_shaymin/all/sky/hellas/sprite.png",
+              "texture": "hellasforms:pokemon/492_shaymin/all/offensive/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/492_shaymin/all/offensive/hellas/sprite.png",
+              "emissive": "hellasforms:pokemon/492_shaymin/all/offensive/hellas/emissive.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -1186,8 +1187,9 @@
             },
             {
               "name": "shiny",
-              "texture": "hellasforms:pokemon/492_shaymin/all/sky/hellasshiny/texture.png",
-              "sprite": "hellasforms:pokemon/492_shaymin/all/sky/hellasshiny/sprite.png",
+              "texture": "hellasforms:pokemon/492_shaymin/all/offensive/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/492_shaymin/all/offensive/hellasshiny/sprite.png",
+              "emissive": "hellasforms:pokemon/492_shaymin/all/offensive/hellasshiny/emissive.png",
               "particle": "arcanery:shiny"
             }
           ]
