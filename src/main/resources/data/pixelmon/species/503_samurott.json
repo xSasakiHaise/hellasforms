@@ -1094,8 +1094,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "hellasforms:pokemon/503_samurott/all/hisuian/hellas/texture.png",
-              "sprite": "hellasforms:pokemon/503_samurott/all/hisuian/hellas/sprite.png",
+              "texture": "hellasforms:pokemon/503_samurott/all/mega/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/503_samurott/all/mega/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -1107,8 +1107,8 @@
             },
             {
               "name": "shiny",
-              "texture": "hellasforms:pokemon/503_samurott/all/hisuian/hellasshiny/texture.png",
-              "sprite": "hellasforms:pokemon/503_samurott/all/hisuian/hellasshiny/sprite.png",
+              "texture": "hellasforms:pokemon/503_samurott/all/mega/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/503_samurott/all/mega/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }
           ]
