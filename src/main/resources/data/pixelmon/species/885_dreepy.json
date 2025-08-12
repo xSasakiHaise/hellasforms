@@ -330,6 +330,7 @@
               "name": "none",
               "texture": "hellasforms:pokemon/885_dreepy/all/base/hellas/texture.png",
               "sprite": "hellasforms:pokemon/885_dreepy/all/base/hellas/sprite.png",
+              "emissive": "hellasforms:pokemon/885_dreepy/all/base/hellas/emissive.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -345,6 +346,7 @@
               "name": "shiny",
               "texture": "hellasforms:pokemon/885_dreepy/all/base/hellasshiny/texture.png",
               "sprite": "hellasforms:pokemon/885_dreepy/all/base/hellasshiny/sprite.png",
+              "emissive": "hellasforms:pokemon/885_dreepy/all/base/hellasshiny/emissive.png",
               "particle": "arcanery:shiny"
             }
           ]
