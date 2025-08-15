@@ -5,10 +5,10 @@ license="Restricted"
 
 [[mods]]
 modId="hellasforms"
-version="2.0.0"
+version="2.0.1"
 displayName="HellasForms"
-displayURL="https://discord.gg/ggShyqB92C"
-credits="xSasaki_Haise, pg13snipez, xGlitzerschaf"
+displayURL="https:discord.pixelmon-server.com"
+credits="xSasaki_Haise, pg13snipez, xGlitzerschaf, NouveauLumière"
 authors="xSasaki_Haise"
 description='''
 Welcome to Hellas :)
@@ -29,11 +29,11 @@ Welcome to Hellas :)
     side="BOTH"
 
 [[dependencies.hellasforms]]
-modId="tconstruct"
-mandatory=false
-versionRange="[3.3.+,)"
-ordering="AFTER"
-side="BOTH"
+    modId="tconstruct"
+    mandatory=false
+    versionRange="[3.3.+,)"
+    ordering="AFTER"
+    side="BOTH"
 
 [[dependencies.hellasforms]]
     modId="pixelmon"

@@ -466,6 +466,24 @@
             "attacks": [
               "Cleansing Frost"
             ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Snowstorm Fury"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Isbrand"
+            ]
+          },
+          {
+            "level": 71,
+            "attacks": [
+              "Shatterstorm"
+            ]
           }
         ],
         "tutorMoves": [

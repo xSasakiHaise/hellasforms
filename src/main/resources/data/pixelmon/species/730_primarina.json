@@ -459,6 +459,12 @@
             "attacks": [
               "Hydro Pump"
             ]
+          },
+          {
+            "level": 63,
+            "attacks": [
+              "Eroding Tides"
+            ]
           }
         ],
         "tutorMoves": [

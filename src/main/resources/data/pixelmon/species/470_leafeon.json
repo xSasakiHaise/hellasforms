@@ -491,6 +491,18 @@
             "attacks": [
               "Colony Swarm"
             ]
+          },
+          {
+            "level": 53,
+            "attacks": [
+              "Cutting Edge"
+            ]
+          },
+          {
+            "level": 59,
+            "attacks": [
+              "Petalblade"
+            ]
           }
         ],
         "tutorMoves": [

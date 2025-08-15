@@ -352,6 +352,18 @@
             "attacks": [
               "Hitch Kick"
             ]
+          },
+          {
+            "level": 57,
+            "attacks": [
+              "Isbrand"
+            ]
+          },
+          {
+            "level": 63,
+            "attacks": [
+              "Shatterstorm"
+            ]
           }
         ],
         "tutorMoves": [

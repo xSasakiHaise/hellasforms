@@ -630,6 +630,12 @@
             "attacks": [
               "Flare Blitz"
             ]
+          },
+          {
+            "level": 68,
+            "attacks": [
+              "Afterburner"
+            ]
           }
         ],
         "tutorMoves": [

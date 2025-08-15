@@ -630,6 +630,12 @@
             "attacks": [
               "Toxic"
             ]
+          },
+          {
+            "level": 65,
+            "attacks": [
+              "Sea Fog"
+            ]
           }
         ],
         "tutorMoves": [

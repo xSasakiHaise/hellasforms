@@ -77,6 +77,7 @@ public class HellasForms {
         ItemRegistration.ITEMS.register("sparkly-wild-egg", QuestItem::new);
         ItemRegistration.ITEMS.register("sparkly-hellasian-egg", QuestItem::new);
         ItemRegistration.ITEMS.register("sparkly-odd-looking-egg", QuestItem::new);
+        ItemRegistration.ITEMS.register("deck-of-many-mons", QuestItem::new);
         ItemRegistration.ITEMS.register("bug_badge_hellas", BadgeItem::new);
         ItemRegistration.ITEMS.register("dark_badge_hellas", BadgeItem::new);
         ItemRegistration.ITEMS.register("dragon_badge_hellas", BadgeItem::new);

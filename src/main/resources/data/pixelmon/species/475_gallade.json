@@ -818,9 +818,21 @@
             ]
           },
           {
+            "level": 39,
+            "attacks": [
+              "Cutting Edge"
+            ]
+          },
+          {
             "level": 42,
             "attacks": [
               "Psycho Cut"
+            ]
+          },
+          {
+            "level": 46,
+            "attacks": [
+              "Isbrand"
             ]
           },
           {

@@ -518,6 +518,12 @@
             "attacks": [
               "Waterfall"
             ]
+          },
+          {
+            "level": 80,
+            "attacks": [
+              "Eroding Tides"
+            ]
           }
         ],
         "tutorMoves": [],

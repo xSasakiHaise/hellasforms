@@ -349,6 +349,12 @@
             ]
           },
           {
+            "level": 45,
+            "attacks": [
+              "Cutting Edge"
+            ]
+          },
+          {
             "level": 49,
             "attacks": [
               "Leaf Blade"
@@ -364,6 +370,12 @@
             "level": 63,
             "attacks": [
               "Close Combat"
+            ]
+          },
+          {
+            "level": 67,
+            "attacks": [
+              "Radiant Energy"
             ]
           },
           {

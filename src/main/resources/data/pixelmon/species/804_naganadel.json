@@ -445,6 +445,12 @@
             ]
           },
           {
+            "level": 52,
+            "attacks": [
+              "Corrode"
+            ]
+          },
+          {
             "level": 56,
             "attacks": [
               "Gastro Acid"

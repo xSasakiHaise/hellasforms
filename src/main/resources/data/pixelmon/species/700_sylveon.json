@@ -411,6 +411,18 @@
             "attacks": [
               "Fairy Circle"
             ]
+          },
+          {
+            "level": 57,
+            "attacks": [
+              "Cutting Edge"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Shatterstorm"
+            ]
           }
         ],
         "tutorMoves": [

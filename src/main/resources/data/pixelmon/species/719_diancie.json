@@ -426,86 +426,122 @@
           {
             "level": 0,
             "attacks": [
-              "Harden",
               "Tackle"
             ]
           },
           {
-            "level": 7,
+            "level": 5,
             "attacks": [
-              "Guard Split"
+              "Confusion"
             ]
           },
           {
-            "level": 14,
+            "level": 8,
             "attacks": [
-              "Smack Down"
+              "Dazzling Gleam"
             ]
           },
           {
-            "level": 21,
+            "level": 12,
             "attacks": [
-              "Flail"
+              "Calm Mind"
             ]
           },
           {
-            "level": 28,
+            "level": 16,
             "attacks": [
-              "Ancient Power"
+              "Dragon Pulse"
             ]
           },
           {
-            "level": 35,
+            "level": 19,
             "attacks": [
-              "Rock Polish"
+              "Petal Blizzard"
             ]
           },
           {
-            "level": 42,
+            "level": 24,
             "attacks": [
-              "Light Screen"
+              "Fake Tears"
             ]
           },
           {
-            "level": 49,
+            "level": 32,
             "attacks": [
-              "Rock Slide"
+              "Stored Power"
             ]
           },
           {
-            "level": 56,
+            "level": 39,
             "attacks": [
               "Jade Light"
             ]
           },
           {
-            "level": 63,
+            "level": 46,
             "attacks": [
-              "Power Gem"
+              "Mystical Fire"
             ]
           },
           {
-            "level": 70,
+            "level": 49,
             "attacks": [
-              "Stealth Rock"
+              "Misty Terrain"
             ]
           },
           {
-            "level": 77,
+            "level": 53,
+            "attacks": [
+              "Psychic Fangs"
+            ]
+          },
+          {
+            "level": 57,
+            "attacks": [
+              "Reflect",
+              "Light Screen"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Diamond Storm"
+            ]
+          },
+          {
+            "level": 68,
             "attacks": [
               "Moonblast"
             ]
           },
           {
-            "level": 84,
+            "level": 75,
             "attacks": [
-              "Stone Edge"
+              "Nasty Plot"
             ]
           },
           {
-            "level": 91,
+            "level": 81,
             "attacks": [
-              "Diamond Storm"
+              "Draco Meteor"
+            ]
+          },
+          {
+            "level": 85,
+            "attacks": [
+              "Petalblade"
+            ]
+          },
+          {
+            "level": 88,
+            "attacks": [
+              "Fire Blast"
+            ]
+          },
+          {
+            "level": 94,
+            "attacks": [
+              "Fleur Cannon"
             ]
           }
         ],

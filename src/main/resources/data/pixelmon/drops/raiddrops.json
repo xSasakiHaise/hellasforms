@@ -3276,6 +3276,10 @@
             {
                 "item": "pixelmon:orb",
                 "weight": 5
+            },
+            {
+                "item": "pixelmon:purple_petal",
+                "weight": 3
             }
         ],
         "Bug": [

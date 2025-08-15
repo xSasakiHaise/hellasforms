@@ -29,7 +29,33 @@
     {
       "spec": "species:Gible form:hellas",
       "stringLocationTypes": [
+        "Land"
+      ],
+      "tags": [
+        "hellas",
+        "wild",
+        "tier_epic"
+      ],
+      "minLevel": 15,
+      "maxLevel": 35,
+      "typeID": "pokemon",
+      "condition": {
+        "stringBiomes": [
+          "byg:rainbow_beach"
+        ],
+        "maxY": 80
+      },
+      "rarity": 2.0
+    },
+    {
+      "spec": "species:Gible form:hellas",
+      "stringLocationTypes": [
         "Underground"
+      ],
+      "tags": [
+        "hellas",
+        "wild",
+        "tier_epic"
       ],
       "minLevel": 15,
       "maxLevel": 35,
