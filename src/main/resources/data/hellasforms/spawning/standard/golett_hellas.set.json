@@ -17,8 +17,6 @@
       "heldItems": [
       ],
       "condition": {
-        "times": [
-        ],
         "stringBiomes": [
           "arid",
           "mesas"

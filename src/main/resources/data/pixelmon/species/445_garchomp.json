@@ -635,9 +635,21 @@
             ]
           },
           {
+            "level": 36,
+            "attacks": [
+              "Greek Fire"
+            ]
+          },
+          {
             "level": 42,
             "attacks": [
               "Dragon Claw"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Venom Ambush"
             ]
           },
           {

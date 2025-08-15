@@ -404,6 +404,12 @@
             ]
           },
           {
+            "level": 37,
+            "attacks": [
+              "Afterburner"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Corrode"

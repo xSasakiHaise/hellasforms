@@ -338,6 +338,12 @@
             ]
           },
           {
+            "level": 36,
+            "attacks": [
+              "Corrode"
+            ]
+          },
+          {
             "level": 39,
             "attacks": [
               "Fire Spin"
@@ -560,8 +566,9 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "hellasforms:pokemon/851_centiskorch/all/gmax/hellas/texture.png",
-              "sprite": "hellasforms:pokemon/851_centiskorch/all/gmax/hellas/sprite.png",
+              "texture": "hellasforms:pokemon/851_centiskorch/all/mega/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/851_centiskorch/all/mega/hellas/sprite.png",
+              "emissive": "hellasforms:pokemon/851_centiskorch/all/mega/hellas/emissive.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -572,8 +579,9 @@
             },
             {
               "name": "shiny",
-              "texture": "hellasforms:pokemon/851_centiskorch/all/gmax/hellasshiny/texture.png",
-              "sprite": "hellasforms:pokemon/851_centiskorch/all/gmax/hellasshiny/sprite.png",
+              "texture": "hellasforms:pokemon/851_centiskorch/all/mega/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/851_centiskorch/all/mega/hellasshiny/sprite.png",
+                "emissive": "hellasforms:pokemon/851_centiskorch/all/mega/hellasshiny/emissive.png",
               "particle": "arcanery:shiny"
             }
           ]

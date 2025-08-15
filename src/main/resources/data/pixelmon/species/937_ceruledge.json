@@ -282,6 +282,18 @@
             "attacks": [
               "Shadow Claw"
             ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Plasma Veil"
+            ]
+          },
+          {
+            "level": 58,
+            "attacks": [
+              "Petalblade"
+            ]
           }
         ],
         "tutorMoves": [

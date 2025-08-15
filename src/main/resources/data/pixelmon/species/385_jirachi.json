@@ -594,6 +594,18 @@
             ]
           },
           {
+            "level": 63,
+            "attacks": [
+              "Draconic Shout"
+            ]
+          },
+          {
+            "level": 67,
+            "attacks": [
+              "Cutting Edge"
+            ]
+          },
+          {
             "level": 80,
             "attacks": [
               "Rest"

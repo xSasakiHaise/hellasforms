@@ -846,6 +846,12 @@
             ]
           },
           {
+            "level": 40,
+            "attacks": [
+              "Eroding Tides"
+            ]
+          },
+          {
             "level": 42,
             "attacks": [
               "Thrash"
@@ -867,6 +873,12 @@
             "level": 59,
             "attacks": [
               "Giga Impact"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Draconic Jaw"
             ]
           }
         ],

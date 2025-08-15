@@ -285,6 +285,18 @@
             "attacks": [
               "Psyshock"
             ]
+          },
+          {
+            "level": 55,
+            "attacks": [
+              "Plasma Veil"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Afterburner"
+            ]
           }
         ],
         "tutorMoves": [

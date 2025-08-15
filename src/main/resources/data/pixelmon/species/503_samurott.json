@@ -828,6 +828,24 @@
             "attacks": [
               "Hydro Pump"
             ]
+          },
+          {
+            "level": 70,
+            "attacks": [
+              "Snowstorm Fury"
+            ]
+          },
+          {
+            "level": 75,
+            "attacks": [
+              "Eroding Tides"
+            ]
+          },
+          {
+            "level": 80,
+            "attacks": [
+              "Isbrand"
+            ]
           }
         ],
         "tutorMoves": [

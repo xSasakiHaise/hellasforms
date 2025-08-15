@@ -451,6 +451,12 @@
             "attacks": [
               "Greek Fire"
             ]
+          },
+          {
+            "level": 57,
+            "attacks": [
+              "Afterburner"
+            ]
           }
         ],
         "tutorMoves": [

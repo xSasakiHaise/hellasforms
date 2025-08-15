@@ -456,15 +456,33 @@
             ]
           },
           {
+            "level": 60,
+            "attacks": [
+              "Afterburner"
+            ]
+          },
+          {
             "level": 63,
             "attacks": [
               "Dragon Rush"
             ]
           },
           {
+            "level": 66,
+            "attacks": [
+              "Draconic Shout"
+            ]
+          },
+          {
             "level": 70,
             "attacks": [
               "Double-Edge"
+            ]
+          },
+          {
+            "level": 73,
+            "attacks": [
+              "Photon Darts"
             ]
           },
           {
