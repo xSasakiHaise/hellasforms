@@ -14,8 +14,6 @@
       "minLevel": 10,
       "maxLevel": 15,
       "typeID": "pokemon",
-      "heldItems": [
-      ],
       "condition": {
         "stringBiomes": [
           "arid"

@@ -16,8 +16,6 @@
       "maxLevel": 10,
       "typeID": "pokemon",
       "condition": {
-        "times": [
-        ],
         "stringBiomes": [
           "beaches"
         ]

@@ -6,14 +6,14 @@
       "stringLocationTypes": [
         "Land"
       ],
+      "minLevel": 15,
+      "maxLevel": 35,
+      "typeID": "pokemon",
       "tags": [
         "hellas",
         "wild",
         "tier_epic"
       ],
-      "minLevel": 15,
-      "maxLevel": 35,
-      "typeID": "pokemon",
       "condition": {
         "times": [
           "NIGHT"
@@ -31,43 +31,20 @@
       "stringLocationTypes": [
         "Land"
       ],
+      "minLevel": 15,
+      "maxLevel": 35,
+      "typeID": "pokemon",
       "tags": [
         "hellas",
         "wild",
         "tier_epic"
       ],
-      "minLevel": 15,
-      "maxLevel": 35,
-      "typeID": "pokemon",
       "condition": {
         "stringBiomes": [
           "byg:rainbow_beach"
-        ],
-        "maxY": 80
+        ]
       },
       "rarity": 0.8
-    },
-    {
-      "spec": "species:Gible form:hellas",
-      "stringLocationTypes": [
-        "Underground"
-      ],
-      "tags": [
-        "hellas",
-        "wild",
-        "tier_epic"
-      ],
-      "minLevel": 15,
-      "maxLevel": 35,
-      "typeID": "pokemon",
-      "condition": {
-        "stringBiomes": [
-          "arid",
-          "mesas"
-        ],
-        "maxY": 70
-      },
-      "rarity": 0.4
     }
   ]
 }
