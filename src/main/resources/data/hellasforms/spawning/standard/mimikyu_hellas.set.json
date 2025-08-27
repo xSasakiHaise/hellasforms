@@ -1,0 +1,30 @@
+{
+  "id": "Hellasian Mimikyu",
+  "spawnInfos": [
+    {
+      "spec": "species:Mimikyu form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 15,
+      "maxLevel": 45,
+      "typeID": "pokemon",
+      "tags": [
+        "hellas",
+        "wild",
+        "tier_rare"
+      ],
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "evil"
+        ],
+        "maxLightLevel": 3,
+        "moonPhase": 5
+      },
+      "rarity": 0.6
+    }
+  ]
+}

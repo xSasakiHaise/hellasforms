@@ -3,6 +3,7 @@ Rarity Tiers:
         Golett
         Sizzlipede
         Skiddo
+        Skrelp
         Spheal
         Wailmer
         Wooloo
@@ -17,8 +18,9 @@ Rarity Tiers:
             Phase1->Phase2:
                 45
             Background:
-                Grey
+                Gray
     Uncommon:
+        Amaura
         Phantump
         Popplio
         Tepig
@@ -37,6 +39,8 @@ Rarity Tiers:
                 Green
     Rare:
         Charcadet
+        Mimikyu
+        Noibat
         Oshawott
         Ralts
         Rowlet
@@ -56,6 +60,7 @@ Rarity Tiers:
     Epic:
         Dreepy
         Gible
+        Goomy
         Eevee
         Larvitar
         Zorua
@@ -72,6 +77,8 @@ Rarity Tiers:
             Background:
                 Purple
     Mythic:
+        Honedge
+        Hoopa
         Iron Valiant
         Jirachi
         Roaring Moon
@@ -89,10 +96,12 @@ Rarity Tiers:
             Background:
                 Yellow
     Legendary:
+        Floette
         Magikarp
         Meloetta
         Poipole
         Yveltal
+        Zygarde
             BST:
                 620
             Rarity:
@@ -106,6 +115,7 @@ Rarity Tiers:
             Background:
                 Orange
     Exotic:
+        Falinks
         Diancie
         Giratina
         Lunala

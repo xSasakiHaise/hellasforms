@@ -1,0 +1,30 @@
+{
+  "id": "Hellasian Skrelp",
+  "spawnInfos": [
+    {
+      "spec": "species:Skrelp form:hellas",
+      "stringLocationTypes": [
+        "Water"
+      ],
+      "minLevel": 5,
+      "maxLevel": 10,
+      "typeID": "pokemon",
+      "tags": [
+        "hellas",
+        "wild",
+        "tier_common"
+      ],
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "minecraft:deep_warm_ocean",
+          "minecraft:warm_ocean"
+        ],
+        "maxY": 50
+      },
+      "rarity": 1.0
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "Hellasian Zygarde",
+  "spawnInfos": [
+    {
+      "spec": "species:Zygarde forrm:hellas",
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 50,
+      "maxLevel": 70,
+      "typeID": "pokemon",
+      "condition": {
+        "stringBiomes": [
+          "mesas"
+        ],
+        "maxY": 50
+      },
+      "rarity": 0.2
+    }
+  ]
+}

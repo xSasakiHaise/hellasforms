@@ -1,0 +1,29 @@
+{
+  "id": "Hellasian Floette",
+  "spawnInfos": [
+    {
+      "spec": "species:Floette form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 15,
+      "maxLevel": 22,
+      "typeID": "pokemon",
+        "tags": [
+            "hellas",
+            "wild",
+            "tier_legendary"
+        ],
+      "condition": {
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "evil",
+          "magical"
+        ]
+      },
+      "rarity": 0.2
+    }
+  ]
+}
