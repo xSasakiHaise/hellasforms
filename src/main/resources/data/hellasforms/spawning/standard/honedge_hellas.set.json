@@ -1,0 +1,29 @@
+{
+  "id": "Heellasian Honedge",
+  "spawnInfos": [
+    {
+      "spec": "species:Honedge form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 35,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "tags": [
+        "hellas",
+        "wild",
+        "tier_mythic"
+      ],
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "magical",
+          "evil"
+        ]
+      },
+      "rarity": 0.3
+    }
+  ]
+}

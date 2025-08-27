@@ -1,0 +1,30 @@
+{
+  "id": "Hellasian Noibat",
+  "spawnInfos": [
+    {
+      "spec": "species:Noibat form:hellas",
+      "stringLocationTypes": [
+        "Air"
+      ],
+      "minLevel": 10,
+      "maxLevel": 25,
+      "typeID": "pokemon",
+        "tags": [
+            "hellas",
+            "wild",
+            "tier_rare"
+        ],
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "hills",
+          "jungles",
+          "redwoods"
+        ]
+      },
+      "rarity": 0.6
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "Hellasian Hoopa",
+  "spawnInfos": [
+    {
+      "spec": "species:Hoopa form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 50,
+      "maxLevel": 70,
+      "typeID": "pokemon",
+      "tags": [
+        "hellas",
+        "wild",
+        "tier_legendary"
+      ],
+      "condition": {
+        "stringBiomes": [
+          "arid"
+        ]
+      },
+      "rarity": 0.2
+    }
+  ]
+}

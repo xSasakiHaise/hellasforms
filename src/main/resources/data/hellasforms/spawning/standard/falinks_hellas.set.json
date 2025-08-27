@@ -1,0 +1,29 @@
+{
+  "id": "Hellasian Falinks",
+  "spawnInfos": [
+    {
+      "spec": "species:Falinks form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 70,
+      "maxLevel": 80,
+      "typeID": "pokemon",
+      "tags": [
+        "hellas",
+        "wild",
+        "tier_exotic"
+      ],
+      "condition": {
+        "stringBiomes": [
+          "savannas",
+          "mesas",
+          "freezing",
+          "plains",
+          "forest"
+        ]
+      },
+      "rarity": 0.1
+    }
+  ]
+}

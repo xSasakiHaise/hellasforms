@@ -1,0 +1,25 @@
+{
+  "id": "Hellasian Goomy",
+  "spawnInfos": [
+    {
+      "spec": "species:Goomy form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 15,
+      "maxLevel": 35,
+      "typeID": "pokemon",
+      "tags": [
+        "hellas",
+        "wild",
+        "tier_epic"
+      ],
+      "condition": {
+        "stringBiomes": [
+          "swamps"
+        ]
+      },
+      "rarity": 0.4
+    }
+  ]
+}
