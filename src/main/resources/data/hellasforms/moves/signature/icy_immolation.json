@@ -1,0 +1,46 @@
+{
+  "attackName": "Icy Immolation",
+  "attackType": "ICE",
+  "attackCategory": "STATUS",
+  "basePower": 0,
+  "ppBase": 5,
+  "ppMax": 8,
+  "accuracy": 100,
+  "makesContact": false,
+  "effects": [
+    {
+      "langStart": "pixelmon.status.electricterrain",
+      "langEnd": "pixelmon.status.electricterrainend",
+      "type": "ElectricTerrain",
+      "modifiers": [],
+      "persists": false,
+      "effectTypeID": "ElectricTerrain"
+    },
+    {
+      "langStart": "pixelmon.effect.auroraveil.raised",
+      "langFail": "pixelmon.effect.auroraveil.already",
+      "langEnd": "pixelmon.status.auroraveil.woreoff",
+      "type": "AuroraVeil",
+      "modifiers": [],
+      "persists": false,
+      "effectTypeID": "AuroraVeil"
+    },
+    {
+      "modifiers": [],
+      "persists": true,
+      "effectTypeID": "IcyImmolation"
+    }
+  ],
+  "animations": [
+    "leapForward"
+  ],
+  "targetingInfo": {
+    "hitsAll": false,
+    "hitsOppositeFoe": false,
+    "hitsAdjacentFoe": false,
+    "hitsExtendedFoe": false,
+    "hitsSelf": true,
+    "hitsAdjacentAlly": false,
+    "hitsExtendedAlly": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "Hellasian Mega Samurott",
+  "spawnInfos": [
+    {
+      "spec": "species:Samurott form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "spawnSpecificBossRate": 1,
+      "condition": {
+        "stringBiomes": [
+          "minecraft:beach",
+          "biomesoplenty:gravel_beach",
+          "biomesoplenty:tropic_beach",
+          "byg:rainbow_beach",
+          "byg:white_beach"
+        ]
+      },
+      "interval": "megaBoss",
+      "typeID": "pokemon",
+      "rarity": 0.5
+    }
+  ]
+}

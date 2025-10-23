@@ -4,7 +4,8 @@
     {
       "spec": "species:Lunala form:hellas",
       "stringLocationTypes": [
-        "Land"
+        "Land",
+        "Air"
       ],
       "tags": [
         "hellas",
@@ -21,7 +22,7 @@
           "NIGHT"
         ],
       "stringBiomes": [
-        "byg:lavender_fields"
+        "biomesoplenty:lavender_fields"
       ]
       },
       "rarity": 0.1

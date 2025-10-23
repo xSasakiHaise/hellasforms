@@ -812,33 +812,87 @@
             ]
           },
           {
-            "level": 51,
+            "level": 50,
             "attacks": [
               "Retaliate"
             ]
           },
           {
-            "level": 58,
+            "level": 52,
+            "attacks": [
+              "Autotomize"
+            ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Sharpen"
+            ]
+          },
+          {
+            "level": 56,
             "attacks": [
               "Swords Dance"
             ]
           },
           {
-            "level": 63,
+            "level": 58,
             "attacks": [
-              "Hydro Pump"
+              "Parting Shot"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Iron Defense"
+            ]
+          },
+          {
+            "level": 62,
+            "attacks": [
+              "Taunt"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Coaching"
+            ]
+          },
+          {
+            "level": 66,
+            "attacks": [
+              "Close Combat"
+            ]
+          },
+          {
+            "level": 68,
+            "attacks": [
+              "Gyro Ball"
             ]
           },
           {
             "level": 70,
             "attacks": [
-              "Snowstorm Fury"
+              "Hydro Pump"
             ]
           },
           {
-            "level": 75,
+            "level": 72,
             "attacks": [
-              "Eroding Tides"
+              "Anchor Shot"
+            ]
+          },
+          {
+            "level": 74,
+            "attacks": [
+              "Earthquake"
+            ]
+          },
+          {
+            "level": 76,
+            "attacks": [
+              "U-Turn"
             ]
           },
           {
@@ -846,9 +900,27 @@
             "attacks": [
               "Isbrand"
             ]
+          },
+          {
+            "level": 82,
+            "attacks": [
+              "Snowstorm Fury"
+            ]
+          },
+          {
+            "level": 85,
+            "attacks": [
+              "Eroding Tides"
+            ]
+          },
+          {
+            "level": 88,
+            "attacks": [
+              "Smart Strike"
+            ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Aqua Tail",
           "Block",
           "Covet",

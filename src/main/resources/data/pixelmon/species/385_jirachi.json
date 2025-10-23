@@ -527,6 +527,66 @@
       "moves": {
         "levelUpMoves": [
           {
+            "level": 1,
+            "attacks": [
+              "Confusion"
+            ]
+          },
+          {
+            "level": 5,
+            "attacks": [
+              "Zen Headbutt"
+            ]
+          },
+          {
+            "level": 10,
+            "attacks": [
+              "Psywave"
+            ]
+          },
+          {
+            "level": 15,
+            "attacks": [
+              "Mirror Shot"
+            ]
+          },
+          {
+            "level": 20,
+            "attacks": [
+              "Psybeam"
+            ]
+          },
+          {
+            "level": 25,
+            "attacks": [
+              "Calm Mind"
+            ]
+          },
+          {
+            "level": 30,
+            "attacks": [
+              "Telekinesis"
+            ]
+          },
+          {
+            "level": 35,
+            "attacks": [
+              "Iron Head"
+            ]
+          },
+          {
+            "level": 40,
+            "attacks": [
+              "Dragon Claw"
+            ]
+          },
+          {
+            "level": 45,
+            "attacks": [
+              "Dragon Pulse"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Corrode"
@@ -547,62 +607,49 @@
           {
             "level": 53,
             "attacks": [
-              "Mirror Shot"
-            ]
-          },
-
-          {
-            "level": 54,
-            "attacks": [
-              "Psybeam"
+              "Future Sight"
             ]
           },
           {
             "level": 55,
             "attacks": [
-              "Psywave"
-            ]
-          },
-          {
-            "level": 56,
-            "attacks": [
-              "Confusion"
+              "Cosmic Power"
             ]
           },
           {
             "level": 57,
             "attacks": [
-              "Zen Headbutt"
-            ]
-          },
-          {
-            "level": 58,
-            "attacks": [
-              "Future Sight"
-            ]
-          },
-          {
-            "level": 59,
-            "attacks": [
-              "Cosmic Power"
+              "Healing Wish"
             ]
           },
           {
             "level": 60,
             "attacks": [
-              "Healing Wish"
+              "Draconic Shout"
             ]
           },
           {
             "level": 63,
             "attacks": [
-              "Draconic Shout"
+              "Cutting Edge"
             ]
           },
           {
             "level": 67,
             "attacks": [
-              "Cutting Edge"
+              "Dragon Claw"
+            ]
+          },
+          {
+            "level": 70,
+            "attacks": [
+              "Flash Cannon"
+            ]
+          },
+          {
+            "level": 75,
+            "attacks": [
+              "Trick Room"
             ]
           },
           {
@@ -610,9 +657,21 @@
             "attacks": [
               "Rest"
             ]
+          },
+          {
+            "level": 85,
+            "attacks": [
+              "Light Screen"
+            ]
+          },
+          {
+            "level": 90,
+            "attacks": [
+              "Thunder Wave"
+            ]
           }
         ],
-        "tutorMoves": [],
+      "tutorMoves": [],
         "transferMoves": [
           "Aerial Ace",
           "Ancient Power",

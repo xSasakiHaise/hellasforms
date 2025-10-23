@@ -460,6 +460,48 @@
             ]
           },
           {
+            "level": 20,
+            "attacks": [
+              "Psychic Terrain"
+            ]
+          },
+          {
+            "level": 24,
+            "attacks": [
+              "Cosmic Power"
+            ]
+          },
+          {
+            "level": 28,
+            "attacks": [
+              "Gravity"
+            ]
+          },
+          {
+            "level": 32,
+            "attacks": [
+              "Hypnosis"
+            ]
+          },
+          {
+            "level": 36,
+            "attacks": [
+              "Trick Room"
+            ]
+          },
+          {
+            "level": 40,
+            "attacks": [
+              "Lunar Dance"
+            ]
+          },
+          {
+            "level": 44,
+            "attacks": [
+              "Lunar Blessing"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Water Spout"
@@ -514,9 +556,27 @@
             ]
           },
           {
+            "level": 76,
+            "attacks": [
+              "Wave Crash"
+            ]
+          },
+          {
             "level": 77,
             "attacks": [
-              "Waterfall"
+              "Psychic Fangs"
+            ]
+          },
+          {
+            "level": 78,
+            "attacks": [
+              "Dream Eater"
+            ]
+          },
+          {
+            "level": 79,
+            "attacks": [
+              "Expanding Force"
             ]
           },
           {
@@ -524,9 +584,15 @@
             "attacks": [
               "Eroding Tides"
             ]
+          },
+          {
+            "level": 83,
+            "attacks": [
+              "Future Sight"
+            ]
           }
         ],
-        "tutorMoves": [],
+      "tutorMoves": [],
         "transferMoves": [
           "Block",
           "Captivate",

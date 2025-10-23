@@ -281,6 +281,66 @@
             ]
           },
           {
+            "level": 35,
+            "attacks": [
+              "Gravity"
+            ]
+          },
+          {
+            "level": 36,
+            "attacks": [
+              "Skill Swap"
+            ]
+          },
+          {
+            "level": 37,
+            "attacks": [
+              "Trick Room"
+            ]
+          },
+          {
+            "level": 38,
+            "attacks": [
+              "Electric Terrain"
+            ]
+          },
+          {
+            "level": 39,
+            "attacks": [
+              "Thunder"
+            ]
+          },
+          {
+            "level": 40,
+            "attacks": [
+              "Thunderbolt"
+            ]
+          },
+          {
+            "level": 41,
+            "attacks": [
+              "Overdrive"
+            ]
+          },
+          {
+            "level": 42,
+            "attacks": [
+              "Rising Voltage"
+            ]
+          },
+          {
+            "level": 43,
+            "attacks": [
+              "Expanding Force"
+            ]
+          },
+          {
+            "level": 44,
+            "attacks": [
+              "Earth Power"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Psyshock"
@@ -299,7 +359,7 @@
             ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Thunder Shock",
           "Thunder Wave",
           "Thunderbolt",

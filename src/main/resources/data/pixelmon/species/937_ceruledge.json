@@ -274,7 +274,87 @@
             "level": 0,
             "attacks": [
               "Hitch Kick",
-              "Plasma Veil"
+              "Plasma Veil",
+              "Astonish",
+              "Ember",
+              "Leer",
+              "Night Slash",
+              "Quick Guard",
+              "Shadow Claw",
+              "Shadow Sneak",
+              "Solar Blade"
+            ]
+          },
+          {
+            "level": 8,
+            "attacks": [
+              "Clear Smog"
+            ]
+          },
+          {
+            "level": 12,
+            "attacks": [
+              "Fire Spin"
+            ]
+          },
+          {
+            "level": 16,
+            "attacks": [
+              "Will-O-Wisp"
+            ]
+          },
+          {
+            "level": 20,
+            "attacks": [
+              "Night Shade"
+            ]
+          },
+          {
+            "level": 24,
+            "attacks": [
+              "Flame Charge"
+            ]
+          },
+          {
+            "level": 28,
+            "attacks": [
+              "Incinerate"
+            ]
+          },
+          {
+            "level": 32,
+            "attacks": [
+              "Lava Plume"
+            ]
+          },
+          {
+            "level": 35,
+            "attacks": [
+              "Wild Charge"
+            ]
+          },
+          {
+            "level": 36,
+            "attacks": [
+              "Thunder Punch"
+            ]
+          },
+          {
+            "level": 37,
+            "attacks": [
+              "Swords Dance"
+            ]
+          },
+          {
+            "level": 42,
+            "attacks": [
+              "Ally Switch"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Bitter Blade"
             ]
           },
           {
@@ -290,13 +370,25 @@
             ]
           },
           {
+            "level": 56,
+            "attacks": [
+              "Psycho Cut"
+            ]
+          },
+          {
             "level": 58,
             "attacks": [
               "Petalblade"
             ]
+          },
+          {
+            "level": 62,
+            "attacks": [
+              "Flare Blitz"
+            ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Thunder Shock",
           "Thunder Wave",
           "Thunderbolt",

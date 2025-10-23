@@ -685,25 +685,121 @@
             "attacks": [
               "Growl",
               "Tackle",
-              "Peck",
               "Leafage",
-              "Astonish",
-              "Shadow Sneak",
-              "Razor Leaf",
-              "Synthesis",
-              "Pluck",
-              "Absorb",
+              "Absorb"
+            ]
+          },
+          {
+            "level": 9,
+            "attacks": [
+              "Peck"
+            ]
+          },
+          {
+            "level": 12,
+            "attacks": [
+              "Shadow Sneak"
+            ]
+          },
+          {
+            "level": 15,
+            "attacks": [
+              "Razor Leaf"
+            ]
+          },
+          {
+            "level": 20,
+            "attacks": [
+              "Synthesis"
+            ]
+          },
+          {
+            "level": 25,
+            "attacks": [
+              "Pluck"
+            ]
+          },
+          {
+            "level": 30,
+            "attacks": [
               "Nasty Plot"
+            ]
+          },
+          {
+            "level": 37,
+            "attacks": [
+              "Sucker Punch"
+            ]
+          },
+          {
+            "level": 44,
+            "attacks": [
+              "Leaf Blade"
             ]
           },
           {
             "level": 50,
             "attacks": [
-              "Sea Fog"
+              "Sea Fog",
+              "Focus Energy"
+            ]
+          },
+          {
+            "level": 53,
+            "attacks": [
+              "Swords Dance"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Endure"
+            ]
+          },
+          {
+            "level": 59,
+            "attacks": [
+              "Parting Shot"
+            ]
+          },
+          {
+            "level": 62,
+            "attacks": [
+              "Psycho Cut"
+            ]
+          },
+          {
+            "level": 65,
+            "attacks": [
+              "Lash Out"
+            ]
+          },
+          {
+            "level": 68,
+            "attacks": [
+              "Knock Off"
+            ]
+          },
+          {
+            "level": 71,
+            "attacks": [
+              "Triple Arrows"
+            ]
+          },
+          {
+            "level": 74,
+            "attacks": [
+              "Feather Dance"
+            ]
+          },
+          {
+            "level": 77,
+            "attacks": [
+              "Brave Bird"
             ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Sucker Punch",
           "Leaf Blade",
           "Feather Dance",
@@ -875,7 +971,8 @@
         "speed": 150
       },
       "tags": [
-        "hellas"
+        "hellas",
+        "tier_rare"
       ],
       "spawn": {
         "baseExp": 239,

@@ -1,0 +1,21 @@
+{
+  "id": "Hellasian Mega Sceptile",
+  "spawnInfos": [
+    {
+      "spec": "species:Sceptile form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "spawnSpecificBossRate": 1,
+      "condition": {
+        "stringBiomes": [
+          "jungles",
+          "forests"
+        ]
+      },
+      "interval": "megaBoss",
+      "typeID": "pokemon",
+      "rarity": 0.5
+    }
+  ]
+}

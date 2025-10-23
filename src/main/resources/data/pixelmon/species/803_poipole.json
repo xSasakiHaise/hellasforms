@@ -431,7 +431,8 @@
       },
       "tags": [
         "hellas",
-        "wild"
+        "wild",
+        "tier_legendary"
       ],
       "spawn": {
         "baseExp": 189,

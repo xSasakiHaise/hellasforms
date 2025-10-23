@@ -518,13 +518,73 @@
             ]
           },
           {
+            "level": 20,
+            "attacks": [
+              "Autotomize"
+            ]
+          },
+          {
+            "level": 24,
+            "attacks": [
+              "Bulk Up"
+            ]
+          },
+          {
+            "level": 28,
+            "attacks": [
+              "Gravity"
+            ]
+          },
+          {
+            "level": 32,
+            "attacks": [
+              "Trick Room"
+            ]
+          },
+          {
+            "level": 36,
+            "attacks": [
+              "Meteor Mash"
+            ]
+          },
+          {
+            "level": 40,
+            "attacks": [
+              "Bullet Punch"
+            ]
+          },
+          {
+            "level": 44,
+            "attacks": [
+              "Shadow Punch"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Close Combat"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Corrode"
             ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Double Iron Bash"
+            ]
+          },
+          {
+            "level": 58,
+            "attacks": [
+              "Sky Uppercut"
+            ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Earthquake",
           "Heavy Slam",
           "Phantom Force",

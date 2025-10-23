@@ -8,9 +8,6 @@ import com.pixelmonmod.pixelmon.battles.status.Terrain;
 import com.pixelmonmod.pixelmon.enums.heldItems.EnumHeldItems;
 
 public class NightmareRealm extends AbstractAbility {
-    public NightmareRealm() {
-    }
-
     public void applySwitchInEffect(PixelmonWrapper newPokemon) {
         Terrain terrain = newPokemon.bc.globalStatusController.getTerrain();
         if (!(terrain instanceof MistyTerrain)) {
@@ -29,9 +26,9 @@ public class NightmareRealm extends AbstractAbility {
     public int[] modifyStats(PixelmonWrapper user, int[] stats) {
         if (user.bc.globalStatusController.getTerrain() instanceof MistyTerrain) {
             int var10001 = BattleStatsType.DEFENSE.getStatIndex();
-            stats[var10001] = (int)((double)stats[var10001] * 2);
+            stats[var10001] = (int)((double)stats[var10001] * (double)2.0F);
             int var10002 = BattleStatsType.SPECIAL_DEFENSE.getStatIndex();
-            stats[var10002] = (int)((double)stats[var10002] * 2);
+            stats[var10002] = (int)((double)stats[var10002] * (double)2.0F);
         }
 
         return stats;

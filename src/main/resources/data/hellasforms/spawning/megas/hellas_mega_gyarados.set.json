@@ -1,0 +1,23 @@
+{
+  "id": "Hellasian Mega Gyarados",
+  "spawnInfos": [
+    {
+      "spec": "species:Gyarados form:hellas",
+      "stringLocationTypes": [
+        "Water"
+      ],
+      "spawnSpecificBossRate": 1,
+      "condition": {
+        "stringBiomes": [
+          "oceanic",
+          "beaches",
+          "minecraft:river",
+          "lakes"
+        ]
+      },
+      "interval": "megaBoss",
+      "typeID": "pokemon",
+      "rarity": 0.5
+    }
+  ]
+}

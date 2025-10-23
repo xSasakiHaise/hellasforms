@@ -1,13 +1,13 @@
 modLoader="javafml"
 loaderVersion="[36,)"
-logoFile="Hellas.png"
+logoFile="HellasForms.png"
 license="Restricted"
 
 [[mods]]
 modId="hellasforms"
-version="2.0.2"
+version="2.5.0"
 displayName="HellasForms"
-displayURL="https:discord.pixelmon-server.com"
+displayURL="https://discord.pixelmon-server.com"
 credits="xSasaki_Haise, pg13snipez, xGlitzerschaf, NouveauLumière"
 authors="xSasaki_Haise"
 description='''
@@ -29,6 +29,13 @@ Welcome to Hellas :)
     side="BOTH"
 
 [[dependencies.hellasforms]]
+    modId="pixelmon"
+    mandatory=true
+    versionRange="[9.1.12,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.hellasforms]]
     modId="tconstruct"
     mandatory=false
     versionRange="[3.3.+,)"
@@ -36,8 +43,8 @@ Welcome to Hellas :)
     side="BOTH"
 
 [[dependencies.hellasforms]]
-    modId="pixelmon"
-    mandatory=true
-    versionRange="[9.1.12,)"
-    ordering="AFTER"
-    side="BOTH"
+modId="hellascontrol"
+mandatory=true
+versionRange="[1.0.0,)"
+ordering="NONE"
+side="BOTH"

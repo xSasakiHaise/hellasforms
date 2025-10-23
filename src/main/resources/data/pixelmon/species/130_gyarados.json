@@ -1140,6 +1140,12 @@
             ]
           },
           {
+            "level": 28,
+            "attacks": [
+              "Breaking Swipe"
+            ]
+          },
+          {
             "level": 32,
             "attacks": [
               "Flare Blitz"
@@ -1185,6 +1191,30 @@
             "level": 56,
             "attacks": [
               "Sunsteel Strike"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Flame Charge"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Dragon Hammer"
+            ]
+          },
+          {
+            "level": 68,
+            "attacks": [
+              "Steel Beam"
+            ]
+          },
+          {
+            "level": 72,
+            "attacks": [
+              "Iron Head"
             ]
           }
         ],

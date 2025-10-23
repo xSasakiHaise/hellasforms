@@ -1,0 +1,21 @@
+{
+  "id": "Hellasian Mega Aegislash",
+  "spawnInfos": [
+  {
+    "spec": "species:Aegislash form:hellas",
+    "stringLocationTypes": [
+    "Land"
+    ],
+  "spawnSpecificBossRate": 1,
+  "condition": {
+    "stringBiomes": [
+      "magical",
+      "evil"
+    ]
+  },
+    "interval": "megaBoss",
+    "typeID": "pokemon",
+    "rarity": 0.5
+    }
+  ]
+}

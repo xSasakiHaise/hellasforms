@@ -1,0 +1,35 @@
+{
+  "attackName": "Tactical Retreat",
+  "attackType": "FIGHTING",
+  "attackCategory": "PHYSICAL",
+  "basePower": 45,
+  "ppBase": 5,
+  "ppMax": 8,
+  "accuracy": -1,
+  "makesContact": true,
+  "effects": [
+    {
+      "drainPercent": 25,
+      "modifiers": [],
+      "persists": false,
+      "effectTypeID": "Drain"
+    },
+    {
+      "modifiers": [],
+      "persists": false,
+      "effectTypeID": "SwitchOut"
+    }
+  ],
+  "animations": [
+    "leapForward"
+  ],
+  "targetingInfo": {
+    "hitsAll": false,
+    "hitsOppositeFoe": true,
+    "hitsAdjacentFoe": true,
+    "hitsExtendedFoe": false,
+    "hitsSelf": false,
+    "hitsAdjacentAlly": true,
+    "hitsExtendedAlly": false
+  }
+}

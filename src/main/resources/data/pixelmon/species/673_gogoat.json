@@ -348,25 +348,106 @@
             ]
           },
           {
+            "level": 20,
+            "attacks": [
+              "Grassy Terrain"
+            ]
+          },
+          {
+            "level": 25,
+            "attacks": [
+              "Sandstorm"
+            ]
+          },
+          {
+            "level": 30,
+            "attacks": [
+              "Stealth Rock"
+            ]
+          },
+          {
+            "level": 35,
+            "attacks": [
+              "Spikes"
+            ]
+          },
+          {
+            "level": 40,
+            "attacks": [
+              "Final Gambit"
+            ]
+          },
+          {
+            "level": 45,
+            "attacks": [
+              "Head Smash"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
-              "Hitch Kick"
+              "Hitch Kick",
+              "Headlong Rush"
+            ]
+          },
+          {
+            "level": 53,
+            "attacks": [
+              "Grassy Glide"
             ]
           },
           {
             "level": 57,
             "attacks": [
-              "Isbrand"
+              "Isbrand",
+              "Head Charge"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Wood Hammer"
             ]
           },
           {
             "level": 63,
             "attacks": [
-              "Shatterstorm"
+              "Shatterstorm",
+              "Rock Slide"
+            ]
+          },
+          {
+            "level": 66,
+            "attacks": [
+              "Trailblaze"
+            ]
+          },
+          {
+            "level": 69,
+            "attacks": [
+              "Low Kick"
+            ]
+          },
+          {
+            "level": 72,
+            "attacks": [
+              "Low Sweep"
+            ]
+          },
+          {
+            "level": 75,
+            "attacks": [
+              "Play Rough"
+            ]
+          },
+          {
+            "level": 78,
+            "attacks": [
+              "Rapid Spin"
             ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Triple Kick",
           "High Jump Kick",
           "Bounce",

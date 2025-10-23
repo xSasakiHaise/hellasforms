@@ -479,9 +479,33 @@
             ]
           },
           {
+            "level": 20,
+            "attacks": [
+              "Cotton Guard"
+            ]
+          },
+          {
             "level": 21,
             "attacks": [
-              "Headbutt"
+              "Synthesis"
+            ]
+          },
+          {
+            "level": 22,
+            "attacks": [
+              "Amnesia"
+            ]
+          },
+          {
+            "level": 23,
+            "attacks": [
+              "Rage Powder"
+            ]
+          },
+          {
+            "level": 24,
+            "attacks": [
+              "Spore"
             ]
           },
           {
@@ -491,9 +515,27 @@
             ]
           },
           {
+            "level": 28,
+            "attacks": [
+              "Bulk Up"
+            ]
+          },
+          {
             "level": 32,
             "attacks": [
               "Guard Swap"
+            ]
+          },
+          {
+            "level": 33,
+            "attacks": [
+              "Body Slam"
+            ]
+          },
+          {
+            "level": 34,
+            "attacks": [
+              "Body Press"
             ]
           },
           {
@@ -503,9 +545,21 @@
             ]
           },
           {
+            "level": 37,
+            "attacks": [
+              "Wood Hammer"
+            ]
+          },
+          {
             "level": 38,
             "attacks": [
               "Reversal"
+            ]
+          },
+          {
+            "level": 39,
+            "attacks": [
+              "Grassy Glide"
             ]
           },
           {
@@ -521,13 +575,19 @@
             ]
           },
           {
+            "level": 51,
+            "attacks": [
+              "Fake Out"
+            ]
+          },
+          {
             "level": 56,
             "attacks": [
               "Last Resort"
             ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Grassy Glide"
         ],
         "transferMoves": [],

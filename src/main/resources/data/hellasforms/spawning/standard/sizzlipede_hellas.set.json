@@ -4,8 +4,7 @@
     {
       "spec": "species:Sizzlipede form:hellas",
       "stringLocationTypes": [
-        "Land",
-        "Headbutt"
+        "Land"
       ],
       "tags": [
         "hellas",

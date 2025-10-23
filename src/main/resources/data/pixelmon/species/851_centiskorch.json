@@ -322,7 +322,25 @@
           {
             "level": 20,
             "attacks": [
-              "Bug Bite"
+              "Toxic"
+            ]
+          },
+          {
+            "level": 21,
+            "attacks": [
+              "Toxic Spikes"
+            ]
+          },
+          {
+            "level": 22,
+            "attacks": [
+              "Toxic Thread"
+            ]
+          },
+          {
+            "level": 23,
+            "attacks": [
+              "Baneful Bunker"
             ]
           },
           {
@@ -332,9 +350,27 @@
             ]
           },
           {
+            "level": 26,
+            "attacks": [
+              "Parting Shot"
+            ]
+          },
+          {
+            "level": 27,
+            "attacks": [
+              "Quiver Dance"
+            ]
+          },
+          {
             "level": 32,
             "attacks": [
               "Slam"
+            ]
+          },
+          {
+            "level": 33,
+            "attacks": [
+              "Dark Pulse"
             ]
           },
           {
@@ -356,6 +392,12 @@
             ]
           },
           {
+            "level": 47,
+            "attacks": [
+              "Earth Power"
+            ]
+          },
+          {
             "level": 53,
             "attacks": [
               "Fire Lash"
@@ -374,7 +416,7 @@
             ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Scorching Sands",
           "Skitter Smack"
         ],

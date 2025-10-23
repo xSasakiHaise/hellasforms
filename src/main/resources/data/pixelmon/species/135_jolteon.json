@@ -550,6 +550,36 @@
             ]
           },
           {
+            "level": 40,
+            "attacks": [
+              "Detect"
+            ]
+          },
+          {
+            "level": 42,
+            "attacks": [
+              "Mat Block"
+            ]
+          },
+          {
+            "level": 44,
+            "attacks": [
+              "Final Gambit"
+            ]
+          },
+          {
+            "level": 45,
+            "attacks": [
+              "Coaching"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Bulk Up"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Rabid Claw"
@@ -619,6 +649,48 @@
             "level": 61,
             "attacks": [
               "Plasma Fangs"
+            ]
+          },
+          {
+            "level": 62,
+            "attacks": [
+              "Taunt"
+            ]
+          },
+          {
+            "level": 63,
+            "attacks": [
+              "Close Combat"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Thunderous Kick"
+            ]
+          },
+          {
+            "level": 65,
+            "attacks": [
+              "Double Shock"
+            ]
+          },
+          {
+            "level": 66,
+            "attacks": [
+              "Drain Punch"
+            ]
+          },
+          {
+            "level": 67,
+            "attacks": [
+              "Power-Up Punch"
+            ]
+          },
+          {
+            "level": 68,
+            "attacks": [
+              "Play Rough"
             ]
           }
         ],

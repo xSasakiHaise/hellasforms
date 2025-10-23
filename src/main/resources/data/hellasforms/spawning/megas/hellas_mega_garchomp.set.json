@@ -1,0 +1,22 @@
+{
+  "id": "Hellasian Mega Garchomp",
+  "spawnInfos": [
+    {
+      "spec": "species:Garchomp form:hellas",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "spawnSpecificBossRate": 1,
+      "condition": {
+        "stringBiomes": [
+          "arid",
+          "mesas",
+          "byg:rainbow_beach"
+        ]
+      },
+      "interval": "megaBoss",
+      "typeID": "pokemon",
+      "rarity": 0.5
+    }
+  ]
+}

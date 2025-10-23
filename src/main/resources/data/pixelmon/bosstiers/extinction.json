@@ -1,0 +1,22 @@
+{
+  "alwaysPalette": "shiny",
+  "canRandomlySpawn": true,
+  "color": {
+    "r": 220,
+    "g": 208,
+    "b": 255,
+    "a": 255
+  },
+  "dropSets": [],
+  "extraLevels": 150,
+  "id": "extinction",
+  "isMega": true,
+  "levelMultiplier": 1,
+  "megaStoneObtainChance": 1,
+  "megaStoneRepeatChance": 0.05,
+  "modelScaleFactor": 2,
+  "name": "enum.trainerBoss.extinction",
+  "weight": 25
+}
+  ]
+}

@@ -462,6 +462,18 @@
             ]
           },
           {
+            "level": 1,
+            "attacks": [
+              "Helping Hand"
+            ]
+          },
+          {
+            "level": 2,
+            "attacks": [
+              "Agility"
+            ]
+          },
+          {
             "level": 5,
             "attacks": [
               "Taunt"
@@ -562,9 +574,51 @@
             "attacks": [
               "Hyper Beam"
             ]
+          },
+          {
+            "level": 90,
+            "attacks": [
+              "Draco Meteor"
+            ]
+          },
+          {
+            "level": 92,
+            "attacks": [
+              "Dragon Pulse"
+            ]
+          },
+          {
+            "level": 94,
+            "attacks": [
+              "Fiery Wrath"
+            ]
+          },
+          {
+            "level": 95,
+            "attacks": [
+              "Draconic Shout"
+            ]
+          },
+          {
+            "level": 96,
+            "attacks": [
+              "Meteor Beam"
+            ]
+          },
+          {
+            "level": 97,
+            "attacks": [
+              "Shadow Ball"
+            ]
+          },
+          {
+            "level": 97,
+            "attacks": [
+              "Sludge Bomb"
+            ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Dual Wingbeat",
           "Lash Out"
         ],

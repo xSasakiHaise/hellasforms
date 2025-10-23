@@ -729,6 +729,459 @@
           ]
         }
       ]
+    },
+    {
+      "name": "hellas",
+      "experienceGroup": "SLOW",
+      "dimensions": {
+        "height": 1.2,
+        "width": 1.5,
+        "length": 1,
+        "eyeHeight": 1.2,
+        "hoverHeight": 1.2
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Ally Switch",
+              "Confusion",
+              "Destiny Bond"
+            ]
+          },
+          {
+            "level": 1,
+            "attacks": [
+              "Trick"
+            ]
+          },
+          {
+            "level": 2,
+            "attacks": [
+              "Trick-or-Treat"
+            ]
+          },
+          {
+            "level": 3,
+            "attacks": [
+              "Power Trick"
+            ]
+          },
+          {
+            "level": 4,
+            "attacks": [
+              "Recover"
+            ]
+          },
+          {
+            "level": 5,
+            "attacks": [
+              "Nasty Plot"
+            ]
+          },
+          {
+            "level": 6,
+            "attacks": [
+              "Astonish"
+            ]
+          },
+          {
+            "level": 7,
+            "attacks": [
+              "Memento"
+            ]
+          },
+          {
+            "level": 10,
+            "attacks": [
+              "Trick"
+            ]
+          },
+          {
+            "level": 15,
+            "attacks": [
+              "Light Screen"
+            ]
+          },
+          {
+            "level": 19,
+            "attacks": [
+              "Psybeam"
+            ]
+          },
+          {
+            "level": 25,
+            "attacks": [
+              "Skill Swap"
+            ]
+          },
+          {
+            "level": 29,
+            "attacks": [
+              "Guard Split",
+              "Power Split"
+            ]
+          },
+          {
+            "level": 35,
+            "attacks": [
+              "Phantom Force"
+            ]
+          },
+          {
+            "level": 46,
+            "attacks": [
+              "Zen Headbutt"
+            ]
+          },
+          {
+            "level": 50,
+            "attacks": [
+              "Trick Room",
+              "Wonder Room"
+            ]
+          },
+          {
+            "level": 51,
+            "attacks": [
+              "Doom Desire"
+            ]
+          },
+          {
+            "level": 52,
+            "attacks": [
+              "Flamethrower"
+            ]
+          },
+          {
+            "level": 53,
+            "attacks": [
+              "Shadow Ball"
+            ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Flash Cannon"
+            ]
+          },
+          {
+            "level": 55,
+            "attacks": [
+              "Shadow Ball"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Steel Beam"
+            ]
+          },
+          {
+            "level": 57,
+            "attacks": [
+              "Fire Blast"
+            ]
+          },
+          {
+            "level": 58,
+            "attacks": [
+              "Inferno"
+            ]
+          },
+          {
+            "level": 59,
+            "attacks": [
+              "Burning Jealousy"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Future Sight"
+            ]
+          },
+          {
+            "level": 68,
+            "attacks": [
+              "Nasty Plot"
+            ]
+          },
+          {
+            "level": 75,
+            "attacks": [
+              "Psychic"
+            ]
+          },
+          {
+            "level": 85,
+            "attacks": [
+              "Hyperspace Hole"
+            ]
+          }
+        ],
+      "tutorMoves": [
+          "Ally Switch",
+          "Block",
+          "Covet",
+          "Drain Punch",
+          "Dual Chop",
+          "Fire Punch",
+          "Focus Punch",
+          "Foul Play",
+          "Gravity",
+          "Gunk Shot",
+          "Ice Punch",
+          "Knock Off",
+          "Laser Focus",
+          "Last Resort",
+          "Magic Coat",
+          "Magic Room",
+          "Recycle",
+          "Role Play",
+          "Shock Wave",
+          "Signal Beam",
+          "Skill Swap",
+          "Snatch",
+          "Snore",
+          "Telekinesis",
+          "Throat Chop",
+          "Thunder Punch",
+          "Trick",
+          "Uproar",
+          "Wonder Room",
+          "Zen Headbutt"
+        ],
+        "transferMoves": [
+          "Flash",
+          "Magic Coat",
+          "Power-Up Punch",
+          "Secret Power"
+        ],
+        "trMoves": [],
+        "hmMoves": [],
+        "tmMoves9": [
+          "Take Down",
+          "Scary Face",
+          "Protect",
+          "Psybeam",
+          "Thief",
+          "Facade",
+          "Swift",
+          "Rock Tomb",
+          "Fling",
+          "Endure",
+          "Sunny Day",
+          "Rain Dance",
+          "Sandstorm",
+          "Psyshock",
+          "Brick Break",
+          "Zen Headbutt",
+          "Foul Play",
+          "Fire Punch",
+          "Thunder Punch",
+          "Ice Punch",
+          "Sleep Talk",
+          "Drain Punch",
+          "Reflect",
+          "Light Screen",
+          "Grass Knot",
+          "Thunder Wave",
+          "Rest",
+          "Taunt",
+          "Dark Pulse",
+          "Skill Swap",
+          "Gunk Shot",
+          "Substitute",
+          "Trick",
+          "Shadow Ball",
+          "Energy Ball",
+          "Psychic",
+          "Thunderbolt",
+          "Calm Mind",
+          "Psychic Terrain",
+          "Nasty Plot",
+          "Phantom Force",
+          "Giga Impact",
+          "Focus Blast",
+          "Trick Room",
+          "Hyper Beam",
+          "Tera Blast",
+          "Gravity",
+          "Knock Off",
+          "Focus Punch",
+          "Lash Out",
+          "Psych Up",
+          "Future Sight",
+          "Expanding Force",
+          "Skitter Smack",
+          "Throat Chop"
+        ],
+        "tmMoves8": [],
+        "eggMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "Levitate",
+          "SheerForce"
+        ],
+        "hiddenAbilities": [
+          "Turboblaze"
+        ]
+      },
+      "movement": {
+        "rideable": false,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false
+      },
+      "aggression": {
+        "timid": 80,
+        "passive": 0,
+        "aggressive": 20
+      },
+      "battleStats": {
+        "hp": 100,
+        "attack": 70,
+        "defense": 50,
+        "specialAttack": 130,
+        "specialDefense": 100,
+        "speed": 150
+      },
+      "tags": [
+        "wild",
+        "hellas",
+        "tier_legendary"
+      ],
+      "spawn": {
+        "baseExp": 270,
+        "baseFriendship": 0,
+        "spawnLevel": 50,
+        "spawnLevelRange": 0,
+        "spawnLocations": [
+          "LAND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "hellasforms:pokemon/720_hoopa/all/confined/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/720_hoopa/all/confined/hellas/emissive.png",
+              "sprite": "hellasforms:pokemon/720_hoopa/all/confined/hellas/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/720_hoopa/all/confined/none/model.pqc"
+                ],
+                "yRotation": 27
+              },
+              "sounds": [
+                "pixelmon.mob.hoopa"
+              ]
+            },
+            {
+              "name": "shiny",
+              "texture": "hellasforms:pokemon/720_hoopa/all/confined/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/720_hoopa/all/confined/hellasshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/720_hoopa/all/confined/hellasshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "GHOST",
+        "FIRE"
+      ],
+      "preEvolutions": [],
+      "defaultBaseForm": "",
+      "megaItems": [],
+      "megas": [],
+      "gigantamax": {
+        "canHaveFactor": false,
+        "canGigantamax": false
+      },
+      "eggCycles": 121,
+      "weight": 9.0,
+      "catchRate": 3,
+      "malePercentage": -1,
+      "evolutions": [],
+      "evYields": {
+        "specialAttack": 3
+      }
+    },
+    {
+      "name": "unleashed",
+      "dimensions": {
+        "height": 3.5,
+        "width": 1.5,
+        "length": 1.5
+      },
+      "battleStats": {
+        "hp": 100,
+        "attack": 20,
+        "defense": 125,
+        "specialAttack": 180,
+        "specialDefense": 125,
+        "speed": 50
+      },
+      "types": [
+        "GHOST",
+        "STEEL"
+      ],
+      "tags": [
+        "temp",
+        "hellas",
+        "tier_legendary"
+      ],
+      "weight": 490.0,
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "hellasforms:pokemon/720_hoopa/all/unbound/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/720_hoopa/all/unbound/hellas/emissive.png",
+              "sprite": "hellasforms:pokemon/720_hoopa/all/unbound/hellas/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/720_hoopa/all/unbound/none/model.pqc"
+                ]
+              }
+            },
+            {
+              "name": "shiny",
+              "texture": "hellasforms:pokemon/720_hoopa/all/unbound/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/720_hoopa/all/unbound/hellasshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/720_hoopa/all/unbound/hellasshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ]
     }
   ],
   "generation": 6

@@ -387,6 +387,359 @@
       "evYields": {
         "specialDefense": 2
       }
+    },
+    {
+      "name": "hellas",
+      "experienceGroup": "MEDIUM_FAST",
+      "dimensions": {
+        "height": 2.1,
+        "width": 1.4,
+        "length": 1,
+        "eyeHeight": 2.1,
+        "hoverHeight": 2.1
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Acid",
+              "Smokescreen",
+              "Tackle",
+              "Water Gun"
+            ]
+          },
+          {
+            "level": 15,
+            "attacks": [
+              "Tail Whip"
+            ]
+          },
+          {
+            "level": 20,
+            "attacks": [
+              "Double Team",
+              "Grassy Terrain"
+            ]
+          },
+          {
+            "level": 25,
+            "attacks": [
+              "Poison Tail",
+              "Jungle Healing"
+            ]
+          },
+          {
+            "level": 30,
+            "attacks": [
+              "Water Pulse",
+              "Wide Guard"
+            ]
+          },
+          {
+            "level": 35,
+            "attacks": [
+              "Toxic",
+              "Stun Spore"
+            ]
+          },
+          {
+            "level": 40,
+            "attacks": [
+              "Dragon Pulse",
+              "Sleep Powder"
+            ]
+          },
+          {
+            "level": 45,
+            "attacks": [
+              "Aqua Tail",
+              "Poison Powder"
+            ]
+          },
+          {
+            "level": 50,
+            "attacks": [
+              "Sludge Bomb",
+              "Rage Powder"
+            ]
+          },
+          {
+            "level": 55,
+            "attacks": [
+              "Hydro Pump",
+              "Leech Seed"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Outrage",
+              "Soak"
+            ]
+          },
+          {
+            "level": 65,
+            "attacks": [
+              "Helping Hand"
+            ]
+          },
+          {
+            "level": 70,
+            "attacks": [
+              "Giga Drain"
+            ]
+          },
+          {
+            "level": 75,
+            "attacks": [
+              "Seed Flare"
+            ]
+          },
+          {
+            "level": 80,
+            "attacks": [
+              "Pollen Puff"
+            ]
+          }
+        ],
+      "tutorMoves": [
+          "Draco Meteor",
+          "Flip Turn",
+          "Scale Shot"
+        ],
+        "transferMoves": [
+          "Bubble",
+          "Camouflage",
+          "Confide",
+          "Feint Attack",
+          "Frustration",
+          "Hidden Power",
+          "Return",
+          "Secret Power",
+          "Shock Wave",
+          "Swagger"
+        ],
+        "trMoves": [
+          "Hydro Pump",
+          "Surf",
+          "Thunderbolt",
+          "Thunder",
+          "Waterfall",
+          "Substitute",
+          "Sludge Bomb",
+          "Outrage",
+          "Endure",
+          "Sleep Talk",
+          "Iron Tail",
+          "Shadow Ball",
+          "Toxic Spikes",
+          "Dragon Pulse",
+          "Focus Blast",
+          "Gunk Shot",
+          "Sludge Wave",
+          "Scald",
+          "Play Rough",
+          "Venom Drench"
+        ],
+        "hmMoves": [],
+        "tmMoves9": [
+          "Take Down",
+          "Mud-Slap",
+          "Scary Face",
+          "Protect",
+          "Water Pulse",
+          "Acid Spray",
+          "Thief",
+          "Chilling Water",
+          "Facade",
+          "Poison Tail",
+          "Icy Wind",
+          "Mud Shot",
+          "Venoshock",
+          "Endure",
+          "Rain Dance",
+          "Snowscape",
+          "Sleep Talk",
+          "Waterfall",
+          "Rest",
+          "Toxic Spikes",
+          "Gunk Shot",
+          "Substitute",
+          "Liquidation",
+          "Shadow Ball",
+          "Dragon Pulse",
+          "Surf",
+          "Thunderbolt",
+          "Play Rough",
+          "Hydro Pump",
+          "Sludge Bomb",
+          "Giga Impact",
+          "Outrage",
+          "Focus Blast",
+          "Hyper Beam",
+          "Thunder",
+          "Draco Meteor",
+          "Tera Blast",
+          "Haze",
+          "Toxic",
+          "Spite",
+          "Scald",
+          "Flip Turn",
+          "Scale Shot",
+          "Whirlpool",
+          "Muddy Water",
+          "Sludge Wave"
+        ],
+        "tmMoves8": [
+          "Hyper Beam",
+          "Giga Impact",
+          "Rest",
+          "Snore",
+          "Protect",
+          "Icy Wind",
+          "Attract",
+          "Rain Dance",
+          "Hail",
+          "Facade",
+          "Dive",
+          "Bounce",
+          "Venoshock",
+          "Round"
+        ],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "EffectSpore",
+          "MarvelScale"
+        ],
+        "hiddenAbilities": [
+          "StormDrain"
+        ]
+      },
+      "movement": {
+        "rideable": true,
+        "canFly": false,
+        "canSurf": true,
+        "canRideShoulder": false,
+        "ridingOffsets": {
+          "standing": {
+            "x": 0.05,
+            "y": -0.4,
+            "z": -0.2
+          },
+          "moving": {
+            "x": 0.05,
+            "y": -0.8,
+            "z": 0.0
+          }
+        },
+        "swimmingParameters": {
+          "depthRangeStart": 15,
+          "depthRangeEnd": 40,
+          "swimSpeed": 20,
+          "decayRate": 0.5,
+          "refreshRate": 120,
+          "chanceToStopOnBlock": 0.9,
+          "blocksToStopOn": [
+            "miencraft:KELP_PLANT"
+          ],
+          "minStopTime": 20,
+          "maxStopTime": 30,
+          "minStopCooldownTime": 30,
+          "maxStopCooldownTime": 40
+        }
+      },
+      "aggression": {
+        "timid": 80,
+        "passive": 0,
+        "aggressive": 20
+      },
+      "battleStats": {
+        "hp": 65,
+        "attack": 30,
+        "defense": 75,
+        "specialAttack": 100,
+        "specialDefense": 100,
+        "speed": 130
+      },
+      "tags": [
+        "hellas",
+        "tier_common"
+      ],
+      "spawn": {
+        "baseExp": 173,
+        "baseFriendship": 0,
+        "spawnLevel": 49,
+        "spawnLevelRange": 11,
+        "spawnLocations": [
+          "WATER"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "hellasforms:pokemon/691_dragalge/all/base/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/691_dragalge/all/base/hellas/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/691_dragalge/all/base/none/model.pqc"
+                ],
+                "yRotation": 21
+              },
+              "sounds": []
+            },
+            {
+              "name": "shiny",
+              "texture": "hellasforms:pokemon/691_dragalge/all/base/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/691_dragalge/all/base/hellasshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "WATER",
+        "GRASS"
+      ],
+      "preEvolutions": [
+        "Skrelp form:hellas"
+      ],
+      "defaultBaseForm": "",
+      "megaItems": [],
+      "megas": [],
+      "gigantamax": {
+        "canHaveFactor": false,
+        "canGigantamax": false
+      },
+      "eggCycles": 21,
+      "weight": 81.5,
+      "catchRate": 55,
+      "malePercentage": 50,
+      "evolutions": [],
+      "evYields": {
+        "specialDefense": 2
+      }
     }
   ],
   "generation": 6

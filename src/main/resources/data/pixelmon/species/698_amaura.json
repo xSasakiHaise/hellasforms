@@ -391,6 +391,308 @@
       "evYields": {
         "hp": 1
       }
+    },
+    {
+      "name": "hellas",
+      "experienceGroup": "MEDIUM_FAST",
+      "dimensions": {
+        "height": 0.7,
+        "width": 0.6,
+        "length": 1,
+        "eyeHeight": 0.7,
+        "hoverHeight": 0.7
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Growl",
+              "Powder Snow"
+            ]
+          },
+          {
+            "level": 4,
+            "attacks": [
+              "Encore"
+            ]
+          },
+          {
+            "level": 8,
+            "attacks": [
+              "Ancient Power"
+            ]
+          },
+          {
+            "level": 12,
+            "attacks": [
+              "Icy Wind"
+            ]
+          },
+          {
+            "level": 16,
+            "attacks": [
+              "Round"
+            ]
+          },
+          {
+            "level": 20,
+            "attacks": [
+              "Mist"
+            ]
+          },
+          {
+            "level": 24,
+            "attacks": [
+              "Aurora Beam"
+            ]
+          },
+          {
+            "level": 28,
+            "attacks": [
+              "Thunder Wave"
+            ]
+          },
+          {
+            "level": 32,
+            "attacks": [
+              "Nature Power"
+            ]
+          },
+          {
+            "level": 36,
+            "attacks": [
+              "Freeze-Dry"
+            ]
+          },
+          {
+            "level": 40,
+            "attacks": [
+              "Ice Beam"
+            ]
+          },
+          {
+            "level": 44,
+            "attacks": [
+              "Light Screen"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Hail"
+            ]
+          },
+          {
+            "level": 52,
+            "attacks": [
+              "Blizzard"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Hyper Beam"
+            ]
+          }
+        ],
+        "tutorMoves": [
+          "Meteor Beam"
+        ],
+        "eggMoves": [
+          "Aurora Veil",
+          "Discharge",
+          "Haze",
+          "Mirror Coat",
+          "Rock Throw",
+          "Take Down"
+        ],
+        "tmMoves8": [
+          "Hyper Beam",
+          "Thunder Wave",
+          "Light Screen",
+          "Reflect",
+          "Safeguard",
+          "Rest",
+          "Rock Slide",
+          "Snore",
+          "Protect",
+          "Icy Wind",
+          "Attract",
+          "Sandstorm",
+          "Rain Dance",
+          "Hail",
+          "Facade",
+          "Weather Ball",
+          "Rock Tomb",
+          "Mud Shot",
+          "Rock Blast",
+          "Avalanche",
+          "Round",
+          "Bulldoze"
+        ],
+        "trMoves": [
+          "Body Slam",
+          "Ice Beam",
+          "Blizzard",
+          "Thunderbolt",
+          "Substitute",
+          "Outrage",
+          "Endure",
+          "Sleep Talk",
+          "Encore",
+          "Iron Tail",
+          "Hyper Voice",
+          "Iron Defense",
+          "Calm Mind",
+          "Dark Pulse",
+          "Earth Power",
+          "Zen Headbutt",
+          "Flash Cannon",
+          "Iron Head",
+          "Stone Edge",
+          "Stealth Rock"
+        ],
+        "hmMoves": [],
+        "transferMoves": [
+          "Aqua Tail",
+          "Barrier",
+          "Charge Beam",
+          "Confide",
+          "Double Team",
+          "Dragon Tail",
+          "Dream Eater",
+          "Echoed Voice",
+          "Flash",
+          "Frost Breath",
+          "Frustration",
+          "Hidden Power",
+          "Magnet Rise",
+          "Psych Up",
+          "Return",
+          "Roar",
+          "Rock Polish",
+          "Rock Smash",
+          "Secret Power",
+          "Swagger",
+          "Toxic",
+          "Water Pulse"
+        ],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "IceScales",
+          "Transistor"
+        ],
+        "hiddenAbilities": [
+          "SuperconductiveScales"
+        ]
+      },
+      "movement": {
+        "rideable": false,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false
+      },
+      "aggression": {
+        "timid": 80,
+        "passive": 0,
+        "aggressive": 20
+      },
+      "battleStats": {
+        "hp": 80,
+        "attack": 35,
+        "defense": 65,
+        "specialAttack": 110,
+        "specialDefense": 65,
+        "speed": 65
+      },
+      "tags": [],
+      "spawn": {
+        "baseExp": 72,
+        "baseFriendship": 0,
+        "spawnLevel": 22,
+        "spawnLevelRange": 16,
+        "spawnLocations": [
+          "LAND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "hellasforms:pokemon/698_amaura/all/base/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/698_amaura/all/base/hellas/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/698_amaura/all/base/none/model.pqc"
+                ]
+              },
+              "sounds": [
+                "pixelmon.mob.amaura",
+                "pixelmon.mob.amaura"
+              ]
+            },
+            {
+              "name": "shiny",
+              "texture": "hellasforms:pokemon/698_amaura/all/base/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/698_amaura/all/base/hellasshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "ELECTRIC",
+        "ICE"
+      ],
+      "preEvolutions": [],
+      "defaultBaseForm": "",
+      "megaItems": [],
+      "megas": [],
+      "gigantamax": {
+        "canHaveFactor": false,
+        "canGigantamax": false
+      },
+      "eggCycles": 31,
+      "weight": 25.2,
+      "catchRate": 45,
+      "malePercentage": 87.5,
+      "evolutions": [
+        {
+          "level": 25,
+          "to": "Aurorus form:hellas",
+          "conditions": [
+            {
+              "time": "NIGHT",
+              "evoConditionType": "time"
+            }
+          ],
+          "evoType": "leveling"
+        }
+      ],
+      "evYields": {
+        "hp": 1
+      }
     }
   ],
   "generation": 6

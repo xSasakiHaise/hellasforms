@@ -594,9 +594,21 @@
             ]
           },
           {
+            "level": 52,
+            "attacks": [
+              "Parting Shot"
+            ]
+          },
+          {
             "level": 55,
             "attacks": [
               "Draconic Greed"
+            ]
+          },
+          {
+            "level": 57,
+            "attacks": [
+              "Fake Tears"
             ]
           },
           {
@@ -606,9 +618,21 @@
             ]
           },
           {
+            "level": 62,
+            "attacks": [
+              "False Surrender"
+            ]
+          },
+          {
             "level": 65,
             "attacks": [
               "Earthquake"
+            ]
+          },
+          {
+            "level": 67,
+            "attacks": [
+              "Terrain Pulse"
             ]
           },
           {
@@ -618,7 +642,7 @@
             ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Rock Slide",
           "Defog",
           "Dragon Breath",

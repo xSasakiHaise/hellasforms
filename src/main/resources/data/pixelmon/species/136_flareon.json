@@ -530,109 +530,163 @@
             ]
           },
           {
+            "level": 40,
+            "attacks": [
+              "Autotomize"
+            ]
+          },
+          {
+            "level": 42,
+            "attacks": [
+              "Iron Defense"
+            ]
+          },
+          {
+            "level": 44,
+            "attacks": [
+              "Taunt"
+            ]
+          },
+          {
+            "level": 46,
+            "attacks": [
+              "Bulk Up"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Wide Guard"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Burnout"
             ]
           },
           {
-            "level": 51,
+            "level": 52,
             "attacks": [
               "Steel Roller"
             ]
           },
           {
-            "level": 52,
+            "level": 54,
             "attacks": [
               "Steel Beam"
             ]
           },
           {
-            "level": 54,
+            "level": 56,
             "attacks": [
               "Metal Sound"
             ]
           },
           {
-            "level": 55,
+            "level": 58,
             "attacks": [
               "Metal Claw"
             ]
           },
           {
-            "level": 56,
+            "level": 60,
             "attacks": [
               "Metal Burst"
             ]
           },
           {
-            "level": 57,
+            "level": 62,
             "attacks": [
               "Iron Tail"
             ]
           },
           {
-            "level": 58,
+            "level": 64,
             "attacks": [
               "Iron Head"
             ]
           },
           {
-            "level": 59,
+            "level": 66,
             "attacks": [
               "Double Iron Bash"
             ]
           },
           {
-            "level": 60,
+            "level": 67,
             "attacks": [
               "Overheat"
             ]
           },
           {
-            "level": 61,
+            "level": 68,
+            "attacks": [
+              "Sunsteel Strike"
+            ]
+          },
+          {
+            "level": 69,
             "attacks": [
               "Magma Storm"
             ]
           },
           {
-            "level": 62,
+            "level": 70,
             "attacks": [
               "Lava Plume"
             ]
           },
           {
-            "level": 63,
+            "level": 71,
             "attacks": [
               "Inferno"
             ]
           },
           {
-            "level": 64,
+            "level": 72,
             "attacks": [
               "Heat Wave"
             ]
           },
           {
-            "level": 65,
+            "level": 73,
+            "attacks": [
+              "Body Press"
+            ]
+          },
+          {
+            "level": 74,
             "attacks": [
               "Gyro Ball"
             ]
           },
           {
-            "level": 66,
+            "level": 75,
             "attacks": [
               "Fire Spin"
             ]
           },
           {
-            "level": 67,
+            "level": 76,
+            "attacks": [
+              "Heat Crash"
+            ]
+          },
+          {
+            "level": 77,
+            "attacks": [
+              "Heavy Slam"
+            ]
+          },
+          {
+            "level": 78,
             "attacks": [
               "Flare Blitz"
             ]
           },
           {
-            "level": 68,
+            "level": 80,
             "attacks": [
               "Afterburner"
             ]
