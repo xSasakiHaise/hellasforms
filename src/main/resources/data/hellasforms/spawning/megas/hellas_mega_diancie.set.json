@@ -1,0 +1,21 @@
+{
+  "id": "Hellasian Mega Diancie",
+  "spawnInfos": [
+    {
+      "spec": "species:Diancie form:hellas",
+      "stringLocationTypes": [
+        "Land",
+        "Underground"
+      ],
+      "spawnSpecificBossRate": 1,
+      "condition": {
+        "stringBiomes": [
+          "byg:jade_cliffs"
+        ]
+      },
+      "interval": "megaBoss",
+      "typeID": "pokemon",
+      "rarity": 0.5
+    }
+  ]
+}

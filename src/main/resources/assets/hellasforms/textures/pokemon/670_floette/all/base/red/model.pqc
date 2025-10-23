@@ -1,4 +1,0 @@
-$body floette.bmd
-$anim idle idle.bmd
-$anim walk walk.bmd
-$scale 0.2

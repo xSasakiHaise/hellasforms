@@ -449,6 +449,12 @@
             ]
           },
           {
+            "level": 48,
+            "attacks": [
+              "Grass Whistle"
+            ]
+          },
+          {
             "level": 51,
             "attacks": [
               "Moonblast"
@@ -467,7 +473,7 @@
             ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Flip Turn",
           "Hydro Cannon",
           "Misty Explosion",

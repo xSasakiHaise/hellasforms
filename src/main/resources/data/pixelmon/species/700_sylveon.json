@@ -407,15 +407,69 @@
             ]
           },
           {
+            "level": 40,
+            "attacks": [
+              "Rock Polish"
+            ]
+          },
+          {
+            "level": 42,
+            "attacks": [
+              "Nasty Plot"
+            ]
+          },
+          {
+            "level": 44,
+            "attacks": [
+              "Quick Guard"
+            ]
+          },
+          {
+            "level": 46,
+            "attacks": [
+              "Wide Guard"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Endure"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Fairy Circle"
             ]
           },
           {
+            "level": 52,
+            "attacks": [
+              "Meteor Beam"
+            ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Power Gem"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Misty Explosion"
+            ]
+          },
+          {
             "level": 57,
             "attacks": [
               "Cutting Edge"
+            ]
+          },
+          {
+            "level": 58,
+            "attacks": [
+              "Earth Power"
             ]
           },
           {

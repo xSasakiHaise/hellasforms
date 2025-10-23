@@ -447,9 +447,33 @@
             ]
           },
           {
+            "level": 45,
+            "attacks": [
+              "Aqua Ring"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Sunny Day"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Greek Fire"
+            ]
+          },
+          {
+            "level": 52,
+            "attacks": [
+              "Coaching"
+            ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Wide Guard"
             ]
           },
           {
@@ -457,9 +481,45 @@
             "attacks": [
               "Afterburner"
             ]
+          },
+          {
+            "level": 59,
+            "attacks": [
+              "Mat Block"
+            ]
+          },
+          {
+            "level": 61,
+            "attacks": [
+              "Sacred Fire"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Wave Crash"
+            ]
+          },
+          {
+            "level": 67,
+            "attacks": [
+              "Liquidation"
+            ]
+          },
+          {
+            "level": 70,
+            "attacks": [
+              "Jet Punch"
+            ]
+          },
+          {
+            "level": 75,
+            "attacks": [
+              "Surf"
+            ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Hitch Kick",
           "Belly Drum",
           "Blaze Kick",

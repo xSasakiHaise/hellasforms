@@ -4,23 +4,21 @@
     {
       "spec": "species:Diancie form:hellas",
       "stringLocationTypes": [
-        "Land"
+        "Land",
+        "Underground"
       ],
       "minLevel": 70,
       "maxLevel": 80,
       "typeID": "pokemon",
+      "tags": [
+        "hellas",
+        "wild",
+        "tier_exotic"
+      ],
       "condition": {
-        "times": [
-        ],
-        "tags": [
-          "hellas",
-          "wild",
-          "tier_exotic"
-        ],
         "condition": {
           "stringBiomes": [
-            "minecraft:gravelly_mountains",
-            "byg:jade_cliffs"
+            "biomesoplenty:jade_cliffs"
           ]
         }
       },

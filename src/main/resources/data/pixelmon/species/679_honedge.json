@@ -477,9 +477,11 @@
       },
       "abilities": {
         "abilities": [
-          "NoGuard"
+          "Sharpness"
         ],
-        "hiddenAbilities": []
+        "hiddenAbilities": [
+          "PlasmaBlade"
+        ]
       },
       "movement": {
         "rideable": false,
@@ -493,14 +495,18 @@
         "aggressive": 20
       },
       "battleStats": {
-        "hp": 45,
-        "attack": 80,
-        "defense": 100,
-        "specialAttack": 35,
-        "specialDefense": 37,
-        "speed": 28
+        "hp": 80,
+        "attack": 90,
+        "defense": 90,
+        "specialAttack": 20,
+        "specialDefense": 60,
+        "speed": 60
       },
-      "tags": [],
+      "tags": [
+        "hellas",
+        "wild",
+        "tier_mythic"
+      ],
       "spawn": {
         "baseExp": 65,
         "baseFriendship": 0,
@@ -520,8 +526,8 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/679_honedge/all/base/none/texture.png",
-              "sprite": "pixelmon:pokemon/679_honedge/all/base/none/sprite.png",
+              "texture": "hellasforms:pokemon/679_honedge/all/base/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/679_honedge/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
@@ -535,25 +541,33 @@
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/679_honedge/all/base/shiny/texture.png",
-              "sprite": "pixelmon:pokemon/679_honedge/all/base/shiny/sprite.png",
+              "texture": "hellasforms:pokemon/679_honedge/all/base/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/679_honedge/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             },
             {
-              "name": "alter",
-              "texture": "pixelmon:pokemon/679_honedge/all/base/alter/texture.png",
-              "sprite": "pixelmon:pokemon/679_honedge/all/base/alter/sprite.png",
+              "name": "holo",
+              "texture": "hellasforms:pokemon/679_honedge/all/base/holo/texture.png",
+              "emissive": "hellasforms:pokemon/679_honedge/all/base/holo/emissive.png",
+              "sprite": "hellasforms:pokemon/679_honedge/all/base/holo/sprite.png",
               "particle": ""
+            },
+            {
+              "name": "holoshiny",
+              "texture": "hellasforms:pokemon/679_honedge/all/base/holoshiny/texture.png",
+              "emissive": "hellasforms:pokemon/679_honedge/all/base/holoshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/679_honedge/all/base/holoshiny/sprite.png",
+              "particle": "arcanery:shiny"
             }
           ]
         }
       ],
       "eggGroups": [
-        "MINERAL"
+        "UNDISCOVERED"
       ],
       "types": [
-        "STEEL",
-        "GHOST"
+        "ELECTRIC",
+        "STEEL"
       ],
       "preEvolutions": [],
       "defaultBaseForm": "",
@@ -569,7 +583,7 @@
       "malePercentage": 50,
       "evolutions": [
         {
-          "level": 35,
+          "level": 55,
           "to": "Doublade form:hellas",
           "conditions": [],
           "evoType": "leveling"

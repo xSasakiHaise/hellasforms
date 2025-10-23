@@ -645,31 +645,85 @@
             ]
           },
           {
-            "level": 54,
+            "level": 53,
+            "attacks": [
+              "Parting Shot"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Sunny Day"
+            ]
+          },
+          {
+            "level": 59,
+            "attacks": [
+              "Camouflage"
+            ]
+          },
+          {
+            "level": 62,
             "attacks": [
               "X-Scissor"
             ]
           },
           {
-            "level": 58,
+            "level": 65,
+            "attacks": [
+              "Ceaseless Edge"
+            ]
+          },
+          {
+            "level": 68,
+            "attacks": [
+              "Knock Off"
+            ]
+          },
+          {
+            "level": 71,
             "attacks": [
               "Psycho Cut"
             ]
           },
           {
-            "level": 62,
+            "level": 74,
+            "attacks": [
+              "Horn Leech"
+            ]
+          },
+          {
+            "level": 77,
+            "attacks": [
+              "Dark Pulse"
+            ]
+          },
+          {
+            "level": 80,
             "attacks": [
               "Cross Poison"
             ]
           },
           {
-            "level": 62,
+            "level": 83,
+            "attacks": [
+              "Solar Blade"
+            ]
+          },
+          {
+            "level": 86,
+            "attacks": [
+              "Cross Poison"
+            ]
+          },
+          {
+            "level": 90,
             "attacks": [
               "Bitter Blade"
             ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Frenzy Plant",
           "Grass Pledge",
           "Grassy Glide",

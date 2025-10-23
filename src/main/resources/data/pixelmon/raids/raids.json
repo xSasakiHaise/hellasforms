@@ -310,8 +310,7 @@
       "5-Zacian",
       "5-Zamazenta",
       "1,2,3-Tandemaus",
-      "3,4,5-Maushold-family_of_four",
-      "5-Sceptile-hellas"
+      "3,4,5-Maushold-family_of_four"
     ]
   },
   "burntforest": {
@@ -954,8 +953,7 @@
       "4,5-Ursaring",
       "1,2,3-Shroodle",
       "1,2,3-Tandemaus",
-      "3,4,5-Maushold-family_of_four",
-      "5-Sceptile-hellas"
+      "3,4,5-Maushold-family_of_four"
     ]
   },
   "freezingbeaches": {
@@ -1184,8 +1182,7 @@
       "5-Palkia",
       "5-Giratina",
       "5-Arceus",
-      "5-ChienPao",
-      "5-Diancie-hellas"
+      "5-ChienPao"
     ]
   },
   "freezingocean": {
@@ -1492,8 +1489,7 @@
       "5-Terrakion",
       "5-Virizion",
       "5-Meltan",
-      "5-Melmetal",
-      "5-Diancie-hellas"
+      "5-Melmetal"
     ]
   },
   "jungles": {
@@ -1616,8 +1612,7 @@
       "5-Kubfu",
       "5-Urshifu",
       "1,2,3-Shroodle",
-      "2,3-Grafaiai",
-      "5-Sceptile-hellas"
+      "2,3-Grafaiai"
     ]
   },
   "lukewarmocean": {
@@ -1701,8 +1696,7 @@
       "2,3-Lileep",
       "4,5-Cradily",
       "3,4,5-Ditto",
-      "3,4,5-Veluza",
-      "5-Gyarados-hellas"
+      "3,4,5-Veluza"
     ]
   },
   "magical": {
@@ -1933,8 +1927,7 @@
       "4,5-Aerodactyl",
       "3,4,5-Ditto",
       "2,3-Drilbur",
-      "4,5-Excadrill",
-      "5-Diancie-hellas"
+      "4,5-Excadrill"
     ]
   },
   "mushroom": {
@@ -2107,8 +2100,7 @@
       "2,3-Lileep",
       "4,5-Cradily",
       "3,4,5-Ditto",
-      "3,4,5-Veluza",
-      "5-Gyarados-hellas"
+      "3,4,5-Veluza"
     ]
   },
   "otherfreezing": {
@@ -2388,8 +2380,7 @@
       "2,3,4-Pawmo",
       "4,5-Pawmot",
       "1,2,3-Tandemaus",
-      "3,4,5-Maushold-family_of_four",
-      "5-Sceptile-hellas"
+      "3,4,5-Maushold-family_of_four"
     ]
   },
   "roofed": {
@@ -2542,8 +2533,7 @@
       "1,2,3-Teddiursa",
       "4,5-Ursaring",
       "1,2,3-Tandemaus",
-      "3,4,5-Maushold-family_of_four",
-      "5-Sceptile-hellas"
+      "3,4,5-Maushold-family_of_four"
     ]
   },
   "savannas": {
@@ -3271,7 +3261,7 @@
         "4,5-Kleavor",
         "4-Ursaring",
         "5-Ursaluna",
-        "3,4-Beautifly",
+        "4-Beautifly",
         "4-Dustox",
         "4,5-Sawk",
         "4,5-Throh",

@@ -4,6 +4,8 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "hellasforms.refmap.json",
   "mixins": [
+    "abilities.effects.MixinSharpness",
+    "abilities.effects.MixinStrongJaw"
   ],
   "client": [
   ],

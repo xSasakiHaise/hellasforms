@@ -22,11 +22,11 @@ public class PhotonAura extends AbstractAbility {
     public int[] modifyStats(PixelmonWrapper user, int[] stats) {
         if (user.bc.globalStatusController.getWeather() instanceof Sunny) {
             int var10001 = BattleStatsType.ATTACK.getStatIndex();
-            stats[var10001] = (int)((double)stats[var10001] * 1.5);
+            stats[var10001] = (int)((double)stats[var10001] * 1.25);
             int var10002 = BattleStatsType.SPECIAL_ATTACK.getStatIndex();
-            stats[var10002] = (int)((double)stats[var10002] * 1.5);
+            stats[var10002] = (int)((double)stats[var10002] * 1.25);
             int var10003 = BattleStatsType.EVASION.getStatIndex();
-            stats[var10003] = (int)((double)stats[var10003] * 2.0);
+            stats[var10003] = (int)((double)stats[var10003] * 1.5);
         }
 
         return stats;

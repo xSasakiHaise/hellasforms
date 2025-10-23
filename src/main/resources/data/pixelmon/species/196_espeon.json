@@ -543,13 +543,103 @@
             ]
           },
           {
+            "level": 40,
+            "attacks": [
+              "Sandstorm"
+            ]
+          },
+          {
+            "level": 42,
+            "attacks": [
+              "Ally Switch"
+            ]
+          },
+          {
+            "level": 44,
+            "attacks": [
+              "Skill Swap"
+            ]
+          },
+          {
+            "level": 46,
+            "attacks": [
+              "Take Heart"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Imprison"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Supernova"
             ]
+          },
+          {
+            "level": 52,
+            "attacks": [
+              "Trick Room"
+            ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Stealth Rock"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Sandsear Storm"
+            ]
+          },
+          {
+            "level": 58,
+            "attacks": [
+              "Earth Power"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Confusion"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Bite"
+            ]
+          },
+          {
+            "level": 68,
+            "attacks": [
+              "Crunch"
+            ]
+          },
+          {
+            "level": 72,
+            "attacks": [
+              "Swords Dance"
+            ]
+          },
+          {
+            "level": 76,
+            "attacks": [
+              "Copycat"
+            ]
+          },
+          {
+            "level": 80,
+            "attacks": [
+              "Double-Edge"
+            ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Psyshock",
           "Calm Mind",
           "Toxic",

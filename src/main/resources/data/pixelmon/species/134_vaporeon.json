@@ -542,43 +542,91 @@
             ]
           },
           {
-            "level": 50,
+            "level": 20,
+            "attacks": [
+              "Shore Up"
+            ]
+          },
+          {
+            "level": 24,
+            "attacks": [
+              "Corrosive Gas"
+            ]
+          },
+          {
+            "level": 27,
+            "attacks": [
+              "Sludge Bomb"
+            ]
+          },
+          {
+            "level": 30,
+            "attacks": [
+              "Roar"
+            ]
+          },
+          {
+            "level": 32,
+            "attacks": [
+              "Sludge Wave"
+            ]
+          },
+          {
+            "level": 35,
+            "attacks": [
+              "Toxic Spikes"
+            ]
+          },
+          {
+            "level": 37,
+            "attacks": [
+              "Clear Smog"
+            ]
+          },
+          {
+            "level": 40,
+            "attacks": [
+              "Water Spout"
+            ]
+          },
+          {
+            "level": 45,
             "attacks": [
               "Oilslick"
             ]
           },
           {
-            "level": 51,
+            "level": 47,
             "attacks": [
               "Corrode"
             ]
           },
           {
-            "level": 52,
+            "level": 49,
             "attacks": [
               "Hydro Pump"
             ]
           },
           {
-            "level": 53,
+            "level": 51,
             "attacks": [
               "Acid Armor"
             ]
           },
           {
-            "level": 54,
+            "level": 53,
             "attacks": [
               "Poison Tail"
             ]
           },
           {
-            "level": 55,
+            "level": 54,
             "attacks": [
               "Poison Fang"
             ]
           },
           {
-            "level": 56,
+            "level": 55,
             "attacks": [
               "Aqua Tail"
             ]
@@ -590,51 +638,57 @@
             ]
           },
           {
-            "level": 58,
+            "level": 59,
             "attacks": [
               "Poison Jab"
             ]
           },
           {
-            "level": 59,
+            "level": 61,
             "attacks": [
               "Surf"
             ]
           },
           {
-            "level": 60,
+            "level": 63,
             "attacks": [
               "Toxic Spikes"
             ]
           },
           {
-            "level": 61,
+            "level": 65,
             "attacks": [
               "Muddy Water"
             ]
           },
           {
-            "level": 62,
+            "level": 67,
             "attacks": [
               "Sludge Wave"
             ]
           },
           {
-            "level": 63,
+            "level": 69,
             "attacks": [
               "Venom Drench"
             ]
           },
           {
-            "level": 64,
+            "level": 72,
             "attacks": [
               "Toxic"
             ]
           },
           {
-            "level": 65,
+            "level": 75,
             "attacks": [
               "Sea Fog"
+            ]
+          },
+          {
+            "level": 78,
+            "attacks": [
+              "Last Resort"
             ]
           }
         ],

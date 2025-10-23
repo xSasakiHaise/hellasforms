@@ -467,9 +467,81 @@
             "attacks": [
               "Dragon Rush"
             ]
+          },
+          {
+            "level": 75,
+            "attacks": [
+              "Quiver Dance"
+            ]
+          },
+          {
+            "level": 76,
+            "attacks": [
+              "Sleep Powder"
+            ]
+          },
+          {
+            "level": 77,
+            "attacks": [
+              "Stun Spore"
+            ]
+          },
+          {
+            "level": 78,
+            "attacks": [
+              "Poison Powder"
+            ]
+          },
+          {
+            "level": 79,
+            "attacks": [
+              "Defend Order"
+            ]
+          },
+          {
+            "level": 80,
+            "attacks": [
+              "Heal Order"
+            ]
+          },
+          {
+            "level": 81,
+            "attacks": [
+              "Bug Buzz"
+            ]
+          },
+          {
+            "level": 82,
+            "attacks": [
+              "Energy Ball"
+            ]
+          },
+          {
+            "level": 83,
+            "attacks": [
+              "Giga Drain"
+            ]
+          },
+          {
+            "level": 84,
+            "attacks": [
+              "Signal Beam"
+            ]
+          },
+          {
+            "level": 85,
+            "attacks": [
+              "Solar Beam"
+            ]
+          },
+          {
+            "level": 86,
+            "attacks": [
+              "U-turn"
+            ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Draco Meteor",
           "Dual Wingbeat",
           "Scale Shot"

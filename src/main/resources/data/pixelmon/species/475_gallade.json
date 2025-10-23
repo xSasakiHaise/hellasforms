@@ -824,9 +824,21 @@
             ]
           },
           {
+            "level": 40,
+            "attacks": [
+              "Agility"
+            ]
+          },
+          {
             "level": 42,
             "attacks": [
               "Psycho Cut"
+            ]
+          },
+          {
+            "level": 44,
+            "attacks": [
+              "Bitter Blade"
             ]
           },
           {
@@ -836,9 +848,33 @@
             ]
           },
           {
+            "level": 48,
+            "attacks": [
+              "Coaching"
+            ]
+          },
+          {
             "level": 49,
             "attacks": [
               "Heal Pulse"
+            ]
+          },
+          {
+            "level": 50,
+            "attacks": [
+              "Bulk Up"
+            ]
+          },
+          {
+            "level": 52,
+            "attacks": [
+              "Flame Charge"
+            ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Fake Out"
             ]
           },
           {
@@ -849,13 +885,61 @@
             ]
           },
           {
+            "level": 58,
+            "attacks": [
+              "Leaf Blade"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Night Slash"
+            ]
+          },
+          {
+            "level": 62,
+            "attacks": [
+              "Cross Poison"
+            ]
+          },
+          {
             "level": 63,
             "attacks": [
               "Close Combat"
             ]
+          },
+          {
+            "level": 65,
+            "attacks": [
+              "Psyblade"
+            ]
+          },
+          {
+            "level": 67,
+            "attacks": [
+              "Solar Blade"
+            ]
+          },
+          {
+            "level": 70,
+            "attacks": [
+              "Razor Shell"
+            ]
+          },
+          {
+            "level": 72,
+            "attacks": [
+              "Flare Blitz"
+            ]
+          },
+          {
+            "level": 74,
+            "attacks": [
+              "Mat Block"
+            ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Coaching",
           "Expanding Force",
           "Triple Axel"
@@ -1191,7 +1275,10 @@
     {
       "name": "mega-hellas",
       "tags": [
-        "temp"
+        "temp",
+        "hellas",
+        "mega",
+        "tier_rare"
       ],
       "abilities": {
         "abilities": [

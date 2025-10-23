@@ -659,9 +659,27 @@
             ]
           },
           {
-            "level": 62,
+            "level": 60,
             "attacks": [
               "Sandstorm"
+            ]
+          },
+          {
+            "level": 63,
+            "attacks": [
+              "Agility"
+            ]
+          },
+          {
+            "level": 66,
+            "attacks": [
+              "Calm Mind"
+            ]
+          },
+          {
+            "level": 69,
+            "attacks": [
+              "Toxic"
             ]
           },
           {
@@ -671,13 +689,55 @@
             ]
           },
           {
+            "level": 74,
+            "attacks": [
+              "Toxic Spikes"
+            ]
+          },
+          {
+            "level": 76,
+            "attacks": [
+              "Baneful Bunker"
+            ]
+          },
+          {
+            "level": 78,
+            "attacks": [
+              "Sludge Bomb"
+            ]
+          },
+          {
+            "level": 80,
+            "attacks": [
+              "Dark Pulse"
+            ]
+          },
+          {
             "level": 82,
             "attacks": [
               "Dragon Rush"
             ]
+          },
+          {
+            "level": 84,
+            "attacks": [
+              "Focus Blast"
+            ]
+          },
+          {
+            "level": 86,
+            "attacks": [
+              "Extrasensory"
+            ]
+          },
+          {
+            "level": 88,
+            "attacks": [
+              "Scald"
+            ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Draco Meteor",
           "Scale Shot",
           "Scorching Sands"

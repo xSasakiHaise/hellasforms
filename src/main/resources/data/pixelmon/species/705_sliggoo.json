@@ -585,6 +585,261 @@
       "evYields": {
         "specialDefense": 2
       }
+    },
+    {
+      "name": "hellas",
+      "experienceGroup": "SLOW",
+      "dimensions": {
+        "height": 1.2,
+        "width": 1.0,
+        "length": 1,
+        "eyeHeight": 1.2,
+        "hoverHeight": 1.2
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Absorb",
+              "Acid Armor",
+              "Dragon Breath",
+              "Shelter",
+              "Tackle",
+              "Water Gun"
+            ]
+          },
+          {
+            "level": 15,
+            "attacks": [
+              "Protect"
+            ]
+          },
+          {
+            "level": 20,
+            "attacks": [
+              "Flail"
+            ]
+          },
+          {
+            "level": 25,
+            "attacks": [
+              "Water Pulse"
+            ]
+          },
+          {
+            "level": 30,
+            "attacks": [
+              "Rain Dance"
+            ]
+          },
+          {
+            "level": 35,
+            "attacks": [
+              "Dragon Pulse"
+            ]
+          },
+          {
+            "level": 43,
+            "attacks": [
+              "Curse"
+            ]
+          },
+          {
+            "level": 49,
+            "attacks": [
+              "Iron Head"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Muddy Water"
+            ]
+          }
+        ],
+        "tutorMoves": [
+          "Draco Meteor",
+          "Ice Beam",
+          "Iron Head",
+          "Iron Tail",
+          "Outrage",
+          "Rest",
+          "Rock Slide",
+          "Sludge Bomb",
+          "Steel Beam",
+          "Thunderbolt",
+          "Water Pulse"
+        ],
+        "transferMoves": [
+          "Acid Spray",
+          "Bubble",
+          "Counter",
+          "Hydro Pump",
+          "Life Dew"
+        ],
+        "trMoves": [],
+        "hmMoves": [],
+        "tmMoves9": [
+          "Take Down",
+          "Charm",
+          "Protect",
+          "Water Pulse",
+          "Acid Spray",
+          "Chilling Water",
+          "Facade",
+          "Mud Shot",
+          "Rock Tomb",
+          "Endure",
+          "Sunny Day",
+          "Rain Dance",
+          "Sandstorm",
+          "Body Slam",
+          "Sleep Talk",
+          "Rest",
+          "Rock Slide",
+          "Flash Cannon",
+          "Iron Head",
+          "Substitute",
+          "Dragon Pulse",
+          "Heavy Slam",
+          "Ice Spinner",
+          "Thunderbolt",
+          "Ice Beam",
+          "Blizzard",
+          "Sludge Bomb",
+          "Outrage",
+          "Thunder",
+          "Draco Meteor",
+          "Steel Beam",
+          "Tera Blast",
+          "Gyro Ball",
+          "Muddy Water",
+          "Sludge Wave",
+          "Skitter Smack",
+          "Curse"
+        ],
+        "tmMoves8": [],
+        "eggMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "StormDrain",
+          "Filter"
+        ],
+        "hiddenAbilities": [
+          "WaterBubble"
+        ]
+      },
+      "movement": {
+        "rideable": false,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false
+      },
+      "aggression": {
+        "timid": 80,
+        "passive": 0,
+        "aggressive": 20
+      },
+      "battleStats": {
+        "hp": 110,
+        "attack": 30,
+        "defense": 120,
+        "specialAttack": 30,
+        "specialDefense": 160,
+        "speed": 70
+      },
+      "tags": [
+        "hellas",
+        "tier_epic"
+      ],
+      "spawn": {
+        "baseExp": 158,
+        "baseFriendship": 0,
+        "spawnLevel": 41,
+        "spawnLevelRange": 8,
+        "spawnLocations": [
+          "LAND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "hellasforms:pokemon/705_sliggoo/all/base/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/705_sliggoo/all/base/hellas/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/705_sliggoo/all/base/none/model.pqc"
+                ]
+              },
+              "sounds": [
+                "pixelmon.mob.sliggoo.hishui"
+              ]
+            },
+            {
+              "name": "shiny",
+              "texture": "hellasforms:pokemon/705_sliggoo/all/base/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/705_sliggoo/all/base/hellasshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "WATER",
+        "STEEL"
+      ],
+      "preEvolutions": [
+        "Goomy form:hellas"
+      ],
+      "defaultBaseForm": "",
+      "megaItems": [],
+      "megas": [],
+      "gigantamax": {
+        "canHaveFactor": false,
+        "canGigantamax": false
+      },
+      "eggCycles": 41,
+      "weight": 17.5,
+      "catchRate": 45,
+      "malePercentage": 50,
+      "evolutions": [
+        {
+          "level": 60,
+          "to": "Goodra form:hellas",
+          "conditions": [
+            {
+              "weather": "STORM",
+              "evoConditionType": "weather"
+            }
+          ],
+          "evoType": "leveling"
+        }
+      ],
+      "evYields": {
+        "specialDefense": 2
+      }
     }
   ],
   "generation": 6

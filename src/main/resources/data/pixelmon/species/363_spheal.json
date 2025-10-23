@@ -502,9 +502,27 @@
             ]
           },
           {
+            "level": 3,
+            "attacks": [
+              "Work Up"
+            ]
+          },
+          {
             "level": 5,
             "attacks": [
               "Defense Curl"
+            ]
+          },
+          {
+            "level": 7,
+            "attacks": [
+              "Agility"
+            ]
+          },
+          {
+            "level": 10,
+            "attacks": [
+              "Protect"
             ]
           },
           {
@@ -514,9 +532,21 @@
             ]
           },
           {
+            "level": 15,
+            "attacks": [
+              "Wide Guard"
+            ]
+          },
+          {
             "level": 18,
             "attacks": [
               "Fly"
+            ]
+          },
+          {
+            "level": 21,
+            "attacks": [
+              "Tailwind"
             ]
           },
           {
@@ -526,13 +556,49 @@
             ]
           },
           {
+            "level": 28,
+            "attacks": [
+              "Air Slash"
+            ]
+          },
+          {
+            "level": 30,
+            "attacks": [
+              "Wave Crash"
+            ]
+          },
+          {
             "level": 32,
             "attacks": [
               "Eroding Tides"
             ]
+          },
+          {
+            "level": 35,
+            "attacks": [
+              "Hurricane"
+            ]
+          },
+          {
+            "level": 38,
+            "attacks": [
+              "Liquidation"
+            ]
+          },
+          {
+            "level": 40,
+            "attacks": [
+              "Icy Wind"
+            ]
+          },
+          {
+            "level": 45,
+            "attacks": [
+              "Explosion"
+            ]
           }
         ],
-        "tutorMoves": [],
+      "tutorMoves": [],
         "transferMoves": [
           "Aqua Tail",
           "Captivate",

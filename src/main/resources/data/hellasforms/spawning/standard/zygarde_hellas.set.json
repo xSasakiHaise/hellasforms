@@ -9,6 +9,11 @@
       "minLevel": 50,
       "maxLevel": 70,
       "typeID": "pokemon",
+      "tags": [
+        "hellas",
+        "wild",
+        "tier_legendary"
+      ],
       "condition": {
         "stringBiomes": [
           "mesas"

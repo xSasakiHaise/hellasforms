@@ -2440,6 +2440,50 @@
             {
                 "item": "pixelmon:orb",
                 "weight": 4
+            },
+            {
+                "item": "pixelmon:diancite_hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:sceptilite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:gyaradosite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:tyranitarite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:gardevoirite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:garchompite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:galladeite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:samurottite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:centiskorchite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:aegislashite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:goodrite-hellas",
+                "weight": 1
             }
         ],
         "Bug": [
@@ -3278,8 +3322,56 @@
                 "weight": 5
             },
             {
-                "item": "pixelmon:purple_petal",
+                "item": "hellasforms:battlepass_item_1",
+                "weight": 1
+            },
+            {
+                "item": "hellasforms:battlepass_item_2",
                 "weight": 3
+            },
+            {
+                "item": "pixelmon:diancite_hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:sceptilite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:gyaradosite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:tyranitarite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:gardevoirite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:garchompite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:galladeite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:samurottite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:centiskorchite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:aegislashite-hellas",
+                "weight": 1
+            },
+            {
+                "item": "pixelmon:goodrite-hellas",
+                "weight": 1
             }
         ],
         "Bug": [

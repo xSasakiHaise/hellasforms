@@ -750,9 +750,33 @@
             ]
           },
           {
-            "level": 56,
+            "level": 55,
             "attacks": [
-              "Dream Eater"
+              "Fiery Dance"
+            ]
+          },
+          {
+            "level": 58,
+            "attacks": [
+              "Heat Wave"
+            ]
+          },
+          {
+            "level": 61,
+            "attacks": [
+              "Fire Blast"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Overheat"
+            ]
+          },
+          {
+            "level": 67,
+            "attacks": [
+              "Burnout"
             ]
           },
           {
@@ -760,9 +784,15 @@
             "attacks": [
               "Future Sight"
             ]
+          },
+          {
+            "level": 70,
+            "attacks": [
+              "Dream Eater"
+            ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Expanding Force",
           "Misty Explosion",
           "Triple Axel"

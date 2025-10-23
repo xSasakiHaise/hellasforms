@@ -443,19 +443,97 @@
             ]
           },
           {
+            "level": 7,
+            "attacks": [
+              "Night Shade"
+            ]
+          },
+          {
+            "level": 14,
+            "attacks": [
+              "Confuse Ray"
+            ]
+          },
+          {
+            "level": 21,
+            "attacks": [
+              "Air Slash"
+            ]
+          },
+          {
+            "level": 28,
+            "attacks": [
+              "Shadow Ball"
+            ]
+          },
+          {
+            "level": 35,
+            "attacks": [
+              "Moonlight"
+            ]
+          },
+          {
+            "level": 42,
+            "attacks": [
+              "Night Daze"
+            ]
+          },
+          {
+            "level": 49,
+            "attacks": [
+              "Magic Coat"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Moonlight Dance"
             ]
           },
           {
-            "level": 60,
+            "level": 53,
             "attacks": [
               "Corrode"
             ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Dream Eater"
+            ]
+          },
+          {
+            "level": 59,
+            "attacks": [
+              "Wide Guard"
+            ]
+          },
+          {
+            "level": 62,
+            "attacks": [
+              "Hyper Beam"
+            ]
+          },
+          {
+            "level": 65,
+            "attacks": [
+              "Gravity"
+            ]
+          },
+          {
+            "level": 68,
+            "attacks": [
+              "Dark Void"
+            ]
+          },
+          {
+            "level": 70,
+            "attacks": [
+              "Phantom Force"
+            ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Shadow Ball",
           "Moonblast",
           "Night Daze",

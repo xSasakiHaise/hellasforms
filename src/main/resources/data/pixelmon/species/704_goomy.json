@@ -346,6 +346,279 @@
       "evYields": {
         "specialDefense": 1
       }
+    },
+    {
+      "name": "hellas",
+      "experienceGroup": "SLOW",
+      "dimensions": {
+        "height": 0.5,
+        "width": 0.5,
+        "length": 1,
+        "eyeHeight": 0.5,
+        "hoverHeight": 0.5
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Absorb",
+              "Tackle"
+            ]
+          },
+          {
+            "level": 5,
+            "attacks": [
+              "Water Gun"
+            ]
+          },
+          {
+            "level": 10,
+            "attacks": [
+              "Dragon Breath"
+            ]
+          },
+          {
+            "level": 15,
+            "attacks": [
+              "Protect"
+            ]
+          },
+          {
+            "level": 20,
+            "attacks": [
+              "Flail"
+            ]
+          },
+          {
+            "level": 25,
+            "attacks": [
+              "Water Pulse"
+            ]
+          },
+          {
+            "level": 30,
+            "attacks": [
+              "Rain Dance"
+            ]
+          },
+          {
+            "level": 35,
+            "attacks": [
+              "Dragon Pulse"
+            ]
+          },
+          {
+            "level": 41,
+            "attacks": [
+              "Curse"
+            ]
+          },
+          {
+            "level": 45,
+            "attacks": [
+              "Body Slam"
+            ]
+          },
+          {
+            "level": 50,
+            "attacks": [
+              "Muddy Water"
+            ]
+          }
+        ],
+        "tutorMoves": [
+          "Draco Meteor",
+          "Skitter Smack"
+        ],
+        "transferMoves": [
+          "Acid Armor",
+          "Bide",
+          "Bubble",
+          "Confide",
+          "Double Team",
+          "Frustration",
+          "Hidden Power",
+          "Infestation",
+          "Poison Tail",
+          "Return",
+          "Secret Power",
+          "Shock Wave",
+          "Swagger",
+          "Toxic"
+        ],
+        "trMoves": [
+          "Body Slam",
+          "Thunderbolt",
+          "Substitute",
+          "Sludge Bomb",
+          "Outrage",
+          "Endure",
+          "Sleep Talk",
+          "Iron Tail",
+          "Muddy Water",
+          "Dragon Pulse",
+          "Sludge Wave"
+        ],
+        "hmMoves": [],
+        "tmMoves9": [
+          "Take Down",
+          "Charm",
+          "Protect",
+          "Water Pulse",
+          "Chilling Water",
+          "Facade",
+          "Mud Shot",
+          "Endure",
+          "Sunny Day",
+          "Rain Dance",
+          "Body Slam",
+          "Sleep Talk",
+          "Rest",
+          "Rock Slide",
+          "Substitute",
+          "Dragon Pulse",
+          "Thunderbolt",
+          "Sludge Bomb",
+          "Outrage",
+          "Draco Meteor",
+          "Tera Blast",
+          "Muddy Water",
+          "Sludge Wave",
+          "Skitter Smack",
+          "Curse"
+        ],
+        "tmMoves8": [
+          "Rest",
+          "Rock Slide",
+          "Snore",
+          "Protect",
+          "Attract",
+          "Rain Dance",
+          "Sunny Day",
+          "Facade",
+          "Mud Shot",
+          "Round"
+        ],
+        "eggMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "StormDrain",
+          "Filter"
+        ],
+        "hiddenAbilities": [
+          "WaterBubble"
+        ]
+      },
+      "movement": {
+        "rideable": false,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false
+      },
+      "aggression": {
+        "timid": 80,
+        "passive": 0,
+        "aggressive": 20
+      },
+      "battleStats": {
+        "hp": 80,
+        "attack": 30,
+        "defense": 90,
+        "specialAttack": 30,
+        "specialDefense": 130,
+        "speed": 60
+      },
+      "tags": [
+        "wild",
+        "hellas",
+        "tier_epic"
+      ],
+      "spawn": {
+        "baseExp": 60,
+        "baseFriendship": 0,
+        "spawnLevel": 22,
+        "spawnLevelRange": 17,
+        "spawnLocations": [
+          "LAND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "hellasforms:pokemon/704_goomy/all/base/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/704_goomy/all/base/hellas/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/704_goomy/all/base/none/model.pqc"
+                ]
+              },
+              "sounds": [
+                "pixelmon.mob.goomy"
+              ]
+            },
+            {
+              "name": "shiny",
+              "texture": "hellasforms:pokemon/704_goomy/all/base/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/704_goomy/all/base/hellasshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "WATER",
+        "STEEL"
+      ],
+      "preEvolutions": [],
+      "defaultBaseForm": "",
+      "megaItems": [],
+      "megas": [],
+      "gigantamax": {
+        "canHaveFactor": false,
+        "canGigantamax": false
+      },
+      "eggCycles": 41,
+      "weight": 2.8,
+      "catchRate": 45,
+      "malePercentage": 50,
+      "evolutions": [
+        {
+          "level": 40,
+          "to": "Sliggoo form:hellas",
+          "conditions": [
+            {
+              "weather": "STORM",
+              "evoConditionType": "weather"
+            }
+          ],
+          "evoType": "leveling"
+        }
+      ],
+      "evYields": {
+        "specialDefense": 1
+      }
     }
   ],
   "generation": 6

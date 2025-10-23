@@ -1,0 +1,41 @@
+{
+  "attackName": "Purification",
+  "attackType": "FAIRY",
+  "attackCategory": "Status",
+  "basePower": 0,
+  "ppBase": 5,
+  "ppMax": 8,
+  "accuracy": -1,
+  "makesContact": true,
+  "effects": [
+    {
+      "modifiers": [],
+      "persists": true,
+      "effectTypeID": "PetalDance"
+    }
+  ],
+  "animations": [
+    "leapForward"
+  ],
+  "targetingInfo": {
+    "hitsAll": false,
+    "hitsOppositeFoe": true,
+    "hitsAdjacentFoe": true,
+    "hitsExtendedFoe": false,
+    "hitsSelf": false,
+    "hitsAdjacentAlly": false,
+    "hitsExtendedAlly": false
+  },
+  "flags": {
+    "nontarget": true
+  },
+  "z": [
+    {
+      "crystal": "fairium-z",
+      "attackName": "Twinkle Tackle",
+      "basePower": 60,
+      "effects": [],
+      "allowedPokemon": []
+    }
+  ]
+}

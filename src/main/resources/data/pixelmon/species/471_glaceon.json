@@ -462,9 +462,27 @@
             ]
           },
           {
+            "level": 40,
+            "attacks": [
+              "Tailwind"
+            ]
+          },
+          {
+            "level": 45,
+            "attacks": [
+              "Defog"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Cleansing Frost"
+            ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Roost"
             ]
           },
           {
@@ -474,9 +492,33 @@
             ]
           },
           {
+            "level": 60,
+            "attacks": [
+              "Agility"
+            ]
+          },
+          {
+            "level": 62,
+            "attacks": [
+              "Mirror Move"
+            ]
+          },
+          {
             "level": 64,
             "attacks": [
               "Isbrand"
+            ]
+          },
+          {
+            "level": 67,
+            "attacks": [
+              "Life Dew"
+            ]
+          },
+          {
+            "level": 69,
+            "attacks": [
+              "Haze"
             ]
           },
           {
@@ -484,9 +526,21 @@
             "attacks": [
               "Shatterstorm"
             ]
+          },
+          {
+            "level": 75,
+            "attacks": [
+              "Hurricane"
+            ]
+          },
+          {
+            "level": 78,
+            "attacks": [
+              "Bleakwind Storm"
+            ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Ice Beam",
           "Blizzard",
           "Hyper Beam",

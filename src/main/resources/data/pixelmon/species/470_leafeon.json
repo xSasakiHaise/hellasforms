@@ -84,9 +84,21 @@
             ]
           },
           {
-            "level": 45,
+            "level": 43,
             "attacks": [
-              "Swords Dance"
+              "Defend Order"
+            ]
+          },
+          {
+            "level": 46,
+            "attacks": [
+              "Heal Order"
+            ]
+          },
+          {
+            "level": 49,
+            "attacks": [
+              "Rage Powder"
             ]
           },
           {
@@ -96,13 +108,55 @@
             ]
           },
           {
+            "level": 52,
+            "attacks": [
+              "Spiky Shield"
+            ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Sleep Powder"
+            ]
+          },
+          {
             "level": 55,
             "attacks": [
               "Last Resort"
             ]
+          },
+          {
+            "level": 57,
+            "attacks": [
+              "Attack Order"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Earthquake"
+            ]
+          },
+          {
+            "level": 63,
+            "attacks": [
+              "Horn Leech"
+            ]
+          },
+          {
+            "level": 66,
+            "attacks": [
+              "Rock Blast"
+            ]
+          },
+          {
+            "level": 70,
+            "attacks": [
+              "Swords Dance"
+            ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Celebrate",
           "Grassy Glide"
         ],

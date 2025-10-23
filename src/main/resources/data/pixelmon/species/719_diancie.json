@@ -707,6 +707,20 @@
               "texture": "hellasforms:pokemon/719_diancie/all/base/hellasshiny/texture.png",
               "sprite": "hellasforms:pokemon/719_diancie/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
+            },
+            {
+              "name": "holo",
+              "texture": "hellasforms:pokemon/719_diancie/all/base/holo/texture.png",
+              "emissive": "hellasforms:pokemon/719_diancie/all/base/holo/emissive.png",
+              "sprite": "hellasforms:pokemon/719_diancie/all/base/holo/sprite.png",
+              "particle": ""
+            },
+            {
+              "name": "holoshiny",
+              "texture": "hellasforms:pokemon/719_diancie/all/base/holoshiny/texture.png",
+              "emissive": "hellasforms:pokemon/719_diancie/all/base/holoshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/719_diancie/all/base/holoshiny/sprite.png",
+              "particle": "arcanery:shiny"
             }
           ]
         }
@@ -780,6 +794,20 @@
               "name": "shiny",
               "texture": "hellasforms:pokemon/719_diancie/all/mega/hellasshiny/texture.png",
               "sprite": "hellasforms:pokemon/719_diancie/all/mega/hellasshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            },
+            {
+              "name": "holo",
+              "texture": "hellasforms:pokemon/719_diancie/all/mega/holo/texture.png",
+              "emissive": "hellasforms:pokemon/719_diancie/all/mega/holo/emissive.png",
+              "sprite": "hellasforms:pokemon/719_diancie/all/mega/holo/sprite.png",
+              "particle": ""
+            },
+            {
+              "name": "holoshiny",
+              "texture": "hellasforms:pokemon/719_diancie/all/mega/holoshiny/texture.png",
+              "emissive": "hellasforms:pokemon/719_diancie/all/mega/holoshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/719_diancie/all/mega/holoshiny/sprite.png",
               "particle": "arcanery:shiny"
             }
           ]

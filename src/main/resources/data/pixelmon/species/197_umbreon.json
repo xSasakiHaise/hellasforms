@@ -540,9 +540,75 @@
             ]
           },
           {
+            "level": 40,
+            "attacks": [
+              "Trick Room"
+            ]
+          },
+          {
+            "level": 42,
+            "attacks": [
+              "Wide Guard"
+            ]
+          },
+          {
+            "level": 44,
+            "attacks": [
+              "Amnesia"
+            ]
+          },
+          {
+            "level": 46,
+            "attacks": [
+              "Iron Defense"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Soul Sap"
+            ]
+          },
+          {
+            "level": 52,
+            "attacks": [
+              "Topsy-Turvy"
+            ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Will-O-Wisp"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Perish Song"
+            ]
+          },
+          {
+            "level": 58,
+            "attacks": [
+              "Encore"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Breaking Swipe"
+            ]
+          },
+          {
+            "level": 65,
+            "attacks": [
+              "Body Press"
+            ]
+          },
+          {
+            "level": 70,
+            "attacks": [
+              "Core Enforcer"
             ]
           }
         ],

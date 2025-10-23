@@ -599,15 +599,27 @@
             ]
           },
           {
+            "level": 45,
+            "attacks": [
+              "Autotomize"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Metallic Scales"
             ]
           },
           {
-            "level": 55,
+            "level": 53,
             "attacks": [
-              "Autotomize"
+              "Metal Sound"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Gravity"
             ]
           },
           {
@@ -623,9 +635,21 @@
             ]
           },
           {
+            "level": 63,
+            "attacks": [
+              "Swords Dance"
+            ]
+          },
+          {
             "level": 65,
             "attacks": [
               "Metal Claw"
+            ]
+          },
+          {
+            "level": 68,
+            "attacks": [
+              "Gear Grind"
             ]
           },
           {
@@ -635,9 +659,21 @@
             ]
           },
           {
+            "level": 73,
+            "attacks": [
+              "Heavy Slam"
+            ]
+          },
+          {
             "level": 75,
             "attacks": [
               "Dragon Dance"
+            ]
+          },
+          {
+            "level": 78,
+            "attacks": [
+              "Smart Strike"
             ]
           },
           {
@@ -665,7 +701,7 @@
             ]
           }
         ],
-        "tutorMoves": [],
+      "tutorMoves": [],
         "transferMoves": [
           "Aerial Ace",
           "Air Cutter",

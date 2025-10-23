@@ -768,43 +768,103 @@
             ]
           },
           {
-            "level": 43,
+            "level": 42,
             "attacks": [
               "Nasty Plot"
             ]
           },
           {
-            "level": 46,
+            "level": 44,
             "attacks": [
               "Cutting Edge"
             ]
           },
           {
-            "level": 50,
+            "level": 46,
             "attacks": [
               "Hitch Kick"
             ]
           },
           {
-            "level": 52,
+            "level": 48,
             "attacks": [
               "Extrasensory"
             ]
           },
           {
-            "level": 56,
+            "level": 50,
             "attacks": [
               "Plasma Veil"
             ]
           },
           {
-            "level": 60,
+            "level": 52,
             "attacks": [
               "Plasma Fangs"
             ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Parting Shot"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Charge"
+            ]
+          },
+          {
+            "level": 58,
+            "attacks": [
+              "Volt Switch"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Thunderbolt"
+            ]
+          },
+          {
+            "level": 62,
+            "attacks": [
+              "Aura Sphere"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Parabolic Charge"
+            ]
+          },
+          {
+            "level": 66,
+            "attacks": [
+              "Charge Beam"
+            ]
+          },
+          {
+            "level": 68,
+            "attacks": [
+              "Psychic"
+            ]
+          },
+          {
+            "level": 70,
+            "attacks": [
+              "Flash Cannon"
+            ]
+          },
+          {
+            "level": 72,
+            "attacks": [
+              "Dazzling Gleam"
+            ]
           }
         ],
-          "tutorMoves": [
+      "tutorMoves": [
             "Aerial Ace",
             "Calm Mind",
             "Dark Pulse",

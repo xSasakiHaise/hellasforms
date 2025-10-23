@@ -29,11 +29,11 @@ public class PlasmaAura extends AbstractAbility {
     public int[] modifyStats(PixelmonWrapper user, int[] stats) {
         if (user.bc.globalStatusController.getTerrain() instanceof ElectricTerrain) {
             int var10001 = BattleStatsType.ATTACK.getStatIndex();
-            stats[var10001] = (int)((double)stats[var10001] * 2);
+            stats[var10001] = (int)((double)stats[var10001] * 1.5);
             int var10002 = BattleStatsType.SPECIAL_ATTACK.getStatIndex();
-            stats[var10002] = (int)((double)stats[var10002] * 2);
+            stats[var10002] = (int)((double)stats[var10002] * 1.5);
             int var10003 = BattleStatsType.SPEED.getStatIndex();
-            stats[var10003] = (int)((double)stats[var10003] * 1.5);
+            stats[var10003] = (int)((double)stats[var10003] * 1.1);
         }
 
         return stats;

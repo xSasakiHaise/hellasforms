@@ -870,19 +870,80 @@
             ]
           },
           {
-            "level": 59,
+            "level": 60,
             "attacks": [
               "Giga Impact"
             ]
           },
           {
-            "level": 64,
+            "level": 63,
             "attacks": [
+              "Autotomize"
+            ]
+          },
+          {
+            "level": 66,
+            "attacks": [
+              "Comeuppance"
+            ]
+          },
+          {
+            "level": 69,
+            "attacks": [
+              "Shift Gear"
+            ]
+          },
+          {
+            "level": 72,
+            "attacks": [
+              "Parting Shot"
+            ]
+          },
+          {
+            "level": 75,
+            "attacks": [
+              "Coil"
+            ]
+          },
+          {
+            "level": 77,
+            "attacks": [
+              "Scale Shot"
+            ]
+          },
+          {
+            "level": 79,
+            "attacks": [
+              "Brutal Swing"
+            ]
+          },
+          {
+            "level": 81,
+            "attacks": [
+              "False Surrender"
+            ]
+          },
+          {
+            "level": 84,
+            "attacks": [
+              "Meteor Mash"
+            ]
+          },
+          {
+            "level": 87,
+            "attacks": [
+              "Bullet Punch"
+            ]
+          },
+          {
+            "level": 90,
+            "attacks": [
+              "Dragon Hammer",
               "Draconic Jaw"
             ]
           }
         ],
-        "tutorMoves": [
+      "tutorMoves": [
           "Lash Out"
         ],
         "transferMoves": [

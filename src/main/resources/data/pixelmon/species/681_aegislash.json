@@ -329,6 +329,346 @@
           ]
         }
       ]
+    },
+    {
+      "name": "hellas",
+      "experienceGroup": "MEDIUM_FAST",
+      "dimensions": {
+        "height": 2.0,
+        "width": 1.0,
+        "length": 1,
+        "eyeHeight": 2.0,
+        "hoverHeight": 2.0
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Aerial Ace",
+              "Autotomize",
+              "Fury Cutter",
+              "Head Smash",
+              "Iron Defense",
+              "Iron Head",
+              "King\u0027s Shield",
+              "Metal Sound",
+              "Night Slash",
+              "Power Trick",
+              "Retaliate",
+              "Sacred Sword",
+              "Shadow Sneak",
+              "Slash",
+              "Swords Dance",
+              "Tackle"
+            ]
+          },
+          {
+            "level": 70,
+            "attacks": [
+              "Thunder Wave"
+            ]
+          },
+          {
+            "level": 72,
+            "attacks": [
+              "Ion Deluge"
+            ]
+          },
+          {
+            "level": 74,
+            "attacks": [
+              "Magnet Rise"
+            ]
+          },
+          {
+            "level": 76,
+            "attacks": [
+              "Electric Terrain"
+            ]
+          },
+          {
+            "level": 78,
+            "attacks": [
+              "Power-Up Punch"
+            ]
+          },
+          {
+            "level": 80,
+            "attacks": [
+              "Wild Charge"
+            ]
+          },
+          {
+            "level": 85,
+            "attacks": [
+              "Body Press"
+            ]
+          }
+        ],
+        "tutorMoves": [
+          "Steel Beam"
+        ],
+        "transferMoves": [
+          "After You",
+          "Confide",
+          "Cut",
+          "Double Team",
+          "Frustration",
+          "Hidden Power",
+          "Laser Focus",
+          "Magnet Rise",
+          "Pursuit",
+          "Return",
+          "Rock Smash",
+          "Secret Power",
+          "Shock Wave",
+          "Spite",
+          "Swagger",
+          "Toxic"
+        ],
+        "trMoves": [
+          "Swords Dance",
+          "Substitute",
+          "Reversal",
+          "Endure",
+          "Sleep Talk",
+          "Shadow Ball",
+          "Iron Defense",
+          "Gyro Ball",
+          "Close Combat",
+          "Flash Cannon",
+          "Iron Head"
+        ],
+        "hmMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [
+          "Hyper Beam",
+          "Giga Impact",
+          "Solar Blade",
+          "Screech",
+          "Reflect",
+          "Rest",
+          "Rock Slide",
+          "Snore",
+          "Protect",
+          "Attract",
+          "Rain Dance",
+          "Sunny Day",
+          "Facade",
+          "Brick Break",
+          "Shadow Claw",
+          "Psycho Cut",
+          "Round",
+          "Retaliate",
+          "False Swipe",
+          "Air Slash",
+          "Brutal Swing"
+        ],
+        "eggMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "Sharpness"
+        ],
+        "hiddenAbilities": [
+          "PlasmaBlade"
+        ]
+      },
+      "movement": {
+        "rideable": true,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false,
+        "ridingOffsets": {
+          "standing": {
+            "x": 0.0,
+            "y": 0.5,
+            "z": -0.3
+          },
+          "moving": {
+            "x": 0.0,
+            "y": 0.5,
+            "z": -0.3
+          }
+        }
+      },
+      "aggression": {
+        "timid": 80,
+        "passive": 0,
+        "aggressive": 20
+      },
+      "battleStats": {
+        "hp": 150,
+        "attack": 130,
+        "defense": 110,
+        "specialAttack": 30,
+        "specialDefense": 80,
+        "speed": 100
+      },
+      "tags": [
+        "hellas",
+        "tier_mythic"
+      ],
+      "spawn": {
+        "baseExp": 234,
+        "baseFriendship": 0,
+        "spawnLevel": 50,
+        "spawnLevelRange": 12,
+        "spawnLocations": [
+          "LAND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "hellasforms:pokemon/681_aegislash/all/base/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/681_aegislash/all/base/hellas/emissive.png",
+              "sprite": "hellasforms:pokemon/681_aegislash/all/base/hellas/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/681_aegislash/all/blade/none/model.pqc"
+                ]
+              },
+              "sounds": [
+                "pixelmon.mob.aegislash"
+              ]
+            },
+            {
+              "name": "shiny",
+              "texture": "hellasforms:pokemon/681_aegislash/all/base/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/681_aegislash/all/base/hellasshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/681_aegislash/all/base/hellasshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            },
+            {
+              "name": "holo",
+              "texture": "hellasforms:pokemon/681_aegislash/all/base/holo/texture.png",
+              "emissive": "hellasforms:pokemon/681_aegislash/all/base/holo/emissive.png",
+              "sprite": "hellasforms:pokemon/681_aegislash/all/base/holo/sprite.png",
+              "particle": ""
+            },
+            {
+              "name": "holoshiny",
+              "texture": "hellasforms:pokemon/681_aegislash/all/base/holoshiny/texture.png",
+              "emissive": "hellasforms:pokemon/681_aegislash/all/base/holoshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/681_aegislash/all/base/holoshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "ELECTRIC",
+        "STEEL"
+      ],
+      "preEvolutions": [
+        "Doublade form:hellas",
+        "Honedge form:hellas"
+      ],
+      "defaultBaseForm": "hellas",
+      "megaItems": [
+        "pixelmon:aegislashite-hellas"
+      ],
+      "megas": [
+        "mega-hellas"
+      ],
+      "gigantamax": {
+        "canHaveFactor": false,
+        "canGigantamax": false
+      },
+      "eggCycles": 21,
+      "weight": 53.0,
+      "catchRate": 45,
+      "malePercentage": 50,
+      "evolutions": [],
+      "evYields": {
+        "defense": 2,
+        "specialDefense": 1
+      }
+    },
+    {
+      "name": "mega-hellas",
+      "tags": [
+        "temp",
+        "hellas",
+        "mega",
+        "tier_mythic"
+      ],
+      "abilities": {
+        "abilities": [
+          "SwordOfJustice"
+        ]
+      },
+      "battleStats": {
+        "hp": 150,
+        "attack": 130,
+        "defense": 160,
+        "specialAttack": 30,
+        "specialDefense": 130,
+        "speed": 100
+      },
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "hellasforms:pokemon/681_aegislash/all/mega/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/681_aegislash/all/mega/hellas/emissive.png",
+              "sprite": "hellasforms:pokemon/681_aegislash/all/mega/hellas/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/681_aegislash/all/shield/none/model.pqc"
+                ]
+              }
+            },
+            {
+              "name": "shiny",
+              "texture": "hellasforms:pokemon/681_aegislash/all/mega/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/681_aegislash/all/mega/hellasshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/681_aegislash/all/mega/shiny/hellassprite.png",
+              "particle": "arcanery:shiny"
+            },
+            {
+              "name": "holo",
+              "texture": "hellasforms:pokemon/681_aegislash/all/mega/holo/texture.png",
+              "emissive": "hellasforms:pokemon/681_aegislash/all/mega/holo/emissive.png",
+              "sprite": "hellasforms:pokemon/681_aegislash/all/mega/holo/sprite.png",
+              "particle": ""
+            },
+            {
+              "name": "holoshiny",
+              "texture": "hellasforms:pokemon/681_aegislash/all/mega/holoshiny/texture.png",
+              "emissive": "hellasforms:pokemon/681_aegislash/all/mega/holoshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/681_aegislash/all/mega/holoshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ]
     }
   ],
   "generation": 6

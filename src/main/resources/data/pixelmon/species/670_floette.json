@@ -593,6 +593,220 @@
         }
       ],
       "evolutions": []
+    },
+    {
+      "name": "hellas",
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Fairy Wind",
+              "Tackle",
+              "Vine Whip",
+              "Light of Ruin"
+            ]
+          },
+          {
+            "level": 3,
+            "attacks": [
+              "Calm Mind"
+            ]
+          },
+          {
+            "level": 6,
+            "attacks": [
+              "Fairy Wind"
+            ]
+          },
+          {
+            "level": 10,
+            "attacks": [
+              "Lucky Chant",
+              "Curse"
+            ]
+          },
+          {
+            "level": 15,
+            "attacks": [
+              "Razor Leaf"
+            ]
+          },
+          {
+            "level": 20,
+            "attacks": [
+              "Wish",
+              "Revival Blessing"
+            ]
+          },
+          {
+            "level": 25,
+            "attacks": [
+              "Magical Leaf",
+              "Switcheroo"
+            ]
+          },
+          {
+            "level": 27,
+            "attacks": [
+              "Grassy Terrain"
+            ]
+          },
+          {
+            "level": 33,
+            "attacks": [
+              "Petal Blizzard"
+            ]
+          },
+          {
+            "level": 38,
+            "attacks": [
+              "Aromatherapy"
+            ]
+          },
+          {
+            "level": 43,
+            "attacks": [
+              "Misty Terrain",
+              "Memento"
+            ]
+          },
+          {
+            "level": 46,
+            "attacks": [
+              "Moonblast",
+              "Shadow Ball"
+            ]
+          },
+          {
+            "level": 51,
+            "attacks": [
+              "Petal Dance",
+              "Bitter Malice"
+            ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Hyper Voice"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Psychic"
+            ]
+          },
+          {
+            "level": 58,
+            "attacks": [
+              "Solar Beam",
+              "Dark Pulse"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Earth Power",
+              "Burning Jealousy"
+            ]
+          },
+          {
+            "level": 62,
+            "attacks": [
+              "Energy Ball"
+            ]
+          }
+        ],
+      "tutorMoves": [
+          "After You",
+          "Ally Switch",
+          "Covet",
+          "Endeavor",
+          "Giga Drain",
+          "Heal Bell",
+          "Helping Hand",
+          "Magic Coat",
+          "Seed Bomb",
+          "Snore",
+          "Synthesis",
+          "Worry Seed"
+        ],
+        "transferMoves": [
+          "Flash",
+          "Secret Power"
+        ],
+        "trMoves": [],
+        "hmMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [],
+        "eggMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+       "abilities": {
+        "abilities": [
+          "PerishBody",
+          "WonderSkin"
+        ],
+        "hiddenAbilities": [
+          "GraveMistake"
+        ]
+     },
+      "battleStats": {
+        "hp": 90,
+        "attack": 50,
+        "defense": 70,
+        "specialAttack": 170,
+        "specialDefense": 110,
+        "speed": 130
+      },
+      "tags": [
+        "wild",
+        "hellas",
+        "tier_legendary"
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "FAIRY",
+        "GHOST"
+      ],
+      "preEvolutions": [],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "hellasforms:pokemon/670_floette/all/az/hellas/texture.png",
+              "sprite": "hellasforms:pokemon/670_floette/all/az/hellas/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/670_floette/all/az/none/model.pqc"
+                ],
+                "yRotation": 60
+              }
+            },
+            {
+              "name": "shiny",
+              "texture": "hellasforms:pokemon/670_floette/all/az/hellasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/670_floette/all/az/hellasshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "evolutions": []
     }
   ],
   "generation": 6

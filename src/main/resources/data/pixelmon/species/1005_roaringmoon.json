@@ -357,6 +357,12 @@
             ]
           },
           {
+            "level": 30,
+            "attacks": [
+              "Autotomize"
+            ]
+          },
+          {
             "level": 35,
             "attacks": [
               "Zen Headbutt"
@@ -408,6 +414,12 @@
             "level": 77,
             "attacks": [
               "Throat Chop"
+            ]
+          },
+          {
+            "level": 80,
+            "attacks": [
+              "Anchor Shot"
             ]
           },
           {

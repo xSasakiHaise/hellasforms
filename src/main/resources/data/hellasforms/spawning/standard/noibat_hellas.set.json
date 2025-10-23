@@ -19,9 +19,7 @@
           "NIGHT"
         ],
         "stringBiomes": [
-          "hills",
-          "jungles",
-          "redwoods"
+          "hills"
         ]
       },
       "rarity": 0.6

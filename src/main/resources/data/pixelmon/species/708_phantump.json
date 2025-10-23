@@ -517,7 +517,8 @@
       },
       "tags": [
         "hellas",
-        "wild"
+        "wild",
+        "tier_uncommon"
       ],
       "spawn": {
         "baseExp": 62,
@@ -558,6 +559,20 @@
               "emissive": "hellasforms:pokemon/708_phantump/all/base/hellasshiny/emissive.png",
               "sprite": "hellasforms:pokemon/708_phantump/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
+            },
+            {
+              "name": "holo",
+              "texture": "hellasforms:pokemon/708_phantump/all/base/holo/texture.png",
+              "emissive": "hellasforms:pokemon/708_phantump/all/base/holo/emissive.png",
+              "sprite": "hellasforms:pokemon/708_phantump/all/base/holo/sprite.png",
+              "particle": ""
+            },
+            {
+              "name": "holoshiny",
+              "texture": "hellasforms:pokemon/708_phantump/all/base/holoshiny/texture.png",
+              "emissive": "hellasforms:pokemon/708_phantump/all/base/holoshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/708_phantump/all/base/holoshiny/sprite.png",
+              "particle": "arcanery:shiny"
             }
           ]
         }
@@ -583,22 +598,10 @@
       "malePercentage": 50,
       "evolutions": [
         {
+          "level": 25,
           "to": "Trevenant form:hellas",
           "conditions": [],
-          "evoType": "trade",
-          "moves": [
-            "Shadow Claw"
-          ]
-        },
-        {
-          "item": {
-            "itemID": "pixelmon:linking_cord"
-          },
-          "to": "Trevenant form:hellas",
-          "evoType": "interact",
-          "moves": [
-            "Shadow Claw"
-          ]
+          "evoType": "leveling"
         }
       ],
       "evYields": {

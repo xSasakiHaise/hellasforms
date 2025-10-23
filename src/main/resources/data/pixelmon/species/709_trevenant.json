@@ -400,7 +400,70 @@
               "Astonish",
               "Tackle",
               "Ember",
-              "Absorb"
+              "Absorb",
+              "Branch Poke",
+              "Leech Seed",
+              "Shadow Claw"
+            ]
+          },
+          {
+            "level": 12,
+            "attacks": [
+              "Confuse Ray"
+            ]
+          },
+          {
+            "level": 16,
+            "attacks": [
+              "Will-O-Wisp"
+            ]
+          },
+          {
+            "level": 20,
+            "attacks": [
+              "Hex"
+            ]
+          },
+          {
+            "level": 24,
+            "attacks": [
+              "Growth"
+            ]
+          },
+          {
+            "level": 25,
+            "attacks": [
+              "Sunny Day"
+            ]
+          },
+          {
+            "level": 28,
+            "attacks": [
+              "Horn Leech"
+            ]
+          },
+          {
+            "level": 31,
+            "attacks": [
+              "Spore"
+            ]
+          },
+          {
+            "level": 32,
+            "attacks": [
+              "Curse"
+            ]
+          },
+          {
+            "level": 34,
+            "attacks": [
+              "Rage Powder"
+            ]
+          },
+          {
+            "level": 36,
+            "attacks": [
+              "Phantom Force"
             ]
           },
           {
@@ -410,9 +473,76 @@
             ]
           },
           {
+            "level": 40,
+            "attacks": [
+              "Ingrain",
+              "Helping Hand"
+            ]
+          },
+          {
+            "level": 43,
+            "attacks": [
+              "Synthesis"
+            ]
+          },
+          {
+            "level": 44,
+            "attacks": [
+              "Wood Hammer"
+            ]
+          },
+          {
+            "level": 46,
+            "attacks": [
+              "Fire Punch"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Destiny Bond"
+            ]
+          },
+          {
             "level": 50,
             "attacks": [
               "Corrode"
+            ]
+          },
+          {
+            "level": 52,
+            "attacks": [
+              "Forest's Curse"
+            ]
+          },
+          {
+            "level": 53,
+            "attacks": [
+              "Flare Blitz"
+            ]
+          },
+          {
+            "level": 59,
+            "attacks": [
+              "Knock Off"
+            ]
+          },
+          {
+            "level": 62,
+            "attacks": [
+              "Close Combat"
+            ]
+          },
+          {
+            "level": 65,
+            "attacks": [
+              "Fake Out"
+            ]
+          },
+          {
+            "level": 68,
+            "attacks": [
+              "Hammer Arm"
             ]
           }
         ],
@@ -595,6 +725,20 @@
                 "texture": "hellasforms:pokemon/709_trevenant/all/base/hellasshiny/texture.png",
                 "sprite": "hellasforms:pokemon/709_trevenant/all/base/hellasshiny/sprite.png",
                 "emissive": "hellasforms:pokemon/709_trevenant/all/base/hellasshiny/emissive.png",
+                "particle": "arcanery:shiny"
+              },
+              {
+                "name": "holo",
+                "texture": "hellasforms:pokemon/709_trevenant/all/base/holo/texture.png",
+                "emissive": "hellasforms:pokemon/709_trevenant/all/base/holo/emissive.png",
+                "sprite": "hellasforms:pokemon/709_trevenant/all/base/holo/sprite.png",
+                "particle": ""
+              },
+              {
+                "name": "holoshiny",
+                "texture": "hellasforms:pokemon/709_trevenant/all/base/holoshiny/texture.png",
+                "emissive": "hellasforms:pokemon/709_trevenant/all/base/holoshiny/emissive.png",
+                "sprite": "hellasforms:pokemon/709_trevenant/all/base/holoshiny/sprite.png",
                 "particle": "arcanery:shiny"
               }
             ]

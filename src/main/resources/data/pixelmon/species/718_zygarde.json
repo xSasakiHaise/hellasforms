@@ -430,6 +430,431 @@
       "tags": [
         "temp"
       ]
+    },
+    {
+      "name": "hellas",
+      "experienceGroup": "SLOW",
+      "dimensions": {
+        "height": 2.5,
+        "width": 1.5,
+        "length": 1,
+        "eyeHeight": 2.5,
+        "hoverHeight": 2.5
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Bind",
+              "Bite",
+              "Bulldoze",
+              "Core Enforcer",
+              "Dragon Breath",
+              "Thousand Arrows",
+              "Thousand Waves"
+            ]
+          },
+          {
+            "level": 1,
+            "attacks": [
+              "Magnet Rise"
+            ]
+          },
+          {
+            "level": 2,
+            "attacks": [
+              "Ion Deluge"
+            ]
+          },
+          {
+            "level": 3,
+            "attacks": [
+              "Wide Guard"
+            ]
+          },
+          {
+            "level": 4,
+            "attacks": [
+              "Thunder"
+            ]
+          },
+          {
+            "level": 5,
+            "attacks": [
+              "Thunderbolt"
+            ]
+          },
+          {
+            "level": 6,
+            "attacks": [
+              "Discharge"
+            ]
+          },
+          {
+            "level": 7,
+            "attacks": [
+              "Flash Cannon"
+            ]
+          },
+          {
+            "level": 8,
+            "attacks": [
+              "Haze"
+            ]
+          },
+          {
+            "level": 9,
+            "attacks": [
+              "Steel Beam"
+            ]
+          },
+          {
+            "level": 10,
+            "attacks": [
+              "Metal Burst"
+            ]
+          },
+          {
+            "level": 11,
+            "attacks": [
+              "Mirror Shot"
+            ]
+          },
+          {
+            "level": 16,
+            "attacks": [
+              "Dig"
+            ]
+          },
+          {
+            "level": 24,
+            "attacks": [
+              "Safeguard"
+            ]
+          },
+          {
+            "level": 32,
+            "attacks": [
+              "Crunch"
+            ]
+          },
+          {
+            "level": 40,
+            "attacks": [
+              "Dragon Pulse"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Land's Wrath"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Glare"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Sandstorm"
+            ]
+          },
+          {
+            "level": 72,
+            "attacks": [
+              "Coil"
+            ]
+          },
+          {
+            "level": 80,
+            "attacks": [
+              "Earthquake"
+            ]
+          },
+          {
+            "level": 88,
+            "attacks": [
+              "Outrage"
+            ]
+          }
+        ],
+      "tutorMoves": [
+          "Draco Meteor",
+          "Scale Shot",
+          "Scorching Sands",
+          "Skitter Smack"
+        ],
+        "transferMoves": [
+          "Block",
+          "Camouflage",
+          "Confide",
+          "Double Team",
+          "Dragon Tail",
+          "Extreme Speed",
+          "Frustration",
+          "Hidden Power",
+          "Pain Split",
+          "Return",
+          "Rock Smash",
+          "Secret Power",
+          "Shock Wave",
+          "Spite",
+          "Strength",
+          "Swagger",
+          "Toxic"
+        ],
+        "trMoves": [
+          "Body Slam",
+          "Earthquake",
+          "Substitute",
+          "Reversal",
+          "Outrage",
+          "Endure",
+          "Sleep Talk",
+          "Iron Tail",
+          "Crunch",
+          "Superpower",
+          "Hyper Voice",
+          "Dragon Dance",
+          "Dragon Pulse",
+          "Focus Blast",
+          "Earth Power",
+          "Zen Headbutt",
+          "Stone Edge",
+          "Grass Knot",
+          "Sludge Wave",
+          "High Horsepower"
+        ],
+        "hmMoves": [],
+        "tmMoves9": [],
+        "tmMoves8": [
+          "Hyper Beam",
+          "Giga Impact",
+          "Dig",
+          "Safeguard",
+          "Rest",
+          "Rock Slide",
+          "Snore",
+          "Protect",
+          "Sandstorm",
+          "Sunny Day",
+          "Facade",
+          "Swift",
+          "Brick Break",
+          "Payback",
+          "Round",
+          "Retaliate",
+          "Bulldoze",
+          "Stomping Tantrum",
+          "Breaking Swipe"
+        ],
+        "eggMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "FullMetalBody"
+        ],
+        "hiddenAbilities": [
+          "PhotonConstruct"
+        ]
+      },
+      "movement": {
+        "rideable": true,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false,
+        "ridingOffsets": {
+          "standing": {
+            "x": 0.0,
+            "y": -0.3,
+            "z": -0.6
+          },
+          "moving": {
+            "x": 0.0,
+            "y": -0.3,
+            "z": -0.6
+          }
+        }
+      },
+      "aggression": {
+        "timid": 80,
+        "passive": 0,
+        "aggressive": 20
+      },
+      "battleStats": {
+        "hp": 170,
+        "attack": 50,
+        "defense": 130,
+        "specialAttack": 70,
+        "specialDefense": 150,
+        "speed": 50
+      },
+      "tags": [
+        "wild",
+        "hellas",
+        "tier_legendary"
+      ],
+      "spawn": {
+        "baseExp": 270,
+        "baseFriendship": 0,
+        "spawnLevel": 1,
+        "spawnLevelRange": 99,
+        "spawnLocations": [
+          "LAND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "hellasforms:pokemon/718_zygarde/all/fifty_percent/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/718_zygarde/all/fifty_percent/hellas/emissive.png",
+              "sprite": "hellasforms:pokemon/718_zygarde/all/fifty_percent/hellas/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/718_zygarde/all/fifty_percent/none/model.pqc"
+                ]
+              },
+              "sounds": [
+                "pixelmon.mob.zygarde.50"
+              ]
+            },
+            {
+              "name": "shiny",
+              "texture": "hellasforms:pokemon/718_zygarde/all/fifty_percent/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/718_zygarde/all/fifty_percent/hellasshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/718_zygarde/all/fifty_percent/hellasshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            },
+            {
+              "name": "holo",
+              "texture": "hellasforms:pokemon/718_zygarde/all/fifty_percent/holo/texture.png",
+              "emissive": "hellasforms:pokemon/718_zygarde/all/fifty_percent/holo/emissive.png",
+              "sprite": "hellasforms:pokemon/718_zygarde/all/fifty_percent/holo/sprite.png",
+              "particle": ""
+            },
+            {
+              "name": "holoshiny",
+              "texture": "hellasforms:pokemon/718_zygarde/all/fifty_percent/holoshiny/texture.png",
+              "emissive": "hellasforms:pokemon/718_zygarde/all/fifty_percent/holoshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/718_zygarde/all/fifty_percent/holoshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "ELECTRIC",
+        "DRAGON"
+      ],
+      "preEvolutions": [],
+      "defaultBaseForm": "hellas",
+      "megaItems": [],
+      "megas": [],
+      "gigantamax": {
+        "canHaveFactor": false,
+        "canGigantamax": false
+      },
+      "eggCycles": 121,
+      "weight": 305.0,
+      "catchRate": 3,
+      "malePercentage": -1,
+      "evolutions": [],
+      "evYields": {
+        "hp": 3
+      }
+    },
+    {
+      "name": "photon-construct",
+      "dimensions": {
+        "height": 6.0,
+        "width": 3.0,
+        "length": 3.0
+      },
+      "battleStats": {
+        "hp": 170,
+        "attack": 50,
+        "defense": 130,
+        "specialAttack": 120,
+        "specialDefense": 150,
+        "speed": 100
+      },
+      "weight": 610.0,
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "hellasforms:pokemon/718_zygarde/all/complete/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/718_zygarde/all/complete/hellas/emissive.png",
+              "sprite": "hellasforms:pokemon/718_zygarde/all/complete/hellas/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/718_zygarde/all/complete/none/model.pqc"
+                ],
+                "animationIncrement": 1.5
+              },
+              "sounds": [
+                "pixelmon.mob.zygarde.100"
+              ]
+            },
+            {
+              "name": "shiny",
+              "texture": "hellasforms:pokemon/718_zygarde/all/complete/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/718_zygarde/all/complete/hellasshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/718_zygarde/all/complete/hellasshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            },
+            {
+              "name": "holo",
+              "texture": "hellasforms:pokemon/718_zygarde/all/complete/holo/texture.png",
+              "emissive": "hellasforms:pokemon/718_zygarde/all/complete/holo/emissive.png",
+              "sprite": "hellasforms:pokemon/718_zygarde/all/complete/holo/sprite.png",
+              "particle": ""
+            },
+            {
+              "name": "holoshiny",
+              "texture": "hellasforms:pokemon/718_zygarde/all/complete/holoshiny/texture.png",
+                "emissive": "hellasforms:pokemon/718_zygarde/all/complete/holoshiny/emissive.png",
+              "sprite": "hellasforms:pokemon/718_zygarde/all/complete/holoshiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ],
+          "types": [
+            "ELECTRIC",
+            "STEEL"
+          ]
+        }
+      ],
+      "tags": [
+        "temp"
+      ]
     }
   ],
   "generation": 6
