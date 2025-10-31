@@ -1,0 +1,11 @@
+Items lacking PNG textures under assets/hellasforms/textures:
+- ability_patch_remover
+- attack_252_ev_capsule
+- defense_252_ev_capsule
+- exp_candy_xxl
+- exp_candy_xxxl
+- hp_252_ev_capsule
+- rusted_bottle_cap
+- spatk_252_ev_capsule
+- spdef_252_ev_capsule
+- speed_252_ev_capsule
