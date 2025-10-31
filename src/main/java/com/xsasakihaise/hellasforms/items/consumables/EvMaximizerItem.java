@@ -2,7 +2,7 @@ package com.xsasakihaise.hellasforms.items.consumables;
 
 import com.pixelmonmod.pixelmon.api.pokemon.Pokemon;
 import com.pixelmonmod.pixelmon.api.pokemon.stats.EVStore;
-import com.pixelmonmod.pixelmon.api.pokemon.stats.StatsType;
+import com.pixelmonmod.pixelmon.api.pokemon.stats.StatType;
 import com.pixelmonmod.pixelmon.entities.pixelmon.PixelmonEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -10,10 +10,10 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 
 public class EvMaximizerItem extends PokemonInteractItem {
-    private final StatsType targetStat;
+    private final StatType targetStat;
     private final String successTranslation;
 
-    public EvMaximizerItem(StatsType targetStat, String successTranslation) {
+    public EvMaximizerItem(StatType targetStat, String successTranslation) {
         this.targetStat = targetStat;
         this.successTranslation = successTranslation;
     }
