@@ -77,7 +77,9 @@ public final class PixelmonStatTypes {
     public static Enum<?> resolve(String... candidates) {
         for (String candidate : candidates) {
             try {
-                return Enum.valueOf(STAT_ENUM_CLASS, candidate.toUpperCase(Locale.ROOT));
+                @SuppressWarnings({"unchecked", "rawtypes"})
+                Enum<?> value = Enum.valueOf((Class) STAT_ENUM_CLASS, candidate.toUpperCase(Locale.ROOT));
+                return value;
             } catch (IllegalArgumentException ignored) {
             }
         }
