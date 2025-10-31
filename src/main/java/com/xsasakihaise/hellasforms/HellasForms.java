@@ -38,7 +38,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.xsasakihaise.hellascontrol.api.sidemods.HellasAPIControlForms;
 import com.xsasakihaise.hellasforms.HellasFormsInfoConfig;
-import com.pixelmonmod.pixelmon.api.pokemon.stats.StatsType;
+import com.pixelmonmod.pixelmon.api.pokemon.stats.StatType;
+import com.xsasakihaise.hellasforms.util.PixelmonStatTypes;
 
 @Mod("hellasforms")
 public class HellasForms {
@@ -128,12 +129,12 @@ public class HellasForms {
         ItemRegistration.ITEMS.register("rusted_bottle_cap", RustedBottleCapItem::new);
         ItemRegistration.ITEMS.register("exp_candy_xxl", () -> new ExperienceCandyItem(60000, "item.pixelmon.exp_candy_xxl.success"));
         ItemRegistration.ITEMS.register("exp_candy_xxxl", () -> new ExperienceCandyItem(120000, "item.pixelmon.exp_candy_xxxl.success"));
-        ItemRegistration.ITEMS.register("hp_252_ev_capsule", () -> new EvMaximizerItem(StatsType.HP, "item.pixelmon.hp_252_ev_capsule.success"));
-        ItemRegistration.ITEMS.register("attack_252_ev_capsule", () -> new EvMaximizerItem(StatsType.ATTACK, "item.pixelmon.attack_252_ev_capsule.success"));
-        ItemRegistration.ITEMS.register("defense_252_ev_capsule", () -> new EvMaximizerItem(StatsType.DEFENCE, "item.pixelmon.defense_252_ev_capsule.success"));
-        ItemRegistration.ITEMS.register("spatk_252_ev_capsule", () -> new EvMaximizerItem(StatsType.SPECIAL_ATTACK, "item.pixelmon.spatk_252_ev_capsule.success"));
-        ItemRegistration.ITEMS.register("spdef_252_ev_capsule", () -> new EvMaximizerItem(StatsType.SPECIAL_DEFENCE, "item.pixelmon.spdef_252_ev_capsule.success"));
-        ItemRegistration.ITEMS.register("speed_252_ev_capsule", () -> new EvMaximizerItem(StatsType.SPEED, "item.pixelmon.speed_252_ev_capsule.success"));
+        ItemRegistration.ITEMS.register("hp_252_ev_capsule", () -> new EvMaximizerItem(StatType.HP, "item.pixelmon.hp_252_ev_capsule.success"));
+        ItemRegistration.ITEMS.register("attack_252_ev_capsule", () -> new EvMaximizerItem(StatType.ATTACK, "item.pixelmon.attack_252_ev_capsule.success"));
+        ItemRegistration.ITEMS.register("defense_252_ev_capsule", () -> new EvMaximizerItem(PixelmonStatTypes.defence(), "item.pixelmon.defense_252_ev_capsule.success"));
+        ItemRegistration.ITEMS.register("spatk_252_ev_capsule", () -> new EvMaximizerItem(StatType.SPECIAL_ATTACK, "item.pixelmon.spatk_252_ev_capsule.success"));
+        ItemRegistration.ITEMS.register("spdef_252_ev_capsule", () -> new EvMaximizerItem(PixelmonStatTypes.specialDefence(), "item.pixelmon.spdef_252_ev_capsule.success"));
+        ItemRegistration.ITEMS.register("speed_252_ev_capsule", () -> new EvMaximizerItem(StatType.SPEED, "item.pixelmon.speed_252_ev_capsule.success"));
         ItemRegistration.ITEMS.register("ability_patch_remover", AbilityPatchRemoverItem::new);
 
         ITEMS.register("wild-egg", PokemonEggItem::new);
@@ -262,4 +263,3 @@ public class HellasForms {
         FormsFeaturesCommand.register(event.getDispatcher(), infoConfig);
     }
 }
-import com.pixelmonmod.pixelmon.api.pokemon.stats.StatsType;
