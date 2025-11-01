@@ -7,6 +7,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Locale;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Utility helpers for resolving Pixelmon stat enum constants across multiple API versions.
@@ -18,48 +20,49 @@ import java.util.Locale;
  */
 public final class PixelmonStatTypes {
 
-    private static final Class<? extends Enum<?>> STAT_ENUM_CLASS = locateStatEnum();
-    private static final Enum<?> HP = resolve("HP");
-    private static final Enum<?> ATTACK = resolve("ATTACK");
-    private static final Enum<?> DEFENCE = resolve("DEFENCE", "DEFENSE");
-    private static final Enum<?> SPECIAL_ATTACK = resolve("SPECIAL_ATTACK", "SP_ATTACK");
-    private static final Enum<?> SPECIAL_DEFENCE = resolve("SPECIAL_DEFENCE", "SPECIAL_DEFENSE", "SP_DEFENSE");
-    private static final Enum<?> SPEED = resolve("SPEED");
+    private static final String[] CANDIDATES = {
+            "com.pixelmonmod.pixelmon.api.pokemon.stats.BattleStatsType",
+            "com.pixelmonmod.pixelmon.enums.stats.BattleStatsType",
+            "com.pixelmonmod.pixelmon.api.stats.BattleStatsType"
+    };
 
-    private static final Method EV_GET_STAT = locateStatGetter(EVStore.class, "getStat");
-    private static final MethodWithOrder EV_SET_STAT = locateStatSetter(EVStore.class, "setStat");
-    private static final MethodWithOrder IV_SET_STAT = locateStatSetter(IVStore.class, "setStat");
+    private static final Map<String, Enum<?>> CACHE = new ConcurrentHashMap<>();
+
+    private static volatile Class<? extends Enum<?>> battleEnum;
+    private static volatile Method evGetStat;
+    private static volatile MethodWithOrder evSetStat;
+    private static volatile MethodWithOrder ivSetStat;
 
     private PixelmonStatTypes() {
     }
 
     public static Enum<?> hp() {
-        return HP;
+        return resolve("HP");
     }
 
     public static Enum<?> attack() {
-        return ATTACK;
+        return resolve("ATTACK");
     }
 
     public static Enum<?> defence() {
-        return DEFENCE;
+        return resolve("DEFENCE", "DEFENSE");
     }
 
     public static Enum<?> specialAttack() {
-        return SPECIAL_ATTACK;
+        return resolve("SPECIAL_ATTACK", "SP_ATTACK");
     }
 
     public static Enum<?> specialDefence() {
-        return SPECIAL_DEFENCE;
+        return resolve("SPECIAL_DEFENCE", "SPECIAL_DEFENSE", "SP_DEFENSE");
     }
 
     public static Enum<?> speed() {
-        return SPEED;
+        return resolve("SPEED");
     }
 
     public static int getEV(EVStore store, Enum<?> stat) {
         try {
-            Object value = EV_GET_STAT.invoke(store, stat);
+            Object value = evGetStatMethod().invoke(store, stat);
             return ((Number) value).intValue();
         } catch (IllegalAccessException | InvocationTargetException e) {
             throw new IllegalStateException("Unable to read EV stat using Pixelmon API", e);
@@ -67,50 +70,105 @@ public final class PixelmonStatTypes {
     }
 
     public static void setEV(EVStore store, Enum<?> stat, int value) {
-        invokeSetter(EV_SET_STAT, store, stat, value, "EV");
+        invokeSetter(evSetStatMethod(), store, stat, value, "EV");
     }
 
     public static void setIV(IVStore store, Enum<?> stat, int value) {
-        invokeSetter(IV_SET_STAT, store, stat, value, "IV");
+        invokeSetter(ivSetStatMethod(), store, stat, value, "IV");
     }
 
     public static Enum<?> resolve(String... candidates) {
         for (String candidate : candidates) {
             try {
-                @SuppressWarnings({"unchecked", "rawtypes"})
-                Enum<?> value = Enum.valueOf((Class) STAT_ENUM_CLASS, candidate.toUpperCase(Locale.ROOT));
-                return value;
+                return battleStatByName(candidate);
             } catch (IllegalArgumentException ignored) {
             }
         }
         throw new IllegalArgumentException("Unable to resolve Pixelmon stat for candidates " + Arrays.toString(candidates));
     }
 
-    private static Class<? extends Enum<?>> locateStatEnum() {
-        for (String className : new String[]{
-                "com.pixelmonmod.pixelmon.api.pokemon.stats.StatsType",
-                "com.pixelmonmod.pixelmon.api.pokemon.stats.StatType"
-        }) {
-            try {
-                Class<?> clazz = Class.forName(className);
-                if (Enum.class.isAssignableFrom(clazz)) {
-                    @SuppressWarnings("unchecked")
-                    Class<? extends Enum<?>> enumClass = (Class<? extends Enum<?>>) clazz;
-                    return enumClass;
-                }
-            } catch (ClassNotFoundException ignored) {
-            }
-        }
-        throw new IllegalStateException("Unable to locate Pixelmon stat enum class");
+    public static Enum<?> battleStatByName(String name) {
+        String key = name.toUpperCase(Locale.ROOT);
+        return CACHE.computeIfAbsent(key, k -> {
+            @SuppressWarnings({"unchecked", "rawtypes"})
+            Enum<?> value = Enum.valueOf((Class) battleEnum(), k);
+            return value;
+        });
     }
 
-    private static Method locateStatGetter(Class<?> type, String name) {
+    private static Class<? extends Enum<?>> battleEnum() {
+        Class<? extends Enum<?>> current = battleEnum;
+        if (current != null) {
+            return current;
+        }
+        synchronized (PixelmonStatTypes.class) {
+            if (battleEnum != null) {
+                return battleEnum;
+            }
+            for (String fqcn : CANDIDATES) {
+                try {
+                    @SuppressWarnings("unchecked")
+                    Class<? extends Enum<?>> found = (Class<? extends Enum<?>>) Class.forName(fqcn);
+                    return battleEnum = found;
+                } catch (ClassNotFoundException ignore) {
+                }
+            }
+            throw new IllegalStateException("Unable to locate Pixelmon BattleStatsType enum");
+        }
+    }
+
+    private static Method evGetStatMethod() {
+        Method current = evGetStat;
+        if (current != null) {
+            return current;
+        }
+        synchronized (PixelmonStatTypes.class) {
+            if (evGetStat != null) {
+                return evGetStat;
+            }
+            Method located = locateStatGetter(EVStore.class, "getStat", battleEnum());
+            evGetStat = located;
+            return located;
+        }
+    }
+
+    private static MethodWithOrder evSetStatMethod() {
+        MethodWithOrder current = evSetStat;
+        if (current != null) {
+            return current;
+        }
+        synchronized (PixelmonStatTypes.class) {
+            if (evSetStat != null) {
+                return evSetStat;
+            }
+            MethodWithOrder located = locateStatSetter(EVStore.class, "setStat", battleEnum());
+            evSetStat = located;
+            return located;
+        }
+    }
+
+    private static MethodWithOrder ivSetStatMethod() {
+        MethodWithOrder current = ivSetStat;
+        if (current != null) {
+            return current;
+        }
+        synchronized (PixelmonStatTypes.class) {
+            if (ivSetStat != null) {
+                return ivSetStat;
+            }
+            MethodWithOrder located = locateStatSetter(IVStore.class, "setStat", battleEnum());
+            ivSetStat = located;
+            return located;
+        }
+    }
+
+    private static Method locateStatGetter(Class<?> type, String name, Class<? extends Enum<?>> enumClass) {
         for (Method method : type.getMethods()) {
             if (!method.getName().equals(name)) {
                 continue;
             }
             Class<?>[] parameterTypes = method.getParameterTypes();
-            if (parameterTypes.length == 1 && parameterTypes[0].getName().equals(STAT_ENUM_CLASS.getName())) {
+            if (parameterTypes.length == 1 && parameterTypes[0].getName().equals(enumClass.getName())) {
                 method.setAccessible(true);
                 return method;
             }
@@ -118,7 +176,7 @@ public final class PixelmonStatTypes {
         throw new IllegalStateException("Unable to locate stat getter method '" + name + "' on " + type.getName());
     }
 
-    private static MethodWithOrder locateStatSetter(Class<?> type, String name) {
+    private static MethodWithOrder locateStatSetter(Class<?> type, String name, Class<? extends Enum<?>> enumClass) {
         for (Method method : type.getMethods()) {
             if (!method.getName().equals(name)) {
                 continue;
@@ -127,8 +185,8 @@ public final class PixelmonStatTypes {
             if (parameterTypes.length != 2) {
                 continue;
             }
-            boolean enumFirst = parameterTypes[0].getName().equals(STAT_ENUM_CLASS.getName()) && parameterTypes[1] == int.class;
-            boolean enumSecond = parameterTypes[1].getName().equals(STAT_ENUM_CLASS.getName()) && parameterTypes[0] == int.class;
+            boolean enumFirst = parameterTypes[0].getName().equals(enumClass.getName()) && parameterTypes[1] == int.class;
+            boolean enumSecond = parameterTypes[1].getName().equals(enumClass.getName()) && parameterTypes[0] == int.class;
             if (enumFirst || enumSecond) {
                 method.setAccessible(true);
                 return new MethodWithOrder(method, enumSecond);
