@@ -1,6 +1,6 @@
 {
   "parent": "pixelmon:item/pixelmon_item",
   "textures": {
-    "layer0": "pixelmon:items/medicine/carbos"
+    "layer0": "hellasforms:item/consumables/spd_252_ev_capsule"
   }
 }

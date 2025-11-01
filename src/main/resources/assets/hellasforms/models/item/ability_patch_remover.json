@@ -1,6 +1,6 @@
 {
   "parent": "pixelmon:item/pixelmon_item",
   "textures": {
-    "layer0": "pixelmon:items/medicine/ability_patch"
+    "layer0": "hellasforms:item/consumables/ability_patch_remover"
   }
 }
