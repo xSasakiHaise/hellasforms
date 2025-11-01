@@ -40,7 +40,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.xsasakihaise.hellascontrol.api.sidemods.HellasAPIControlForms;
 import com.xsasakihaise.hellasforms.HellasFormsInfoConfig;
-import com.xsasakihaise.hellasforms.util.PixelmonStatTypes;
+import java.util.function.Supplier;
 
 @Mod("hellasforms")
 public class HellasForms {
@@ -74,82 +74,6 @@ public class HellasForms {
             DebuggingHooks.runWithTracing(LogFlag.CONFIG, "initializeInfoConfig", LOGGER, () -> {
                 infoConfig = new HellasFormsInfoConfig();
                 infoConfig.loadDefaultsFromResource();
-            });
-
-            DebuggingHooks.runWithTracing(LogFlag.BATTLES, "registerBattleEffectAdapters", LOGGER, () -> {
-                EffectTypeAdapter.EFFECTS.put("ColonySwarm", ColonySwarm.class);
-                EffectTypeAdapter.EFFECTS.put("Corrode", Corrode.class);
-                EffectTypeAdapter.EFFECTS.put("GreekFire", GreekFire.class);
-                EffectTypeAdapter.EFFECTS.put("HitchKick", HitchKick.class);
-                EffectTypeAdapter.EFFECTS.put("PlasmaFangs", PlasmaFangs.class);
-                EffectTypeAdapter.EFFECTS.put("RabidClaw", RabidClaw.class);
-                EffectTypeAdapter.EFFECTS.put("PlasmaVeil", PlasmaVeil.class);
-
-                EffectTypeAdapter.EFFECTS.put("RadiantEnergy", RadiantEnergy.class);
-                EffectTypeAdapter.EFFECTS.put("BleedingJaw", BleedingJaw.class);
-                EffectTypeAdapter.EFFECTS.put("Shatterstorm", Shatterstorm.class);
-                EffectTypeAdapter.EFFECTS.put("SnowstormFury", SnowstormFury.class);
-                EffectTypeAdapter.EFFECTS.put("Afterburner", Afterburner.class);
-                EffectTypeAdapter.EFFECTS.put("VenomAmbush", VenomAmbush.class);
-                EffectTypeAdapter.EFFECTS.put("DC", DC.class);
-                EffectTypeAdapter.EFFECTS.put("PhotonDarts", PhotonDarts.class);
-                EffectTypeAdapter.EFFECTS.put("SurgeBurrow", SurgeBurrow.class);
-
-                EffectTypeAdapter.EFFECTS.put("TiroFinale", TiroFinale.class);
-                EffectTypeAdapter.EFFECTS.put("AuroraInfernalis", AuroraInfernalis.class);
-                EffectTypeAdapter.EFFECTS.put("StingingNettle", StingingNettle.class);
-                EffectTypeAdapter.EFFECTS.put("PetalBurst", PetalBurst.class);
-                EffectTypeAdapter.EFFECTS.put("Purification", Purification.class);
-                EffectTypeAdapter.EFFECTS.put("Thermodynamics", Thermodynamics.class);
-                EffectTypeAdapter.EFFECTS.put("IcyImmolation", IcyImmolation.class);
-            });
-
-            DebuggingHooks.runWithTracing(LogFlag.ITEMS, "registerPixelmonItems", LOGGER, () -> {
-                ItemRegistration.ITEMS.register("eeveeolite", EeveeoliteItem::new);
-
-                ItemRegistration.ITEMS.register("diancite-hellas", () -> new MegaStoneItem("diancie form:hellas"));
-                ItemRegistration.ITEMS.register("sceptilite-hellas", () -> new MegaStoneItem("sceptile form:hellas"));
-                ItemRegistration.ITEMS.register("gyaradosite-hellas", () -> new MegaStoneItem("gyarados form:hellas"));
-                ItemRegistration.ITEMS.register("tyranitarite-hellas", () -> new MegaStoneItem("tyranitar form:hellas"));
-                ItemRegistration.ITEMS.register("gardevoirite-hellas", () -> new MegaStoneItem("gardevoir form:hellas"));
-                ItemRegistration.ITEMS.register("garchompite-hellas", () -> new MegaStoneItem("garchomp form:hellas"));
-                ItemRegistration.ITEMS.register("galladeite-hellas", () -> new MegaStoneItem("gallade form:hellas"));
-                ItemRegistration.ITEMS.register("samurottite-hellas", () -> new MegaStoneItem("samurott form:hellas"));
-                ItemRegistration.ITEMS.register("centiskorchite-hellas", () -> new MegaStoneItem("centiskorch form:hellas"));
-                ItemRegistration.ITEMS.register("aegislashite-hellas", () -> new MegaStoneItem("aegislash form:hellas"));
-                ItemRegistration.ITEMS.register("goodrite-hellas", () -> new MegaStoneItem("goodra form:hellas"));
-
-                ItemRegistration.ITEMS.register("bug_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("dark_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("dragon_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("electric_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("fairy_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("fighting_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("fire_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("flying_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("ghost_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("grass_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("ground_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("ice_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("normal_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("poison_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("psychic_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("rock_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("steel_badge_hellas", BadgeItem::new);
-                ItemRegistration.ITEMS.register("water_badge_hellas", BadgeItem::new);
-
-                ItemRegistration.ITEMS.register("rusted_bottle_cap", RustedBottleCapItem::new);
-                ItemRegistration.ITEMS.register("exp_candy_xxl", () -> new ExperienceCandyItem(60000, "item.pixelmon.exp_candy_xxl.success"));
-                ItemRegistration.ITEMS.register("exp_candy_xxxl", () -> new ExperienceCandyItem(120000, "item.pixelmon.exp_candy_xxxl.success"));
-                ItemRegistration.ITEMS.register("hp_252_ev_capsule", () -> new EvMaximizerItem(PixelmonStatTypes.hp(), "item.pixelmon.hp_252_ev_capsule.success"));
-                ItemRegistration.ITEMS.register("attack_252_ev_capsule", () -> new EvMaximizerItem(PixelmonStatTypes.attack(), "item.pixelmon.attack_252_ev_capsule.success"));
-                ItemRegistration.ITEMS.register("defense_252_ev_capsule", () -> new EvMaximizerItem(PixelmonStatTypes.defence(), "item.pixelmon.defense_252_ev_capsule.success"));
-                ItemRegistration.ITEMS.register("spatk_252_ev_capsule", () -> new EvMaximizerItem(PixelmonStatTypes.specialAttack(), "item.pixelmon.spatk_252_ev_capsule.success"));
-                ItemRegistration.ITEMS.register("spdef_252_ev_capsule", () -> new EvMaximizerItem(PixelmonStatTypes.specialDefence(), "item.pixelmon.spdef_252_ev_capsule.success"));
-                ItemRegistration.ITEMS.register("speed_252_ev_capsule", () -> new EvMaximizerItem(PixelmonStatTypes.speed(), "item.pixelmon.speed_252_ev_capsule.success"));
-                ItemRegistration.ITEMS.register("ability_patch_remover", AbilityPatchRemoverItem::new);
-                ItemRegistration.ITEMS.register("hellas_coupon", QuestItem::new);
-                ItemRegistration.ITEMS.register("deck-of-many-mons", QuestItem::new);
             });
 
             DebuggingHooks.runWithTracing(LogFlag.ITEMS, "registerHellasItems", LOGGER, () -> {
@@ -238,8 +162,13 @@ public class HellasForms {
     }
 
     private void setup(FMLCommonSetupEvent event) {
-        DebuggingHooks.runWithTracing(LogFlag.CORE, "setup(FMLCommonSetupEvent)", LOGGER, () ->
-                LOGGER.info("{} Loaded HellasForms (hopefully XD)", LogFlag.CORE.format()));
+        DebuggingHooks.runWithTracing(LogFlag.CORE, "setup(FMLCommonSetupEvent)", LOGGER, () -> {
+            LOGGER.info("{} Loaded HellasForms (hopefully XD)", LogFlag.CORE.format());
+            event.enqueueWork(() -> {
+                DebuggingHooks.runWithTracing(LogFlag.BATTLES, "registerBattleEffectAdapters", LOGGER, this::registerBattleEffectAdapters);
+                DebuggingHooks.runWithTracing(LogFlag.ITEMS, "registerPixelmonItems", LOGGER, this::registerPixelmonItems);
+            });
+        });
     }
 
     @SubscribeEvent
@@ -284,6 +213,98 @@ public class HellasForms {
         DebuggingHooks.runWithTracing(LogFlag.CORE, "clientSetup(FMLClientSetupEvent)", LOGGER, () -> {
             // Intentionally blank hook for future use
         });
+    }
+
+    private void registerBattleEffectAdapters() {
+        registerEffectAdapter("ColonySwarm", ColonySwarm.class);
+        registerEffectAdapter("Corrode", Corrode.class);
+        registerEffectAdapter("GreekFire", GreekFire.class);
+        registerEffectAdapter("HitchKick", HitchKick.class);
+        registerEffectAdapter("PlasmaFangs", PlasmaFangs.class);
+        registerEffectAdapter("RabidClaw", RabidClaw.class);
+        registerEffectAdapter("PlasmaVeil", PlasmaVeil.class);
+
+        registerEffectAdapter("RadiantEnergy", RadiantEnergy.class);
+        registerEffectAdapter("BleedingJaw", BleedingJaw.class);
+        registerEffectAdapter("Shatterstorm", Shatterstorm.class);
+        registerEffectAdapter("SnowstormFury", SnowstormFury.class);
+        registerEffectAdapter("Afterburner", Afterburner.class);
+        registerEffectAdapter("VenomAmbush", VenomAmbush.class);
+        registerEffectAdapter("DC", DC.class);
+        registerEffectAdapter("PhotonDarts", PhotonDarts.class);
+        registerEffectAdapter("SurgeBurrow", SurgeBurrow.class);
+
+        registerEffectAdapter("TiroFinale", TiroFinale.class);
+        registerEffectAdapter("AuroraInfernalis", AuroraInfernalis.class);
+        registerEffectAdapter("StingingNettle", StingingNettle.class);
+        registerEffectAdapter("PetalBurst", PetalBurst.class);
+        registerEffectAdapter("Purification", Purification.class);
+        registerEffectAdapter("Thermodynamics", Thermodynamics.class);
+        registerEffectAdapter("IcyImmolation", IcyImmolation.class);
+    }
+
+    private void registerPixelmonItems() {
+        registerPixelmonItem("eeveeolite", EeveeoliteItem::new);
+
+        registerPixelmonItem("diancite-hellas", () -> new MegaStoneItem("diancie form:hellas"));
+        registerPixelmonItem("sceptilite-hellas", () -> new MegaStoneItem("sceptile form:hellas"));
+        registerPixelmonItem("gyaradosite-hellas", () -> new MegaStoneItem("gyarados form:hellas"));
+        registerPixelmonItem("tyranitarite-hellas", () -> new MegaStoneItem("tyranitar form:hellas"));
+        registerPixelmonItem("gardevoirite-hellas", () -> new MegaStoneItem("gardevoir form:hellas"));
+        registerPixelmonItem("garchompite-hellas", () -> new MegaStoneItem("garchomp form:hellas"));
+        registerPixelmonItem("galladeite-hellas", () -> new MegaStoneItem("gallade form:hellas"));
+        registerPixelmonItem("samurottite-hellas", () -> new MegaStoneItem("samurott form:hellas"));
+        registerPixelmonItem("centiskorchite-hellas", () -> new MegaStoneItem("centiskorch form:hellas"));
+        registerPixelmonItem("aegislashite-hellas", () -> new MegaStoneItem("aegislash form:hellas"));
+        registerPixelmonItem("goodrite-hellas", () -> new MegaStoneItem("goodra form:hellas"));
+
+        registerPixelmonItem("bug_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("dark_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("dragon_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("electric_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("fairy_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("fighting_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("fire_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("flying_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("ghost_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("grass_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("ground_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("ice_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("normal_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("poison_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("psychic_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("rock_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("steel_badge_hellas", BadgeItem::new);
+        registerPixelmonItem("water_badge_hellas", BadgeItem::new);
+
+        registerPixelmonItem("rusted_bottle_cap", RustedBottleCapItem::new);
+        registerPixelmonItem("exp_candy_xxl", () -> new ExperienceCandyItem(60000, "item.pixelmon.exp_candy_xxl.success"));
+        registerPixelmonItem("exp_candy_xxxl", () -> new ExperienceCandyItem(120000, "item.pixelmon.exp_candy_xxxl.success"));
+        registerPixelmonItem("hp_252_ev_capsule", () -> new EvMaximizerItem("item.pixelmon.hp_252_ev_capsule.success", "HP"));
+        registerPixelmonItem("attack_252_ev_capsule", () -> new EvMaximizerItem("item.pixelmon.attack_252_ev_capsule.success", "ATTACK"));
+        registerPixelmonItem("defense_252_ev_capsule", () -> new EvMaximizerItem("item.pixelmon.defense_252_ev_capsule.success", "DEFENCE", "DEFENSE"));
+        registerPixelmonItem("spatk_252_ev_capsule", () -> new EvMaximizerItem("item.pixelmon.spatk_252_ev_capsule.success", "SPECIAL_ATTACK", "SP_ATTACK"));
+        registerPixelmonItem("spdef_252_ev_capsule", () -> new EvMaximizerItem("item.pixelmon.spdef_252_ev_capsule.success", "SPECIAL_DEFENCE", "SPECIAL_DEFENSE", "SP_DEFENSE"));
+        registerPixelmonItem("speed_252_ev_capsule", () -> new EvMaximizerItem("item.pixelmon.speed_252_ev_capsule.success", "SPEED"));
+        registerPixelmonItem("ability_patch_remover", AbilityPatchRemoverItem::new);
+        registerPixelmonItem("hellas_coupon", QuestItem::new);
+        registerPixelmonItem("deck-of-many-mons", QuestItem::new);
+    }
+
+    private void registerEffectAdapter(String key, Class<? extends EffectBase> adapterClass) {
+        try {
+            EffectTypeAdapter.EFFECTS.put(key, adapterClass);
+        } catch (Exception ex) {
+            LOGGER.error("Failed to register battle effect {}", key, ex);
+        }
+    }
+
+    private void registerPixelmonItem(String id, Supplier<? extends Item> supplier) {
+        try {
+            ItemRegistration.ITEMS.register(id, supplier);
+        } catch (Exception ex) {
+            LOGGER.error("Failed to register Pixelmon item {}", id, ex);
+        }
     }
 
     private void onRegisterCommands(RegisterCommandsEvent event) {
