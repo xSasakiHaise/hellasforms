@@ -1,19 +1,19 @@
 package com.xsasakihaise.hellasforms.items.consumables;
 
 import com.pixelmonmod.pixelmon.api.pokemon.Pokemon;
+import com.pixelmonmod.pixelmon.api.pokemon.stats.BattleStatsType;
 import com.pixelmonmod.pixelmon.api.pokemon.stats.EVStore;
 import com.pixelmonmod.pixelmon.entities.pixelmon.PixelmonEntity;
-import com.xsasakihaise.hellasforms.util.PixelmonStatTypes;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 
 public class EvMaximizerItem extends PokemonInteractItem {
-    private final Enum<?> targetStat;
+    private final BattleStatsType targetStat;
     private final String successTranslation;
 
-    public EvMaximizerItem(Enum<?> targetStat, String successTranslation) {
+    public EvMaximizerItem(BattleStatsType targetStat, String successTranslation) {
         this.targetStat = targetStat;
         this.successTranslation = successTranslation;
     }
@@ -21,12 +21,12 @@ public class EvMaximizerItem extends PokemonInteractItem {
     @Override
     protected boolean applyEffect(PlayerEntity player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
         EVStore evStore = pokemon.getEVs();
-        int current = PixelmonStatTypes.getEV(evStore, targetStat);
+        int current = evStore.getStat(targetStat);
         if (current >= 252) {
             return false;
         }
 
-        PixelmonStatTypes.setEV(evStore, targetStat, 252);
+        evStore.setStat(targetStat, 252);
         pokemon.markDirty();
         return true;
     }
