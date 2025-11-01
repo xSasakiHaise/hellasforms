@@ -1,6 +1,6 @@
 {
   "parent": "pixelmon:item/pixelmon_item",
   "textures": {
-    "layer0": "hellasforms:item/consumables/spd_252_ev_capsule"
+    "layer0": "pixelmon:item/questitems/atk_252_ev_capsule"
   }
 }
