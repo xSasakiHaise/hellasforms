@@ -1,6 +1,6 @@
 {
   "parent": "pixelmon:item/pixelmon_item",
   "textures": {
-    "layer0": "pixelmon:items/medicine/exp_candy_xl"
+    "layer0": "hellasforms:item/consumables/exp_candy_xxxl"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "pixelmon:item/pixelmon_item",
   "textures": {
-    "layer0": "pixelmon:items/medicine/hp_up"
+    "layer0": "hellasforms:item/consumables/hp_252_ev_capsule"
   }
 }
