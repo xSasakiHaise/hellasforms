@@ -88,7 +88,7 @@ dependencies {
     compileOnly files('C:/Users/raehr/Documents/Hellas/HellasControl/build/libs/hellascontrol-1.0.0.jar')
     minecraft "net.minecraftforge:forge:1.16.5-36.2.42"
 
-    implementation files('libs/Pixelmon-1.16.5-9.1.13-universal.jar')
+    implementation fg.deobf("pixelmon:Pixelmon-1.16.5-9.1.12-universal:9.1.12")
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.0'
 
 }
