@@ -11,20 +11,21 @@ import net.minecraft.util.text.TranslationTextComponent;
 import java.util.Random;
 
 public class RustedBottleCapItem extends PokemonInteractItem {
-    private static final Enum<?>[] BATTLE_STATS = new Enum[]{
-            PixelmonStatTypes.hp(),
-            PixelmonStatTypes.attack(),
-            PixelmonStatTypes.defence(),
-            PixelmonStatTypes.specialAttack(),
-            PixelmonStatTypes.specialDefence(),
-            PixelmonStatTypes.speed()
+    private static final String[][] STAT_CANDIDATES = new String[][]{
+            {"HP"},
+            {"ATTACK"},
+            {"DEFENCE", "DEFENSE"},
+            {"SPECIAL_ATTACK", "SP_ATTACK"},
+            {"SPECIAL_DEFENCE", "SPECIAL_DEFENSE", "SP_DEFENSE"},
+            {"SPEED"}
     };
 
     private final Random random = new Random();
 
     @Override
     protected boolean applyEffect(PlayerEntity player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
-        Enum<?> chosen = BATTLE_STATS[random.nextInt(BATTLE_STATS.length)];
+        String[] candidates = STAT_CANDIDATES[random.nextInt(STAT_CANDIDATES.length)];
+        Enum<?> chosen = PixelmonStatTypes.resolve(candidates);
         PixelmonStatTypes.setIV(pokemon.getIVs(), chosen, 0);
         pokemon.markDirty();
         return true;

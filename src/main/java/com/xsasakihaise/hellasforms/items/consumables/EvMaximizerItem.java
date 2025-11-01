@@ -10,16 +10,17 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 
 public class EvMaximizerItem extends PokemonInteractItem {
-    private final Enum<?> targetStat;
     private final String successTranslation;
+    private final String[] statCandidates;
 
-    public EvMaximizerItem(Enum<?> targetStat, String successTranslation) {
-        this.targetStat = targetStat;
+    public EvMaximizerItem(String successTranslation, String... statCandidates) {
         this.successTranslation = successTranslation;
+        this.statCandidates = statCandidates.clone();
     }
 
     @Override
     protected boolean applyEffect(PlayerEntity player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
+        Enum<?> targetStat = PixelmonStatTypes.resolve(statCandidates);
         EVStore evStore = pokemon.getEVs();
         int current = PixelmonStatTypes.getEV(evStore, targetStat);
         if (current >= 252) {
