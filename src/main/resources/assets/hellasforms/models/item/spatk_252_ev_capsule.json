@@ -1,6 +1,6 @@
 {
   "parent": "pixelmon:item/pixelmon_item",
   "textures": {
-    "layer0": "pixelmon:items/medicine/calcium"
+    "layer0": "hellasforms:item/consumables/spatk_252_ev_capsule"
   }
 }

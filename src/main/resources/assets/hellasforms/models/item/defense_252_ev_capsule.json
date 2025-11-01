@@ -1,6 +1,6 @@
 {
   "parent": "pixelmon:item/pixelmon_item",
   "textures": {
-    "layer0": "pixelmon:items/medicine/iron"
+    "layer0": "hellasforms:item/consumables/def_252_ev_capsule"
   }
 }
