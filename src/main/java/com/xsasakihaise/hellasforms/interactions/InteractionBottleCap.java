@@ -11,6 +11,10 @@ import com.pixelmonmod.pixelmon.comm.packetHandlers.OpenScreenPacket;
 import com.pixelmonmod.pixelmon.entities.pixelmon.PixelmonEntity;
 import com.pixelmonmod.pixelmon.enums.EnumGuiScreen;
 import com.pixelmonmod.pixelmon.items.BottlecapItem;
+import com.xsasakihaise.hellasforms.HellasForms;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.UUID;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
@@ -19,11 +23,12 @@ public class InteractionBottleCap implements IInteraction {
 
     @Override
     public boolean processInteract(PixelmonEntity pixelmon, PlayerEntity player, Hand hand, ItemStack stack) {
-        if (player.world.isRemote || hand == Hand.OFF_HAND || !(stack.getItem() instanceof BottlecapItem)) {
+        if (player.level.isClientSide || hand == Hand.OFF_HAND || !(stack.getItem() instanceof BottlecapItem)) {
             return false;
         }
         final Pokemon mon = pixelmon.getPokemon();
-        if (mon.getOwnerUUID() == null || !mon.getOwnerUUID().equals(player.getUniqueID())) {
+        final UUID ownerUuid = getOwnerUUID(mon);
+        if (ownerUuid == null || !ownerUuid.equals(player.getUUID())) {
             return false;
         }
         if (mon.getPokemonLevel() < 50) {
@@ -55,7 +60,7 @@ public class InteractionBottleCap implements IInteraction {
             BattleStatsType t = types[i];
             screenData[i] = (!ivs.isHyperTrained(t) && ivs.getStat(t) != 31) ? getHTValue(t, mon) : 0;
         }
-        screenData[n] = pixelmon.getEntityId();
+        screenData[n] = pixelmon.getId();
 
         OpenScreenPacket.open(player, EnumGuiScreen.BottleCap, screenData);
         return true;
@@ -68,5 +73,32 @@ public class InteractionBottleCap implements IInteraction {
         int stat = pokemon.getStats().calculateStat(type, pokemon.getNature(), pokemon.getForm(), pokemon.getPokemonLevel());
         store.setHyperTrained(type, wasHT);
         return stat;
+    }
+
+    private static final Method OWNER_UUID_METHOD = resolveOwnerUuidAccessor();
+
+    private static Method resolveOwnerUuidAccessor() {
+        try {
+            return Pokemon.class.getMethod("getOwnerUUID");
+        } catch (final NoSuchMethodException primary) {
+            try {
+                return Pokemon.class.getMethod("getOwnerPlayerUUID");
+            } catch (final NoSuchMethodException fallback) {
+                HellasForms.LOGGER.error("Failed to find a compatible Pokemon owner UUID accessor", fallback);
+                return null;
+            }
+        }
+    }
+
+    private static UUID getOwnerUUID(final Pokemon pokemon) {
+        if (OWNER_UUID_METHOD == null) {
+            return null;
+        }
+        try {
+            return (UUID) OWNER_UUID_METHOD.invoke(pokemon);
+        } catch (final IllegalAccessException | InvocationTargetException e) {
+            HellasForms.LOGGER.error("Failed to invoke Pokemon owner UUID accessor", e);
+            return null;
+        }
     }
 }
