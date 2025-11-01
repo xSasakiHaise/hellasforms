@@ -31,7 +31,7 @@ Welcome to Hellas :)
 [[dependencies.hellasforms]]
     modId="pixelmon"
     mandatory=true
-    versionRange="[9.1.12,)"
+    versionRange="[9.1.12,9.1.14)"
     ordering="AFTER"
     side="BOTH"
 
@@ -43,8 +43,8 @@ Welcome to Hellas :)
     side="BOTH"
 
 [[dependencies.hellasforms]]
-modId="hellascontrol"
-mandatory=true
-versionRange="[1.0.0,)"
-ordering="NONE"
-side="BOTH"
+    modId="hellascontrol"
+    mandatory=true
+    versionRange="[1.0.0,)"
+    ordering="NONE"
+    side="BOTH"
