@@ -137,7 +137,6 @@ public class HellasForms {
                 ItemRegistration.ITEMS.register("rock_badge_hellas", BadgeItem::new);
                 ItemRegistration.ITEMS.register("steel_badge_hellas", BadgeItem::new);
                 ItemRegistration.ITEMS.register("water_badge_hellas", BadgeItem::new);
-
                 ItemRegistration.ITEMS.register("rusted_bottle_cap", RustedBottleCapItem::new);
                 ItemRegistration.ITEMS.register("exp_candy_xxl", () -> new ExperienceCandyItem(60000, "item.pixelmon.exp_candy_xxl.success"));
                 ItemRegistration.ITEMS.register("exp_candy_xxxl", () -> new ExperienceCandyItem(120000, "item.pixelmon.exp_candy_xxxl.success"));
@@ -148,6 +147,7 @@ public class HellasForms {
                 ItemRegistration.ITEMS.register("spdef_252_ev_capsule", () -> new EvMaximizerItem(BattleStatsType.SPECIAL_DEFENSE, "item.pixelmon.spdef_252_ev_capsule.success"));
                 ItemRegistration.ITEMS.register("speed_252_ev_capsule", () -> new EvMaximizerItem(BattleStatsType.SPEED, "item.pixelmon.speed_252_ev_capsule.success"));
                 ItemRegistration.ITEMS.register("ability_patch_remover", AbilityPatchRemoverItem::new);
+
                 ItemRegistration.ITEMS.register("hellas_coupon", QuestItem::new);
                 ItemRegistration.ITEMS.register("deck-of-many-mons", QuestItem::new);
             });
