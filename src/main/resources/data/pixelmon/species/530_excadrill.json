@@ -856,6 +856,7 @@
             {
               "name": "none",
               "texture": "hellasforms:pokemon/530_excadrill/all/base/hellas/texture.png",
+              "emissive": "hellasforms:pokemon/530_excadrill/all/base/hellas/emissive.png",
               "sprite": "hellasforms:pokemon/530_excadrill/all/base/hellas/sprite.png",
               "particle": "",
               "modelLocator": {
@@ -871,6 +872,7 @@
             {
               "name": "shiny",
               "texture": "hellasforms:pokemon/530_excadrill/all/base/hellasshiny/texture.png",
+              "emissive": "hellasforms:pokemon/530_excadrill/all/base/hellasshiny/emissive.png",
               "sprite": "hellasforms:pokemon/530_excadrill/all/base/hellasshiny/sprite.png",
               "particle": "arcanery:shiny"
             }
