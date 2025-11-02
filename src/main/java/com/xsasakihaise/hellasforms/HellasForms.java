@@ -138,8 +138,8 @@ public class HellasForms {
                 ItemRegistration.ITEMS.register("steel_badge_hellas", BadgeItem::new);
                 ItemRegistration.ITEMS.register("water_badge_hellas", BadgeItem::new);
                 ItemRegistration.ITEMS.register("rusted_bottle_cap", RustedBottleCapItem::new);
-                ItemRegistration.ITEMS.register("exp_candy_xxl", () -> new ExperienceCandyItem(60000, "item.pixelmon.exp_candy_xxl.success"));
-                ItemRegistration.ITEMS.register("exp_candy_xxxl", () -> new ExperienceCandyItem(120000, "item.pixelmon.exp_candy_xxxl.success"));
+                ItemRegistration.ITEMS.register("exp_candy_xxl", () -> new ExperienceCandyItem(100000, "item.pixelmon.exp_candy_xxl.success"));
+                ItemRegistration.ITEMS.register("exp_candy_xxxl", () -> new ExperienceCandyItem(350000, "item.pixelmon.exp_candy_xxxl.success"));
                 ItemRegistration.ITEMS.register("hp_252_ev_capsule", () -> new EvMaximizerItem(BattleStatsType.HP, "item.pixelmon.hp_252_ev_capsule.success"));
                 ItemRegistration.ITEMS.register("attack_252_ev_capsule", () -> new EvMaximizerItem(BattleStatsType.ATTACK, "item.pixelmon.attack_252_ev_capsule.success"));
                 ItemRegistration.ITEMS.register("defense_252_ev_capsule", () -> new EvMaximizerItem(BattleStatsType.DEFENSE, "item.pixelmon.defense_252_ev_capsule.success"));
