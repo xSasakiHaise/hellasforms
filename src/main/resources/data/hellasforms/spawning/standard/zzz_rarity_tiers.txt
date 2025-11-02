@@ -59,7 +59,7 @@ Rarity Tiers:
                 Blue
     Epic:
         Dreepy
-        Drillbur
+        Drilbur
         Gible
         Goomy
         Eevee

@@ -2,7 +2,7 @@
   "id": "Drilbur",
   "spawnInfos": [
     {
-      "spec": "species:Drilbur",
+      "spec": "species:Drilbur form:hellas",
       "stringLocationTypes": [
         "Underground"
       ],
@@ -17,7 +17,7 @@
           "ultra space"
         ]
       },
-      "rarity": 130.0
+      "rarity": 0.4
     }
   ]
 }
