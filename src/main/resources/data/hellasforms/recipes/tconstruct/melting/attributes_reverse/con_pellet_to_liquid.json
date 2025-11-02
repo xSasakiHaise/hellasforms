@@ -1,0 +1,7 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": { "item": "hellasforms:pellet_con" },
+  "result": { "fluid": "hellasforms:liquid_con", "amount": 2000 },
+  "temperature": 250,
+  "time": 160
+}

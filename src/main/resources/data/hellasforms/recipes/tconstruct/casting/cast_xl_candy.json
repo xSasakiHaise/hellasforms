@@ -1,0 +1,7 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": { "item": "hellasforms:candy_cast_xl", "consumed": false },
+  "fluid": { "name": "hellasforms:liquid_exp_candy", "amount": 300 },
+  "result": "pixelmon:exp_candy_xl",
+  "cooling_time": 160
+}

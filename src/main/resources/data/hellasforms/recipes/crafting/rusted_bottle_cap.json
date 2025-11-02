@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "pixelmon:silver_bottle_cap" },
+    { "item": "minecraft:water_bucket" }
+  ],
+  "result": { "item": "hellasforms:rusted_bottle_cap", "count": 1 }
+}

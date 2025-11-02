@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "pixelmon:exp_candy_m"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "tconstruct:molten_gold",
+    "amount": 144
+  },
+  "result": "hellasforms:candy_cast_m",
+  "cooling_time": 70
+}

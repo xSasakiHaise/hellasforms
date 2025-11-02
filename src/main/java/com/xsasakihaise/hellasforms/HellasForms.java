@@ -1,6 +1,8 @@
 package com.xsasakihaise.hellasforms;
 
 import net.minecraftforge.event.RegisterCommandsEvent;
+import com.xsasakihaise.hellasforms.candy.ModFluids;
+import com.xsasakihaise.hellasforms.candy.ModItems;
 import com.xsasakihaise.hellasforms.commands.FormsVersionCommand;
 import com.xsasakihaise.hellasforms.commands.FormsDependenciesCommand;
 import com.xsasakihaise.hellasforms.commands.FormsFeaturesCommand;
@@ -67,6 +69,8 @@ public class HellasForms {
             DebuggingHooks.runWithTracing(LogFlag.CORE, "registerLifecycleListeners", LOGGER, () -> {
                 IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
                 modEventBus.addListener(this::setup);
+                ModItems.register(modEventBus);
+                ModFluids.register(modEventBus);
                 MinecraftForge.EVENT_BUS.register(this);
                 MinecraftForge.EVENT_BUS.addListener(this::onRegisterCommands);
             });
@@ -150,6 +154,7 @@ public class HellasForms {
 
                 ItemRegistration.ITEMS.register("hellas_coupon", QuestItem::new);
                 ItemRegistration.ITEMS.register("deck-of-many-mons", QuestItem::new);
+                ItemRegistration.ITEMS.register("pg_token", QuestItem::new);
             });
 
             DebuggingHooks.runWithTracing(LogFlag.ITEMS, "registerHellasItems", LOGGER, () -> {

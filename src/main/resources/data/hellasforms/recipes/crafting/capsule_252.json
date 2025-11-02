@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PBP",
+    "PPP"
+  ],
+  "key": {
+    "P": { "tag": "hellasforms:pellets" },
+    "B": { "item": "minecraft:glass_bottle" }
+  },
+  "result": { "item": "hellasforms:capsule_252", "count": 1 }
+}
