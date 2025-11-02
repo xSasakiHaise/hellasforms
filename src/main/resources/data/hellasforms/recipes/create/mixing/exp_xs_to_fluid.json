@@ -1,0 +1,10 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "pixelmon:exp_candy_xs" }
+  ],
+  "results": [
+    { "fluid": "hellasforms:liquid_exp_candy", "amount": 1 }
+  ],
+  "heatRequirement": "heated"
+}

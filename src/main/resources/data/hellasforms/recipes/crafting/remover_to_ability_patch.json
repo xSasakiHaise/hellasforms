@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "hellasforms:ability_patch_remover" }
+  ],
+  "result": { "item": "pixelmon:ability_patch", "count": 1 }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": { "item": "pixelmon:exp_candy_xl" },
+  "result": { "fluid": "hellasforms:liquid_exp_candy", "amount": 300 },
+  "temperature": 300,
+  "time": 160
+}

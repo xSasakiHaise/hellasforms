@@ -1,0 +1,10 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "hellasforms:exp_candy_xxl" }
+  ],
+  "results": [
+    { "fluid": "hellasforms:liquid_exp_candy", "amount": 1000 }
+  ],
+  "heatRequirement": "heated"
+}

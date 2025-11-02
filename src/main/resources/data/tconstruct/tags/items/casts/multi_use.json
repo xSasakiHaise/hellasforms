@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "hellasforms:candy_cast_xs",
+    "hellasforms:candy_cast_s",
+    "hellasforms:candy_cast_m",
+    "hellasforms:candy_cast_l",
+    "hellasforms:candy_cast_xl",
+    "hellasforms:candy_cast_xxl",
+    "hellasforms:candy_cast_xxxl",
+    "hellasforms:pellet_cast"
+  ]
+}

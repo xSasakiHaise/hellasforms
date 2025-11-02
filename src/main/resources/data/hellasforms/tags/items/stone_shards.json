@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "pixelmon:fire_stone_shard",
+    "pixelmon:water_stone_shard",
+    "pixelmon:thunder_stone_shard",
+    "pixelmon:leaf_stone_shard",
+    "pixelmon:moon_stone_shard",
+    "pixelmon:sun_stone_shard",
+    "pixelmon:dawn_stone_shard",
+    "pixelmon:dusk_stone_shard",
+    "pixelmon:shiny_stone_shard",
+    "pixelmon:ice_stone_shard"
+  ]
+}
