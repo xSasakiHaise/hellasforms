@@ -1,0 +1,7 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": { "item": "hellasforms:exp_candy_xxxl" },
+  "result": { "fluid": "hellasforms:liquid_exp_candy", "amount": 3500 },
+  "temperature": 300,
+  "time": 240
+}

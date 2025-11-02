@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX",
+    "XX"
+  ],
+  "key": {
+    "X": { "item": "hellasforms:candy_cast_xs" }
+  },
+  "result": {
+    "item": "hellasforms:candy_cast_s",
+    "count": 1
+  }
+}

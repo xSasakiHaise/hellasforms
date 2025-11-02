@@ -1,0 +1,7 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": { "item": "hellasforms:pellet_cast", "consumed": false },
+  "fluid": { "name": "hellasforms:liquid_cha", "amount": 2000 },
+  "result": "hellasforms:pellet_cha",
+  "cooling_time": 200
+}

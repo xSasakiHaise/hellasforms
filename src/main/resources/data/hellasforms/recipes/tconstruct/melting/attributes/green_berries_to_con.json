@@ -1,0 +1,7 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": { "tag": "hellasforms:berries/green" },
+  "result": { "fluid": "hellasforms:liquid_con", "amount": 100 },
+  "temperature": 250,
+  "time": 80
+}

@@ -1,5 +1,5 @@
 {
-  "version": "2.6.1",
+  "version": "2.6.2",
   "dependencies": ["Required:","- Forge 36.2.42+", "- Pixelmon 9.1.13+", "Tinkers Construct 3.3.0+", "- HellasContol 1.0.0+", "Optional:", "- HellasPatcher", "- HellasDeck", "- HellasElo"],
   "features": ["- Hellasian Regional Forms", "- Hellasian Regional Abilities", "- Hellasian Regional Moves", "- Hellasian Themed Items", "- Hellasian Regional Form Skins", "And much more..."]
 }

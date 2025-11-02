@@ -1,0 +1,7 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": { "tag": "hellasforms:berries/purple" },
+  "result": { "fluid": "hellasforms:liquid_wis", "amount": 100 },
+  "temperature": 250,
+  "time": 80
+}
