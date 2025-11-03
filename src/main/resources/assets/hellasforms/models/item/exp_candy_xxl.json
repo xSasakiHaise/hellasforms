@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "pixelmon:item/questitems/exp_candy_xxl"
-  }
-}

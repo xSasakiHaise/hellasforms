@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PBP",
+    "PPP"
+  ],
+  "key": {
+    "P": { "tag": "hellasforms:pellets/spatk" },
+    "B": { "item": "minecraft:glass_bottle" }
+  },
+  "result": { "item": "pixelmon:spatk_252_ev_capsule", "count": 1 }
+}

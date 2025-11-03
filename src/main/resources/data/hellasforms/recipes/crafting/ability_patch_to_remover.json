@@ -3,5 +3,5 @@
   "ingredients": [
     { "item": "pixelmon:ability_patch" }
   ],
-  "result": { "item": "hellasforms:ability_patch_remover", "count": 1 }
+  "result": { "item": "pixelmon:ability_patch_remover", "count": 1 }
 }
