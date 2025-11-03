@@ -15,13 +15,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
 
 public class AbilityPatchRemoverItem extends PokemonInteractItem {
-    private final Random random = new Random();
-
     @Override
     protected boolean applyEffect(PlayerEntity player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
         List<AbilityOption> normalAbilities = resolveNormalAbilities(pokemon);
@@ -29,26 +27,20 @@ public class AbilityPatchRemoverItem extends PokemonInteractItem {
             return false;
         }
 
-        List<AbilityOption> candidateSlots = new ArrayList<>();
-        int currentSlot = pokemon.getAbilitySlot();
-        for (AbilityOption option : normalAbilities) {
-            if (option.ability != null && (normalAbilities.size() == 1 || option.slot != currentSlot)) {
-                candidateSlots.add(option);
-            }
-        }
-
-        if (candidateSlots.isEmpty()) {
+        boolean hasHiddenAbility = pokemon.hasHiddenAbility();
+        AbilityOption chosen = pickPrimaryAbility(normalAbilities);
+        if (chosen == null || chosen.ability == null) {
             return false;
         }
 
-        AbilityOption chosen = candidateSlots.get(random.nextInt(candidateSlots.size()));
-        Ability chosenAbility = chosen.ability;
-
-        if (chosenAbility == null) {
+        Ability currentAbility = pokemon.getAbility();
+        if (!hasHiddenAbility && abilityMatches(currentAbility, chosen.ability)
+                && pokemon.getAbilitySlot() == chosen.slot) {
             return false;
         }
 
-        pokemon.setAbility(chosenAbility);
+        pokemon.setAbility(chosen.ability);
+        recordAbilitySlot(pokemon, chosen);
         pokemon.setAbilitySlot(chosen.slot);
         pokemon.markDirty();
         return true;
@@ -99,7 +91,7 @@ public class AbilityPatchRemoverItem extends PokemonInteractItem {
             List<AbilityOption> options = new ArrayList<>(length);
             for (int i = 0; i < length; i++) {
                 Object value = Array.get(container, i);
-                if (value instanceof Ability) {
+                if (value instanceof Ability && !isHiddenSlotNumber(i)) {
                     options.add(new AbilityOption((Ability) value, i));
                 }
             }
@@ -128,6 +120,9 @@ public class AbilityPatchRemoverItem extends PokemonInteractItem {
             indexedGetter.setAccessible(true);
             List<AbilityOption> options = new ArrayList<>();
             for (int i = 0; i < 3; i++) {
+                if (isHiddenSlotNumber(i)) {
+                    continue;
+                }
                 Ability ability = (Ability) invokeMethod(container, indexedGetter, i);
                 if (ability != null) {
                     options.add(new AbilityOption(ability, i));
@@ -146,7 +141,9 @@ public class AbilityPatchRemoverItem extends PokemonInteractItem {
         int index = 0;
         for (Object item : collection) {
             if (item instanceof Ability) {
-                options.add(new AbilityOption((Ability) item, index));
+                if (!isHiddenSlotNumber(index)) {
+                    options.add(new AbilityOption((Ability) item, index));
+                }
             }
             index++;
         }
@@ -161,6 +158,9 @@ public class AbilityPatchRemoverItem extends PokemonInteractItem {
             }
 
             int slot = resolveSlot(entry.getKey(), options.size());
+            if (isHiddenSlotNumber(slot)) {
+                continue;
+            }
             Object value = entry.getValue();
             if (value instanceof Ability) {
                 options.add(new AbilityOption((Ability) value, slot));
@@ -168,7 +168,10 @@ public class AbilityPatchRemoverItem extends PokemonInteractItem {
                 int subSlot = slot;
                 for (Object inner : (Collection<?>) value) {
                     if (inner instanceof Ability) {
-                        options.add(new AbilityOption((Ability) inner, subSlot++));
+                        if (!isHiddenSlotNumber(subSlot)) {
+                            options.add(new AbilityOption((Ability) inner, subSlot));
+                        }
+                        subSlot++;
                     }
                 }
             } else if (value != null && value.getClass().isArray()) {
@@ -176,7 +179,10 @@ public class AbilityPatchRemoverItem extends PokemonInteractItem {
                 for (int i = 0; i < length; i++) {
                     Object element = Array.get(value, i);
                     if (element instanceof Ability) {
-                        options.add(new AbilityOption((Ability) element, slot + i));
+                        int resolvedSlot = slot + i;
+                        if (!isHiddenSlotNumber(resolvedSlot)) {
+                            options.add(new AbilityOption((Ability) element, resolvedSlot));
+                        }
                     }
                 }
             }
@@ -202,6 +208,33 @@ public class AbilityPatchRemoverItem extends PokemonInteractItem {
             return ((String) key).toUpperCase().contains("HIDDEN");
         }
         return false;
+    }
+
+    private boolean isHiddenSlotNumber(int slot) {
+        return slot >= 2;
+    }
+
+    private AbilityOption pickPrimaryAbility(List<AbilityOption> abilities) {
+        return abilities.stream()
+                .filter(option -> !isHiddenSlotNumber(option.slot))
+                .min(Comparator.comparingInt(option -> option.slot))
+                .orElse(null);
+    }
+
+    private boolean abilityMatches(Ability left, Ability right) {
+        if (left == null || right == null) {
+            return false;
+        }
+        String leftName = left.getName();
+        String rightName = right.getName();
+        return leftName != null && leftName.equals(rightName);
+    }
+
+    private void recordAbilitySlot(Pokemon pokemon, AbilityOption chosen) {
+        Method recorder = findMethod(pokemon.getClass(), "recordAbilitySlot", Ability.class);
+        if (recorder != null) {
+            invokeMethod(pokemon, recorder, chosen.ability);
+        }
     }
 
     private Object invokeMethod(Object target, String methodName, Object... args) {

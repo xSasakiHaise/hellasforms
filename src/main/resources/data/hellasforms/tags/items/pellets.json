@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "hellasforms:pellet_str",
-    "hellasforms:pellet_dex",
-    "hellasforms:pellet_con",
-    "hellasforms:pellet_int",
-    "hellasforms:pellet_wis",
-    "hellasforms:pellet_cha"
+    "#hellasforms:pellets/attack",
+    "#hellasforms:pellets/defense",
+    "#hellasforms:pellets/hp",
+    "#hellasforms:pellets/spatk",
+    "#hellasforms:pellets/spdef",
+    "#hellasforms:pellets/speed"
   ]
 }

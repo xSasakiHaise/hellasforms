@@ -6,8 +6,8 @@
     "PPP"
   ],
   "key": {
-    "P": { "tag": "hellasforms:pellets" },
+    "P": { "tag": "hellasforms:pellets/attack" },
     "B": { "item": "minecraft:glass_bottle" }
   },
-  "result": { "item": "hellasforms:capsule_252", "count": 1 }
+  "result": { "item": "pixelmon:attack_252_ev_capsule", "count": 1 }
 }

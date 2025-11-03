@@ -1,3 +1,0 @@
-hellasforms.effect.aurorainfernalis.burn.target
-hellasforms.effect.aurorainfernalis.burn.user
-hellasforms.effect.aurorainfernalis.raised

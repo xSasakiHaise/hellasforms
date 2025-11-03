@@ -22,11 +22,21 @@ public class EvMaximizerItem extends PokemonInteractItem {
     protected boolean applyEffect(PlayerEntity player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
         EVStore evStore = pokemon.getEVs();
         int current = evStore.getStat(targetStat);
-        if (current >= 252) {
+        if (current >= EVStore.MAX_EVS) {
             return false;
         }
 
-        evStore.setStat(targetStat, 252);
+        int total = 0;
+        for (BattleStatsType statType : BattleStatsType.getEVIVStatValues()) {
+            total += evStore.getStat(statType);
+        }
+
+        int newTotal = total - current + EVStore.MAX_EVS;
+        if (newTotal > EVStore.MAX_TOTAL_EVS) {
+            return false;
+        }
+
+        evStore.setStat(targetStat, EVStore.MAX_EVS);
         pokemon.markDirty();
         return true;
     }
