@@ -1,7 +1,7 @@
 {
   "type": "create:mixing",
   "ingredients": [
-    { "item": "pixelmon:exp_candy_xs" }
+    { "item": "pixelmon:xs_exp_candy" }
   ],
   "results": [
     { "fluid": "hellasforms:liquid_exp_candy", "amount": 1 }
