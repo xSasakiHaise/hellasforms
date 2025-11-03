@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AA ",
+    "AA ",
+    "   "
+  ],
+  "key": {
+    "A": { "item": "minecraft:iron_ingot" }
+  },
+  "result": {
+    "item": "pixelmon:poke_ball_lid",
+    "count": 1,
+    "nbt": "{PokeBallID:\"hellasforms:lunar_ball\"}"
+  }
+}
