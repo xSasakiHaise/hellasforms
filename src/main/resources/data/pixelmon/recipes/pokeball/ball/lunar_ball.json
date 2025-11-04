@@ -1,15 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "L  ",
-    " B ",
-    "  U"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pixelmon:poke_ball_lid",
+      "nbt": "{PokeBallID:\"hellasforms:lunar_ball\"}"
+    },
+    {
+      "item": "pixelmon:silver_base"
+    },
+    {
+      "item": "minecraft:stone_button"
+    }
   ],
-  "key": {
-    "L": { "item": "pixelmon:poke_ball_lid", "nbt": "{PokeBallID:\"hellasforms:lunar_ball\"}" },
-    "B": { "tag": "pixelmon:pokeball_bases" },
-    "U": { "item": "minecraft:stone_button" }
-  },
   "result": {
     "item": "pixelmon:poke_ball",
     "count": 1,
