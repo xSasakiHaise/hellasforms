@@ -40,6 +40,8 @@
     "item.pixelmon.ability_patch_remover": "Fähigkeitenpflaster-Entferner",
     "item.pixelmon.ability_patch_remover.tooltip": "Klicke mit der rechten Maustaste auf ein Pokémon, um seine Versteckte Fähigkeit zu entfernen und ihm eine zufällige Standardfähigkeit zu geben.",
     "item.pixelmon.ability_patch_remover.success": "%s hat seine Versteckte Fähigkeit abgelegt!",
+    "item.pixelmon.lunar_ball": "Lunarball",
+    "item.pixelmon.lunar_ball.tooltip": "Ein mit Mondlicht erfüllter Pokéball. Wirkt nachts am besten, besonders bei Vollmond.",
     "item.hellasforms.generic.no_effect": "%s wurde nicht beeinflusst.",
     "item.hellasforms.generic.ev_max": "Die EVs von %s sind für diesen Wert bereits am Maximum.",
     "item.hellasforms.generic.ability_fail": "%s kann seine aktuelle Fähigkeit nicht vergessen.",

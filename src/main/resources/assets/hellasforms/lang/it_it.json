@@ -40,6 +40,8 @@
     "item.pixelmon.ability_patch_remover": "Rimuovi-Cerotto Abilità",
     "item.pixelmon.ability_patch_remover.tooltip": "Fai clic destro su un Pokémon per rimuovere l'abilità speciale e dargli una abilità standard casuale.",
     "item.pixelmon.ability_patch_remover.success": "%s ha rinunciato alla sua abilità speciale!",
+    "item.pixelmon.lunar_ball": "Sfera Lunare",
+    "item.pixelmon.lunar_ball.tooltip": "Una Poké Ball intrisa di chiaro di luna. Funziona al meglio di notte, soprattutto con la luna piena.",
     "item.hellasforms.generic.no_effect": "%s non ne ha risentito.",
     "item.hellasforms.generic.ev_max": "Gli EV di %s sono già al massimo per quella statistica.",
     "item.hellasforms.generic.ability_fail": "%s non può dimenticare l'abilità attuale.",
