@@ -45,6 +45,8 @@
         "item.pixelmon.ability_patch_remover": "Ability Patch Remover",
         "item.pixelmon.ability_patch_remover.tooltip": "Right-click a Pokémon to strip its hidden ability and grant a random standard ability.",
         "item.pixelmon.ability_patch_remover.success": "%s let go of its hidden ability!",
+        "item.pixelmon.lunar_ball": "Lunar Ball",
+        "item.pixelmon.lunar_ball.tooltip": "A Poké Ball infused with moonlight. Works best at night, especially under a full moon.",
 
         "fluid.hellasforms.liquid_exp_candy": "Liquid EXP Candy",
         "fluid.hellasforms.liquid_str": "Liquid Strength",

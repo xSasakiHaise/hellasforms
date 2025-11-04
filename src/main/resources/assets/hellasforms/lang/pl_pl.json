@@ -40,6 +40,8 @@
     "item.pixelmon.ability_patch_remover": "Zmywacz Łaty Umiejętności",
     "item.pixelmon.ability_patch_remover.tooltip": "Kliknij prawym przyciskiem na Pokémonie, aby zabrać mu ukrytą umiejętność i nadać losową zwykłą.",
     "item.pixelmon.ability_patch_remover.success": "%s pozbył się swojej ukrytej umiejętności!",
+    "item.pixelmon.lunar_ball": "Kula Lunarna",
+    "item.pixelmon.lunar_ball.tooltip": "Poké Ball nasączony blaskiem księżyca. Najlepiej działa nocą, zwłaszcza podczas pełni.",
     "item.hellasforms.generic.no_effect": "%s nie został dotknięty.",
     "item.hellasforms.generic.ev_max": "EV %s są już maksymalne dla tej statystyki.",
     "item.hellasforms.generic.ability_fail": "%s nie może zapomnieć swojej obecnej umiejętności.",
