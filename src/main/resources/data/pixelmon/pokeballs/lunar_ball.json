@@ -1,15 +1,15 @@
 {
   "name": "hellasforms:lunar_ball",
   "model": "pixelmon:models/pokeballs/poke_ball.pqc",
-  "texture": "pixelmon:textures/entity/pokeballs/lunar_ball.png",
-  "flashingTexture": "pixelmon:textures/entity/pokeballs/lunar_ball_flash.png",
-  "ballSprite": "pixelmon:textures/items/pokeballs/lunar_ball.png",
-  "lidSprite": "pixelmon:textures/items/pokeballs/lids/lunar_ball.png",
-  "guiSprite": "pixelmon:textures/gui/pokeballs/lunar_ball.png",
-  "bases": [
-    "pixelmon:black_apricorn",
-    "pixelmon:cooked_blue_apricorn"
-  ],
+  "texture": "hellasforms:textures/entity/pokeballs/lunar_ball.png",
+  "flashingTexture": "hellasforms:textures/entity/pokeballs/lunar_ball_flash.png",
+  "ballSprite": "hellasforms:textures/items/pokeballs/lunar_ball.png",
+  "lidSprite": "hellasforms:textures/items/pokeballs/lids/lunar_ball.png",
+  "guiSprite": "hellasforms:textures/gui/pokeballs/lunar_ball.png",
+    "bases": [
+      "pixelmon:cooked_black_apricorn",
+      "pixelmon:cooked_blue_apricorn"
+    ],
   "captureMethod": "gen8",
   "catchBonus": 1.0,
   "breakChance": 1.0,

@@ -5,7 +5,7 @@
   ],
   "key": {
     "A": { "item": "pixelmon:cooked_blue_apricorn" },
-    "B": { "item": "pixelmon:black_apricorn" }
+    "B": { "item": "pixelmon:cooked_black_apricorn" }
   },
   "result": {
     "item": "pixelmon:poke_ball_lid",
