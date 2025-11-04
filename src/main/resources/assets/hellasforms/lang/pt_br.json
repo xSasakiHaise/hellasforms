@@ -40,6 +40,8 @@
     "item.pixelmon.ability_patch_remover": "Removedor de Patch de Habilidade",
     "item.pixelmon.ability_patch_remover.tooltip": "Clique com o botão direito em um Pokémon para remover a habilidade oculta e conceder uma habilidade padrão aleatória.",
     "item.pixelmon.ability_patch_remover.success": "%s abriu mão de sua habilidade oculta!",
+    "item.pixelmon.lunar_ball": "Bola Lunar",
+    "item.pixelmon.lunar_ball.tooltip": "Uma Poké Bola imbuída de luar. Funciona melhor à noite, especialmente sob a lua cheia.",
     "item.hellasforms.generic.no_effect": "%s não foi afetado.",
     "item.hellasforms.generic.ev_max": "Os EVs de %s já estão no máximo para esse atributo.",
     "item.hellasforms.generic.ability_fail": "%s não consegue esquecer a habilidade atual.",
