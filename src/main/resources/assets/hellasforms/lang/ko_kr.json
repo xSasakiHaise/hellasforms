@@ -40,6 +40,8 @@
     "item.pixelmon.ability_patch_remover": "특성패치 제거제",
     "item.pixelmon.ability_patch_remover.tooltip": "포켓몬을 오른쪽 클릭하여 숨겨진 특성을 지우고 무작위 일반 특성을 부여한다.",
     "item.pixelmon.ability_patch_remover.success": "%s는 숨겨진 특성을 버렸다!",
+    "item.pixelmon.lunar_ball": "루나볼",
+    "item.pixelmon.lunar_ball.tooltip": "달빛이 스며든 특별한 몬스터볼입니다. 밤, 특히 보름달일 때 가장 효과가 좋습니다.",
     "item.hellasforms.generic.no_effect": "%s는 아무 영향도 받지 않았다.",
     "item.hellasforms.generic.ev_max": "%s의 노력치는 이미 그 능력치에서 최대치다.",
     "item.hellasforms.generic.ability_fail": "%s는 현재 특성을 잊을 수 없다.",

@@ -40,6 +40,8 @@
     "item.pixelmon.ability_patch_remover": "Effaceur de Patch Talent",
     "item.pixelmon.ability_patch_remover.tooltip": "Clique droit sur un Pokémon pour lui retirer son talent caché et lui donner un talent standard aléatoire.",
     "item.pixelmon.ability_patch_remover.success": "%s a renoncé à son talent caché !",
+    "item.pixelmon.lunar_ball": "Lune Ball",
+    "item.pixelmon.lunar_ball.tooltip": "Une Poké Ball imprégnée de clair de lune. Fonctionne mieux la nuit, surtout lors de la pleine lune.",
     "item.hellasforms.generic.no_effect": "%s n'a subi aucun effet.",
     "item.hellasforms.generic.ev_max": "Les EV de %s sont déjà au maximum pour cette statistique.",
     "item.hellasforms.generic.ability_fail": "%s ne peut pas oublier son talent actuel.",

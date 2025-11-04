@@ -40,6 +40,8 @@
     "item.pixelmon.ability_patch_remover": "Αφαιρετής Επιθέματος Ικανότητας",
     "item.pixelmon.ability_patch_remover.tooltip": "Κάνε δεξί κλικ σε ένα Pokémon για να αφαιρέσεις την κρυφή ικανότητά του και να του δώσεις μια τυχαία βασική.",
     "item.pixelmon.ability_patch_remover.success": "%s εγκατέλειψε την κρυφή ικανότητά του!",
+    "item.pixelmon.lunar_ball": "Μπάλα Σελήνης",
+    "item.pixelmon.lunar_ball.tooltip": "Μια Poké Ball εμποτισμένη με φεγγαρόφως. Λειτουργεί καλύτερα τη νύχτα, ειδικά όταν έχει πανσέληνο.",
     "item.hellasforms.generic.no_effect": "%s δεν επηρεάστηκε.",
     "item.hellasforms.generic.ev_max": "Τα EV του %s είναι ήδη στο μέγιστο για αυτό το στατιστικό.",
     "item.hellasforms.generic.ability_fail": "%s δεν μπορεί να ξεχάσει την τωρινή του ικανότητα.",

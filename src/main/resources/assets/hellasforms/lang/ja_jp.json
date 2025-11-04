@@ -40,6 +40,8 @@
     "item.pixelmon.ability_patch_remover": "とくせいパッチリムーバー",
     "item.pixelmon.ability_patch_remover.tooltip": "ポケモンを右クリックして隠れ特性を消し、ランダムな通常特性を与えよう。",
     "item.pixelmon.ability_patch_remover.success": "%sは隠れ特性を手放した！",
+    "item.pixelmon.lunar_ball": "ルナーボール",
+    "item.pixelmon.lunar_ball.tooltip": "月光を宿した特別なモンスターボール。夜、とくに満月のときに最高の効果を発揮する。",
     "item.hellasforms.generic.no_effect": "%sには効果がなかった。",
     "item.hellasforms.generic.ev_max": "%sのきそポイントはその能力値ですでに最大だ。",
     "item.hellasforms.generic.ability_fail": "%sは今の特性を忘れられない。",
