@@ -6,11 +6,16 @@
   "ballSprite": "pixelmon:textures/items/pokeballs/lunar_ball.png",
   "lidSprite": "pixelmon:textures/items/pokeballs/lids/lunar_ball.png",
   "guiSprite": "pixelmon:textures/gui/pokeballs/lunar_ball.png",
+  "bases": [
+    "pixelmon:black_apricorn",
+    "pixelmon:cooked_blue_apricorn"
+  ],
   "captureMethod": "gen8",
   "catchBonus": 1.0,
   "breakChance": 1.0,
   "velocityModifier": 1.0,
   "gravityModifier": 1.0,
   "particles": { "primary": "#8ec5ff", "secondary": "#d6b3ff" },
+  "translationKey": "item.pixelmon.lunar_ball",
   "logic": "hellasforms.pokeballs.LunarBallLogic"
 }

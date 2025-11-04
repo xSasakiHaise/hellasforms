@@ -18,6 +18,8 @@
         "item.pixelmon.rusted_bottle_cap.success": "%s's was corroded by the Rusted Bottle Cap!",
         "pixelmon.interaction.bottlecap.level": "%s needs to be at least Lv. 50.",
         "pixelmon.interaction.bottlecap.full": "%s cannot be hyper trained further.",
+        "item.pixelmon.lunar_ball": "Lunar Ball",
+        "item.pixelmon.lunar_ball.tooltip": "A Poké Ball that grows stronger under the full moon.",
         "item.pixelmon.exp_candy_xxl": "Exp. Candy XXL",
         "item.pixelmon.exp_candy_xxl.tooltip": "Right-click a Pokémon to grant it a tremendous 60,000 experience points.",
         "item.pixelmon.exp_candy_xxl.success": "%s absorbed the candy's colossal energy!",
