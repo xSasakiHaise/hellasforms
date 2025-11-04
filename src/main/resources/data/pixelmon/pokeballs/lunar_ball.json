@@ -15,7 +15,7 @@
   "breakChance": 1.0,
   "velocityModifier": 1.0,
   "gravityModifier": 1.0,
-  "particles": { "primary": "#8ec5ff", "secondary": "#d6b3ff" },
+  "particles": false,
   "translationKey": "item.pixelmon.lunar_ball",
   "logic": "hellasforms.pokeballs.LunarBallLogic"
 }
