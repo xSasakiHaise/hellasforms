@@ -3,8 +3,8 @@
   "attackType": "ELECTRIC",
   "attackCategory": "PHYSICAL",
   "basePower": 80,
-  "ppBase": 10,
-  "ppMax": 16,
+  "ppBase": 5,
+  "ppMax": 8,
   "accuracy": 100,
   "makesContact": true,
   "effects": [

@@ -29,8 +29,8 @@
     "hitsAdjacentFoe": true,
     "hitsExtendedFoe": true,
     "hitsSelf": false,
-    "hitsAdjacentAlly": true,
-    "hitsExtendedAlly": true
+    "hitsAdjacentAlly": false,
+    "hitsExtendedAlly": false
   },
   "z": [
     {

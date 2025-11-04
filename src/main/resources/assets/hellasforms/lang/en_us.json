@@ -11,11 +11,11 @@
         "hellasforms.effect.aurorainfernalis.burn.user": "%s was burned by Aurora Infernalis!",
         "hellasforms.effect.aurorainfernalis.raised": "Aurora Infernalis engulfed the battlefield in burning light!",
 
-	"item.pixelmon.eeveeolite": "Eeveeolite",
+		"item.pixelmon.eeveeolite": "Eeveeolite",
         "item.pixelmon.eeveeolite.tooltip": "When held by any form of Eevee, this item doubles its Special Attack and Speed stats.",
         "item.pixelmon.rusted_bottle_cap": "Rusted Bottle Cap",
         "item.pixelmon.rusted_bottle_cap.tooltip": "Right-click a Pokémon to corrode one random IV to 0.",
-        "item.pixelmon.rusted_bottle_cap.success": "%s's genes were corroded by the Rusted Bottle Cap!",
+        "item.pixelmon.rusted_bottle_cap.success": "%s's was corroded by the Rusted Bottle Cap!",
         "pixelmon.interaction.bottlecap.level": "%s needs to be at least Lv. 50.",
         "pixelmon.interaction.bottlecap.full": "%s cannot be hyper trained further.",
         "item.pixelmon.exp_candy_xxl": "Exp. Candy XXL",
@@ -105,8 +105,8 @@
         "item.pixelmon.deck-of-many-mons": "Deck of Many Mons",
         "item.pixelmon.deck-of-many-mons.tooltip": "This deck of cards is said to be powerful but cursed. Better ask the Professor about it before using it.",
 
-        "item.pixelmon.pg_token": "PG Token",
-        "item.pixelmon.pg_token.tooltip": "A commemorative token awarded for completing a Professor Greek quest.",
+        "item.pixelmon.pg_token": "SnipezCoin",
+        "item.pixelmon.pg_token.tooltip": "Buy my Stuff",
 
 	"item.pixelmon.tyrantitarite-hellas": "Tyranitarite (Hellas)",
 	"item.pixelmon.tyranitarite-hellas.tooltip": "One of a variety of mysterious Mega Stones. Have Hellasian Tyranitar hold it, and this stone will enable it to Mega Evolve during battle.",

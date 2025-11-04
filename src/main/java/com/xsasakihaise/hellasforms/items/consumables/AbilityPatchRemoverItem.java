@@ -2,48 +2,108 @@ package com.xsasakihaise.hellasforms.items.consumables;
 
 import com.pixelmonmod.pixelmon.api.pokemon.Pokemon;
 import com.pixelmonmod.pixelmon.api.pokemon.ability.Ability;
+import com.pixelmonmod.pixelmon.api.storage.PartyStorage;
+import com.pixelmonmod.pixelmon.api.storage.StorageProxy;
 import com.pixelmonmod.pixelmon.entities.pixelmon.PixelmonEntity;
+import net.minecraft.command.CommandSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.util.math.vector.Vector3d;
+import net.minecraft.world.World;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.lang.reflect.Array;
-import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
+/**
+ * Ability Patch Remover:
+ * - If the Pokémon has a Hidden Ability, switch it to the first NORMAL (slot 0) ability.
+ * - First tries to do it via /pokeedit (same execution path as BattlePass item).
+ * - If commands fail (SP/LAN without perms or no dispatcher), falls back to PokemonSpec / direct API.
+ */
 public class AbilityPatchRemoverItem extends PokemonInteractItem {
+
+    private static final Logger LOGGER = LogManager.getLogger("HellasForms/AbilityPatchRemover");
+
     @Override
     protected boolean applyEffect(PlayerEntity player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
-        List<AbilityOption> normalAbilities = resolveNormalAbilities(pokemon);
-        if (normalAbilities.isEmpty()) {
+        if (player == null || player.getServer() == null) {
+            LOGGER.warn("Aborted: invalid player or not on server side.");
             return false;
         }
 
-        boolean hasHiddenAbility = pokemon.hasHiddenAbility();
-        AbilityOption chosen = pickPrimaryAbility(normalAbilities);
-        if (chosen == null || chosen.ability == null) {
+        final String monName = safeMonName(pokemon);
+        final String playerName = player.getGameProfile().getName();
+        LOGGER.info("=== AbilityPatchRemover invoked for {}'s {} ===", playerName, monName);
+
+        boolean hasHA = safeHasHA(pokemon);
+        LOGGER.info("[State:before] hasHA={}, ability={}, slot={}",
+                hasHA, safeAbilityName(pokemon), safeAbilitySlot(pokemon));
+
+        if (!hasHA) {
+            LOGGER.info("Skipping: Pokémon is not on a Hidden Ability.");
             return false;
         }
 
-        Ability currentAbility = pokemon.getAbility();
-        if (!hasHiddenAbility && abilityMatches(currentAbility, chosen.ability)
-                && pokemon.getAbilitySlot() == chosen.slot) {
+        // Resolve first NORMAL (slot 0) ability
+        AbilityOption normal0 = resolveNormalSlot0Ability(pokemon);
+        if (normal0 == null || normal0.ability == null) {
+            LOGGER.warn("Failed to resolve a normal (slot 0) ability — aborting.");
             return false;
         }
+        final String abilityName = normal0.ability.getName();
+        LOGGER.info("Resolved normal slot 0 ability: {}", abilityName);
 
-        pokemon.setAbility(chosen.ability);
-        recordAbilitySlot(pokemon, chosen);
-        pokemon.setAbilitySlot(chosen.slot);
-        pokemon.markDirty();
-        return true;
+        // Try to find party slot for /pokeedit
+        int partySlot = resolvePartySlotIndex(player, pokemon);
+        if (partySlot <= 0) {
+            LOGGER.warn("Could not resolve party slot (is the Pokémon in the party?) — skipping command path.");
+        }
+
+        boolean ok = false;
+
+        // === Command path (same pattern as your BattlePass item) ===
+        if (partySlot > 0) {
+            // Make replies visible
+            runRaw(player, "gamerule sendCommandFeedback true");
+            runRaw(player, "gamerule logAdminCommands true");
+
+            ok = tryAllPokeeditVariants(player, playerName, partySlot, abilityName);
+            if (!ok) {
+                LOGGER.warn("All command execution paths failed — will attempt API fallback.");
+            }
+        }
+
+        // === Fallback: PokemonSpec (mirrors /pokeedit internally) ===
+        if (!ok) {
+            boolean specApplied = applyAbilityViaPokemonSpec(pokemon, abilityName);
+            LOGGER.info("[SpecApply] attempted={}, ability={}", specApplied, abilityName);
+            ok = specApplied;
+        }
+
+        // === Last resort: force set + clear HA flags ===
+        if (!ok) {
+            ok = forceSetAbilityAndClearHA(pokemon, abilityName);
+            LOGGER.info("[ForceSet] result={}", ok);
+        }
+
+        // Sync-ish (best effort)
+        safeMarkDirty(pokemon);
+
+        boolean afterHA = safeHasHA(pokemon);
+        String afterAbility = safeAbilityName(pokemon);
+        int afterSlot = safeAbilitySlot(pokemon);
+        boolean success = abilityName.equals(afterAbility) && !afterHA;
+
+        LOGGER.info("[State:after] hasHA={}, ability={}, slot={}, success={}",
+                afterHA, afterAbility, afterSlot, success);
+
+        return success;
     }
 
     @Override
@@ -56,339 +116,425 @@ public class AbilityPatchRemoverItem extends PokemonInteractItem {
         return new TranslationTextComponent("item.hellasforms.generic.ability_fail", pokemon.getDisplayName());
     }
 
-    private List<AbilityOption> resolveNormalAbilities(Pokemon pokemon) {
-        Object stats = invokeMethod(pokemon, "getBaseStats");
-        if (stats == null) {
-            Object species = invokeMethod(pokemon, "getSpecies");
-            if (species != null) {
-                stats = invokeMethod(species, "getBaseStats");
-            }
-        }
+    /* ========================= Command execution (BattlePass-style, no reflection) ========================= */
 
-        List<AbilityOption> options = normalizeAbilityContainer(invokeMethod(stats, "getAbilities"));
-        if (!options.isEmpty()) {
-            return options;
-        }
+    private int runRaw(PlayerEntity player, String raw) {
+        try {
+            World world = player.level;
+            if (world == null || world.isClientSide()) return 0;
 
-        return normalizeAbilityContainer(invokeMethod(pokemon, "getNormalAbilities"));
+            CommandSource source = player.createCommandSourceStack()
+                    .withPermission(4)
+                    .withSuppressedOutput() // <- no-arg in 1.16.5 MCP
+                    .withPosition(new Vector3d(player.getX(), player.getY(), player.getZ()));
+
+            int ret = world.getServer().getCommands().performCommand(source, raw);
+            LOGGER.info("[Cmd] '{}' -> ret={}, ok={}", raw, ret, (ret >= 1));
+            return ret; // Brigadier success count
+        } catch (Throwable t) {
+            LOGGER.error("runRaw exception for '{}': {}", raw, t.toString());
+            return 0;
+        }
     }
 
-    private List<AbilityOption> normalizeAbilityContainer(Object container) {
-        if (container == null) {
-            return Collections.emptyList();
-        }
+    private boolean tryAllPokeeditVariants(PlayerEntity player, String playerName, int partySlot, String abilityName) {
+        // no quotes, no leading slash; include minecraft: variants to bypass Essentials on servers
+        final String baseExact = playerName + " " + partySlot + " ability:" + abilityName;
+        final String baseSelf  = "@s " + partySlot + " ability:" + abilityName;
+        final String baseNear  = "@p " + partySlot + " ability:" + abilityName;
 
-        if (container instanceof Ability[]) {
-            return buildOptions(Arrays.asList((Ability[]) container));
-        }
+        String[] variants = new String[]{
+                "minecraft:pokeedit " + baseExact,
+                "pokeedit " + baseExact,
+                "minecraft:pokeedit " + baseSelf,
+                "pokeedit " + baseSelf,
+                "minecraft:pokeedit " + baseNear,
+                "pokeedit " + baseNear
+        };
 
-        if (container instanceof List) {
-            return buildOptions((Collection<?>) container);
-        }
-
-        if (container.getClass().isArray() && Ability.class.isAssignableFrom(container.getClass().getComponentType())) {
-            int length = Array.getLength(container);
-            List<AbilityOption> options = new ArrayList<>(length);
-            for (int i = 0; i < length; i++) {
-                Object value = Array.get(container, i);
-                if (value instanceof Ability && !isHiddenSlotNumber(i)) {
-                    options.add(new AbilityOption((Ability) value, i));
-                }
-            }
-            return options;
-        }
-
-        if (container instanceof Map) {
-            return buildOptionsFromMap((Map<?, ?>) container);
-        }
-
-        for (String methodName : new String[]{"getNormalAbilities", "getAbilities", "getAll", "values"}) {
-            Object nested = invokeMethod(container, methodName);
-            if (nested != null && nested != container) {
-                List<AbilityOption> options = normalizeAbilityContainer(nested);
-                if (!options.isEmpty()) {
-                    return options;
-                }
-            }
-        }
-
-        Method indexedGetter = findMethod(container.getClass(), "get", int.class);
-        if (indexedGetter == null) {
-            indexedGetter = findMethod(container.getClass(), "getAbility", int.class);
-        }
-        if (indexedGetter != null) {
-            indexedGetter.setAccessible(true);
-            List<AbilityOption> options = new ArrayList<>();
-            for (int i = 0; i < 3; i++) {
-                if (isHiddenSlotNumber(i)) {
-                    continue;
-                }
-                Ability ability = (Ability) invokeMethod(container, indexedGetter, i);
-                if (ability != null) {
-                    options.add(new AbilityOption(ability, i));
-                }
-            }
-            if (!options.isEmpty()) {
-                return options;
-            }
-        }
-
-        return Collections.emptyList();
-    }
-
-    private List<AbilityOption> buildOptions(Collection<?> collection) {
-        List<AbilityOption> options = new ArrayList<>();
-        int index = 0;
-        for (Object item : collection) {
-            if (item instanceof Ability) {
-                if (!isHiddenSlotNumber(index)) {
-                    options.add(new AbilityOption((Ability) item, index));
-                }
-            }
-            index++;
-        }
-        return options;
-    }
-
-    private List<AbilityOption> buildOptionsFromMap(Map<?, ?> map) {
-        List<AbilityOption> options = new ArrayList<>();
-        for (Map.Entry<?, ?> entry : map.entrySet()) {
-            if (isHiddenSlot(entry.getKey())) {
-                continue;
-            }
-
-            int slot = resolveSlot(entry.getKey(), options.size());
-            if (isHiddenSlotNumber(slot)) {
-                continue;
-            }
-            Object value = entry.getValue();
-            if (value instanceof Ability) {
-                options.add(new AbilityOption((Ability) value, slot));
-            } else if (value instanceof Collection) {
-                int subSlot = slot;
-                for (Object inner : (Collection<?>) value) {
-                    if (inner instanceof Ability) {
-                        if (!isHiddenSlotNumber(subSlot)) {
-                            options.add(new AbilityOption((Ability) inner, subSlot));
-                        }
-                        subSlot++;
-                    }
-                }
-            } else if (value != null && value.getClass().isArray()) {
-                int length = Array.getLength(value);
-                for (int i = 0; i < length; i++) {
-                    Object element = Array.get(value, i);
-                    if (element instanceof Ability) {
-                        int resolvedSlot = slot + i;
-                        if (!isHiddenSlotNumber(resolvedSlot)) {
-                            options.add(new AbilityOption((Ability) element, resolvedSlot));
-                        }
-                    }
-                }
-            }
-        }
-        return options;
-    }
-
-    private int resolveSlot(Object key, int fallback) {
-        if (key instanceof Number) {
-            return ((Number) key).intValue();
-        }
-        if (key instanceof Enum) {
-            return ((Enum<?>) key).ordinal();
-        }
-        return fallback;
-    }
-
-    private boolean isHiddenSlot(Object key) {
-        if (key instanceof Enum) {
-            return ((Enum<?>) key).name().toUpperCase().contains("HIDDEN");
-        }
-        if (key instanceof String) {
-            return ((String) key).toUpperCase().contains("HIDDEN");
+        for (String cmd : variants) {
+            LOGGER.info("Prepared command: {}", cmd);
+            int ret = runRaw(player, cmd);
+            if (ret >= 1) return true;
         }
         return false;
     }
 
-    private boolean isHiddenSlotNumber(int slot) {
-        return slot >= 2;
+    /* ========================= PokemonSpec / API fallbacks ========================= */
+
+    private boolean applyAbilityViaPokemonSpec(Pokemon pokemon, String abilityName) {
+        if (abilityName == null || abilityName.isEmpty()) return false;
+        final String specString = "ability:" + abilityName;
+
+        try {
+            Class<?> specCls = Class.forName("com.pixelmonmod.pixelmon.api.pokemon.spec.PokemonSpec");
+
+            // PokemonSpec.from(String)
+            try {
+                Method mFrom = specCls.getDeclaredMethod("from", String.class);
+                mFrom.setAccessible(true);
+                Object spec = mFrom.invoke(null, specString);
+                if (spec != null) {
+                    Method apply = specCls.getDeclaredMethod("apply", Class.forName("com.pixelmonmod.pixelmon.api.pokemon.Pokemon"));
+                    apply.setAccessible(true);
+                    apply.invoke(spec, pokemon);
+                    return true;
+                }
+            } catch (NoSuchMethodException ignored) {}
+
+            // PokemonSpec.from(String[])
+            for (Method m : specCls.getDeclaredMethods()) {
+                if (!m.getName().equals("from")) continue;
+                Class<?>[] pts = m.getParameterTypes();
+                if (pts.length == 1 && pts[0].isArray() && pts[0].getComponentType() == String.class) {
+                    m.setAccessible(true);
+                    Object spec = m.invoke(null, (Object) new String[]{specString});
+                    if (spec != null) {
+                        Method apply = specCls.getDeclaredMethod("apply", Class.forName("com.pixelmonmod.pixelmon.api.pokemon.Pokemon"));
+                        apply.setAccessible(true);
+                        apply.invoke(spec, pokemon);
+                        return true;
+                    }
+                }
+            }
+
+            // Constructor(String[])
+            try {
+                Constructor<?> ctor = specCls.getDeclaredConstructor(String[].class);
+                ctor.setAccessible(true);
+                Object spec = ctor.newInstance((Object) new String[]{specString});
+                Method apply = specCls.getDeclaredMethod("apply", Class.forName("com.pixelmonmod.pixelmon.api.pokemon.Pokemon"));
+                apply.setAccessible(true);
+                apply.invoke(spec, pokemon);
+                return true;
+            } catch (Throwable ignored) {}
+
+        } catch (Throwable t) {
+            LOGGER.warn("[SpecApply] PokemonSpec path unavailable: {}", t.toString());
+        }
+        return false;
     }
 
-    private AbilityOption pickPrimaryAbility(List<AbilityOption> abilities) {
-        return abilities.stream()
-                .filter(option -> !isHiddenSlotNumber(option.slot))
-                .min(Comparator.comparingInt(option -> option.slot))
-                .orElse(null);
-    }
+    private boolean forceSetAbilityAndClearHA(Pokemon pokemon, String abilityName) {
+        try {
+            Ability a = findAbilityByName(abilityName);
+            if (a == null) return false;
 
-    private boolean abilityMatches(Ability left, Ability right) {
-        if (left == null || right == null) {
+            // set ability + slot/index 0
+            try { pokemon.setAbility(a); } catch (Throwable ignored) {}
+            try { pokemon.setAbilitySlot(0); } catch (Throwable ignored) {}
+            try { invoke(pokemon, "setAbilityIndex", new Class<?>[]{int.class}, new Object[]{0}); } catch (Throwable ignored) {}
+
+            // clear HA flag if any mapping exists
+            String[] flags = new String[]{
+                    "setHasHiddenAbility",
+                    "setHiddenAbility",
+                    "setAbilityHidden",
+                    "setIsHiddenAbility",
+                    "setIsHA"
+            };
+            for (String f : flags) {
+                Object r = invoke(pokemon, f, new Class<?>[]{boolean.class}, new Object[]{false});
+                if (r != null) break;
+            }
+
+            safeMarkDirty(pokemon);
+
+            boolean ok = abilityName.equals(safeAbilityName(pokemon)) && !safeHasHA(pokemon);
+            if (!ok) {
+                invoke(pokemon, "refreshAbility", new Class<?>[]{}, new Object[]{});
+                invoke(pokemon, "validate", new Class<?>[]{}, new Object[]{});
+                ok = abilityName.equals(safeAbilityName(pokemon)) && !safeHasHA(pokemon);
+            }
+            return ok;
+        } catch (Throwable t) {
+            LOGGER.warn("[ForceSet] failed: {}", t.toString());
             return false;
         }
-        String leftName = left.getName();
-        String rightName = right.getName();
-        return leftName != null && leftName.equals(rightName);
     }
 
-    private void recordAbilitySlot(Pokemon pokemon, AbilityOption chosen) {
-        Method recorder = findMethod(pokemon.getClass(), "recordAbilitySlot", Ability.class);
-        if (recorder != null) {
-            invokeMethod(pokemon, recorder, chosen.ability);
+    /* ========================= Resolve first NORMAL (slot 0) ability ========================= */
+
+    private AbilityOption resolveNormalSlot0Ability(Pokemon pokemon) {
+        Object form = invoke(pokemon, "getForm", new Class<?>[]{}, new Object[]{});
+        if (form != null) {
+            Object abilitiesWrapper = invoke(form, "getAbilities", new Class<?>[]{}, new Object[]{});
+            AbilityOption fromWrapper = extractFirstNormalFromAbilitiesWrapper(abilitiesWrapper);
+            if (fromWrapper != null) return fromWrapper;
+
+            Object stats = invoke(form, "getBaseStats", new Class<?>[]{}, new Object[]{});
+            if (stats != null) {
+                Object abil = invoke(stats, "getAbilities", new Class<?>[]{}, new Object[]{});
+                AbilityOption fromStats = extractFirstNormalFromAbilitiesWrapper(abil);
+                if (fromStats != null) return fromStats;
+            }
+        }
+
+        Object species = invoke(pokemon, "getSpecies", new Class<?>[]{}, new Object[]{});
+        if (species != null) {
+            Object defaultForm = tryMany(species, "getDefaultForm", "getFormDefault", "getBaseForm");
+            Object abilitiesWrapper = (defaultForm != null)
+                    ? invoke(defaultForm, "getAbilities", new Class<?>[]{}, new Object[]{})
+                    : null;
+            AbilityOption fromWrapper = extractFirstNormalFromAbilitiesWrapper(abilitiesWrapper);
+            if (fromWrapper != null) return fromWrapper;
+        }
+
+        Object normals = invoke(pokemon, "getNormalAbilities", new Class<?>[]{}, new Object[]{});
+        if (normals instanceof Collection) {
+            for (Object o : (Collection<?>) normals) {
+                Ability a = coerceAbility(o);
+                if (a != null) return new AbilityOption(a, 0);
+            }
+        } else if (normals != null && normals.getClass().isArray()) {
+            int len = Array.getLength(normals);
+            for (int i = 0; i < len; i++) {
+                Ability a = coerceAbility(Array.get(normals, i));
+                if (a != null) return new AbilityOption(a, 0);
+            }
+        }
+
+        return null;
+    }
+
+    private AbilityOption extractFirstNormalFromAbilitiesWrapper(Object abilitiesWrapper) {
+        if (abilitiesWrapper == null) return null;
+
+        Set<String> hiddenNames = new HashSet<>();
+        Object hidden = invoke(abilitiesWrapper, "getHiddenAbilities", new Class<?>[]{}, new Object[]{});
+        collectAbilityNames(hidden, hiddenNames);
+
+        Object all = invoke(abilitiesWrapper, "getAll", new Class<?>[]{}, new Object[]{});
+        if (all == null) all = invoke(abilitiesWrapper, "getAbilities", new Class<?>[]{}, new Object[]{});
+        if (all == null) return null;
+
+        List<AbilityOption> normals = new ArrayList<>(2);
+
+        if (all instanceof Collection) {
+            for (Object o : (Collection<?>) all) {
+                Ability a = coerceAbility(o);
+                if (a == null) continue;
+                if (hiddenNames.contains(a.getName())) continue;
+
+                int slot = readAbilitySlotFromWrapper(abilitiesWrapper, a, normals.size());
+                if (slot < 2) normals.add(new AbilityOption(a, slot));
+            }
+        } else if (all.getClass().isArray()) {
+            int len = Array.getLength(all);
+            for (int i = 0; i < len; i++) {
+                Ability a = coerceAbility(Array.get(all, i));
+                if (a == null) continue;
+                if (hiddenNames.contains(a.getName())) continue;
+
+                int slot = readAbilitySlotFromWrapper(abilitiesWrapper, a, i);
+                if (slot < 2) normals.add(new AbilityOption(a, slot));
+            }
+        }
+
+        normals.sort(Comparator.comparingInt(o -> o.slot));
+        for (AbilityOption opt : normals) {
+            if (opt.slot == 0) return opt;
+        }
+        return normals.isEmpty() ? null : normals.get(0);
+    }
+
+    private int readAbilitySlotFromWrapper(Object wrapper, Ability a, int fallback) {
+        Object slotObj = invoke(wrapper, "getAbilitySlot", new Class<?>[]{Ability.class}, new Object[]{a});
+        if (slotObj instanceof Number) return ((Number) slotObj).intValue();
+        return fallback;
+    }
+
+    private void collectAbilityNames(Object container, Set<String> out) {
+        if (container == null) return;
+        if (container instanceof Collection) {
+            for (Object o : (Collection<?>) container) {
+                Ability a = coerceAbility(o);
+                if (a != null) out.add(a.getName());
+            }
+        } else if (container.getClass().isArray()) {
+            int len = Array.getLength(container);
+            for (int i = 0; i < len; i++) {
+                Ability a = coerceAbility(Array.get(container, i));
+                if (a != null) out.add(a.getName());
+            }
         }
     }
 
-    private Object invokeMethod(Object target, String methodName, Object... args) {
-        if (target == null || methodName == null) {
-            return null;
+    /* ========================= Party slot helpers ========================= */
+
+    private int resolvePartySlotIndex(PlayerEntity player, Pokemon target) {
+        Object maybePos = invoke(target, "getPartyPosition", new Class<?>[]{}, new Object[]{});
+        if (maybePos instanceof Number) {
+            int zeroBased = ((Number) maybePos).intValue();
+            if (zeroBased >= 0 && zeroBased < 6) return zeroBased + 1;
         }
 
-        Method method = findCompatibleMethod(target.getClass(), methodName, args);
-        if (method == null) {
-            return null;
-        }
+        UUID playerUuid = getPlayerUUID(player);
+        PartyStorage party = StorageProxy.getParty(playerUuid);
+        if (party == null) return 0;
 
-        method.setAccessible(true);
+        Pokemon[] team = party.getAll();
+        if (team == null) return 0;
+
+        UUID tUuid = safeUUID(target);
+        for (int i = 0; i < Math.min(6, team.length); i++) {
+            Pokemon p = team[i];
+            if (p == null) continue;
+            if (Objects.equals(safeUUID(p), tUuid) || p == target) return i + 1;
+        }
+        return 0;
+    }
+
+    private UUID getPlayerUUID(PlayerEntity player) {
         try {
-            return method.invoke(target, adaptArguments(method.getParameterTypes(), args));
-        } catch (IllegalAccessException | InvocationTargetException e) {
-            return null;
+            Method m = player.getClass().getMethod("getUniqueID"); // MCP
+            Object res = m.invoke(player);
+            if (res instanceof UUID) return (UUID) res;
+        } catch (Exception ignored) {}
+        try {
+            Method m = player.getClass().getMethod("getUUID"); // Mojang
+            Object res = m.invoke(player);
+            if (res instanceof UUID) return (UUID) res;
+        } catch (Exception ignored) {}
+        return player.getGameProfile().getId();
+    }
+
+    private UUID safeUUID(Pokemon p) {
+        Object u = invoke(p, "getUUID", new Class<?>[]{}, new Object[]{});
+        if (u instanceof UUID) return (UUID) u;
+        Object pid = invoke(p, "getPID", new Class<?>[]{}, new Object[]{});
+        return new UUID(31L * Objects.hashCode(p.getSpecies()), Objects.hashCode(pid));
+    }
+
+    /* ========================= Debug-safe state helpers ========================= */
+
+    private boolean safeHasHA(Pokemon p) {
+        try { return p.hasHiddenAbility(); } catch (Throwable ignored) { return false; }
+    }
+
+    private String safeAbilityName(Pokemon p) {
+        try {
+            Ability a = p.getAbility();
+            return a != null ? a.getName() : "<none>";
+        } catch (Throwable ignored) {
+            return "<none>";
         }
     }
 
-    private Object[] adaptArguments(Class<?>[] parameterTypes, Object[] args) {
-        if (parameterTypes.length == 0) {
-            return new Object[0];
-        }
-        Object[] adapted = new Object[parameterTypes.length];
-        for (int i = 0; i < parameterTypes.length; i++) {
-            if (args != null && i < args.length) {
-                Object arg = args[i];
-                if (arg != null && !parameterTypes[i].isInstance(arg) && parameterTypes[i].isPrimitive()) {
-                    adapted[i] = coercePrimitive(parameterTypes[i], arg);
-                } else {
-                    adapted[i] = arg;
-                }
-            } else {
-                adapted[i] = null;
+    private int safeAbilitySlot(Pokemon p) {
+        try { return p.getAbilitySlot(); } catch (Throwable ignored) { return -1; }
+    }
+
+    private void safeMarkDirty(Pokemon p) {
+        try { p.markDirty(); } catch (Throwable ignored) {}
+        try { invoke(p, "refreshAbility", new Class<?>[]{}, new Object[]{}); } catch (Throwable ignored) {}
+    }
+
+    /* ========================= Misc utils ========================= */
+
+    private Ability coerceAbility(Object v) {
+        if (v instanceof Ability) return (Ability) v;
+        if (v == null) return null;
+        try {
+            Method getName = v.getClass().getDeclaredMethod("getName");
+            getName.setAccessible(true);
+            Object name = getName.invoke(v);
+            if (name instanceof String) {
+                return findAbilityByName((String) name);
             }
-        }
-        return adapted;
+        } catch (Throwable ignored) {}
+        if (v instanceof String) return findAbilityByName((String) v);
+        if (v instanceof Enum)   return findAbilityByName(((Enum<?>) v).name());
+        return null;
     }
 
-    private Object coercePrimitive(Class<?> primitive, Object arg) {
-        if (!(arg instanceof Number)) {
-            return arg;
-        }
-        Number number = (Number) arg;
-        if (primitive == int.class) {
-            return number.intValue();
-        }
-        if (primitive == long.class) {
-            return number.longValue();
-        }
-        if (primitive == float.class) {
-            return number.floatValue();
-        }
-        if (primitive == double.class) {
-            return number.doubleValue();
-        }
-        if (primitive == short.class) {
-            return number.shortValue();
-        }
-        if (primitive == byte.class) {
-            return number.byteValue();
-        }
-        if (primitive == boolean.class) {
-            return number.intValue() != 0;
-        }
-        if (primitive == char.class) {
-            return (char) number.intValue();
-        }
-        return arg;
-    }
-
-    private Method findCompatibleMethod(Class<?> type, String name, Object[] args) {
-        if (type == null || name == null) {
-            return null;
-        }
-        Class<?> current = type;
-        while (current != null && current != Object.class) {
-            for (Method method : current.getDeclaredMethods()) {
-                if (!method.getName().equals(name)) {
-                    continue;
-                }
-                if (isCompatible(method.getParameterTypes(), args)) {
-                    return method;
-                }
-            }
-            current = current.getSuperclass();
+    private Ability findAbilityByName(String name) {
+        if (name == null || name.isEmpty()) return null;
+        try {
+            Method m = Ability.class.getDeclaredMethod("getAbility", String.class);
+            m.setAccessible(true);
+            Object res = m.invoke(null, name);
+            return (res instanceof Ability) ? (Ability) res : null;
+        } catch (Throwable ignored) {
+            try {
+                Class<?> reg = Class.forName("com.pixelmonmod.pixelmon.api.pokemon.ability.AbilityRegistry");
+                Method gm = reg.getDeclaredMethod("getAbility", String.class);
+                Object res = gm.invoke(null, name);
+                return (res instanceof Ability) ? (Ability) res : null;
+            } catch (Throwable ignored2) {}
         }
         return null;
     }
 
-    private boolean isCompatible(Class<?>[] parameterTypes, Object[] args) {
-        if (parameterTypes.length == 0) {
-            return args == null || args.length == 0;
-        }
-        if (args == null || parameterTypes.length != args.length) {
-            return false;
-        }
-        for (int i = 0; i < parameterTypes.length; i++) {
-            Object arg = args[i];
-            if (arg == null) {
-                continue;
-            }
-            if (parameterTypes[i].isPrimitive()) {
-                if (!(arg instanceof Number)) {
-                    return false;
-                }
-                continue;
-            }
-            if (!parameterTypes[i].isInstance(arg)) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    private Object invokeMethod(Object target, Method method, Object... args) {
-        if (target == null || method == null) {
-            return null;
-        }
+    private String safeMonName(Pokemon pokemon) {
         try {
-            method.setAccessible(true);
-            return method.invoke(target, args);
-        } catch (IllegalAccessException | InvocationTargetException e) {
-            return null;
-        }
+            Object dn = invoke(pokemon, "getDisplayName", new Class<?>[]{}, new Object[]{});
+            if (dn instanceof ITextComponent) {
+                try {
+                    Method getString = dn.getClass().getMethod("getString");
+                    Object s = getString.invoke(dn);
+                    if (s != null) return String.valueOf(s);
+                } catch (Throwable ignored) {
+                    return String.valueOf(dn);
+                }
+            } else if (dn != null) {
+                return String.valueOf(dn);
+            }
+        } catch (Throwable ignored) { }
+        Object spec = invoke(pokemon, "getSpecies", new Class<?>[]{}, new Object[]{});
+        return String.valueOf(spec != null ? spec : "<?>");
     }
 
-    private Method findMethod(Class<?> type, String name, Class<?>... parameterTypes) {
-        if (type == null || name == null) {
-            return null;
-        }
-        Class<?> current = type;
-        while (current != null && current != Object.class) {
-            for (Method method : current.getDeclaredMethods()) {
-                if (!method.getName().equals(name)) {
-                    continue;
-                }
-                if (Arrays.equals(method.getParameterTypes(), parameterTypes)) {
-                    return method;
-                }
+    private Object invoke(Object target, String name, Class<?>[] sig, Object[] args) {
+        if (target == null || name == null) return null;
+        try {
+            Method m = target.getClass().getDeclaredMethod(name, sig);
+            m.setAccessible(true);
+            return m.invoke(target, args);
+        } catch (Throwable ignored) {
+            Method mc = findCompatible(target.getClass(), name, args);
+            if (mc != null) {
+                try { mc.setAccessible(true); return mc.invoke(target, args); }
+                catch (Throwable ignored2) {}
             }
-            current = current.getSuperclass();
         }
         return null;
     }
 
+    private Method findCompatible(Class<?> type, String name, Object[] args) {
+        Class<?> c = type;
+        while (c != null && c != Object.class) {
+            for (Method m : c.getDeclaredMethods()) {
+                if (!m.getName().equals(name)) continue;
+                Class<?>[] pts = m.getParameterTypes();
+                if ((args == null ? 0 : args.length) != pts.length) continue;
+                boolean ok = true;
+                for (int i = 0; i < pts.length; i++) {
+                    if (args == null) { ok = pts.length == 0; break; }
+                    Object a = args[i];
+                    if (a == null) continue;
+                    if (!pts[i].isInstance(a)) { ok = false; break; }
+                }
+                if (ok) return m;
+            }
+            c = c.getSuperclass();
+        }
+        return null;
+    }
+
+    private Object tryMany(Object target, String... methodNames) {
+        if (target == null || methodNames == null) return null;
+        for (String m : methodNames) {
+            Object val = invoke(target, m, new Class<?>[]{}, new Object[]{});
+            if (val != null) return val;
+        }
+        return null;
+    }
+
+    /* DTO */
     private static final class AbilityOption {
         private final Ability ability;
         private final int slot;
-
-        private AbilityOption(Ability ability, int slot) {
-            this.ability = ability;
-            this.slot = slot;
-        }
+        private AbilityOption(Ability ability, int slot) { this.ability = ability; this.slot = slot; }
     }
 }
