@@ -2,8 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "pixelmon:poke_ball_lid",
-      "nbt": "{PokeBallID:\"hellasforms:lunar_ball\"}"
+      "item": "pixelmon:lunar_ball_lid"
     },
     {
       "item": "pixelmon:silver_base"
