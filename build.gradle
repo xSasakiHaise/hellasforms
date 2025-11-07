@@ -85,7 +85,7 @@ repositories {
 
 
 dependencies {
-    compileOnly files('C:/Users/raehr/Documents/Hellas/HellasControl/build/libs/hellascontrol-1.0.0.jar')
+    compileOnly fileTree(dir: 'libs', include: 'hellascontrol-*.jar')
     minecraft "net.minecraftforge:forge:1.16.5-36.2.42"
 
     implementation fg.deobf("pixelmon:Pixelmon-1.16.5-9.1.12-universal:9.1.12")
