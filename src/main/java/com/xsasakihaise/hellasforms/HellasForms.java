@@ -1,11 +1,7 @@
 package com.xsasakihaise.hellasforms;
 
-import net.minecraftforge.event.RegisterCommandsEvent;
 import com.xsasakihaise.hellasforms.candy.ModFluids;
 import com.xsasakihaise.hellasforms.candy.ModItems;
-import com.xsasakihaise.hellasforms.commands.FormsVersionCommand;
-import com.xsasakihaise.hellasforms.commands.FormsDependenciesCommand;
-import com.xsasakihaise.hellasforms.commands.FormsFeaturesCommand;
 import battles.attacks.specialAttacks.basic.*;
 import battles.attacks.specialAttacks.multiTurn.*;
 import battles.status.*;
@@ -76,7 +72,6 @@ public class HellasForms {
                 ModItems.register(modEventBus);
                 ModFluids.register(modEventBus);
                 MinecraftForge.EVENT_BUS.register(this);
-                MinecraftForge.EVENT_BUS.addListener(this::onRegisterCommands);
             });
 
             DebuggingHooks.runWithTracing(LogFlag.CONFIG, "initializeInfoConfig", LOGGER, () -> {
@@ -295,14 +290,4 @@ public class HellasForms {
         });
     }
 
-    private void onRegisterCommands(RegisterCommandsEvent event) {
-        DebuggingHooks.runWithTracing(LogFlag.CORE, "onRegisterCommands", LOGGER, () -> {
-            DebuggingHooks.runWithTracing(LogFlag.COMMANDS, "FormsVersionCommand.register", LOGGER, () ->
-                    FormsVersionCommand.register(event.getDispatcher(), infoConfig));
-            DebuggingHooks.runWithTracing(LogFlag.COMMANDS, "FormsDependenciesCommand.register", LOGGER, () ->
-                    FormsDependenciesCommand.register(event.getDispatcher(), infoConfig));
-            DebuggingHooks.runWithTracing(LogFlag.COMMANDS, "FormsFeaturesCommand.register", LOGGER, () ->
-                    FormsFeaturesCommand.register(event.getDispatcher(), infoConfig));
-        });
-    }
 }
