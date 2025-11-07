@@ -40,19 +40,18 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.xsasakihaise.hellascontrol.api.sidemods.HellasAPIControlForms;
-import com.xsasakihaise.hellasforms.HellasFormsInfoConfig;
 import com.pixelmonmod.pixelmon.api.pokemon.stats.BattleStatsType;
+import com.xsasakihaise.hellascontrol.api.CoreCheck;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.fml.loading.FMLEnvironment;
 
 @Mod("hellasforms")
 public class HellasForms {
 
     public static final String MOD_ID = "hellasforms";
     public static final Logger LOGGER = LogManager.getLogger("hellasforms");
+    private static final String ENTITLEMENT_KEY = "forms";
 
-    static {
-        DebuggingHooks.runWithTracing(LogFlag.API, "HellasAPIControlForms.verify()", LOGGER, HellasAPIControlForms::verify);
-    }
     private static HellasForms instance;
     public static HellasFormsInfoConfig infoConfig;
     public static final DeferredRegister<Item> ITEMS;
@@ -62,6 +61,11 @@ public class HellasForms {
     }
 
     public HellasForms() {
+        DebuggingHooks.runWithTracing(LogFlag.API, "CoreCheck.verifyCoreLoaded()", LOGGER, CoreCheck::verifyCoreLoaded);
+        if (FMLEnvironment.dist == Dist.DEDICATED_SERVER) {
+            DebuggingHooks.runWithTracing(LogFlag.API, "CoreCheck.verifyEntitled(\"" + ENTITLEMENT_KEY + "\")", LOGGER,
+                    () -> CoreCheck.verifyEntitled(ENTITLEMENT_KEY));
+        }
         DebuggingHooks.initialize(LOGGER);
         DebuggingHooks.runWithTracing(LogFlag.CORE, "HellasForms::<init>", LOGGER, () -> {
             instance = this;

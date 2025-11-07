@@ -5,7 +5,7 @@ license="Restricted"
 
 [[mods]]
 modId="hellasforms"
-version="2.7.0"
+version="2.7.1"
 displayName="HellasForms"
 displayURL="https://discord.pixelmon-server.com"
 credits="xSasaki_Haise, pg13snipez, xGlitzerschaf, NouveauLumière"
@@ -45,6 +45,6 @@ Welcome to Hellas :)
 [[dependencies.hellasforms]]
     modId="hellascontrol"
     mandatory=true
-    versionRange="[1.0.0,)"
+    versionRange="[2.0.0,)"
     ordering="NONE"
     side="BOTH"
