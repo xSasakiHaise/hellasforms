@@ -10,6 +10,12 @@ import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.World;
 
+/**
+ * Lightweight quest token that increments a player's LuckPerms track when used.
+ *
+ * <p>The integer suffix of the registry name (battlepass_item_1..20) determines
+ * which LP parent is added.</p>
+ */
 public class BattlePassItem extends QuestItem {
 
     public BattlePassItem() {
@@ -26,6 +32,7 @@ public class BattlePassItem extends QuestItem {
                 String numberStr = itemId.replace("battlepass_item_", "");
                 int bpNumber = Integer.parseInt(numberStr);
 
+                // Execute against LuckPerms so staff do not need to manually grant rewards.
                 String command = String.format("minecraft:lp user %s parent add bp%d",
                         player.getName().getString(), bpNumber);
 

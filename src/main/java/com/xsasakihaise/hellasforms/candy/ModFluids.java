@@ -66,6 +66,9 @@ public final class ModFluids {
         return set;
     }
 
+    /**
+     * Registers the fluid, block and bucket containers with the Forge bus.
+     */
     public static void register(IEventBus eventBus) {
         FLUIDS.register(eventBus);
         BLOCKS.register(eventBus);
@@ -84,18 +87,30 @@ public final class ModFluids {
             this.name = name;
         }
 
+        /**
+         * @return still fluid instance registered under this set's name.
+         */
         public ForgeFlowingFluid.Source getSourceFluid() {
             return source.get();
         }
 
+        /**
+         * @return flowing fluid variant (used for world rendering/physics).
+         */
         public ForgeFlowingFluid.Flowing getFlowingFluid() {
             return flowing.get();
         }
 
+        /**
+         * @return block representation so mappers can place it in the world.
+         */
         public FlowingFluidBlock getFluidBlock() {
             return block.get();
         }
 
+        /**
+         * @return bucket item tied to the source fluid.
+         */
         public Item getBucketItem() {
             return bucket.get();
         }

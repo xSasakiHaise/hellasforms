@@ -21,10 +21,13 @@ import java.lang.reflect.Method;
 import java.util.*;
 
 /**
- * Ability Patch Remover:
- * - If the Pokémon has a Hidden Ability, switch it to the first NORMAL (slot 0) ability.
- * - First tries to do it via /pokeedit (same execution path as BattlePass item).
- * - If commands fail (SP/LAN without perms or no dispatcher), falls back to PokemonSpec / direct API.
+ * Ability Patch Remover item.
+ * <ul>
+ *     <li>Detects whether the targeted Pokemon is currently on its Hidden Ability.</li>
+ *     <li>Attempts to switch back to ability slot 0 via {@code /pokeedit} command execution.</li>
+ *     <li>If command execution is unavailable, falls back to using {@code PokemonSpec}
+ *     or direct API manipulation to ensure the change still happens.</li>
+ * </ul>
  */
 public class AbilityPatchRemoverItem extends PokemonInteractItem {
 

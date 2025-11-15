@@ -6,6 +6,9 @@ import com.pixelmonmod.pixelmon.enums.heldItems.EnumHeldItems;
 import com.pixelmonmod.pixelmon.items.HeldItem;
 import net.minecraft.item.Item;
 
+/**
+ * Custom held item: doubles Eevee's Speed and Special Attack while held.
+ */
 public class EeveeoliteItem extends HeldItem {
     public EeveeoliteItem() {
         super(EnumHeldItems.other, new Item.Properties());

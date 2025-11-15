@@ -38,6 +38,10 @@ public final class ModItems {
     public static final RegistryObject<Item> PELLET_WIS = ITEMS.register("pellet_wis", () -> new Item(DEFAULT_PROPS));
     public static final RegistryObject<Item> PELLET_CHA = ITEMS.register("pellet_cha", () -> new Item(DEFAULT_PROPS));
 
+    /**
+     * Hooks every deferred register up to the provided mod event bus. Must be
+     * invoked during mod construction.
+     */
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

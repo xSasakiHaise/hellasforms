@@ -9,6 +9,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 
+/**
+ * Sets one EV stat to the Pixelmon cap (252) while respecting the overall total
+ * limit. Used to instantly perfect specific spreads for competitive play.
+ */
 public class EvMaximizerItem extends PokemonInteractItem {
     private final BattleStatsType targetStat;
     private final String successTranslation;
@@ -26,6 +30,7 @@ public class EvMaximizerItem extends PokemonInteractItem {
             return false;
         }
 
+        // Compute total EVs to ensure we do not violate the 510 cap.
         int total = 0;
         for (BattleStatsType statType : BattleStatsType.getEVIVStatValues()) {
             total += evStore.getStat(statType);

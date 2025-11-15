@@ -41,6 +41,14 @@ import com.xsasakihaise.hellascontrol.api.CoreCheck;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.loading.FMLEnvironment;
 
+/**
+ * Main Forge/Pixelmon entry point for the HellasForms sidemod.
+ * <p>
+ * The mod focuses on content that expands the Pokemon roster for the Hellas project:
+ * custom forms, abilities, consumables, battle effects, debug hooks and convenience
+ * listeners.  Registration of Pixelmon adapters, Forge items, quest rewards and
+ * lifecycle listeners all originate from this class.
+ */
 @Mod("hellasforms")
 public class HellasForms {
 
@@ -56,6 +64,10 @@ public class HellasForms {
         ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "hellasforms");
     }
 
+    /**
+     * Forge bootstrap hook. Performs entitlement checks, installs tracing utilities
+     * and registers every runtime component that belongs to the mod.
+     */
     public HellasForms() {
         DebuggingHooks.runWithTracing(LogFlag.API, "CoreCheck.verifyCoreLoaded()", LOGGER, CoreCheck::verifyCoreLoaded);
         if (FMLEnvironment.dist == Dist.DEDICATED_SERVER) {
@@ -79,6 +91,7 @@ public class HellasForms {
                 infoConfig.loadDefaultsFromResource();
             });
 
+            // Register every custom Pixelmon battle effect so JSON-driven moves can reference them by name.
             DebuggingHooks.runWithTracing(LogFlag.BATTLES, "registerBattleEffectAdapters", LOGGER, () -> {
                 EffectTypeAdapter.EFFECTS.put("ColonySwarm", ColonySwarm.class);
                 EffectTypeAdapter.EFFECTS.put("Corrode", Corrode.class);
@@ -107,6 +120,7 @@ public class HellasForms {
                 EffectTypeAdapter.EFFECTS.put("IcyImmolation", IcyImmolation.class);
             });
 
+            // Pixelmon's ItemRegistration handles quest items, mega stones and other non-Forge driven content.
             DebuggingHooks.runWithTracing(LogFlag.ITEMS, "registerPixelmonItems", LOGGER, () -> {
                 ItemRegistration.ITEMS.register("eeveeolite", EeveeoliteItem::new);
 
@@ -156,6 +170,7 @@ public class HellasForms {
                 ItemRegistration.ITEMS.register("pg_token", QuestItem::new);
             });
 
+            // Regular Forge items defined by this mod (eggs, ores, quest tokens).
             DebuggingHooks.runWithTracing(LogFlag.ITEMS, "registerHellasItems", LOGGER, () -> {
                 ITEMS.register("wild-egg", PokemonEggItem::new);
                 ITEMS.register("hellasian-egg", PokemonEggItem::new);
@@ -241,6 +256,10 @@ public class HellasForms {
         });
     }
 
+    /**
+     * Standard common setup callback. Used purely as a lifecycle marker because the
+     * heavy lifting already occurs inside the constructor.
+     */
     private void setup(FMLCommonSetupEvent event) {
         DebuggingHooks.runWithTracing(LogFlag.CORE, "setup(FMLCommonSetupEvent)", LOGGER, () ->
                 LOGGER.info("{} Loaded HellasForms (hopefully XD)", LogFlag.CORE.format()));
@@ -267,10 +286,20 @@ public class HellasForms {
     @SubscribeEvent
     public static void onServerStopped(FMLServerStoppedEvent event) { }
 
+    /**
+     * @return singleton mod instance for convenience lookups.
+     */
     public static HellasForms getInstance() { return instance; }
 
+    /**
+     * @return shared mod logger tagged with the mod id.
+     */
     public static Logger getLogger() { return LOGGER; }
 
+    /**
+     * Registers additional lifecycle listeners. Currently unused but kept for
+     * parity with older iterations of the mod bootstrap.
+     */
     public void ModEventSubscriber() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);

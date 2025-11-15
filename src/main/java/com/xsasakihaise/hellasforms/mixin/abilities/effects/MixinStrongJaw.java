@@ -10,6 +10,10 @@ import org.spongepowered.asm.mixin.Overwrite;
 
 import java.util.Set;
 
+/**
+ * Expands the Strong Jaw ability so it recognises Hellas custom fang moves.
+ * Implemented as a mixin overwrite because Pixelmon hardcodes the list.
+ */
 @Mixin({StrongJaw.class})
 public class MixinStrongJaw extends AbstractAbility {
     @Overwrite(
