@@ -8,6 +8,10 @@ import com.pixelmonmod.pixelmon.battles.status.PsychicTerrain;
 import com.pixelmonmod.pixelmon.battles.status.Terrain;
 import com.pixelmonmod.pixelmon.enums.heldItems.EnumHeldItems;
 
+/**
+ * Ability used by custom forms that summons Psychic Terrain on switch-in and
+ * gains an additional stat boost whenever Misty Terrain is active.
+ */
 public class JadeEmperor extends AbstractAbility {
     public JadeEmperor() {
     }

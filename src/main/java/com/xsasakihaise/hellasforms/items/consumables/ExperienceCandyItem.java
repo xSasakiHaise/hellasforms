@@ -10,6 +10,11 @@ import net.minecraft.util.text.TranslationTextComponent;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+/**
+ * EXP candy variant that grants a configurable amount of experience to the
+ * targeted Pokemon. Reflection is used so it works across multiple Pixelmon
+ * builds where the EXP APIs moved between releases.
+ */
 public class ExperienceCandyItem extends PokemonInteractItem {
     private final int experienceAmount;
     private final String successTranslation;
@@ -34,6 +39,10 @@ public class ExperienceCandyItem extends PokemonInteractItem {
         return new TranslationTextComponent(successTranslation, pokemon.getDisplayName());
     }
 
+    /**
+     * Attempts several possible EXP APIs in order of preference so that the
+     * item remains functional regardless of obfuscation mappings.
+     */
     private boolean addExperience(Pokemon pokemon, int amount) {
         if (pokemon == null || amount <= 0) {
             return false;
@@ -48,6 +57,7 @@ public class ExperienceCandyItem extends PokemonInteractItem {
             }
         }
 
+        // Older builds exposed a nested experience store, newer ones used primitives.
         Object experienceObject = invoke(pokemon, "getExperience");
         if (experienceObject instanceof Number) {
             Method setter = findMethod(Pokemon.class, "setExperience", int.class);
@@ -94,6 +104,10 @@ public class ExperienceCandyItem extends PokemonInteractItem {
         }
     }
 
+    /**
+     * Utility that walks a class hierarchy for a declared method without
+     * assuming SRG or Mojang naming.
+     */
     private Method findMethod(Class<?> type, String name, Class<?>... parameterTypes) {
         if (type == null) {
             return null;

@@ -13,6 +13,13 @@ import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 
+/**
+ * Minimal JSON-backed config file that exposes metadata about the installed
+ * HellasForms build (version number, dependency list and exported features).
+ *
+ * <p>The file lives at {@code config/hellasforms.json} on a server install and
+ * mirrors the resource bundled with the mod if it does not exist yet.</p>
+ */
 public class HellasFormsInfoConfig {
     private transient final Gson gson = new GsonBuilder().setPrettyPrinting().create();
     private File configFile;
@@ -24,8 +31,9 @@ public class HellasFormsInfoConfig {
     private boolean valid = false;
 
     /**
-     * Lade Konfiguration aus dem Serververzeichnis (config/hellasforms.json).
-     * Falls nicht vorhanden oder ungültig, werden Defaults aus resources verwendet.
+     * Loads the configuration from the given server root directory.
+     * If the file does not exist (or fails to parse) a default copy from
+     * the mod resources will be used instead.
      */
     public void load(File serverRoot) {
         File configDir = new File(serverRoot, "config");
@@ -50,12 +58,12 @@ public class HellasFormsInfoConfig {
             }
         }
 
-        // Wenn keine gültige Serverdatei, Defaults nutzen
+        // Fallback to bundled defaults if we could not read a server side file.
         loadDefaultsFromResource();
     }
 
     /**
-     * Lade Default-Config aus Ressourcen: config/hellasforms.json (classpath).
+     * Populates the config object with the JSON file that ships with the mod jar.
      */
     public void loadDefaultsFromResource() {
         try (InputStream is = getClass().getClassLoader().getResourceAsStream("config/hellasforms.json")) {
@@ -79,6 +87,10 @@ public class HellasFormsInfoConfig {
         }
     }
 
+    /**
+     * @return {@code true} when the config information has been populated either
+     * from disk or from the default resource file.
+     */
     public boolean isValid() { return valid; }
 
     public void save() {
@@ -90,7 +102,18 @@ public class HellasFormsInfoConfig {
         }
     }
 
+    /**
+     * @return declared version string or a placeholder when not configured.
+     */
     public String getVersion() { return version != null ? version : "0.0.0"; }
+
+    /**
+     * @return the human readable dependency list advertised to server staff.
+     */
     public String[] getDependencies() { return dependencies != null ? dependencies : new String[0]; }
+
+    /**
+     * @return bullet-point friendly list of features (mirrors FEATURES.md contents).
+     */
     public String[] getFeatures() { return features != null ? features : new String[0]; }
 }

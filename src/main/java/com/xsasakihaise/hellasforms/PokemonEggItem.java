@@ -17,6 +17,13 @@ import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.util.Map;
 
+/**
+ * Represents the different "mystery egg" quest rewards sold on Hellas servers.
+ *
+ * <p>Each egg looks up a JSON loot table under {@code assets/hellasforms/eggs}
+ * and grants a random Pokemon (sometimes shiny) by dispatching the appropriate
+ * Pixelmon {@code /pokegive} command.</p>
+ */
 public class PokemonEggItem extends QuestItem {
 
     public PokemonEggItem() {
@@ -39,6 +46,7 @@ public class PokemonEggItem extends QuestItem {
                     return ActionResult.success(stack);
                 }
 
+                // Eggs are defined as a simple map of "displayName -> pokemonSpec" pairs.
                 Type type = new TypeToken<Map<String, String>>() {}.getType();
                 Map<String, String> pokemonMap = new Gson().fromJson(new InputStreamReader(stream), type);
 

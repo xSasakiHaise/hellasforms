@@ -10,6 +10,9 @@ import org.spongepowered.asm.mixin.Overwrite;
 
 import java.util.Set;
 
+/**
+ * Extends the Sharpness ability whitelist with Hellas-exclusive slicing moves.
+ */
 @Mixin({Sharpness.class})
 public class MixinSharpness extends AbstractAbility {
     @Overwrite(

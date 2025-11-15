@@ -19,8 +19,16 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
 
+/**
+ * Custom interaction that mirrors Pixelmon's bottle cap UI but enforces a
+ * handful of Hellas-specific restrictions (owner only, level gate, IV summary).
+ */
 public class InteractionBottleCap implements IInteraction {
 
+    /**
+     * Opens the vanilla bottle cap GUI if the player meets all prerequisites and
+     * posts a {@link BottleCapEvent} for other mods to react to.
+     */
     @Override
     public boolean processInteract(PixelmonEntity pixelmon, PlayerEntity player, Hand hand, ItemStack stack) {
         if (player.level.isClientSide || hand == Hand.OFF_HAND || !(stack.getItem() instanceof BottlecapItem)) {
