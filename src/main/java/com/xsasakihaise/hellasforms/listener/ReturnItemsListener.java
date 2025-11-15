@@ -6,6 +6,10 @@ import com.pixelmonmod.pixelmon.battles.controller.participants.PixelmonWrapper;
 import com.pixelmonmod.pixelmon.battles.controller.participants.WildPixelmonParticipant;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
+/**
+ * Ensures battle participants keep their held items after staff-organised duels.
+ * Wild encounters are ignored so the vanilla "item steal" behaviour still applies.
+ */
 public class ReturnItemsListener {
     public ReturnItemsListener() {
     }
