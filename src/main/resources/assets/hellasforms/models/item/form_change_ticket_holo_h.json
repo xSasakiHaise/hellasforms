@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "hellasforms:items/form_change_ticket_holo_h"
+  }
+}

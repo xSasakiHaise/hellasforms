@@ -14,6 +14,7 @@ import com.pixelmonmod.pixelmon.items.heldItems.MegaStoneItem;
 import com.xsasakihaise.hellasforms.items.consumables.AbilityPatchRemoverItem;
 import com.xsasakihaise.hellasforms.items.consumables.EvMaximizerItem;
 import com.xsasakihaise.hellasforms.items.consumables.ExperienceCandyItem;
+import com.xsasakihaise.hellasforms.items.consumables.FormChangeTicketItem;
 import com.xsasakihaise.hellasforms.items.consumables.RustedBottleCapItem;
 import com.xsasakihaise.hellasforms.items.heldItems.EeveeoliteItem;
 import com.xsasakihaise.hellasforms.diagnostics.DebuggingHooks;
@@ -163,6 +164,11 @@ public class HellasForms {
                 ItemRegistration.ITEMS.register("spatk_252_ev_capsule", () -> new EvMaximizerItem(BattleStatsType.SPECIAL_ATTACK, "item.pixelmon.spatk_252_ev_capsule.success"));
                 ItemRegistration.ITEMS.register("spdef_252_ev_capsule", () -> new EvMaximizerItem(BattleStatsType.SPECIAL_DEFENSE, "item.pixelmon.spdef_252_ev_capsule.success"));
                 ItemRegistration.ITEMS.register("speed_252_ev_capsule", () -> new EvMaximizerItem(BattleStatsType.SPEED, "item.pixelmon.speed_252_ev_capsule.success"));
+                ItemRegistration.ITEMS.register("form_change_ticket_hellas", () -> new FormChangeTicketItem("hellas", "item.pixelmon.form_change_ticket_hellas.success"));
+                ItemRegistration.ITEMS.register("form_change_ticket_holo_h", () -> new FormChangeTicketItem("pholo", "item.pixelmon.form_change_ticket_holo_h.success"));
+                ItemRegistration.ITEMS.register("form_change_ticket_holo", () -> new FormChangeTicketItem("holo", "item.pixelmon.form_change_ticket_holo.success"));
+                ItemRegistration.ITEMS.register("form_change_ticket_christmas_h", () -> new FormChangeTicketItem("pchristmas", "item.pixelmon.form_change_ticket_christmas_h.success"));
+                ItemRegistration.ITEMS.register("form_change_ticket_christmas", () -> new FormChangeTicketItem("christmas", "item.pixelmon.form_change_ticket_christmas.success"));
                 ItemRegistration.ITEMS.register("ability_patch_remover", AbilityPatchRemoverItem::new);
 
                 ItemRegistration.ITEMS.register("hellas_coupon", QuestItem::new);
