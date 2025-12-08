@@ -27,7 +27,8 @@ public class FormChangeTicketItem extends PokemonInteractItem {
     @Override
     protected boolean applyEffect(PlayerEntity player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
         Form form = pokemon.getSpecies().getForm(targetForm);
-        if (form == null || pokemon.getForm().isForm(targetForm)) {
+        boolean hasTargetForm = form != null && form.getName().equalsIgnoreCase(targetForm);
+        if (!hasTargetForm || pokemon.getForm().isForm(targetForm)) {
             return false;
         }
 
@@ -43,7 +44,8 @@ public class FormChangeTicketItem extends PokemonInteractItem {
 
     @Override
     protected ITextComponent getFailureMessage(Pokemon pokemon) {
-        if (pokemon.getSpecies().getForm(targetForm) == null) {
+        Form form = pokemon.getSpecies().getForm(targetForm);
+        if (form == null || !form.getName().equalsIgnoreCase(targetForm)) {
             return new TranslationTextComponent("item.hellasforms.form_change.missing", pokemon.getDisplayName(), targetForm);
         }
         if (pokemon.getForm().isForm(targetForm)) {
