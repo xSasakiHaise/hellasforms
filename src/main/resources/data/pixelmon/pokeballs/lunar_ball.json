@@ -3,12 +3,11 @@
   "model": "pixelmon:models/pokeballs/base.pqc",
   "texture": "hellasforms:textures/entity/pokeballs/lunar_ball.png",
   "flashingTexture": "hellasforms:textures/entity/pokeballs/lunar_ball_flash.png",
-  "ballSprite": "hellasforms:textures/items/pokeballs/lunar_ball.png",
-  "lidSprite": "hellasforms:textures/items/pokeballs/lids/lunar_ball.png",
+  "ballSprite": "hellasforms:items/pokeballs/lunar_ball.png",
+  "lidSprite": "hellasforms:items/pokeballs/lids/lunar_ball.png",
   "guiSprite": "hellasforms:textures/gui/pokeballs/lunar_ball.png",
   "bases": [
-    "pixelmon:cooked_black_apricorn",
-    "pixelmon:cooked_blue_apricorn"
+    "silver"
   ],
   "captureMethod": "gen8",
   "catchBonus": 1.0,
