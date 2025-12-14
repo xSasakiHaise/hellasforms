@@ -85,12 +85,11 @@ repositories {
 
 
 dependencies {
-    // Use the correctly cased JitPack coordinate for HellasControl
-    compileOnly fg.deobf('com.github.xSasakiHaise:HellasControl:2.0.0')
     minecraft "net.minecraftforge:forge:1.16.5-36.2.42"
 
     implementation fg.deobf("pixelmon:Pixelmon-1.16.5-9.1.12-universal:9.1.12")
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.0'
+    compileOnly fg.deobf('com.github.xSasakiHaise:hellascontrol:master-SNAPSHOT')
 
 }
 
