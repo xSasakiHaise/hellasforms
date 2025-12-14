@@ -721,6 +721,18 @@
               "emissive": "hellasforms:pokemon/719_diancie/all/base/holoshiny/emissive.png",
               "sprite": "hellasforms:pokemon/719_diancie/all/base/holoshiny/sprite.png",
               "particle": "arcanery:shiny"
+            },
+            {
+              "name": "christmas",
+              "texture": "hellasforms:pokemon/719_diancie/all/base/christmas/texture.png",
+              "sprite": "hellasforms:pokemon/719_diancie/all/base/christmas/sprite.png",
+              "particle": ""
+            },
+            {
+              "name": "christmasshiny",
+              "texture": "hellasforms:pokemon/719_diancie/all/base/christmasshiny/texture.png",
+              "sprite": "hellasforms:pokemon/719_diancie/all/base/christmasshiny/sprite.png",
+              "particle": "arcanery:shiny"
             }
           ]
         }
