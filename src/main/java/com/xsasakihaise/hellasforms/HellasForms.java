@@ -82,6 +82,8 @@ public class HellasForms {
             DebuggingHooks.runWithTracing(LogFlag.CORE, "registerLifecycleListeners", LOGGER, () -> {
                 IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
                 modEventBus.addListener(this::setup);
+                modEventBus.addListener(this::commonSetup);
+                modEventBus.addListener(this::clientSetup);
                 ModItems.register(modEventBus);
                 ModFluids.register(modEventBus);
                 MinecraftForge.EVENT_BUS.register(this);
@@ -257,7 +259,7 @@ public class HellasForms {
                 ITEMS.register("hellas_turquoise", OreItem::new);
                 ITEMS.register("hellas_yellow_flourite", OreItem::new);
 
-                ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+                ITEMS.register(modEventBus);
             });
         });
     }
@@ -302,23 +304,12 @@ public class HellasForms {
      */
     public static Logger getLogger() { return LOGGER; }
 
-    /**
-     * Registers additional lifecycle listeners. Currently unused but kept for
-     * parity with older iterations of the mod bootstrap.
-     */
-    public void ModEventSubscriber() {
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
-    }
-
-    @SubscribeEvent
     public void commonSetup(FMLCommonSetupEvent event) {
         DebuggingHooks.runWithTracing(LogFlag.CORE, "commonSetup(FMLCommonSetupEvent)", LOGGER, () -> {
             // Intentionally blank hook for future use
         });
     }
 
-    @SubscribeEvent
     public void clientSetup(FMLClientSetupEvent event) {
         DebuggingHooks.runWithTracing(LogFlag.CORE, "clientSetup(FMLClientSetupEvent)", LOGGER, () -> {
             // Intentionally blank hook for future use
