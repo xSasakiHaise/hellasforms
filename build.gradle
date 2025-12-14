@@ -85,7 +85,7 @@ repositories {
 
 
 dependencies {
-    compileOnly fileTree(dir: 'libs', include: 'hellascontrol-*.jar')
+    compileOnly fg.deobf('com.github.xSasakiHaise:hellascontrol:2.0.0')
     minecraft "net.minecraftforge:forge:1.16.5-36.2.42"
 
     implementation fg.deobf("pixelmon:Pixelmon-1.16.5-9.1.12-universal:9.1.12")
