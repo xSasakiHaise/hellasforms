@@ -13,13 +13,18 @@ group = "com.xsasakihaise.hellasforms"
 base {
     archivesName = "hellasforms"
 }
-java.toolchain.languageVersion = JavaLanguageVersion.of(8)
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+}
 
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 
 minecraft {
 
-    mappings channel: 'parchment', version: '2022.03.06-1.16.5'
+    mappings channel: 'official', version: '1.16.5'
 
     copyIdeResources = true
 
@@ -71,29 +76,20 @@ repositories {
         name = 'sponge'
         url = 'https://repo.spongepowered.org/maven'
     }
-    ivy {
-        setUrl('https://download.nodecdn.net/containers/reforged/universal/release')
-
-        metadataSources {
-            artifact()
-        }
-        patternLayout {
-            artifact('[artifact].[ext]')
-        }
-    }
+    flatDir { dirs 'libs' }
 }
 
 
 dependencies {
     minecraft "net.minecraftforge:forge:1.16.5-36.2.42"
 
-    implementation fg.deobf("pixelmon:Pixelmon-1.16.5-9.1.12-universal:9.1.12")
+    implementation fg.deobf(name: 'Pixelmon-1.16.5-9.1.12-universal')
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.0'
-    compileOnly fg.deobf('com.github.xSasakiHaise:hellascontrol:master-SNAPSHOT')
+    compileOnly fg.deobf('com.github.xSasakiHaise:HellasControl:master-SNAPSHOT')
 
 }
 
-tasks.withType(JavaCompile) {
+tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
 
