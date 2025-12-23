@@ -16,10 +16,9 @@ import com.xsasakihaise.hellasforms.items.consumables.EvMaximizerItem;
 import com.xsasakihaise.hellasforms.items.consumables.ExperienceCandyItem;
 import com.xsasakihaise.hellasforms.items.consumables.FormChangeTicketItem;
 import com.xsasakihaise.hellasforms.items.consumables.RustedBottleCapItem;
+import com.xsasakihaise.hellasforms.items.heldItems.EeveeoliteItem;
 import com.xsasakihaise.hellasforms.diagnostics.DebuggingHooks;
 import com.xsasakihaise.hellasforms.diagnostics.LogFlag;
-import com.xsasakihaise.hellascontrol.HellasControl;
-import com.xsasakihaise.hellasforms.items.heldItems.EeveeoliteItem;
 import com.xsasakihaise.hellasforms.listener.GrowthSpawningListener;
 import com.xsasakihaise.hellasforms.listener.ReturnItemsListener;
 import net.minecraft.item.Item;
@@ -34,12 +33,12 @@ import net.minecraftforge.fml.event.server.FMLServerStartedEvent;
 import net.minecraftforge.fml.event.server.FMLServerStoppedEvent;
 import net.minecraftforge.fml.event.server.FMLServerStoppingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.pixelmonmod.pixelmon.api.pokemon.stats.BattleStatsType;
+import com.xsasakihaise.hellascontrol.api.CoreCheck;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.loading.FMLEnvironment;
 
@@ -71,15 +70,10 @@ public class HellasForms {
      * and registers every runtime component that belongs to the mod.
      */
     public HellasForms() {
-        DebuggingHooks.runWithTracing(LogFlag.API, "verify HellasControl is present", LOGGER, () -> {
-            if (!ModList.get().isLoaded(HellasControl.MODID)) {
-                throw new IllegalStateException("HellasControl core mod missing!");
-            }
-        });
+        DebuggingHooks.runWithTracing(LogFlag.API, "CoreCheck.verifyCoreLoaded()", LOGGER, CoreCheck::verifyCoreLoaded);
         if (FMLEnvironment.dist == Dist.DEDICATED_SERVER) {
-            DebuggingHooks.runWithTracing(LogFlag.API,
-                    "HellasControl.requireEntitlement(\"" + ENTITLEMENT_KEY + "\")", LOGGER,
-                    () -> HellasControl.requireEntitlement(ENTITLEMENT_KEY));
+            DebuggingHooks.runWithTracing(LogFlag.API, "CoreCheck.verifyEntitled(\"" + ENTITLEMENT_KEY + "\")", LOGGER,
+                    () -> CoreCheck.verifyEntitled(ENTITLEMENT_KEY));
         }
         DebuggingHooks.initialize(LOGGER);
         DebuggingHooks.runWithTracing(LogFlag.CORE, "HellasForms::<init>", LOGGER, () -> {

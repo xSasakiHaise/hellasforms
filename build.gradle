@@ -78,7 +78,7 @@ repositories {
     }
 }
 
-def pixelmonJarName = (project.findProperty("pixelmonJarName") ?: "Pixelmon-1.16.5-9.1.12-universal.jar").toString()
+def pixelmonJarName = (project.findProperty("pixelmonJarName") ?: "Pixelmon-1.16.5-9.1.13-universal.jar").toString()
 def pixelmonJar = file("libs/${pixelmonJarName}")
 if (!pixelmonJar.exists()) {
     def pixelmonMatches = fileTree("libs").files
