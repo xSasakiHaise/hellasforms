@@ -76,16 +76,41 @@ repositories {
         name = 'sponge'
         url = 'https://repo.spongepowered.org/maven'
     }
-    flatDir { dirs 'libs' }
 }
+
+def pixelmonJarName = (project.findProperty("pixelmonJarName") ?: "Pixelmon-1.16.5-9.1.12-universal.jar").toString()
+def pixelmonJar = file("libs/${pixelmonJarName}")
+if (!pixelmonJar.exists()) {
+    def pixelmonMatches = fileTree("libs").matching { include "Pixelmon-1.16.5-9.1.*-universal.jar" }.files.toList()
+    if (!pixelmonMatches.isEmpty()) {
+        pixelmonJar = pixelmonMatches.sort { it.name }.last()
+    }
+}
+if (!pixelmonJar.exists()) {
+    throw new GradleException("Missing Pixelmon jar at libs/${pixelmonJarName}. You can also place any Pixelmon-1.16.5-9.1.*-universal.jar in libs/ or set -PpixelmonJarName=... to override.")
+}
+
+def hellasControlLocalJars = fileTree("libs").matching { include "*hellascontrol*.jar" }.files.toList()
+def hellasControlLocalJar = hellasControlLocalJars.isEmpty() ? null : hellasControlLocalJars.sort { it.name }.last()
+def useHellasControlLocalJar = hellasControlLocalJar != null && hellasControlLocalJar.exists()
 
 
 dependencies {
     minecraft "net.minecraftforge:forge:1.16.5-36.2.42"
 
-    implementation fg.deobf(name: 'Pixelmon-1.16.5-9.1.12-universal')
+    // Place Pixelmon at libs/Pixelmon-1.16.5-9.1.12-universal.jar (not tracked in git).
+    // You can override the name with -PpixelmonJarName=... or drop a Pixelmon-1.16.5-9.1.*-universal.jar into libs/.
+    implementation fg.deobf(files(pixelmonJar))
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.0'
-    compileOnly fg.deobf('com.github.xSasakiHaise:HellasControl:master-SNAPSHOT')
+    // If you have hellascontrol checked out next to this repo, includeBuild("../hellascontrol") will be used.
+    // Alternatively, drop any *hellascontrol*.jar into libs/ to use that directly.
+    if (useHellasControlLocalJar) {
+        compileOnly fg.deobf(files(hellasControlLocalJar))
+    } else if (file("../hellascontrol").exists()) {
+        compileOnly fg.deobf("com.xsasakihaise.hellascontrol:hellascontrol:2.0.0")
+    } else {
+        compileOnly fg.deobf("com.github.xSasakiHaise:hellascontrol:master-SNAPSHOT")
+    }
 
 }
 
