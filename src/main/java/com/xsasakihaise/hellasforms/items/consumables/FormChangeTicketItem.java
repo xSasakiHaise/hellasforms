@@ -1,7 +1,6 @@
 package com.xsasakihaise.hellasforms.items.consumables;
 
 import com.pixelmonmod.pixelmon.api.pokemon.Pokemon;
-import com.pixelmonmod.pixelmon.api.pokemon.species.form.Form;
 import com.pixelmonmod.pixelmon.entities.pixelmon.PixelmonEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -26,8 +25,7 @@ public class FormChangeTicketItem extends PokemonInteractItem {
 
     @Override
     protected boolean applyEffect(PlayerEntity player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
-        Form form = pokemon.getSpecies().getForm(targetForm);
-        boolean hasTargetForm = form != null && form.getName().equalsIgnoreCase(targetForm);
+        boolean hasTargetForm = pokemon.getSpecies().getForm(targetForm) != null;
         if (!hasTargetForm || pokemon.getForm().isForm(targetForm)) {
             return false;
         }
@@ -44,8 +42,7 @@ public class FormChangeTicketItem extends PokemonInteractItem {
 
     @Override
     protected ITextComponent getFailureMessage(Pokemon pokemon) {
-        Form form = pokemon.getSpecies().getForm(targetForm);
-        if (form == null || !form.getName().equalsIgnoreCase(targetForm)) {
+        if (pokemon.getSpecies().getForm(targetForm) == null) {
             return new TranslationTextComponent("item.hellasforms.form_change.missing", pokemon.getDisplayName(), targetForm);
         }
         if (pokemon.getForm().isForm(targetForm)) {
