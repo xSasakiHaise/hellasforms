@@ -180,6 +180,7 @@ public class HellasForms {
 
             // Regular Forge items defined by this mod (eggs, ores, quest tokens).
             DebuggingHooks.runWithTracing(LogFlag.ITEMS, "registerHellasItems", LOGGER, () -> {
+                IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
                 ITEMS.register("wild-egg", PokemonEggItem::new);
                 ITEMS.register("hellasian-egg", PokemonEggItem::new);
                 ITEMS.register("odd-looking-egg", PokemonEggItem::new);
