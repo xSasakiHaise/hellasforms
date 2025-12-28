@@ -33,6 +33,7 @@ import net.minecraftforge.fml.event.server.FMLServerStartedEvent;
 import net.minecraftforge.fml.event.server.FMLServerStoppedEvent;
 import net.minecraftforge.fml.event.server.FMLServerStoppingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.logging.log4j.LogManager;
@@ -54,8 +55,10 @@ import net.minecraftforge.fml.loading.FMLEnvironment;
 public class HellasForms {
 
     public static final String MOD_ID = "hellasforms";
-    public static final Logger LOGGER = LogManager.getLogger("hellasforms");
+    private static final Logger LOGGER = LogManager.getLogger("HellasForms");
     private static final String ENTITLEMENT_KEY = "forms";
+    private static volatile boolean ENABLED = false;
+    private static volatile String DISABLE_REASON = "UNINITIALIZED";
 
     private static HellasForms instance;
     public static HellasFormsInfoConfig infoConfig;
@@ -70,11 +73,6 @@ public class HellasForms {
      * and registers every runtime component that belongs to the mod.
      */
     public HellasForms() {
-        DebuggingHooks.runWithTracing(LogFlag.API, "CoreCheck.verifyCoreLoaded()", LOGGER, CoreCheck::verifyCoreLoaded);
-        if (FMLEnvironment.dist == Dist.DEDICATED_SERVER) {
-            DebuggingHooks.runWithTracing(LogFlag.API, "CoreCheck.verifyEntitled(\"" + ENTITLEMENT_KEY + "\")", LOGGER,
-                    () -> CoreCheck.verifyEntitled(ENTITLEMENT_KEY));
-        }
         DebuggingHooks.initialize(LOGGER);
         DebuggingHooks.runWithTracing(LogFlag.CORE, "HellasForms::<init>", LOGGER, () -> {
             instance = this;
@@ -82,7 +80,7 @@ public class HellasForms {
             DebuggingHooks.runWithTracing(LogFlag.CORE, "registerLifecycleListeners", LOGGER, () -> {
                 IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
                 modEventBus.addListener(this::setup);
-                modEventBus.addListener(this::commonSetup);
+                modEventBus.addListener(this::onCommonSetup);
                 modEventBus.addListener(this::clientSetup);
                 ModItems.register(modEventBus);
                 ModFluids.register(modEventBus);
@@ -274,8 +272,42 @@ public class HellasForms {
                 LOGGER.info("{} Loaded HellasForms (hopefully XD)", LogFlag.CORE.format()));
     }
 
+    private void onCommonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(this::initGate);
+    }
+
+    private void initGate() {
+        if (FMLEnvironment.dist != Dist.DEDICATED_SERVER) {
+            ENABLED = true;
+            DISABLE_REASON = "OK (non-dedicated)";
+            return;
+        }
+
+        if (!ModList.get().isLoaded("hellascontrol")) {
+            ENABLED = false;
+            DISABLE_REASON = "HellasControl missing";
+            LOGGER.warn("[HellasForms] disabled: {}", DISABLE_REASON);
+            return;
+        }
+
+        try {
+            CoreCheck.verifyCoreLoaded();
+            CoreCheck.verifyEntitled(ENTITLEMENT_KEY);
+            ENABLED = true;
+            DISABLE_REASON = "OK";
+            LOGGER.info("[HellasForms] enabled (license OK) entitlement='{}'", ENTITLEMENT_KEY);
+        } catch (Exception e) {
+            ENABLED = false;
+            DISABLE_REASON = "License invalid";
+            LOGGER.warn("[HellasForms] disabled: {} entitlement='{}'", DISABLE_REASON, ENTITLEMENT_KEY, e);
+        }
+    }
+
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event) {
+        if (!ENABLED) {
+            return;
+        }
         DebuggingHooks.runWithTracing(LogFlag.CORE, "onServerStarting(FMLServerStartingEvent)", LOGGER, () -> {
             DebuggingHooks.runWithTracing(LogFlag.CONFIG, "HellasFormsInfoConfig.load", LOGGER, () ->
                     infoConfig.load(event.getServer().getServerDirectory()));
@@ -287,13 +319,25 @@ public class HellasForms {
     }
 
     @SubscribeEvent
-    public static void onServerStarted(FMLServerStartedEvent event) { }
+    public static void onServerStarted(FMLServerStartedEvent event) {
+        if (!ENABLED) {
+            return;
+        }
+    }
 
     @SubscribeEvent
-    public static void onServerStopping(FMLServerStoppingEvent event) { }
+    public static void onServerStopping(FMLServerStoppingEvent event) {
+        if (!ENABLED) {
+            return;
+        }
+    }
 
     @SubscribeEvent
-    public static void onServerStopped(FMLServerStoppedEvent event) { }
+    public static void onServerStopped(FMLServerStoppedEvent event) {
+        if (!ENABLED) {
+            return;
+        }
+    }
 
     /**
      * @return singleton mod instance for convenience lookups.
@@ -305,13 +349,10 @@ public class HellasForms {
      */
     public static Logger getLogger() { return LOGGER; }
 
-    public void commonSetup(FMLCommonSetupEvent event) {
-        DebuggingHooks.runWithTracing(LogFlag.CORE, "commonSetup(FMLCommonSetupEvent)", LOGGER, () -> {
-            // Intentionally blank hook for future use
-        });
-    }
-
     public void clientSetup(FMLClientSetupEvent event) {
+        if (!ENABLED) {
+            return;
+        }
         DebuggingHooks.runWithTracing(LogFlag.CORE, "clientSetup(FMLClientSetupEvent)", LOGGER, () -> {
             // Intentionally blank hook for future use
         });
