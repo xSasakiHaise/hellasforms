@@ -92,7 +92,7 @@ public class InteractionBottleCap implements IInteraction {
             try {
                 return Pokemon.class.getMethod("getOwnerPlayerUUID");
             } catch (final NoSuchMethodException fallback) {
-                HellasForms.LOGGER.error("Failed to find a compatible Pokemon owner UUID accessor", fallback);
+                HellasForms.getLogger().error("Failed to find a compatible Pokemon owner UUID accessor", fallback);
                 return null;
             }
         }
@@ -105,7 +105,7 @@ public class InteractionBottleCap implements IInteraction {
         try {
             return (UUID) OWNER_UUID_METHOD.invoke(pokemon);
         } catch (final IllegalAccessException | InvocationTargetException e) {
-            HellasForms.LOGGER.error("Failed to invoke Pokemon owner UUID accessor", e);
+            HellasForms.getLogger().error("Failed to invoke Pokemon owner UUID accessor", e);
             return null;
         }
     }

@@ -26,7 +26,7 @@ public final class HellasFormsSetup {
         if (tryRegister(interaction, "com.pixelmonmod.pixelmon.api.interactions.InteractionController", "registerInteraction")) {
             return;
         }
-        HellasForms.LOGGER.error("Unable to register Pixelmon interaction {} - no compatible registry methods found", interaction.getClass().getName());
+        HellasForms.getLogger().error("Unable to register Pixelmon interaction {} - no compatible registry methods found", interaction.getClass().getName());
     }
 
     @SuppressWarnings("unchecked")
@@ -54,10 +54,10 @@ public final class HellasFormsSetup {
                 return false;
             }
             method.invoke(null, argument);
-            HellasForms.LOGGER.debug("Registered Pixelmon interaction {} via {}#{}", interaction.getClass().getName(), className, methodName);
+            HellasForms.getLogger().debug("Registered Pixelmon interaction {} via {}#{}", interaction.getClass().getName(), className, methodName);
             return true;
         } catch (final ReflectiveOperationException ex) {
-            HellasForms.LOGGER.debug("Failed to register Pixelmon interaction {} via {}#{}", interaction.getClass().getName(), className, methodName, ex);
+            HellasForms.getLogger().debug("Failed to register Pixelmon interaction {} via {}#{}", interaction.getClass().getName(), className, methodName, ex);
             return false;
         }
     }
