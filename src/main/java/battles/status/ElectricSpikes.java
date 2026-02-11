@@ -1,7 +1,6 @@
 package battles.status;
 
-import com.pixelmonmod.pixelmon.api.pokemon.Element;
-import com.pixelmonmod.pixelmon.battles.api.rules.clauses.BattleClauseRegistry;
+import com.pixelmonmod.pixelmon.api.pokemon.type.Type;
 import com.pixelmonmod.pixelmon.battles.controller.participants.PixelmonWrapper;
 import com.pixelmonmod.pixelmon.battles.status.EntryHazard;
 import com.pixelmonmod.pixelmon.battles.status.StatusType;
@@ -18,8 +17,18 @@ public class ElectricSpikes extends EntryHazard {
 
     @Override
     public int getDamage(PixelmonWrapper pw) {
-        float effectiveness = Element.getTotalEffectiveness(pw.type, Element.ELECTRIC, pw.bc.rules.hasClause(BattleClauseRegistry.INVERSE_BATTLE));
-        float modifier = effectiveness * 12.5F;
+        double effectiveness = 1.0D;
+        if (pw.hasType(Type.GROUND)) {
+            effectiveness = 0.0D;
+        } else {
+            if (pw.hasType(Type.WATER)) effectiveness *= 2.0D;
+            if (pw.hasType(Type.FLYING)) effectiveness *= 2.0D;
+            if (pw.hasType(Type.ELECTRIC)) effectiveness *= 0.5D;
+            if (pw.hasType(Type.GRASS)) effectiveness *= 0.5D;
+            if (pw.hasType(Type.DRAGON)) effectiveness *= 0.5D;
+        }
+
+        float modifier = (float) (effectiveness * 12.5F);
         return pw.getPercentMaxHealth(modifier);
     }
 

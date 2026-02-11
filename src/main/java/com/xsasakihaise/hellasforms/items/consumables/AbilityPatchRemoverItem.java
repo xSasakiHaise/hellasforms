@@ -5,13 +5,12 @@ import com.pixelmonmod.pixelmon.api.pokemon.ability.Ability;
 import com.pixelmonmod.pixelmon.api.storage.PartyStorage;
 import com.pixelmonmod.pixelmon.api.storage.StorageProxy;
 import com.pixelmonmod.pixelmon.entities.pixelmon.PixelmonEntity;
-import net.minecraft.command.CommandSource;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
-import net.minecraft.util.math.vector.Vector3d;
-import net.minecraft.world.World;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -34,7 +33,7 @@ public class AbilityPatchRemoverItem extends PokemonInteractItem {
     private static final Logger LOGGER = LogManager.getLogger("HellasForms/AbilityPatchRemover");
 
     @Override
-    protected boolean applyEffect(PlayerEntity player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
+    protected boolean applyEffect(Player player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
         if (player == null || player.getServer() == null) {
             LOGGER.warn("Aborted: invalid player or not on server side.");
             return false;
@@ -110,28 +109,28 @@ public class AbilityPatchRemoverItem extends PokemonInteractItem {
     }
 
     @Override
-    protected ITextComponent getSuccessMessage(Pokemon pokemon) {
-        return new TranslationTextComponent("item.pixelmon.ability_patch_remover.success", pokemon.getDisplayName());
+    protected Component getSuccessMessage(Pokemon pokemon) {
+        return Component.translatable("item.pixelmon.ability_patch_remover.success", pokemon.getDisplayName());
     }
 
     @Override
-    protected ITextComponent getFailureMessage(Pokemon pokemon) {
-        return new TranslationTextComponent("item.hellasforms.generic.ability_fail", pokemon.getDisplayName());
+    protected Component getFailureMessage(Pokemon pokemon) {
+        return Component.translatable("item.hellasforms.generic.ability_fail", pokemon.getDisplayName());
     }
 
     /* ========================= Command execution (BattlePass-style, no reflection) ========================= */
 
-    private int runRaw(PlayerEntity player, String raw) {
+    private int runRaw(Player player, String raw) {
         try {
-            World world = player.level;
+            Level world = player.level();
             if (world == null || world.isClientSide()) return 0;
 
-            CommandSource source = player.createCommandSourceStack()
+            CommandSourceStack source = player.createCommandSourceStack()
                     .withPermission(4)
                     .withSuppressedOutput() // <- no-arg in 1.16.5 MCP
-                    .withPosition(new Vector3d(player.getX(), player.getY(), player.getZ()));
+                    .withPosition(new Vec3(player.getX(), player.getY(), player.getZ()));
 
-            int ret = world.getServer().getCommands().performCommand(source, raw);
+            int ret = world.getServer().getCommands().performPrefixedCommand(source, raw);
             LOGGER.info("[Cmd] '{}' -> ret={}, ok={}", raw, ret, (ret >= 1));
             return ret; // Brigadier success count
         } catch (Throwable t) {
@@ -140,7 +139,7 @@ public class AbilityPatchRemoverItem extends PokemonInteractItem {
         }
     }
 
-    private boolean tryAllPokeeditVariants(PlayerEntity player, String playerName, int partySlot, String abilityName) {
+    private boolean tryAllPokeeditVariants(Player player, String playerName, int partySlot, String abilityName) {
         // no quotes, no leading slash; include minecraft: variants to bypass Essentials on servers
         final String baseExact = playerName + " " + partySlot + " ability:" + abilityName;
         final String baseSelf  = "@s " + partySlot + " ability:" + abilityName;
@@ -365,7 +364,7 @@ public class AbilityPatchRemoverItem extends PokemonInteractItem {
 
     /* ========================= Party slot helpers ========================= */
 
-    private int resolvePartySlotIndex(PlayerEntity player, Pokemon target) {
+    private int resolvePartySlotIndex(Player player, Pokemon target) {
         Object maybePos = invoke(target, "getPartyPosition", new Class<?>[]{}, new Object[]{});
         if (maybePos instanceof Number) {
             int zeroBased = ((Number) maybePos).intValue();
@@ -388,7 +387,7 @@ public class AbilityPatchRemoverItem extends PokemonInteractItem {
         return 0;
     }
 
-    private UUID getPlayerUUID(PlayerEntity player) {
+    private UUID getPlayerUUID(Player player) {
         try {
             Method m = player.getClass().getMethod("getUniqueID"); // MCP
             Object res = m.invoke(player);
@@ -472,7 +471,7 @@ public class AbilityPatchRemoverItem extends PokemonInteractItem {
     private String safeMonName(Pokemon pokemon) {
         try {
             Object dn = invoke(pokemon, "getDisplayName", new Class<?>[]{}, new Object[]{});
-            if (dn instanceof ITextComponent) {
+            if (dn instanceof Component) {
                 try {
                     Method getString = dn.getClass().getMethod("getString");
                     Object s = getString.invoke(dn);

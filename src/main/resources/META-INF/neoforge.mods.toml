@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[36,)"
+loaderVersion="[4,)"
 logoFile="HellasForms.png"
 license="Restricted"
 
@@ -15,16 +15,16 @@ Welcome to Hellas :)
 '''
 
 [[dependencies.hellasforms]]
-    modId="forge"
+    modId="neoforge"
     mandatory=true
-    versionRange="[36,)"
+    versionRange="[21.1.0,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.hellasforms]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.5,)"
+    versionRange="[1.21.1,)"
     ordering="NONE"
     side="BOTH"
 

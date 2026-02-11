@@ -1,8 +1,7 @@
 package battles.attacks.specialAttacks.basic;
 
-import com.pixelmonmod.pixelmon.api.pokemon.Element;
 import com.pixelmonmod.pixelmon.api.pokemon.ability.abilities.MagicGuard;
-import com.pixelmonmod.pixelmon.battles.api.rules.clauses.BattleClauseRegistry;
+import com.pixelmonmod.pixelmon.api.pokemon.type.Type;
 import com.pixelmonmod.pixelmon.battles.controller.participants.PixelmonWrapper;
 import com.pixelmonmod.pixelmon.battles.status.EntryHazard;
 import com.pixelmonmod.pixelmon.battles.status.StatusType;
@@ -22,10 +21,19 @@ public class Shatterstorm extends EntryHazard {
     }
 
     public int getDamage(PixelmonWrapper pw) {
-        float effectiveness = Element.getTotalEffectiveness(pw.type, Element.ICE, pw.bc.rules.hasClause(BattleClauseRegistry.INVERSE_BATTLE));
-        float modifier = effectiveness * 12.5F;
-        int damage = pw.getPercentMaxHealth(modifier);
-        return damage;
+        double effectiveness = 1.0D;
+        if (pw.hasType(Type.GRASS)) effectiveness *= 2.0D;
+        if (pw.hasType(Type.GROUND)) effectiveness *= 2.0D;
+        if (pw.hasType(Type.FLYING)) effectiveness *= 2.0D;
+        if (pw.hasType(Type.DRAGON)) effectiveness *= 2.0D;
+
+        if (pw.hasType(Type.FIRE)) effectiveness *= 0.5D;
+        if (pw.hasType(Type.WATER)) effectiveness *= 0.5D;
+        if (pw.hasType(Type.ICE)) effectiveness *= 0.5D;
+        if (pw.hasType(Type.STEEL)) effectiveness *= 0.5D;
+
+        float modifier = (float) (effectiveness * 12.5F);
+        return pw.getPercentMaxHealth(modifier);
     }
 
     protected String getFirstLayerMessage() {

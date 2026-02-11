@@ -1,7 +1,7 @@
 package hellasforms.pokeballs;
 
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+import net.minecraft.world.level.Level;
 
 /**
  * Lunar Ball capture multiplier:
@@ -14,7 +14,7 @@ public final class LunarBallLogic {
     private static final double PEAK = 6.0;  // mult(0)
     private static final double RATIO = 0.5; // mult(1)/mult(0) = 3.0/6.0
 
-    public double getCatchMultiplier(World world, BlockPos pos /*, Object target, Object thrower */) {
+    public double getCatchMultiplier(Level world, BlockPos pos /*, Object target, Object thrower */) {
         if (world == null) return 1.0;
 
         long tod = world.getDayTime() % 24000L;

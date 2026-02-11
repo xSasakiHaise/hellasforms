@@ -4,10 +4,9 @@ import com.pixelmonmod.pixelmon.api.pokemon.Pokemon;
 import com.pixelmonmod.pixelmon.api.pokemon.stats.BattleStatsType;
 import com.pixelmonmod.pixelmon.api.pokemon.stats.IVStore;
 import com.pixelmonmod.pixelmon.entities.pixelmon.PixelmonEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.network.chat.Component;
 
 import java.util.Random;
 
@@ -17,7 +16,7 @@ public class RustedBottleCapItem extends PokemonInteractItem {
     private final Random random = new Random();
 
     @Override
-    protected boolean applyEffect(PlayerEntity player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
+    protected boolean applyEffect(Player player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
         BattleStatsType chosen = BATTLE_STATS[random.nextInt(BATTLE_STATS.length)];
         IVStore store = pokemon.getIVs();
         store.setHyperTrained(chosen, false);
@@ -27,7 +26,7 @@ public class RustedBottleCapItem extends PokemonInteractItem {
     }
 
     @Override
-    protected ITextComponent getSuccessMessage(Pokemon pokemon) {
-        return new TranslationTextComponent("item.pixelmon.rusted_bottle_cap.success", pokemon.getDisplayName());
+    protected Component getSuccessMessage(Pokemon pokemon) {
+        return Component.translatable("item.pixelmon.rusted_bottle_cap.success", pokemon.getDisplayName());
     }
 }
