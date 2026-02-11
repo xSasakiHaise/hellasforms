@@ -1,0 +1,1 @@
+Creates Sunny Weather and gives the User +25% of ATK and SPATK as well as 1 Stage of Evasion in Sunny Weather

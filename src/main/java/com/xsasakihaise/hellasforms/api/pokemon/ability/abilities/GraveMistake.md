@@ -1,0 +1,1 @@
+Powers up supereffective Moves by 25%, at the Expense of taking 25% more Damage from supereffective Moves

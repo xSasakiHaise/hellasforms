@@ -1,0 +1,1 @@
+German Language File for Hellas Forms Mod

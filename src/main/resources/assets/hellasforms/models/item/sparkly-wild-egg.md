@@ -1,0 +1,1 @@
+RNG F2P Pokemon Lootbox

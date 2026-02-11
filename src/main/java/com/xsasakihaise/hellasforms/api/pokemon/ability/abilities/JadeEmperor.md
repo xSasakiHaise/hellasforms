@@ -1,0 +1,1 @@
+Applies Psychic Terrain to the field when the user enters the field. Increases the user's Special Attack by 1.3x while the user is surrounded by Psychic Terrain.

@@ -1,0 +1,1 @@
+When this Pokemon enters battle, it summons Rain. While it remains active, Water Moves used by this Pokémon have their Damage doubled, and it takes reduced damage from Fire Moves

@@ -1,0 +1,1 @@
+changes a pokemons ability back from a hidden ability to a normal ability.

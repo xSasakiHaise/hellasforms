@@ -14,14 +14,14 @@ public class GrowthSpawningListener {
 
     @SubscribeEvent
     public void onServerStarted(FMLServerStartedEvent event) {
-        EnumGrowth.Microscopic.rarity = 4;
+        EnumGrowth.Microscopic.rarity = 2;
         EnumGrowth.Pygmy.rarity = 4;
-        EnumGrowth.Runt.rarity = 10;
-        EnumGrowth.Small.rarity = 18;
-        EnumGrowth.Ordinary.rarity = 28;
-        EnumGrowth.Huge.rarity = 18;
-        EnumGrowth.Giant.rarity = 10;
+        EnumGrowth.Runt.rarity = 8;
+        EnumGrowth.Small.rarity = 16;
+        EnumGrowth.Ordinary.rarity = 32;
+        EnumGrowth.Huge.rarity = 16;
+        EnumGrowth.Giant.rarity = 8;
         EnumGrowth.Enormous.rarity = 4;
-        EnumGrowth.Ginormous.rarity = 4;
+        EnumGrowth.Ginormous.rarity = 2;
     }
 }

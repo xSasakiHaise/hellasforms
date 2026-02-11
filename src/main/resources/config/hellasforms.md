@@ -1,0 +1,1 @@
+data for HellasHelper to read about the current state and use of the mod

@@ -1,0 +1,1 @@
+Applies Electric Terrain to the field when the user enters the field. Increases the user's priority on status moves by 2 while the user is surrounded by Electric Terrain.

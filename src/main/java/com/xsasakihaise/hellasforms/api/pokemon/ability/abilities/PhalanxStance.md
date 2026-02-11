@@ -1,0 +1,1 @@
+Immune to stats being lowered, gets +1 def and spdef instead whenever stats are tried to be lowered.

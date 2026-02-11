@@ -1,0 +1,1 @@
+Creates an Electric Terrain and gives the User 1 stage of ATK and SPATK while increasing its SPD by 10% when in Electric Terrain

@@ -1,0 +1,1 @@
+Increases the user's Critical Hit rate by 1 rank. Ignores the opponent's raised Evasiveness.

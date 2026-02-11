@@ -1,0 +1,1 @@
+currently obsolete logic for redeeming battlepasses. will later be updated and moved to HellasQuests

@@ -1,0 +1,1 @@
+Applies Misty Terrain to the field when the user enters the field. Doubles the users Defense and Special Defense while the user is surrounded by Misty Terrain.

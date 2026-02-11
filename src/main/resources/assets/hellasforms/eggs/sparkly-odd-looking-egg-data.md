@@ -1,0 +1,1 @@
+Egg Data Pool for Sparkly Odd Looking Egg

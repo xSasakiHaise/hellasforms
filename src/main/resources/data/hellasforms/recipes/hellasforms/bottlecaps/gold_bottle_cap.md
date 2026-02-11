@@ -1,0 +1,1 @@
+turn 4 silver bottlecaps into 1 gold bottlecap

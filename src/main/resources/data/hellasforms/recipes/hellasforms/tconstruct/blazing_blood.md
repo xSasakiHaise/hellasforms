@@ -1,0 +1,1 @@
+blazing blood pixelmon compat

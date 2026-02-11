@@ -1,0 +1,1 @@
+Japanese Language File for Hellas Forms Mod

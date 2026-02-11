@@ -1,0 +1,1 @@
+Takes double damage from Dark type moves but only 33% damage from contact moves
