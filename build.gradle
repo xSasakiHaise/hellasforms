@@ -68,6 +68,7 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
     mavenCentral()
+    maven { url = 'https://maven.neoforged.net/releases' }
     maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
     maven { url 'https://repo.lucko.me/' }
     maven { url = "https://repo.aikar.co/content/groups/aikar/" }
@@ -78,18 +79,30 @@ repositories {
     }
 }
 
-def pixelmonJarName = (project.findProperty("pixelmonJarName") ?: "Pixelmon-1.21.1-9.1.13-universal.jar").toString()
-def pixelmonJar = file("libs/${pixelmonJarName}")
-if (!pixelmonJar.exists()) {
-    def pixelmonMatches = fileTree("libs").files
-            .findAll { it.name.toLowerCase().contains("pixelmon") && it.name.toLowerCase().endsWith(".jar") }
-            .toList()
+def pixelmonArtifactName = (project.findProperty("pixelmonArtifactName") ?: "Pixelmon-1.21.1-9.3.13-universal").toString()
+def pixelmonArtifact = file("libs/${pixelmonArtifactName}")
+if (!pixelmonArtifact.exists()) {
+    def pixelmonMatches = file("libs").listFiles()?.findAll {
+        def name = it.name.toLowerCase()
+        name.contains("pixelmon") && (name.endsWith(".jar") || it.directory)
+    }?.toList() ?: []
     if (!pixelmonMatches.isEmpty()) {
-        pixelmonJar = pixelmonMatches.sort { it.name }.last()
+        pixelmonArtifact = pixelmonMatches.sort { it.name }.last()
     }
 }
-if (!pixelmonJar.exists()) {
-    throw new GradleException("Missing Pixelmon jar at libs/${pixelmonJarName}. You can also place any *pixelmon*.jar in libs/ or set -PpixelmonJarName=... to override.")
+if (!pixelmonArtifact.exists()) {
+    throw new GradleException("Missing Pixelmon artifact at libs/${pixelmonArtifactName}. You can also place any *pixelmon*.jar (or extracted Pixelmon directory) in libs/ or set -PpixelmonArtifactName=... to override.")
+}
+
+if (pixelmonArtifact.isDirectory()) {
+    def pixelmonJarCache = file("${buildDir}/tmp/pixelmon/${pixelmonArtifact.name}.jar")
+    if (!pixelmonJarCache.exists() || pixelmonJarCache.lastModified() < pixelmonArtifact.lastModified()) {
+        pixelmonJarCache.parentFile.mkdirs()
+        ant.zip(destfile: pixelmonJarCache) {
+            fileset(dir: pixelmonArtifact)
+        }
+    }
+    pixelmonArtifact = pixelmonJarCache
 }
 
 def hellasControlLocalJars = fileTree("libs").files
@@ -102,18 +115,18 @@ def useHellasControlLocalJar = hellasControlLocalJar != null && hellasControlLoc
 dependencies {
     minecraft "net.neoforged:neoforge:${forge_version}"
 
-    // Place Pixelmon at libs/Pixelmon-1.21.1-9.1.12-universal.jar (not tracked in git).
-    // You can override the name with -PpixelmonJarName=... or drop a Pixelmon-1.21.1-9.1.1*-universal.jar into libs/.
-    implementation fg.deobf(files(pixelmonJar))
+    // Place Pixelmon under libs/ (jar or extracted directory, not tracked in git).
+    // You can override with -PpixelmonArtifactName=... or drop any Pixelmon artifact in libs/.
+    implementation files(pixelmonArtifact)
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.0'
     // If you have hellascontrol checked out next to this repo, includeBuild("../hellascontrol") will be used.
     // Alternatively, drop any *hellascontrol*.jar into libs/ to use that directly.
     if (useHellasControlLocalJar) {
-        compileOnly fg.deobf(files(hellasControlLocalJar))
+        compileOnly files(hellasControlLocalJar)
     } else if (file("../hellascontrol").exists()) {
-        compileOnly fg.deobf("com.xsasakihaise.hellascontrol:hellascontrol:2.0.0")
+        compileOnly "com.xsasakihaise.hellascontrol:hellascontrol:2.0.0"
     } else {
-        compileOnly fg.deobf("com.github.xSasakiHaise:hellascontrol:master-SNAPSHOT")
+        compileOnly "com.github.xSasakiHaise:hellascontrol:master-SNAPSHOT"
     }
 
 }
