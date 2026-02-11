@@ -2,3 +2,7 @@
 /.gradle/
 /build/
 /src/main/libs/
+.idea/
+*.iml
+libs/
+*.jar
