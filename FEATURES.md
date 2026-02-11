@@ -67,12 +67,12 @@ maintaining a fork.
   `bucket` registry objects.
 
 ## Dependencies & environment
-- Minecraft 1.16.5
-- Forge 36.2.42 (configured via ForgeGradle 6 + Parchment mappings 2022.03.06)
+- Minecraft 1.21.1
+- NeoForge 21.1.10 (for Minecraft 1.21.1)
 - Pixelmon Reforged 9.1.12
 - HellasControl (compile-time dependency, used for entitlement checks via
   `CoreCheck`)
-- Java 8 toolchain
+- Java 21 toolchain
 
 ## Notes for future migration
 - Battle move classes and mixins depend on Pixelmon internals like
@@ -84,5 +84,5 @@ maintaining a fork.
   reflection and command formats that may change between versions. Re-test these
   flows after every Pixelmon update.
 - Bottle cap interactions (`interactions.InteractionBottleCap`) and the growth
-  listener manipulate enums and GUIs that are tightly coupled to the 1.16.5
+  listener manipulate enums and GUIs that are tightly coupled to the 1.21.1
   client – any NeoForge/1.20 migration should revalidate those assumptions.

@@ -15,9 +15,9 @@ import com.xsasakihaise.hellasforms.HellasForms;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.UUID;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.Hand;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.InteractionHand;
 
 /**
  * Custom interaction that mirrors Pixelmon's bottle cap UI but enforces a
@@ -30,8 +30,8 @@ public class InteractionBottleCap implements IInteraction {
      * posts a {@link BottleCapEvent} for other mods to react to.
      */
     @Override
-    public boolean processInteract(PixelmonEntity pixelmon, PlayerEntity player, Hand hand, ItemStack stack) {
-        if (player.level.isClientSide || hand == Hand.OFF_HAND || !(stack.getItem() instanceof BottlecapItem)) {
+    public boolean processInteract(PixelmonEntity pixelmon, Player player, InteractionHand hand, ItemStack stack) {
+        if (player.level().isClientSide() || hand == InteractionHand.OFF_HAND || !(stack.getItem() instanceof BottlecapItem)) {
             return false;
         }
         final Pokemon mon = pixelmon.getPokemon();

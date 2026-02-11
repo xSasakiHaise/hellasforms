@@ -1,7 +1,7 @@
 package com.xsasakihaise.hellasforms.api.pokemon.ability.abilities;
 
-import com.pixelmonmod.pixelmon.api.pokemon.Element;
 import com.pixelmonmod.pixelmon.api.pokemon.ability.AbstractAbility;
+import com.pixelmonmod.pixelmon.api.pokemon.type.Type;
 import com.pixelmonmod.pixelmon.battles.attacks.Attack;
 import com.pixelmonmod.pixelmon.battles.controller.participants.PixelmonWrapper;
 import com.pixelmonmod.pixelmon.battles.status.Rainy;
@@ -24,12 +24,12 @@ public class Hydrosphere extends AbstractAbility {
     // --- WaterBubble ---
     @Override
     public int modifyDamageTarget(int damage, PixelmonWrapper user, PixelmonWrapper target, Attack a) {
-        return a.getType() == Element.FIRE ? damage / 2 : damage;
+        return a.getType().is(Type.FIRE) ? damage / 2 : damage;
     }
 
     @Override
     public int[] modifyPowerAndAccuracyUser(int power, int accuracy, PixelmonWrapper user, PixelmonWrapper target, Attack a) {
-        return a.getType() == Element.WATER ? new int[]{power * 2, accuracy} : new int[]{power, accuracy};
+        return a.getType().is(Type.WATER) ? new int[]{power * 2, accuracy} : new int[]{power, accuracy};
     }
 
     // --- WaterBubble ---

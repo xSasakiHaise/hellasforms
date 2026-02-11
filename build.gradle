@@ -16,7 +16,7 @@ base {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(8)
+        languageVersion = JavaLanguageVersion.of(21)
     }
 }
 
@@ -24,7 +24,7 @@ println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty '
 
 minecraft {
 
-    mappings channel: 'official', version: '1.16.5'
+    mappings channel: 'official', version: '1.21.1'
 
     copyIdeResources = true
 
@@ -78,7 +78,7 @@ repositories {
     }
 }
 
-def pixelmonJarName = (project.findProperty("pixelmonJarName") ?: "Pixelmon-1.16.5-9.1.13-universal.jar").toString()
+def pixelmonJarName = (project.findProperty("pixelmonJarName") ?: "Pixelmon-1.21.1-9.1.13-universal.jar").toString()
 def pixelmonJar = file("libs/${pixelmonJarName}")
 if (!pixelmonJar.exists()) {
     def pixelmonMatches = fileTree("libs").files
@@ -100,10 +100,10 @@ def useHellasControlLocalJar = hellasControlLocalJar != null && hellasControlLoc
 
 
 dependencies {
-    minecraft "net.minecraftforge:forge:1.16.5-36.2.42"
+    minecraft "net.neoforged:neoforge:${forge_version}"
 
-    // Place Pixelmon at libs/Pixelmon-1.16.5-9.1.12-universal.jar (not tracked in git).
-    // You can override the name with -PpixelmonJarName=... or drop a Pixelmon-1.16.5-9.1.1*-universal.jar into libs/.
+    // Place Pixelmon at libs/Pixelmon-1.21.1-9.1.12-universal.jar (not tracked in git).
+    // You can override the name with -PpixelmonJarName=... or drop a Pixelmon-1.21.1-9.1.1*-universal.jar into libs/.
     implementation fg.deobf(files(pixelmonJar))
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.0'
     // If you have hellascontrol checked out next to this repo, includeBuild("../hellascontrol") will be used.
@@ -132,7 +132,7 @@ tasks.named('processResources', ProcessResources).configure {
     ]
     inputs.properties replaceProperties
 
-    filesMatching(['META-INF/mods.toml', 'pack.mcmeta']) {
+    filesMatching(['META-INF/neoforge.mods.toml', 'pack.mcmeta']) {
         expand replaceProperties + [project: project]
     }
 }

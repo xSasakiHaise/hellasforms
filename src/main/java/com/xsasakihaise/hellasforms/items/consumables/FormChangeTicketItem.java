@@ -2,10 +2,9 @@ package com.xsasakihaise.hellasforms.items.consumables;
 
 import com.pixelmonmod.pixelmon.api.pokemon.Pokemon;
 import com.pixelmonmod.pixelmon.entities.pixelmon.PixelmonEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.network.chat.Component;
 
 /**
  * A consumable ticket that swaps a Pokemon into a target form when available.
@@ -24,7 +23,7 @@ public class FormChangeTicketItem extends PokemonInteractItem {
     }
 
     @Override
-    protected boolean applyEffect(PlayerEntity player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
+    protected boolean applyEffect(Player player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
         boolean hasTargetForm = pokemon.getSpecies().getForm(targetForm) != null;
         if (!hasTargetForm || pokemon.getForm().isForm(targetForm)) {
             return false;
@@ -36,17 +35,17 @@ public class FormChangeTicketItem extends PokemonInteractItem {
     }
 
     @Override
-    protected ITextComponent getSuccessMessage(Pokemon pokemon) {
-        return new TranslationTextComponent(successTranslation, pokemon.getDisplayName());
+    protected Component getSuccessMessage(Pokemon pokemon) {
+        return Component.translatable(successTranslation, pokemon.getDisplayName());
     }
 
     @Override
-    protected ITextComponent getFailureMessage(Pokemon pokemon) {
+    protected Component getFailureMessage(Pokemon pokemon) {
         if (pokemon.getSpecies().getForm(targetForm) == null) {
-            return new TranslationTextComponent("item.hellasforms.form_change.missing", pokemon.getDisplayName(), targetForm);
+            return Component.translatable("item.hellasforms.form_change.missing", pokemon.getDisplayName(), targetForm);
         }
         if (pokemon.getForm().isForm(targetForm)) {
-            return new TranslationTextComponent("item.hellasforms.form_change.already", pokemon.getDisplayName(), targetForm);
+            return Component.translatable("item.hellasforms.form_change.already", pokemon.getDisplayName(), targetForm);
         }
         return super.getFailureMessage(pokemon);
     }

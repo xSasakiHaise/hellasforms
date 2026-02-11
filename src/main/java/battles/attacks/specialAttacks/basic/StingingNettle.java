@@ -1,22 +1,20 @@
 package battles.attacks.specialAttacks.basic;
 
-import com.pixelmonmod.pixelmon.api.pokemon.Element;
 import com.pixelmonmod.pixelmon.api.pokemon.ability.Ability;
 import com.pixelmonmod.pixelmon.api.pokemon.ability.abilities.MagicGuard;
+import com.pixelmonmod.pixelmon.api.pokemon.type.Type;
 import com.pixelmonmod.pixelmon.battles.attacks.DamageTypeEnum;
 import com.pixelmonmod.pixelmon.battles.attacks.specialAttacks.basic.SpecialAttackBase;
 import com.pixelmonmod.pixelmon.battles.controller.participants.PixelmonWrapper;
 import com.pixelmonmod.pixelmon.battles.status.Splinters;
 import com.pixelmonmod.pixelmon.battles.status.StatusType;
+import net.minecraft.core.Holder;
 
 import java.util.List;
 
 public class StingingNettle extends SpecialAttackBase {
 
-    private String attackName = "Stinging Nettle";
-
-    public StingingNettle() {
-    }
+    private final String attackName = "Stinging Nettle";
 
     public String getAttackName() {
         return attackName;
@@ -33,7 +31,7 @@ public class StingingNettle extends SpecialAttackBase {
                     if (!(ability instanceof MagicGuard)) {
                         int baseDamage = pw.getMaxHealth() / 8;
 
-                        double multiplier = modifyTypeEffectiveness(pw.getInitialType(), Element.GRASS, 1.0);
+                        double multiplier = modifyTypeEffectiveness(pw.getInitialType(), resolveGrassType(pw), 1.0);
 
                         int finalDamage = Math.max(1, (int) Math.round(baseDamage * multiplier));
 
@@ -44,19 +42,27 @@ public class StingingNettle extends SpecialAttackBase {
                 }
 
                 @Override
-                public double modifyTypeEffectiveness(List<Element> effectiveTypes, Element moveType, double baseEffectiveness) {
-                    if (moveType == Element.GRASS && effectiveTypes.contains(Element.WATER)) {
-                        if (!effectiveTypes.contains(Element.FIRE) && !effectiveTypes.contains(Element.GRASS)) {
-                            return !effectiveTypes.contains(Element.POISON) && !effectiveTypes.contains(Element.ROCK) && !effectiveTypes.contains(Element.STEEL) ? 2.0 : 1.0;
+                public double modifyTypeEffectiveness(List<Holder<Type>> effectiveTypes, Holder<Type> moveType, double baseEffectiveness) {
+                    if (moveType.is(Type.GRASS) && hasType(effectiveTypes, Type.WATER)) {
+                        if (!hasType(effectiveTypes, Type.FIRE) && !hasType(effectiveTypes, Type.GRASS)) {
+                            return !hasType(effectiveTypes, Type.POISON)
+                                    && !hasType(effectiveTypes, Type.ROCK)
+                                    && !hasType(effectiveTypes, Type.STEEL) ? 2.0 : 1.0;
                         } else {
                             return 4.0;
                         }
-                    } else {
-                        return baseEffectiveness;
                     }
+                    return baseEffectiveness;
                 }
-
             }, target);
         }
+    }
+
+    private static boolean hasType(List<Holder<Type>> types, net.minecraft.resources.ResourceKey<Type> key) {
+        return types.stream().anyMatch(t -> t.is(key));
+    }
+
+    private Holder<Type> resolveGrassType(PixelmonWrapper pw) {
+        return pw.getTypes().stream().filter(t -> t.is(Type.GRASS)).findFirst().orElse(pw.getTypes().get(0));
     }
 }

@@ -1,42 +1,33 @@
 package battles.attacks.specialAttacks.basic;
 
-import com.pixelmonmod.pixelmon.api.pokemon.Element;
+import com.pixelmonmod.pixelmon.api.pokemon.type.Type;
 import com.pixelmonmod.pixelmon.battles.attacks.specialAttacks.basic.SpecialAttackBase;
+import net.minecraft.core.Holder;
+
 import java.util.List;
 
 public class GreekFire extends SpecialAttackBase {
-    private String attackName = "Greek Fire";
-
-    public GreekFire() {}
+    private final String attackName = "Greek Fire";
 
     public String getAttackName() {
         return attackName;
     }
 
-    /**
-     * Modify type effectiveness:
-     * - Water types take 2× instead of being resisted.
-     * - Dual types are handled correctly by multiplying each type's modifier.
-     * - Other types follow standard Fire-type effectiveness.
-     */
     @Override
-    public double modifyTypeEffectiveness(List<Element> targetTypes, Element moveType, double baseEffectiveness) {
-        // Only modify Fire-type moves
-        if (moveType != Element.FIRE) {
+    public double modifyTypeEffectiveness(List<Holder<Type>> targetTypes, Holder<Type> moveType, double baseEffectiveness) {
+        if (!moveType.is(Type.FIRE)) {
             return baseEffectiveness;
         }
 
-        double effectiveness = baseEffectiveness; // start from default
+        double effectiveness = baseEffectiveness;
 
-        for (Element type : targetTypes) {
-            if (type == Element.WATER) {
-                effectiveness *= 2.0; // force Water to take 2×
-            } else if (type == Element.FIRE || type == Element.ROCK || type == Element.DRAGON) {
-                effectiveness *= 0.5; // resisted normally
-            } else if (type == Element.BUG || type == Element.STEEL || type == Element.GRASS || type == Element.ICE) {
-                effectiveness *= 2.0; // weak to Fire
-            } else {
-                effectiveness *= 1.0; // neutral for all other types
+        for (Holder<Type> type : targetTypes) {
+            if (type.is(Type.WATER)) {
+                effectiveness *= 2.0;
+            } else if (type.is(Type.FIRE) || type.is(Type.ROCK) || type.is(Type.DRAGON)) {
+                effectiveness *= 0.5;
+            } else if (type.is(Type.BUG) || type.is(Type.STEEL) || type.is(Type.GRASS) || type.is(Type.ICE)) {
+                effectiveness *= 2.0;
             }
         }
 

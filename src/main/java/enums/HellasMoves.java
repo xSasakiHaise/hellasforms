@@ -1,15 +1,16 @@
 package enums;
 
-import com.pixelmonmod.pixelmon.api.pokemon.Element;
+import com.pixelmonmod.pixelmon.api.pokemon.type.Type;
+import net.minecraft.resources.ResourceKey;
 
 public enum HellasMoves {
-    Corrode(1, "Corrode", Element.POISON);
+    Corrode(1, "Corrode", Type.POISON);
 
     private final int id;
     private final String moveName;
-    private final Element moveType;
+    private final ResourceKey<Type> moveType;
 
-    private HellasMoves(int id, String moveName, Element moveType) {
+    HellasMoves(int id, String moveName, ResourceKey<Type> moveType) {
         this.id = id;
         this.moveName = moveName;
         this.moveType = moveType;
@@ -23,7 +24,7 @@ public enum HellasMoves {
         return this.moveName;
     }
 
-    public Element getMoveType() {
+    public ResourceKey<Type> getMoveType() {
         return this.moveType;
     }
 }

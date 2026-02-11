@@ -4,10 +4,9 @@ import com.pixelmonmod.pixelmon.api.pokemon.Pokemon;
 import com.pixelmonmod.pixelmon.api.pokemon.stats.BattleStatsType;
 import com.pixelmonmod.pixelmon.api.pokemon.stats.EVStore;
 import com.pixelmonmod.pixelmon.entities.pixelmon.PixelmonEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.network.chat.Component;
 
 /**
  * Sets one EV stat to the Pixelmon cap (252) while respecting the overall total
@@ -23,7 +22,7 @@ public class EvMaximizerItem extends PokemonInteractItem {
     }
 
     @Override
-    protected boolean applyEffect(PlayerEntity player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
+    protected boolean applyEffect(Player player, Pokemon pokemon, PixelmonEntity entity, ItemStack stack) {
         EVStore evStore = pokemon.getEVs();
         int current = evStore.getStat(targetStat);
         if (current >= EVStore.MAX_EVS) {
@@ -47,12 +46,12 @@ public class EvMaximizerItem extends PokemonInteractItem {
     }
 
     @Override
-    protected ITextComponent getSuccessMessage(Pokemon pokemon) {
-        return new TranslationTextComponent(successTranslation, pokemon.getDisplayName());
+    protected Component getSuccessMessage(Pokemon pokemon) {
+        return Component.translatable(successTranslation, pokemon.getDisplayName());
     }
 
     @Override
-    protected ITextComponent getFailureMessage(Pokemon pokemon) {
-        return new TranslationTextComponent("item.hellasforms.generic.ev_max", pokemon.getDisplayName());
+    protected Component getFailureMessage(Pokemon pokemon) {
+        return Component.translatable("item.hellasforms.generic.ev_max", pokemon.getDisplayName());
     }
 }
